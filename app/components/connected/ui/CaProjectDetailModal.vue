@@ -23,6 +23,39 @@
           {{ detail.project.teaser }}
         </p>
 
+        <!-- EU Mission layer (Barometer) -->
+        <section v-if="mission" class="border border-neutral-darkest">
+          <div class="flex items-center gap-2 border-b border-neutral-darkest px-4 py-2">
+            <span class="h-2.5 w-2.5" :style="{ background: missionTypeColor(mission.project_type) }" />
+            <span class="font-mono text-2xs font-bold tracking-[0.16em]">EU MISSION · {{ missionTypeLabel(mission.project_type).toUpperCase() }}</span>
+            <span class="ml-auto font-mono text-2xs text-neutral-dark">{{ mission.lifecycle.toUpperCase() }}</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 p-4 sm:grid-cols-4">
+            <div>
+              <span class="block font-display text-2xl font-bold">{{ mission.n_authorities }}</span>
+              <span class="font-mono text-[10px] tracking-[0.1em] text-neutral-dark">REGIONS / AUTHORITIES</span>
+            </div>
+            <div>
+              <span class="block font-display text-2xl font-bold">{{ mission.n_signatory_authorities }}</span>
+              <span class="font-mono text-[10px] tracking-[0.1em] text-neutral-dark">CHARTER SIGNATORIES</span>
+            </div>
+            <div>
+              <span class="block font-display text-2xl font-bold">{{ mission.n_demonstrators }}</span>
+              <span class="font-mono text-[10px] tracking-[0.1em] text-neutral-dark">DEMONSTRATORS</span>
+            </div>
+            <div>
+              <span class="block font-display text-2xl font-bold">{{ mission.n_replicators }}</span>
+              <span class="font-mono text-[10px] tracking-[0.1em] text-neutral-dark">REPLICATORS</span>
+            </div>
+          </div>
+          <div class="border-t border-neutral-lighter px-4 py-2 text-[12px] text-neutral-darkest">
+            <span class="font-mono text-[10px] text-neutral-dark">{{ mission.topic_code }}</span><br />
+            {{ mission.topic_title }}
+            <p v-if="mission.type_note" class="mt-1 text-[11px] text-neutral-dark">{{ mission.type_note }}</p>
+            <p v-if="!mission.in_annex5" class="mt-1 text-[11px] text-neutral-dark">No regions listed for this project in the Mission Barometer (Appendix 5).</p>
+          </div>
+        </section>
+
         <section v-if="detail.risks.length" class="space-y-2">
           <h3 class="font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">RISKS</h3>
           <div class="flex flex-wrap gap-1.5">
@@ -165,6 +198,9 @@
 <script setup lang="ts">
 import type { CordisProjectDetail } from '~/types/cordis';
 import { getCordisProjectUrl, parseCordisKeywords } from '~/utils/cordisLinks';
+import { fetchMissionProjects } from '~/utils/cordisRepository';
+import { missionTypeColor, missionTypeLabel } from '~/utils/missionTypes';
+import type { MissionProject } from '~/types/mission';
 
 const open = defineModel<boolean>('open', { default: false });
 
@@ -177,6 +213,12 @@ const props = defineProps<{
 }>();
 
 const detail = ref<CordisProjectDetail | null>(null);
+const missionAll = ref<MissionProject[]>([]);
+fetchMissionProjects().then((rows) => (missionAll.value = rows)).catch(() => {});
+const mission = computed(() => {
+  const id = detail.value?.project?.cordisId ?? detail.value?.project?.id;
+  return missionAll.value.find((m) => m.cordis_id === String(id)) ?? null;
+});
 const pending = ref(false);
 const error = ref<Error | null>(null);
 

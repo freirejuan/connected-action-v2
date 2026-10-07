@@ -1,7 +1,62 @@
 {
-  "lab": {
-    "en": {"subtitle": "Lab · EU Mission layer", "badge": "Experimental", "stableVersion": "Stable version", "sources": "Data sources", "cutoff": "cut-off", "generated": "data built"},
-    "es": {"subtitle": "Lab · capa de la Misión UE", "badge": "Experimental", "stableVersion": "Versión estable", "sources": "Fuentes de datos", "cutoff": "corte", "generated": "datos generados el"},
-    "it": {"subtitle": "Lab · livello della Missione UE", "badge": "Sperimentale", "stableVersion": "Versione stabile", "sources": "Fonti dei dati", "cutoff": "aggiornato al", "generated": "dati generati il"}
+ "lab": {
+  "en": {
+   "subtitle": "Lab · EU Mission layer",
+   "badge": "Experimental",
+   "stableVersion": "Stable version",
+   "sources": "Data sources",
+   "cutoff": "cut-off",
+   "generated": "data built"
+  },
+  "es": {
+   "subtitle": "Lab · capa de la Misión UE",
+   "badge": "Experimental",
+   "stableVersion": "Versión estable",
+   "sources": "Fuentes de datos",
+   "cutoff": "corte",
+   "generated": "datos generados el"
+  },
+  "it": {
+   "subtitle": "Lab · livello della Missione UE",
+   "badge": "Sperimentale",
+   "stableVersion": "Versione stabile",
+   "sources": "Fonti dei dati",
+   "cutoff": "aggiornato al",
+   "generated": "dati generati il"
   }
+ },
+ "_cards": {
+  "territories": {
+   "en": {
+    "title": "Territories",
+    "lede": "Where Mission projects act on the ground.",
+    "body": "The regions and local authorities each project works with, according to the Mission Barometer, compared with where its partners are based. Charter signatories without any Mission project are listed.",
+    "shows": [
+     "Project–territory map (NUTS-3)",
+     "Partner seats vs territories",
+     "Charter signatories without a project"
+    ]
+   },
+   "es": {
+    "title": "Territorios",
+    "lede": "Dónde actúan sobre el terreno los proyectos de la Misión.",
+    "body": "Las regiones y autoridades locales con las que trabaja cada proyecto, según el Barómetro de la Misión, frente a dónde tienen la sede sus socios. Incluye los firmantes de la Charter sin ningún proyecto de la Misión.",
+    "shows": [
+     "Mapa proyecto–territorio (NUTS-3)",
+     "Sedes de socios frente a territorios",
+     "Firmantes de la Charter sin proyecto"
+    ]
+   },
+   "it": {
+    "title": "Territori",
+    "lede": "Dove agiscono sul territorio i progetti della Missione.",
+    "body": "Le regioni e le autorità locali con cui lavora ogni progetto, secondo il Barometro della Missione, rispetto a dove hanno sede i partner. Elenca i firmatari della Carta senza alcun progetto della Missione.",
+    "shows": [
+     "Mappa progetto–territorio (NUTS-3)",
+     "Sedi dei partner rispetto ai territori",
+     "Firmatari della Carta senza progetto"
+    ]
+   }
+  }
+ }
 }

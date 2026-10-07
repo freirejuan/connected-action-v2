@@ -8,7 +8,7 @@
   "scripts": {
     "data": "python3 scripts/build_data.py",
     "dev": "nuxt dev",
-    "build": "nuxt generate",
+    "build": "nuxt generate && node -e \"require('fs').rmSync('.output/public/404.html',{force:true})\"",
     "preview": "npx serve -s .output/public",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck"

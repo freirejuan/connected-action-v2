@@ -122,6 +122,14 @@ const cardDefs = [
     accent: CA_CAT.ochre,
     to: "/connected/ProjectsUmapNew",
   },
+  {
+    id: "territories",
+    key: "territories",
+    n: "05",
+    glyph: "⬢",
+    accent: "#0f4fc4",
+    to: "/connected/territories",
+  },
 ] as const;
 
 function resolveMessageList(key: string): string[] {

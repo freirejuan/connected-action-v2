@@ -48,4 +48,12 @@ export const connectedNav: ConnectedNavItem[] = [
     n: '04',
     description: 'Semantic clustering of projects in 2-D space',
   },
+  {
+    label: 'Territories',
+    to: '/connected/territories',
+    icon: 'i-lucide-map-pin',
+    glyph: '⬢',
+    n: '05',
+    description: 'Where Mission projects act, compared with where their partners are based',
+  },
 ]

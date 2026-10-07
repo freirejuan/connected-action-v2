@@ -96,7 +96,7 @@
   "connected": {
     "index": {
       "metaTitle": "Azione Connessa",
-      "metaDescription": "Esplora la rete di progetti e organizzazioni della Missione UE per l’adattamento climatico in quattro viste interattive.",
+      "metaDescription": "Esplora la rete di progetti e organizzazioni della Missione UE per l’adattamento climatico in cinque viste interattive.",
       "eyebrow": "Azione Connessa",
       "heroTitle": "Esplora l’ecosistema della Missione UE per l’adattamento climatico",
       "heroIntro": "Naviga nella rete di progetti e organizzazioni che guidano l’adattamento climatico in Europa. Quattro prospettive mostrano come le iniziative finanziate dalla Missione si collegano tra temi, luoghi e partnership.",
@@ -148,6 +148,16 @@
             "Layout semantico 2D",
             "Cluster tematici",
             "Dimensione = entità coinvolte"
+          ]
+        },
+        "territories": {
+          "title": "Territori",
+          "lede": "Dove agiscono sul territorio i progetti della Missione.",
+          "body": "Le regioni e le autorità locali con cui lavora ogni progetto, secondo il Barometro della Missione, rispetto a dove hanno sede i partner. Elenca i firmatari della Carta senza alcun progetto della Missione.",
+          "shows": [
+            "Mappa progetto–territorio (NUTS-3)",
+            "Sedi dei partner rispetto ai territori",
+            "Firmatari della Carta senza progetto"
           ]
         }
       }

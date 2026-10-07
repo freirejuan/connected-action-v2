@@ -96,10 +96,10 @@
   "connected": {
     "index": {
       "metaTitle": "Connected Action",
-      "metaDescription": "Browse the EU Climate Adaptation Mission network of projects and organisations across four interactive views.",
+      "metaDescription": "Browse the EU Climate Adaptation Mission network of projects and organisations across five interactive views.",
       "eyebrow": "Connected Action",
       "heroTitle": "Explore the EU Climate Adaptation Mission ecosystem",
-      "heroIntro": "Browse the network of projects and organisations shaping climate adaptation across Europe. Four lenses reveal how Mission-funded initiatives connect across topics, places and partnerships.",
+      "heroIntro": "Browse the network of projects and organisations shaping climate adaptation across Europe. Five lenses reveal how Mission-funded initiatives connect across topics, places and partnerships.",
       "stats": {
         "projects": "projects",
         "entities": "entities",
@@ -148,6 +148,16 @@
             "Semantic 2-D layout",
             "Thematic clusters",
             "Size = entities involved"
+          ]
+        },
+        "territories": {
+          "title": "Territories",
+          "lede": "Where Mission projects act on the ground.",
+          "body": "The regions and local authorities each project works with, according to the Mission Barometer, compared with where its partners are based. Charter signatories without any Mission project are listed.",
+          "shows": [
+            "Project–territory map (NUTS-3)",
+            "Partner seats vs territories",
+            "Charter signatories without a project"
           ]
         }
       }
