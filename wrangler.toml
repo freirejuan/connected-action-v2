@@ -1,0 +1,6 @@
+# Cloudflare Pages: carpeta que se publica tras `pnpm build`.
+# El comando de compilación se configura en el panel (Settings → Builds):
+#   pnpm install --frozen-lockfile && pnpm build
+name = "connected-action-v2"
+pages_build_output_dir = ".output/public"
+compatibility_date = "2025-01-15"

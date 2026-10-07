@@ -19,7 +19,7 @@ El Lab es un sitio estático: no necesita servidor, base de datos ni variables d
 4. **Save and Deploy**. La URL queda en `https://<nombre-del-proyecto>.pages.dev`.
 5. En **Settings → Builds → Branch control**, dejar *Preview branches* en **None** si no se quieren despliegues de otras ramas.
 
-`pnpm build` ya elimina `404.html`, de modo que Pages sirve la app en cualquier ruta (modo SPA). `public/_headers` añade `noindex` a todo el sitio.
+`wrangler.toml` fija la carpeta de salida (`.output/public`) aunque el panel diga otra cosa; el comando de compilación sí hay que ponerlo en el panel. `pnpm build` ya elimina `404.html`, de modo que Pages sirve la app en cualquier ruta (modo SPA). `public/_headers` añade `noindex` a todo el sitio.
 
 ## 2. Acceso abierto pero discreto
 
@@ -52,3 +52,7 @@ pnpm install && pnpm build
 npx wrangler login
 npx wrangler pages deploy .output/public --project-name connected-action-lab
 ```
+
+## Si la URL devuelve 404
+
+Si `/robots.txt` o `/data/meta.json` responden pero la portada da 404, Cloudflare está publicando la carpeta `public/` del repositorio sin compilar. En **Settings → Builds → Build configuration** comprobar que *Build command* es `pnpm install --frozen-lockfile && pnpm build` y volver a desplegar (**Deployments → … → Retry deployment**).
