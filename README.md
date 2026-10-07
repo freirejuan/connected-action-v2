@@ -29,7 +29,7 @@ Node ≥ 22.12 y pnpm 10.
 
 ## Despliegue (Cloudflare Pages)
 
-Sitio estático: directorio de salida `.output/public`, comando `pnpm install --frozen-lockfile && pnpm build && rm -f .output/public/404.html` (sin `404.html`, Pages sirve la app en cualquier ruta). Proteger con Cloudflare Access. Detalle en `docs/despliegue.md`.
+Sitio estático: directorio de salida `.output/public`, comando `pnpm install --frozen-lockfile && pnpm build` (el build elimina `404.html` para que Pages sirva la app en cualquier ruta). Acceso abierto pero fuera de buscadores (`robots.txt`, `X-Robots-Tag` y meta `noindex`). Detalle en `docs/despliegue.md`.
 
 ## Cambios respecto al original
 

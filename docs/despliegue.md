@@ -21,15 +21,17 @@ El Lab es un sitio estático: no necesita servidor, base de datos ni variables d
 
 `pnpm build` ya elimina `404.html`, de modo que Pages sirve la app en cualquier ruta (modo SPA). `public/_headers` añade `noindex` a todo el sitio.
 
-## 2. Cerrar el acceso (recomendado)
+## 2. Acceso abierto pero discreto
 
-Cloudflare **Zero Trust → Access → Applications → Add an application → Self-hosted**:
+El sitio es público para quien tenga el enlace, pero no se anuncia a buscadores:
 
-- *Application domain*: el dominio `*.pages.dev` del proyecto (y, si se quiere, también las URL de vista previa).
-- *Policy*: **Allow**, regla *Emails* con las direcciones del equipo (o *Emails ending in* `@inviable.is` si aplica).
-- *Login method*: **One-time PIN** (código por email; no hace falta otra cuenta).
+- `public/robots.txt` pide a todos los rastreadores que no recorran el sitio (`Disallow: /`).
+- `public/_headers` envía `X-Robots-Tag: noindex, nofollow` en todas las respuestas, y cada página lleva además `<meta name="robots" content="noindex, nofollow">`.
+- En **Settings → Builds → Branch control**, *Preview branches* en **None**: así no aparecen URL de vista previa adicionales.
 
-Desde el panel del proyecto de Pages también se puede activar con **Settings → General → Access policy → Enable**.
+Lo que esto no cubre: cualquiera con el enlace puede abrirlo y descargar los datos (`/data/*.json`, que son públicos en CORDIS y en el Portal de la Misión). Para que el enlace no acabe en un buscador basta con no publicarlo en páginas abiertas; compartirlo por correo o en canales internos no lo expone.
+
+Si más adelante hace falta cerrarlo, Cloudflare Pages → **Settings → General → Access policy → Enable** lo protege con código por email sin tocar el código.
 
 ## 3. Actualizar
 

@@ -3,6 +3,11 @@
 // sin servidor ni Supabase; los datos se leen de /public/data/*.json (scripts/build_data.py).
 export default defineNuxtConfig({
   ssr: false,
+  app: {
+    head: {
+      meta: [{ name: 'robots', content: 'noindex, nofollow' }]
+    }
+  },
   modules: ['@nuxt/ui', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@vueuse/nuxt'],
   components: [
     { path: '~/components/connected', pathPrefix: false },
