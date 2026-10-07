@@ -11,7 +11,10 @@ import {
   fetchProjectThemesTable,
   fetchAuxClimateRisks,
   fetchAuxThemes,
+  fetchDataMeta,
+  fetchMissionProjects,
 } from "~/utils/cordisRepository";
+import { MISSION_TYPES, missionTypeLabel } from "~/utils/missionTypes";
 
 // Filter types
 const FILTER_TYPES = {
@@ -20,6 +23,7 @@ const FILTER_TYPES = {
   risk: "risk",
   topic: "topic",
   year: "year",
+  type: "type",
 };
 
 function formatInvestment(value: number) {
@@ -40,6 +44,10 @@ const { data: rawProjectRisks } = await useAsyncData(CONNECTED_CORDIS_KEYS.proje
 const { data: rawProjectThemes } = await useAsyncData(CONNECTED_CORDIS_KEYS.projectThemes, fetchProjectThemesTable);
 const { data: rawRisks } = await useAsyncData(CONNECTED_CORDIS_KEYS.risks, fetchAuxClimateRisks);
 const { data: rawThemes } = await useAsyncData(CONNECTED_CORDIS_KEYS.themes, fetchAuxThemes);
+const { data: rawMission } = await useAsyncData("mission-projects", fetchMissionProjects);
+const { data: dataMeta } = await useAsyncData("lab-data-meta", fetchDataMeta);
+
+const missionById = computed(() => new Map((rawMission.value || []).map((m) => [m.cordis_id, m])));
 
 // Process base data
 const processedDataBase = computed(() => {
@@ -53,6 +61,7 @@ const processedDataBase = computed(() => {
     totalCost: p.total_cost || 0,
     ecMaxContribution: p.ec_max_contribution || 0,
     year: p.start_date ? parseInt(p.start_date.substring(0, 4)) : null,
+    type: missionById.value.get(p.id)?.project_type ?? null,
   }));
 
   const entities = (rawEntities.value || []).map((e: any) => ({
@@ -112,6 +121,9 @@ const topicChartScopeHint = computed(() => {
   if (filterType === FILTER_TYPES.year) {
     return `Dark bar: topics on projects starting in ${label} · Gray: all projects`;
   }
+  if (filterType === FILTER_TYPES.type) {
+    return `Dark bar: topics on ${label} projects · Gray: all projects`;
+  }
   return "";
 });
 
@@ -130,6 +142,9 @@ const riskChartScopeHint = computed(() => {
   if (filterType === FILTER_TYPES.year) {
     return `Dark bar: risks on projects starting in ${label} · Gray: all projects`;
   }
+  if (filterType === FILTER_TYPES.type) {
+    return `Dark bar: risks on ${label} projects · Gray: all projects`;
+  }
   return "";
 });
 
@@ -138,7 +153,8 @@ const mapChartTitle = computed(() => {
   if (
     filterType === FILTER_TYPES.risk ||
     filterType === FILTER_TYPES.topic ||
-    filterType === FILTER_TYPES.year
+    filterType === FILTER_TYPES.year ||
+    filterType === FILTER_TYPES.type
   ) {
     return "Projects per Country";
   }
@@ -159,6 +175,9 @@ const mapChartScopeHint = computed(() => {
   }
   if (filterType === FILTER_TYPES.year) {
     return `Dark bar: projects starting in ${label} per country · Gray: all projects per country`;
+  }
+  if (filterType === FILTER_TYPES.type) {
+    return `Dark bar: ${label} projects per country · Gray: all projects per country`;
   }
   return "";
 });
@@ -221,6 +240,10 @@ function filterProjectsByActiveFilter(projects: typeof processedDataBase.value.p
   if (filterType === FILTER_TYPES.year) {
     const year = parseInt(content);
     return projects.filter((p) => p.year === year);
+  }
+
+  if (filterType === FILTER_TYPES.type) {
+    return projects.filter((p) => p.type === content);
   }
 
   return projects;
@@ -364,7 +387,8 @@ const dataForDashboard = computed(() => {
   const useProjectCountsForCountry =
     filterType === FILTER_TYPES.risk ||
     filterType === FILTER_TYPES.topic ||
-    filterType === FILTER_TYPES.year;
+    filterType === FILTER_TYPES.year ||
+    filterType === FILTER_TYPES.type;
 
   if (filterType === FILTER_TYPES.country) {
     filtered.entities.forEach((e: any) => {
@@ -446,7 +470,25 @@ const dataForDashboard = computed(() => {
     count_f: countryFiltered.get(country) || 0,
   }));
 
+  const projectsByType = new Map<string, number>();
+  base.projects.forEach((p: any) => {
+    if (p.type) projectsByType.set(p.type, (projectsByType.get(p.type) || 0) + 1);
+  });
+  const projectsByTypeFiltered = new Map<string, number>();
+  if (filterType !== FILTER_TYPES.none) {
+    filtered.projects.forEach((p: any) => {
+      if (p.type) projectsByTypeFiltered.set(p.type, (projectsByTypeFiltered.get(p.type) || 0) + 1);
+    });
+  }
+
   return {
+    projectsByType: MISSION_TYPES.map((t) => ({
+      id: t.code,
+      label: missionTypeLabel(t.code),
+      name: t.code,
+      count: projectsByType.get(t.code) || 0,
+      count_f: projectsByTypeFiltered.get(t.code) || 0,
+    })),
     entitiesByCountry: entitiesByCountryData,
     projectsByTheme: base.themes.map((theme: any) => ({
       id: theme.id,
@@ -480,6 +522,20 @@ const dataForDashboard = computed(() => {
 });
 
 // Computed data for charts
+const dataForProjectsByType = computed(() => {
+  const isTypeFilter = activeFilter.value.filterType === FILTER_TYPES.type;
+  return dataForDashboard.value.projectsByType.map((d) => ({
+    ...d,
+    count_f: isTypeFilter && d.id !== activeFilter.value.content ? 0 : d.count_f || 0,
+  }));
+});
+
+const typeChartScopeHint = computed(() => {
+  if (!hasFilteredData.value) return "Mission classification (Barometer, Appendix 4). Click a type to filter.";
+  const { filterType, label } = activeFilter.value;
+  if (filterType === FILTER_TYPES.type) return `Dark bar: ${label} · Gray: all projects`;
+  return `Dark bar: projects matching “${label}” · Gray: all projects`;
+});
 const dataForEntitiesByCountry = computed(() => {
   return dataForDashboard.value.entitiesByCountry
     .sort((a, b) => b.count - a.count)
@@ -677,7 +733,13 @@ const statStripItems = computed(() => [
             </div>
           </div>
           <p v-else class="font-sans text-[13px] text-neutral-dark">
-            Click on a country, topic, risk or year to enable a filter.
+            Click on a country, project type, topic, risk or year to enable a filter.
+          </p>
+          <p v-if="dataMeta" class="mt-3 border-t border-neutral-lighter pt-2 font-mono text-2xs text-neutral-dark">
+            DATA CUT-OFF ·
+            <span v-for="(s, i) in dataMeta.sources.filter((x) => ['cordis', 'types', 'annex5'].includes(x.key))" :key="s.key">
+              {{ i ? " · " : "" }}{{ s.key === "cordis" ? "CORDIS" : s.key === "types" ? "Project types" : "Territories" }} {{ s.date }}
+            </span>
           </p>
       </CaCard>
 
@@ -694,6 +756,15 @@ const statStripItems = computed(() => [
           :title="mapChartTitle"
           :subtitle="mapChartScopeHint"
           @_click="(event) => processClickOnChart(FILTER_TYPES.country, event.datum)"
+        />
+
+        <HorizontalBarChart
+          :global-data="dataForProjectsByType"
+          :has-filtered-data="hasFilteredData"
+          :active-filter="activeFilter"
+          :subtitle="typeChartScopeHint"
+          title="Projects by Mission type"
+          @set-filter="(event) => processClickOnChart(FILTER_TYPES.type, event)"
         />
 
         <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">

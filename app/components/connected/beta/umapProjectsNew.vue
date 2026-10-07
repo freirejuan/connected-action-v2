@@ -59,7 +59,8 @@
           :width="project.r * 2"
           :height="Math.abs(scaleZ(project.entitiesCount)) + project.r * 2"
           :rx="project.r"
-          class="fill-[#1E63A2] transition-opacity duration-300 cursor-pointer"
+          :fill="props.colorByType ? missionTypeColor(project.type) : '#1E63A2'"
+          class="transition-opacity duration-300 cursor-pointer"
           :opacity="projectDimOpacity(project.id)"
           @mouseover="(e) => onProjectHover(e, project)"
           @mousemove="updateTooltipPosition"
@@ -137,6 +138,7 @@
   import * as d3 from "d3";
   import { UMAP, cosine } from '@/utils/umapLayout'
   import smallestEnclosingCircle from 'smallest-enclosing-circle'
+  import { missionTypeColor, missionTypeLabel } from '~/utils/missionTypes'
 
   // deterministic PRNG so the UMAP layout is identical on every load
   const mulberry32 = (seed: number) => () => {
@@ -229,7 +231,13 @@
     themeCircles?: Array<any>
     categoryMode?: CategoryMode
     activeCategory?: string | null
+    /** Colour each project by its EU Mission type (RIA / IA / CSA / Cascade) */
+    colorByType?: boolean
+    /** If not empty, projects of other types are dimmed */
+    selectedTypes?: string[]
   }>(), {
+    colorByType: false,
+    selectedTypes: () => [],
     years: () => [2020, 2021, 2022, 2023, 2024, 2025],
     riskCircles: () => [],
     themeCircles: () => [],
@@ -455,7 +463,12 @@
 
   const isSelectionActive = computed(() => activeProjectsArray.value.length > 0);
 
+  const typeById = computed(() => new Map((props.projects ?? []).map((p: any) => [p.id, p.type])));
+
   const projectDimOpacity = (projectId: string) => {
+    if (props.selectedTypes.length > 0 && !props.selectedTypes.includes(typeById.value.get(projectId))) {
+      return DIMMED_OPACITY;
+    }
     if (!isSelectionActive.value) return 1;
     return activeProjectsArray.value.includes(projectId) ? 1 : DIMMED_OPACITY;
   };
@@ -520,7 +533,7 @@
     
     return {
       title: project.label || project.title || project.acronym || project.id,
-      subtitle: dateRange || undefined,
+      subtitle: [project.type ? missionTypeLabel(project.type) : null, dateRange || null].filter(Boolean).join(' · ') || undefined,
       value: project.totalCost,
       valueLabel: 'Total Cost',
       value2: project.entitiesCount,

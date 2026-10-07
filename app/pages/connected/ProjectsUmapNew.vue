@@ -23,6 +23,8 @@
             :theme-circles="themeItems"
             :category-mode="categoryMode"
             :active-category="activeCategory"
+            :color-by-type="colorByType"
+            :selected-types="selectedTypes"
             @select-project="openProject"
           />
         </div>
@@ -47,6 +49,33 @@
 
         <!-- category clusters (floating panel) -->
         <div class="absolute right-3 top-3 z-10 max-h-[calc(100%-24px)] w-[280px] overflow-y-auto border border-neutral-darkest bg-neutral-lightest">
+          <!-- EU Mission project type -->
+          <header class="flex items-center gap-2 border-b border-neutral-darkest px-4 py-3">
+            <span class="font-mono text-xs font-bold tracking-[0.06em]">MISSION PROJECT TYPE</span>
+            <CaHelp title="Project type" align="right" :w="280">
+              Classification used by the EU Mission on Adaptation (Barometer, Appendix 4): research (RIA),
+              demonstration (IA), technical support with cascade funding, and coordination (CSA).
+              Click a type to highlight it; click again to clear.
+            </CaHelp>
+          </header>
+          <div class="flex flex-col gap-1.5 border-b border-neutral-darkest p-4">
+            <button
+              v-for="t in typeItems"
+              :key="t.code"
+              type="button"
+              class="flex items-center gap-2.5 text-left transition-opacity"
+              :class="selectedTypes.length && !selectedTypes.includes(t.code) ? 'opacity-40' : ''"
+              @click="toggleType(t.code)"
+            >
+              <span class="h-3 w-3 shrink-0" :style="{ background: colorByType ? t.color : '#1E63A2' }" />
+              <span class="font-mono text-[11px] text-neutral-darkest">{{ t.code }} · {{ t.short }}</span>
+              <span class="ml-auto font-mono text-[11px] text-neutral-dark">{{ t.count }}</span>
+            </button>
+            <label class="mt-2 flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
+              <input v-model="colorByType" type="checkbox" class="accent-neutral-darkest" />
+              COLOUR BY TYPE
+            </label>
+          </div>
           <div class="flex border-b border-neutral-darkest">
             <button
               type="button"
@@ -97,6 +126,8 @@
 <script setup lang="ts">
 definePageMeta({ layout: "connected" });
 import * as d3 from "d3";
+import { fetchMissionProjects } from "~/utils/cordisRepository";
+import { MISSION_TYPES } from "~/utils/missionTypes";
 
 type CategoryMode = "risks" | "themes";
 
@@ -108,6 +139,21 @@ function onSelectEntityFromProject(id: string) {
   openEntity(id);
 }
 const { indexes, ready } = useConnectedCordisIndexes();
+const { data: missionProjects } = await useAsyncData("mission-projects", fetchMissionProjects);
+const typeByProject = computed(() => new Map((missionProjects.value ?? []).map((m) => [m.cordis_id, m.project_type])));
+const colorByType = ref(true);
+const selectedTypes = ref<string[]>([]);
+const toggleType = (code: string) => {
+  selectedTypes.value = selectedTypes.value.includes(code)
+    ? selectedTypes.value.filter((c) => c !== code)
+    : [...selectedTypes.value, code];
+};
+const typeItems = computed(() =>
+  MISSION_TYPES.map((t) => ({
+    ...t,
+    count: (missionProjects.value ?? []).filter((m) => m.project_type === t.code).length,
+  }))
+);
 
 const categoryMode = ref<CategoryMode>("risks");
 const activeCategory = ref<string | null>(null);
@@ -163,6 +209,7 @@ const projectItems = computed(() =>
   (indexes.value?.projectsWithSimpleEntities ?? []).map((project) => ({
     id: project.id,
     label: project.title ?? project.id,
+    type: typeByProject.value.get(project.id) ?? null,
     value: project.id,
     description: project.acronym ?? undefined,
     startDate: project.start_date ?? undefined,
