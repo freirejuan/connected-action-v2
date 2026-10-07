@@ -1,0 +1,1052 @@
+{
+  "common": {
+    "search": "Buscar",
+    "searching": "Buscando...",
+    "results": "resultados encontrados",
+    "filters": "Filtros",
+    "view": "Vista",
+    "all": "Todos",
+    "name": "Nombre",
+    "budget": "Presupuesto",
+    "sortBy": "ordenar por",
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "documentPreview": "Vista Previa del Documento",
+    "openFullPage": "Abrir en vista completa",
+    "tableOfContents": "Tabla de contenidos",
+    "noData": "No hay datos disponibles",
+    "articleNoFulltext": "No hay texto completo disponible para este artículo.",
+    "year": "Año",
+    "region": "Región",
+    "bioregion": "Biorregión",
+    "firstPage": "Primera página",
+    "previousPage": "Página anterior",
+    "nextPage": "Página siguiente",
+    "lastPage": "Última página",
+    "share": "Compartir",
+    "cancel": "Cancelar",
+    "requestFailed": "La solicitud falló"
+  },
+  "explorer": {
+    "exampleQueries": "Consultas de ejemplo",
+    "index": {
+      "metaTitle": "Soluciones de adaptación climática",
+      "metaDescription": "Explora estrategias de adaptación climática en silvicultura, pesca y agricultura.",
+      "heroTitle": "Soluciones de adaptación climática",
+      "heroSubtitle": "Explora publicaciones de adaptación por sector, busca en el corpus y abre documentos para filtrar, comparar y guardar hallazgos en tu tablero.",
+      "aboutTitle": "Qué puedes hacer aquí",
+      "aboutBody": "Este explorador reúne conocimiento de adaptación climática de los sectores forestal, pesquero y agrícola. Elige un sector para centrar la búsqueda o explora todo a la vez. En el explorador puedes buscar por texto, aplicar filtros, abrir documentos completos y guardar resultados en tu tablero.",
+      "aboutHint": "Empieza con un sector, abre todos los sectores o ve directo a una búsqueda por texto.",
+      "featuresTitle": "Qué puedes hacer",
+      "featuresIntro": "Desde el descubrimiento hasta la compartición, el explorador y el tablero te ayudan a convertir la evidencia de adaptación en acción, con herramientas de IA opcionales para enfocar, comparar y comunicar lo esencial.",
+      "featuresMainHeading": "Funciones principales",
+      "featuresAiHeading": "Con IA",
+      "gotoexplorer": "Explorar Soluciones",
+      "features": {
+        "explore": {
+          "title": "Explorar",
+          "description": "Busca y filtra el corpus para encontrar experiencias y casos de estudio que te ayuden a abordar tu reto de adaptación climática."
+        },
+        "board": {
+          "title": "Construir tu tablero",
+          "description": "Guarda documentos, extractos e ideas en tu tablero para crear una base de conocimiento personal que puedas consultar y organizar."
+        },
+        "share": {
+          "title": "Compartir con colegas",
+          "description": "Comparte tu tablero con colegas para que el equipo revise la misma evidencia, notas y fuentes seleccionadas."
+        },
+        "curate": {
+          "title": "Enfocarse en lo relevante",
+          "description": "Selecciona un conjunto de casos y usa la IA para destacar temas, riesgos y conclusiones más pertinentes a tu contexto."
+        },
+        "compare": {
+          "title": "Analiza",
+          "description": "Compara artículos en paralelo para contrastar enfoques, regiones y resultados sin perder el material de origen."
+        },
+        "generate": {
+          "title": "Crear materiales de comunicación",
+          "description": "Genera contenido derivado—resúmenes u esquemas de presentación—para talleres, informes y diálogo con partes interesadas."
+        }
+      },
+      "sectorForestry": "Silvicultura",
+      "sectorForestryDescription": "Incendios, pérdida de biodiversidad, especies invasoras",
+      "sectorFishery": "Pesca",
+      "sectorFisheryDescription": "Calentamiento oceánico, sobrepesca, erosión costera",
+      "sectorAgriculture": "Agricultura",
+      "sectorAgricultureDescription": "Sequías, degradación del suelo, plagas, escasez de agua",
+      "sectorButtonLabel": "Explorar",
+      "viewAll": "Ver todo",
+      "searchHint": "O empieza con una búsqueda por texto:",
+      "searchPlaceholder": "Buscar…",
+      "footerHint": "Las tarjetas de sector abren el explorador con ese enfoque. Ver todo quita el filtro de sector para recorrer todo el corpus."
+    },
+    "meta": {
+      "title": "Explorador de Adaptación Climática",
+      "description": "Busca y explora estudios de caso de adaptación climática."
+    },
+    "searchEmpty": {
+      "textTitle": "Lo sentimos, no hay resultados de búsqueda para \"{term}\"",
+      "textTip": "Intenta usar solo palabras significativas. Recuerda que el idioma de la consulta debe coincidir con el idioma de la interfaz.",
+      "filtersTitle": "Ningún estudio de caso coincide con los filtros actuales",
+      "filtersTip": "Prueba a quitar o ajustar los filtros en la barra lateral.",
+      "genericTitle": "No hay estudios de caso que mostrar",
+      "genericTip": "Actualiza la página o inténtalo de nuevo más tarde."
+    }
+  },
+  "connected": {
+    "index": {
+      "metaTitle": "Acción Conectada",
+      "metaDescription": "Explora la red de proyectos y organizaciones de la Misión de Adaptación Climática de la UE en cuatro vistas interactivas.",
+      "eyebrow": "Acción Conectada",
+      "heroTitle": "Explora el ecosistema de la Misión de Adaptación Climática de la UE",
+      "heroIntro": "Navega por la red de proyectos y organizaciones que impulsan la adaptación climática en Europa. Cuatro perspectivas muestran cómo se conectan las iniciativas financiadas por la Misión en temas, lugares y alianzas.",
+      "stats": {
+        "projects": "proyectos",
+        "entities": "entidades",
+        "countries": "países",
+        "themes": "temas"
+      },
+      "cardsHeading": "Cuatro formas de explorar",
+      "helpTitle": "Cómo usar esta sección",
+      "helpBody": "Cada tarjeta abre una visualización en vivo. Usa la barra de pestañas superior para cambiar entre ellas en cualquier momento; cada vista incluye una breve explicación y consejos de ayuda.",
+      "cards": {
+        "dashboard": {
+          "title": "Panel",
+          "lede": "Toda la red de un vistazo.",
+          "body": "Cifras clave y dónde se concentra el trabajo: entidades por país y proyectos por tema de adaptación.",
+          "shows": [
+            "Totales de proyectos y entidades",
+            "Entidades por país",
+            "Proyectos por tema"
+          ]
+        },
+        "map": {
+          "title": "Mapa de entidades",
+          "lede": "Dónde están los participantes.",
+          "body": "Cada organización participante en un mapa de Europa, filtrable por riesgo climático, tema y proyecto.",
+          "shows": [
+            "Entidades geolocalizadas",
+            "Filtro por riesgo / tema",
+            "Detalle de región NUTS3"
+          ]
+        },
+        "network": {
+          "title": "Conexiones proyecto–entidad",
+          "lede": "Quién trabaja con quién.",
+          "body": "Una red que vincula cada proyecto con las entidades que participaron: proyectos ordenados por año de inicio y entidades agrupadas por país.",
+          "shows": [
+            "Proyectos ↔ entidades",
+            "Ordenados por año",
+            "Enlaces de socios compartidos"
+          ]
+        },
+        "umap": {
+          "title": "UMAP de proyectos",
+          "lede": "Cómo se relacionan los proyectos por tema.",
+          "body": "Proyectos posicionados en un espacio semántico 2D: los que están cerca abordan temas de adaptación similares.",
+          "shows": [
+            "Disposición semántica 2D",
+            "Agrupaciones temáticas",
+            "Tamaño = entidades implicadas"
+          ]
+        }
+      }
+    }
+  },
+  "pins": {
+    "notesPlaceholder": "Añade notas a este marcador",
+    "saveNotes": "Guardar",
+    "boardEmpty": "Marca elementos desde el explorador para verlos aquí.",
+    "boardEmptyCategory": "Prueba otra categoría.",
+    "publicBoardEmpty": "El propietario del tablero aún no ha marcado elementos.",
+    "sourceMissing": "El documento de origen no está vinculado; el título y las notas siguen guardados.",
+    "openInExplorer": "Abrir en el explorador",
+    "sectionsByKind": "Marcadores por tipo",
+    "boardTitle": "Tablero",
+    "boardEyebrow": "03 · Tablero",
+    "loadError": "No se pudieron cargar los marcadores",
+    "filterAll": "Todos",
+    "summaryTotal": "{count} marcador(es) en total",
+    "summaryBoardTotal": "{count} elemento(s) en este tablero",
+    "summarySavedSearchesOnly": "{count} búsqueda(s) guardada(s)",
+    "summaryInSection": "{count} marcador(es) en {section}",
+    "summaryFullPaperView": "{whole} marcador(es) de documento completo; {papersWithFragments} documento(s) con contenido marcado",
+    "fullPaperSectionWhole": "Documentos completos marcados",
+    "fullPaperSectionFragmentPapers": "Documentos con secciones o contenido marcado",
+    "fullPaperWholeEmpty": "Aún no hay marcadores de documento completo.",
+    "fullPaperFragmentPapersEmpty": "Aún no hay documentos con secciones marcadas (los fragmentos necesitan un documento del catálogo vinculado).",
+    "fullPaperFragmentPinCount": "{count} marcador(es) de este documento",
+    "emptyFullPaperTitle": "Aún no hay nada en la vista de documento completo",
+    "emptyFullPaperHint": "Marca documentos enteros desde el explorador, o secciones dentro de un artículo para verlos agrupados aquí.",
+    "sidebarSavedSearches": "Búsquedas guardadas",
+    "emptySavedSearchesTitle": "Aún no hay búsquedas guardadas",
+    "emptyBoardTitle": "Sin marcadores",
+    "emptySectionTitle": "Nada en esta sección",
+    "noTitle": "(sin título)",
+    "userNote": "Nota",
+    "cardMenuAria": "Acciones del marcador",
+    "menuEditNote": "Editar nota",
+    "menuRemove": "Eliminar",
+    "removeConfirmTitle": "Eliminar marcador: {title}",
+    "removeConfirmHeading": "¿Seguro?",
+    "removeConfirmDescription": "Esta acción no se puede deshacer. El marcador se eliminará permanentemente de este tablero.",
+    "removeConfirmCancel": "Cancelar",
+    "removeConfirmDelete": "Eliminar",
+    "removeConfirmFailed": "No se pudo eliminar el marcador",
+    "editNoteTitle": "Editar nota",
+    "editNoteSave": "Guardar",
+    "editNoteCancel": "Cancelar",
+    "editNoteSaveFailed": "No se pudo guardar la nota",
+    "editNoteSaveFailedGeneric": "Algo salió mal al guardar. Inténtalo de nuevo.",
+    "chatEmpty": "No hay mensajes en este marcador.",
+    "chatViewFull": "Ver conversación completa ({count} mensajes)",
+    "chatClose": "Cerrar",
+    "chatSenderYou": "Tú",
+    "chatSenderAssistant": "Asistente",
+    "chatSenderMessage": "Mensaje",
+    "textEmpty": "Sin texto.",
+    "pinDocumentButton": "Marcar documento",
+    "documentPinBodyHint": "Marcado como documento completo del catálogo.",
+    "boardCategoryFullPapers": "Documentos completos",
+    "imagePlaceholder": "Vista previa no disponible aún (ver human-pin-storage).",
+    "imageAlt": "Imagen marcada",
+    "fallbackKind": "Sin diseño para “{kind}”. Datos:",
+    "capture": {
+      "title": "Añadir al tablero",
+      "buttonAria": "Añadir este contenido al tablero",
+      "selectedTextButton": "Marcar texto seleccionado",
+      "noteLabel": "Nota",
+      "notePlaceholder": "¿Por qué es útil?",
+      "save": "Añadir al tablero",
+      "cancel": "Cancelar",
+      "saveFailed": "No se pudo guardar el marcador",
+      "chatResponseTitle": "Respuesta de IA",
+      "conversationTitle": "Conversación de chat",
+      "mindmapPinButton": "Marcar mapa mental",
+      "mindmapSnapshotSuffix": "Mapa mental",
+      "mindmapStandaloneTitle": "Mapa mental del explorador",
+      "markmapPreviewHint": "Markdown de este mapa (la vista previa puede estar truncada):"
+    },
+    "kinds": {
+      "chat": "Chat",
+      "text_segment": "Texto",
+      "selected_text": "Texto seleccionado",
+      "recipe_section": "Sección de receta",
+      "ai_summary": "Resumen de IA",
+      "grid_compare_summary": "Comparación en cuadrícula",
+      "markmap": "Mapa mental",
+      "chat_response": "Respuesta de chat",
+      "reference": "Referencia",
+      "document": "Documento completo",
+      "section": "Sección",
+      "image": "Imagen",
+      "website": "Web",
+      "contact": "Contacto",
+      "saved_search": "Búsqueda guardada",
+      "unknown": "Otro"
+    },
+    "savedSearchCardHint": "Abre el explorador con este conjunto de filtros guardado.",
+    "savedSearchRunSearch": "Ejecutar búsqueda",
+    "savedSearchDelete": "Eliminar",
+    "savedSearchFloatingTrigger": "Búsquedas guardadas",
+    "savedSearchMenuHeading": "Búsquedas guardadas",
+    "savedSearchMenuEmpty": "Aún no hay búsquedas guardadas",
+    "savedSearchSaveCurrent": "Guardar búsqueda actual",
+    "savedSearchNamePlaceholder": "Nombre de la búsqueda…",
+    "savedSearchCancel": "Cancelar",
+    "savedSearchSave": "Guardar",
+    "deleteSavedSearchAria": "Eliminar búsqueda guardada",
+    "savedSearchCardMenuAria": "Acciones de la búsqueda guardada",
+    "savedSearchRemoveConfirmTitle": "¿Eliminar búsqueda guardada?",
+    "savedSearchRemoveConfirmDescription": "Se eliminará «{name}» de tus búsquedas guardadas. Podrás volver a guardar los filtros del explorador más adelante.",
+    "savedSearchRemoveConfirmFailed": "No se pudo eliminar la búsqueda guardada",
+    "markmapOpenLinkedArticle": "Abrir artículo enlazado",
+    "markmapClose": "Cerrar",
+    "map": {
+      "label": "Mapa",
+      "emptyTooltip": "Aún no hay artículos marcados con ubicación. Marca artículos con coordenadas para poblar el mapa.",
+      "emptyBody": "Ninguno de tus artículos marcados tiene ubicación todavía.",
+      "summary": "{count} artículo(s) en el mapa",
+      "popupPinsHeader": "{count} marcador(es) de este artículo",
+      "noteTruncated": "…"
+    },
+    "drawer": {
+      "openArticle": "Abrir artículo",
+      "pinsInArticleHeader": "Tus marcadores de este artículo",
+      "loadError": "No se pudo cargar el artículo. Inténtalo de nuevo.",
+      "loading": "Cargando artículo…",
+      "pinDocumentAria": "Marcar este artículo",
+      "detailsDescription": "Vista detallada del artículo con resumen, receta y chat."
+    },
+    "errors": {
+      "load": "No se pudieron cargar los marcadores",
+      "create": "No se pudo crear el marcador",
+      "update": "No se pudo actualizar el marcador",
+      "delete": "No se pudo eliminar el marcador",
+      "reorder": "No se pudo reordenar los marcadores",
+      "loadSavedSearches": "No se pudieron cargar las búsquedas guardadas",
+      "saveSearch": "No se pudo guardar la búsqueda",
+      "deleteSavedSearch": "No se pudo eliminar la búsqueda"
+    },
+    "share": {
+      "linkCopied": "Enlace copiado al portapapeles"
+    },
+    "exports": {
+      "signInRequired": "Inicia sesión para generar una descarga."
+    }
+  },
+  "podcast": {
+    "wizard": {
+      "title": "Crear podcast",
+      "stepReview": "1. Revisar fuentes",
+      "stepScript": "2. Editar guion",
+      "stepComplete": "3. Audio creado",
+      "errorTitle": "El podcast aún no puede continuar",
+      "loadingDocumentsTitle": "Cargando texto completo del artículo",
+      "loadingDocumentsDescription": "Los marcadores de artículo completo usan el texto completo del artículo como contexto del podcast.",
+      "selectedItemsTitle": "Elementos seleccionados",
+      "selectedItemsSummary": "{count} de {max} elementos seleccionados · unas {words} palabras",
+      "contextSize": "{current} / {max} caracteres",
+      "contextTokens": "~{tokens} tokens de contexto",
+      "summariesNoticeTitle": "Usando resúmenes de los artículos",
+      "summariesNoticeDescription": "Algunos extractos son extensos, por lo que sus artículos completos se sustituyen por resúmenes para ajustarse al contexto. Los pasajes que destacaste siempre se conservan.",
+      "noSelection": "Selecciona marcadores en el tablero antes de crear un podcast.",
+      "itemStats": "{words} palabras · {chars} caracteres",
+      "noTextForItem": "No se encontró texto para este marcador.",
+      "titleLabel": "Título del podcast",
+      "titlePlaceholder": "p. ej. Resumen de adaptación costera",
+      "instructionsLabel": "Instrucciones adicionales",
+      "instructionsPlaceholder": "Tono, audiencia, énfasis o puntos que incluir.",
+      "generatingTitle": "Guion del podcast",
+      "generatingDescription": "Gemini redactará un resumen pensado para audio a partir de los marcadores seleccionados. Revisa y edita el guion antes de generar el audio.",
+      "summarizing": "Creando guion del podcast...",
+      "scriptLabel": "Guion editable del podcast",
+      "completeTitle": "El podcast se está añadiendo a artefactos",
+      "completeDescription": "El audio generado aparecerá en la sección Podcasts de este tablero.",
+      "completeHelp": "Puedes cerrar este asistente y abrir la sección Artefactos para escuchar o descargar el podcast.",
+      "openArtifacts": "Ir a Artefactos",
+      "cancel": "Cancelar",
+      "back": "Atrás",
+      "createScript": "Crear guion",
+      "generatePodcast": "Generar podcast",
+      "done": "Listo",
+      "defaultTitle": "Resumen en podcast",
+      "summaryFailed": "No se pudo crear el guion del podcast.",
+      "audioFailed": "No se pudo generar el audio del podcast.",
+      "documentTextFailed": "No se pudo cargar el texto completo de uno de los artículos seleccionados.",
+      "validation": {
+        "empty": "Selecciona al menos un marcador antes de crear un podcast.",
+        "tooManyItems": "Selecciona como máximo {max} marcadores. Ahora tienes {current}.",
+        "emptyText": "Los marcadores seleccionados no incluyen texto para enviar al generador de podcasts.",
+        "tooMuchText": "El texto seleccionado es demasiado largo: {current} de {max} caracteres.",
+        "contextTooLarge": "El contexto seleccionado es demasiado grande incluso tras resumir los extractos. Selecciona menos elementos.",
+        "scriptTooLong": "El guion revisado es demasiado largo para texto a voz: {current} de {max} bytes UTF-8.",
+        "missingProject": "Selecciona un proyecto antes de generar el audio del podcast.",
+        "generic": "Revisa los marcadores seleccionados antes de continuar."
+      }
+    },
+    "artifacts": {
+      "title": "Artefactos",
+      "description": "Archivos generados para este tablero.",
+      "audioTitle": "Audio",
+      "audioDescription": "Podcasts y narraciones generados desde fuentes seleccionadas del tablero.",
+      "podcastsTitle": "Podcasts",
+      "loadError": "No se pudieron cargar los podcasts",
+      "loading": "Cargando podcasts...",
+      "emptyTitle": "Aún no hay podcasts",
+      "emptyDescription": "Puedes crear audio seleccionando fuentes en el tablero y eligiendo Crear podcast en la barra de acciones.",
+      "untitled": "Podcast sin título",
+      "loadAudio": "Cargar audio",
+      "refreshAudio": "Actualizar audio",
+      "download": "Descargar",
+      "downloadsTitle": "Descargas",
+      "downloadsDescription": "Instantáneas ZIP de este tablero (marcadores, notas, imágenes y artículos enlazados cuando existan).",
+      "generateDownload": "Generar nueva descarga",
+      "downloadGenerateError": "No se pudo iniciar la exportación",
+      "downloadsLoadError": "No se pudieron cargar las descargas",
+      "downloadsLoading": "Cargando descargas…",
+      "downloadsEmptyTitle": "Aún no hay descargas",
+      "downloadsEmptyDescription": "Genera una exportación ZIP de todo el tablero. Los tableros grandes pueden tardar un minuto mientras se recogen imágenes y artículos.",
+      "downloadUntitled": "Exportación del tablero",
+      "downloadStatusPending": "Preparando…",
+      "downloadStatusFailed": "Fallido"
+    }
+  },
+  "powerpoint": {
+    "actions": {
+      "makePresentation": "Generar presentación PowerPoint"
+    },
+    "wizard": {
+      "title": "Generar presentación PowerPoint",
+      "stepReview": "1. Revisar fuentes",
+      "stepStructure": "2. Revisar estructura",
+      "stepComplete": "3. PowerPoint creado",
+      "errorTitle": "El PowerPoint aún no puede continuar",
+      "loadingDocumentsTitle": "Cargando texto completo del artículo",
+      "loadingDocumentsDescription": "Los marcadores de artículo completo usan el texto completo como contexto de la presentación.",
+      "selectedItemsTitle": "Elementos seleccionados",
+      "selectedItemsSummary": "{count} de {max} elementos seleccionados · unas {words} palabras",
+      "contextSize": "{current} / {max} caracteres",
+      "contextTokens": "~{tokens} tokens de contexto",
+      "summariesNoticeTitle": "Usando resúmenes de los artículos",
+      "summariesNoticeDescription": "Algunos extractos son extensos, por lo que sus artículos completos se sustituyen por resúmenes para ajustarse al contexto. Los pasajes que destacaste siempre se conservan.",
+      "noSelection": "Selecciona marcadores en el tablero antes de crear una presentación PowerPoint.",
+      "itemStats": "{words} palabras · {chars} caracteres",
+      "noTextForItem": "No se encontró texto para este marcador.",
+      "imageAvailable": "Imagen",
+      "titleLabel": "Título de la presentación",
+      "titleHint": "Se muestra en la portada y en la cabecera del resto de diapositivas.",
+      "titlePlaceholder": "p. ej. Resumen de adaptación costera",
+      "slideCountLabel": "Diapositivas solicitadas",
+      "toneLabel": "Tono",
+      "tonePlaceholder": "p. ej. ejecutivo, técnico, persuasivo",
+      "languageLabel": "Idioma",
+      "languagePlaceholder": "p. ej. inglés o español",
+      "audienceLabel": "Audiencia",
+      "audiencePlaceholder": "p. ej. planificadores urbanos",
+      "instructionsLabel": "Instrucciones adicionales",
+      "instructionsPlaceholder": "Énfasis, necesidades de audiencia o puntos que incluir.",
+      "structureTitle": "Estructura de la presentación",
+      "structureDescription": "Revisa la estructura generada antes de crear el archivo PowerPoint.",
+      "generatingStructure": "Generando estructura de presentación...",
+      "rawStructureLabel": "Estructura JSON revisada",
+      "slideCount": "{count} diapositiva(s)",
+      "imageReference": "Fuente de imagen: {sourceId}",
+      "cancel": "Cancelar",
+      "back": "Atrás",
+      "createStructure": "Crear estructura",
+      "generatePowerPoint": "Generar PowerPoint",
+      "done": "Listo",
+      "defaultTitle": "Presentación PowerPoint",
+      "structureFailed": "No se pudo generar la estructura de la presentación.",
+      "generationFailed": "No se pudo generar el archivo PowerPoint.",
+      "documentTextFailed": "No se pudo cargar el texto completo de uno de los artículos seleccionados.",
+      "invalidStructure": "La estructura revisada no es un JSON de presentación válido.",
+      "completeTitle": "PowerPoint añadido a artefactos",
+      "completeDescription": "El archivo .pptx generado aparecerá en la sección PowerPoint de este tablero.",
+      "completeHelp": "Puedes cerrar este asistente y abrir la sección Artefactos para descargar la presentación.",
+      "openArtifacts": "Ir a Artefactos",
+      "validation": {
+        "empty": "Selecciona al menos un marcador antes de crear una presentación PowerPoint.",
+        "tooManyItems": "Selecciona como máximo {max} marcadores. Ahora tienes {current}.",
+        "emptyText": "Los marcadores seleccionados no incluyen texto para enviar al generador de presentaciones.",
+        "tooMuchText": "El texto seleccionado es demasiado largo: {current} de {max} caracteres.",
+        "contextTooLarge": "El contexto seleccionado es demasiado grande incluso tras resumir los extractos. Selecciona menos elementos.",
+        "missingProject": "Selecciona un proyecto antes de generar una presentación PowerPoint.",
+        "missingTitle": "Introduce un título de presentación antes de continuar.",
+        "generic": "Revisa los marcadores seleccionados antes de continuar."
+      }
+    },
+    "artifacts": {
+      "title": "Presentaciones PowerPoint",
+      "description": "Archivos .pptx generados desde fuentes seleccionadas del tablero.",
+      "loadError": "No se pudieron cargar las presentaciones PowerPoint",
+      "loading": "Cargando presentaciones PowerPoint...",
+      "emptyTitle": "Aún no hay presentaciones PowerPoint",
+      "emptyDescription": "Selecciona fuentes en el tablero y elige Generar presentación PowerPoint en la barra de acciones.",
+      "untitled": "Presentación sin título",
+      "statusPending": "Preparando…",
+      "statusFailed": "Fallido"
+    }
+  },
+  "header": {
+    "home": "Inicio",
+    "solutions": "Soluciones",
+    "skills": "Habilidades",
+    "network": "Red",
+    "stories": "Historias",
+    "about": "Sobre el proyecto",
+    "pinsBoard": "Tablero de Marcadores",
+    "brandTitle": "FARCLIMATE Transformation Hub",
+    "brandTitleLine1": "FARCLIMATE",
+    "brandTitleLine2": "Transformation Hub",
+    "connectedAction": "Connected Action"
+  },
+  "search": {
+    "title": "Explorador de Soluciones",
+    "placeholder": "¿Qué estás buscando?",
+    "filtersApplied": "filtros aplicados",
+    "activeFilters": "Filtros Activos",
+    "availableFilters": "Filtros Disponibles",
+    "dragInstructions": "Arrastra los filtros entre secciones para activarlos o desactivarlos",
+    "corpusPlaceholder": "Buscar en el corpus…",
+    "clearAll": "Borrar todo",
+    "applyFilters": "Aplicar filtros",
+    "allFiltersActive": "Todos los filtros están activos",
+    "removeFiltersHint": "Elimina filtros arriba para volver a hacerlos disponibles"
+  },
+  "filters": {
+    "activity": "Actividad",
+    "hazards": "Peligros",
+    "location": "Ubicación",
+    "status": {
+      "none": "Sin filtro aplicado",
+      "itemsSelected": "{count} elementos seleccionados",
+      "optionsSelected": "{count} opciones seleccionadas",
+      "applied": "Filtro aplicado"
+    },
+    "time": "Tiempo",
+    "selectBioregion": "Seleccionar Biorregión",
+    "allBioregions": "Todas las Biorregiones",
+    "searchByLocation": "Buscar por ubicación",
+    "lowCost": "Bajo costo",
+    "highCost": "Alto costo",
+    "sector": "Sector",
+    "climateImpacts": "Impactos climáticos",
+    "climateHazards": "Peligros climáticos",
+    "adaptationApproaches": "Enfoques de adaptación",
+    "biogeographicalRegion": "Región biogeográfica",
+    "searchFilter": "Búsqueda",
+    "empty": {
+      "sector": "Aún no hay datos de sector. Ejecuta una búsqueda para cargar facetas.",
+      "hazards": "Aún no hay datos de impactos climáticos. Ejecuta una búsqueda para cargar facetas.",
+      "bioregion": "Aún no hay datos de región biogeográfica. Ejecuta una búsqueda para cargar facetas.",
+      "adaptationApproaches": "Aún no hay datos de enfoques de adaptación. Ejecuta una búsqueda para cargar facetas."
+    },
+    "toggleAria": "{action} filtro {title}",
+    "toggleEnable": "Activar",
+    "toggleDisable": "Desactivar",
+    "visualization": {
+      "placeholder": "Visualización no disponible para este filtro."
+    },
+    "showAll": "Mostrar todo"
+  },
+  "status": {
+    "proposal": "Propuesta",
+    "inProgress": "En Progreso",
+    "finished": "Finalizado"
+  },
+  "timeframes": {
+    "recent": "Últimos 10 años",
+    "allProjects": "Todos los proyectos"
+  },
+  "bioregions": {
+    "alpine": "Alpino (Montañas Centroeuropeas)",
+    "atlantic": "Atlántico (Costas de Europa Occidental)",
+    "boreal": "Boreal (Bosques del Norte de Europa)",
+    "continental": "Continental (Llanuras de Europa Central)",
+    "mediterranean": "Mediterráneo (Costa del Sur de Europa)",
+    "amazon": "Selva Amazónica",
+    "andes": "Cordillera de los Andes",
+    "cerrado": "Sabana del Cerrado",
+    "pantanal": "Humedales del Pantanal",
+    "patagonian": "Estepa Patagónica"
+  },
+  "hazards": {
+    "drought": "Sequía",
+    "heatwave": "Ola de Calor",
+    "heavyPrecipitation": "Precipitación Intensa",
+    "wildfire": "Incendio Forestal",
+    "floods": "Inundaciones",
+    "tropicalCyclone": "Ciclón Tropical",
+    "stormSurge": "Marea de Tormenta"
+  },
+  "viewModes": {
+    "list": "Lista",
+    "grid": "Cuadrícula",
+    "instagram": "Instagram",
+    "instagramCarouselRegion": "Imágenes del artículo",
+    "instagramCarouselDotsTablist": "Diapositivas de la galería",
+    "instagramCarouselPrev": "Imagen anterior",
+    "instagramCarouselNext": "Imagen siguiente",
+    "instagramImageNofM": "Imagen {n} de {total}",
+    "instagramSlideStatus": "Imagen {current} de {total}",
+    "instagramDotAria": "Ir a la imagen {n}",
+    "instagramViewMore": "Ver más…",
+    "map": "Mapa",
+    "showProperty": "Mostrar propiedad",
+    "summary": "Resumen",
+    "costBenefit": "Costos y Beneficios",
+    "implementationTime": "Tiempo de Implementación",
+    "lifetime": "Vida Útil",
+    "stakeholderParticipation": "Participación de Interesados",
+    "successLimitations": "Éxitos y Limitaciones",
+    "selectAll": "Seleccionar todo",
+    "unselectAll": "Quitar selección",
+    "selectAllOnPage": "Seleccionar todo en esta página",
+    "unselectOnPage": "Quitar selección en esta página",
+    "resultsTotal": "{count} resultados",
+    "resultsRange": "Mostrando {start}–{end} de {total}",
+    "customCompare": "Pregunta personalizada",
+    "customCompareLabel": "Qué comparar entre artículos",
+    "customComparePlaceholder": "p. ej. ¿Cuál fue el principal factor de coste? ¿Quién financió el proyecto?",
+    "customCompareEmptyHint": "Escribe una pregunta arriba y pulsa Comparar para generar resúmenes en cada artículo.",
+    "customCompareSubmit": "Comparar",
+    "customCompareSubmitHint": "Pulsa Comparar para generar resúmenes con IA para todos los artículos mostrados.",
+    "sectionEmpty": "No hay contenido para esta sección en el idioma actual.",
+    "paginationStub": "1 / 1",
+    "previousPage": "Página anterior",
+    "nextPage": "Página siguiente",
+    "tooManyForAiTitle": "Demasiados artículos para resúmenes con IA",
+    "tooManyForAiDescription": "Cada artículo dispara una llamada al modelo. Para limitar el gasto en tokens, como máximo {max} artículos a la vez. Ahora tienes {current} ({scope}). Reduce resultados o selecciona hasta {max} artículos con las casillas.",
+    "tooManyForAiScopeGrid": "todos los artículos de esta página en la cuadrícula",
+    "tooManyForAiScopeSelected": "artículos seleccionados",
+    "matchingFiltersAria": "Coincide con filtros de búsqueda activos",
+    "matchingFiltersMore": "+{count} más",
+    "read": "Leer",
+    "clearSelection": "Quitar selección",
+    "compare": "Comparar",
+    "analyse": "Analizar",
+    "byBioRegions": "Por biorregiones",
+    "cardView": "Tarjetas",
+    "tabsAria": "Modo de vista",
+    "mindmap": "Mapa mental",
+    "mapEmptyTitle": "No hay ubicaciones que mostrar",
+    "mapEmptyDescription": "Los resultados de búsqueda no contienen datos geográficos",
+    "downloadPng": "Descargar PNG",
+    "umapEmpty": "No hay resultados para el mapa",
+    "umapIntro": "Este gráfico agrupa los casos de estudio por biorregiones de la UE — zonas ecológicas distintas que organizan el trabajo de adaptación climática en Europa. Cada punto es un caso de estudio; los círculos discontinuos de colores rodean los estudios atribuidos a cada región. Los estudios cercanos comparten etiquetas regionales similares.",
+    "umapIntroNote": "Para la gestión ecológica, la UE se divide en biorregiones distintas. Se utilizan para aplicar el proceso de Biorregiones del Natura 2000 a fin de proteger hábitats y especies.",
+    "umapEmptyDescription": "Realiza una búsqueda o ajusta los filtros para ver las biorregiones",
+    "umapContinentLegendHelp": "Pasa el cursor sobre una biorregión para resaltar sus casos; haz clic para fijar.",
+    "umapBridgeHint": "Los puntos más grandes con halo discontinuo abarcan varias biorregiones.",
+    "umapBridgeSpans": "Abarca biorregiones:",
+    "umapBioregionsLabel": "Biorregiones:",
+    "umapRegionCountOne": "1 caso de estudio en esta región",
+    "umapRegionCountMany": "{count} casos de estudio en esta región",
+    "instagramUnknownTitle": "Título desconocido",
+    "instagramClimateShaper": "Climate Shaper"
+  },
+  "listActions": {
+    "default": "Por defecto",
+    "topInsights": "Ideas clave",
+    "chatWithResults": "Pregutar a estos resultados",
+    "selectedLabel": "seleccionados",
+    "chatWithSelection": "Chat con la selección",
+    "mindmap": "Mapa mental"
+  },
+  "pills": {
+    "forestry": "Silvicultura",
+    "agriculture": "Agricultura",
+    "fishery": "Pesca",
+    "mediterranean": "Mediterráneo",
+    "atlantic": "Atlántico",
+    "continental": "Continental",
+    "alpine": "Alpino",
+    "boreal": "Boreal",
+    "climateAdaptation": "Adaptación climática",
+    "waterManagement": "Gestión del agua",
+    "biodiversity": "Biodiversidad"
+  },
+  "chat": {
+    "inputPlaceholder": "Pregunta sobre este caso de estudio…",
+    "submit": "PREGUNTAR →",
+    "typing": "La IA está escribiendo…",
+    "exampleQuestionsLabel": "Preguntas de ejemplo:",
+    "example1": "¿Cuáles son los principales desafíos abordados en este proyecto?",
+    "example2": "¿Quiénes son los actores clave involucrados y cuáles son sus roles?",
+    "example3": "¿Puedes resumir el impacto económico y los principales costes?",
+    "example4": "¿Qué soluciones o medidas de adaptación se implementaron?",
+    "example5": "¿Cuáles son las lecciones más importantes aprendidas de este artículo?",
+    "saveConversation": "Guardar conversación",
+    "referencesCount": "{count} artículo(s)",
+    "referencesLoading": "Buscando fuentes…"
+  },
+  "tabs": {
+    "summary": "Vista general",
+    "recipe": "Receta",
+    "chat": "Chat",
+    "contacts": "Contacto y referencias",
+    "pins": "Tus marcadores"
+  },
+  "summary": {
+    "slides": {
+      "main": "Resumen",
+      "contacts": "Contacto y referencias",
+      "map": "Ubicación"
+    },
+    "empty": {
+      "economic": "No hay datos económicos disponibles"
+    }
+  },
+  "recipe": {
+    "nav": {
+      "summaryPlus": "Resumen+",
+      "map": "Ubicación"
+    },
+    "emptyTitle": "Sin contenido de receta",
+    "emptyDescription": "No hay una receta estructurada en la base de datos para este caso de estudio en el idioma actual. Si esperabas datos, aplica el SQL actualizado de get_documents_by_ids (recipe_ingredients) y asegúrate de que el pipeline haya cargado filas en knowledge.recipe.",
+    "loadErrorTitle": "No se pudo cargar la receta",
+    "loadErrorDescription": "Falló la petición de datos de receta. Revisa la pestaña Red del navegador para /api/document-recipe y las credenciales de Supabase.",
+    "retry": "Reintentar",
+    "sections": {
+      "context_summary": "Resumen del contexto",
+      "challenges": "Retos",
+      "policy_context": "Contexto de políticas",
+      "legal_aspects": "Aspectos legales",
+      "who_is_involved": "Quién participa",
+      "economic_data": "Datos económicos",
+      "objectives": "Objetivos",
+      "solutions_implemented": "Solución(es) implementada(s)",
+      "implementation_phases": "Fases de implementación y calendario",
+      "success_and_limiting": "Factores de éxito y limitantes",
+      "benefits": "Beneficios",
+      "lessons_learnt": "Lecciones aprendidas",
+      "transferability": "Transferibilidad"
+    }
+  },
+  "article": {
+    "caseStudyKicker": "Explorador · Caso de estudio",
+    "imageNumber": "Imagen {n}",
+    "imageAlt": "Imagen del artículo {n}",
+    "noImagesInGallery": "No hay imágenes vinculadas para este artículo.",
+    "lightboxTitle": "Imagen",
+    "lightboxClose": "Cerrar",
+    "openImageLightbox": "Ver imagen a tamaño completo",
+    "viewOnClimateAdapt": "Ver en Climate-ADAPT",
+    "sourceLinkHint": "Abre el caso de estudio oficial en el sitio web Climate-ADAPT de la AEE.",
+    "contacts": {
+      "empty": "No hay información de contacto disponible.",
+      "allEmptyTitle": "Sin contactos ni referencias",
+      "allEmptyDescription": "Este caso de estudio aún no tiene personas de contacto, sitios web ni referencias científicas en la base de datos."
+    },
+    "websites": {
+      "empty": "No hay sitios web vinculados."
+    },
+    "references": {
+      "empty": "No hay referencias científicas disponibles."
+    },
+    "map": {
+      "emptyTitle": "Sin puntos en el mapa",
+      "emptyDescription": "Este caso de estudio aún no tiene coordenadas geográficas en la base de datos."
+    },
+    "secondaryNav": {
+      "ariaLabel": "Secciones de la receta"
+    },
+    "panelNav": {
+      "previousCase": "Caso anterior",
+      "nextCase": "Caso siguiente",
+      "keyboardHint": "Alt + ← → para navegar · Esc para cerrar",
+      "prevAria": "Abrir el caso anterior de la lista",
+      "nextAria": "Abrir el caso siguiente de la lista"
+    },
+    "errors": {
+      "notFound": "Artículo no encontrado"
+    }
+  },
+  "summaryHeaders": {
+    "shortDescription": "Descripción corta",
+    "sector": "Sector",
+    "date": "Fecha",
+    "hazards": "Peligros",
+    "typeOfSolution": "Enfoque de adaptación",
+    "whoIsInvolved": "Quién está involucrado",
+    "geographicalScope": "Ámbito geográfico",
+    "economicData": "Datos económicos",
+    "contactPersons": "Personas de contacto",
+    "websites": "Sitios web",
+    "scientificReferences": "Referencias científicas",
+    "keywords": "Palabras clave"
+  },
+  "summaryLeft": {
+    "geographic": "Geográfico",
+    "bioregion": "Biorregión",
+    "authors": "Autores",
+    "source": "Fuente",
+    "authorsFallback": "Equipo de investigación EU-Adapt",
+    "sourceFallback": "Plataforma Europea de Adaptación al Cambio Climático"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "logOut": "Cerrar sesión",
+    "backToHome": "← Volver al inicio",
+    "tabs": {
+      "signIn": "Iniciar sesión",
+      "signUp": "Registrarse"
+    },
+    "headings": {
+      "checkEmail": "Revisa tu correo",
+      "signIn": "Iniciar sesión",
+      "welcome": "Bienvenido"
+    },
+    "subtitle": {
+      "otpSent": "Enviamos un código de 6 dígitos a {email}",
+      "password": "Inicia sesión con tu correo y contraseña.",
+      "demo": "En modo demo tu navegación no se guarda. Inicia sesión o crea una cuenta para guardar tu trabajo."
+    },
+    "fields": {
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "name": "Tu nombre",
+      "emailPlaceholder": "tu{'@'}email.com",
+      "passwordPlaceholder": "Introduce tu contraseña",
+      "namePlaceholder": "¿Cómo debemos llamarte?"
+    },
+    "actions": {
+      "signIn": "Iniciar sesión",
+      "createAccount": "Crear cuenta",
+      "continue": "Continuar",
+      "signInWithCode": "← Iniciar sesión con código por correo",
+      "signInWithPassword": "Iniciar sesión con contraseña"
+    },
+    "otp": {
+      "verifying": "Verificando…",
+      "changeEmail": "← Cambiar correo",
+      "resendCode": "Reenviar código",
+      "resendIn": "Reenviar en {seconds}s"
+    },
+    "errors": {
+      "rateLimit": "Demasiadas solicitudes. Espera un momento antes de intentarlo de nuevo.",
+      "expired": "El código ha caducado. Solicita uno nuevo.",
+      "invalidOtp": "Código no válido. Compruébalo e inténtalo de nuevo.",
+      "unexpected": "Ocurrió un error inesperado. Inténtalo de nuevo.",
+      "invalidCredentials": "Correo o contraseña no válidos."
+    },
+    "validation": {
+      "emailRequired": "Introduce tu dirección de correo.",
+      "emailInvalid": "Introduce un correo válido.",
+      "nameRequired": "Introduce tu nombre.",
+      "emailPasswordRequired": "Introduce correo y contraseña."
+    },
+    "prompt": {
+      "pinTitle": "Inicia sesión para usar tu tablero de pins",
+      "pinBody": "El tablero de pins sirve para guardar contenido interesante para análisis o compartir en el futuro. Regístrate o inicia sesión para crear tu tablero.",
+      "boardTitle": "Inicia sesión para ver tu tablero de pins",
+      "boardBody": "Tu tablero reúne todo lo que fijas desde el explorador. Regístrate o inicia sesión para crear y gestionar tu tablero.",
+      "genericTitle": "Inicia sesión para guardar tu trabajo",
+      "genericBody": "Esta acción guarda datos en tu cuenta. Regístrate o inicia sesión para continuar.",
+      "signInAction": "Iniciar sesión / Registrarse",
+      "cancel": "Cancelar"
+    }
+  },
+  "skills": {
+    "readTime": "{minutes} min. de lectura",
+    "index": {
+      "heroTitle": "Aprende las habilidades para adaptarte y prosperar en un clima cambiante",
+      "heroSubtitle": "Aquí puedes explorar habilidades prácticas para afrontar los retos climáticos. Filtra lo que te interese en el menú de la izquierda y descubre a la derecha herramientas, cursos y casos reales listos para inspirar tus próximos pasos",
+      "sortMoreViews": "Más vistas",
+      "sortRelevance": "Relevancia"
+    },
+    "sidebar": {
+      "allTrainings": "Todas las formaciones",
+      "filterBy": "Filtrar por"
+    },
+    "empty": {
+      "title": "No se encontraron habilidades",
+      "description": "Prueba a ajustar los filtros o vuelve más tarde."
+    },
+    "detail": {
+      "back": "Volver a habilidades",
+      "externalLinks": "Enlaces externos"
+    },
+    "errors": {
+      "notFound": "Habilidad no encontrada"
+    }
+  },
+  "projects": {
+    "unnamed": "Proyecto sin nombre",
+    "header": {
+      "projectMenu": "Menú del proyecto",
+      "project": "Proyecto",
+      "signInToUse": "Inicia sesión para usar proyectos",
+      "shareBoard": "Compartir tablero",
+      "copied": "Copiado",
+      "copy": "Copiar",
+      "explorer": "Explorador",
+      "editedAgo": "editado hace {time}",
+      "pinnedCount": "{count} fijados",
+      "shareError": "No se pudo crear el enlace para compartir",
+      "publicLinkHint": "Public board link — anyone with the link can view.",
+      "copyLinkPlaceholder": "Click Copy to create link",
+      "shareSignInRequired": "Sign in to share this board.",
+      "projectsDashboard": "Projects Dashboard",
+      "signInToManageProjects": "Sign in to create and manage projects",
+      "createNewProject": "Create New Project",
+      "newProjectDefault": "New Project",
+      "editedJustNow": "just now",
+      "editedMinutesAgo": "edited {count}m ago",
+      "editedHoursAgo": "edited {count}h ago",
+      "editedDaysAgo": "edited {count}d ago",
+      "editedMonthsAgo": "edited {count}mo ago",
+      "editedYearsAgo": "edited {count}y ago"
+    },
+    "dashboard": {
+      "metaTitle": "Proyectos",
+      "metaDescription": "Gestiona tus proyectos del explorador y tableros de marcadores.",
+      "eyebrow": "Proyectos",
+      "title": "Tus proyectos",
+      "subtitle": "Crea y cambia entre proyectos para organizar marcadores y búsquedas guardadas.",
+      "emptyTitle": "Aún no hay proyectos",
+      "emptyDescription": "Crea un proyecto para empezar a fijar contenido y guardar búsquedas.",
+      "createButton": "Crear proyecto",
+      "modalCreateTitle": "Crear proyecto",
+      "modalEditTitle": "Editar proyecto",
+      "nameLabel": "Nombre del proyecto",
+      "namePlaceholder": "Mi proyecto de adaptación",
+      "promptName": "Introduce un nombre para el nuevo proyecto:",
+      "confirmDelete": "¿Eliminar este proyecto? Se eliminarán los marcadores y búsquedas guardadas.",
+      "cardDescription": "Each project card opens your workspace in the explorer. Use Go to explorer at the bottom of a card (or click anywhere on the card) to browse case studies.",
+      "signInToCreateProjects": "Sign in to create projects",
+      "signInToManageHeading": "Sign in to manage projects",
+      "signInToManageBody": "Projects are saved to your account. Sign in to create and manage projects across devices.",
+      "emptyFirstHeading": "No projects yet",
+      "emptyFirstBody": "Create your first project to start organizing your climate adaptation research and pinned items.",
+      "createFirstProject": "Create your first project",
+      "createNewProjectButton": "Create new project",
+      "enterProjectName": "Enter project name…",
+      "cancel": "Cancel",
+      "createProject": "Create project",
+      "renameProject": "Rename project",
+      "deleteProject": "Delete project",
+      "confirmDeleteTitle": "Delete project?",
+      "promptRename": "Enter new project name:",
+      "confirmDeleteNamed": "Are you sure you want to delete \"{name}\"? This action cannot be undone.",
+      "mostPinnedProject": "Most pinned project"
+    },
+    "stats": {
+      "overview": "Resumen",
+      "title": "Estadísticas del proyecto",
+      "totalProjects": "Proyectos totales",
+      "totalPins": "Marcadores totales",
+      "savedSearches": "Búsquedas guardadas",
+      "notAvailable": "N/D"
+    },
+    "card": {
+      "goToExplorer": "Ir al explorador",
+      "goToExplorerCurrent": "Ir al explorador (proyecto actual)"
+    },
+    "errors": {
+      "load": "No se pudieron cargar los proyectos",
+      "create": "No se pudo crear el proyecto",
+      "update": "No se pudo actualizar el proyecto",
+      "delete": "No se pudo eliminar el proyecto",
+      "cannotDeleteLast": "Debes conservar al menos un proyecto. Crea otro proyecto antes de eliminar este.",
+      "notAuthenticated": "No autenticado"
+    }
+  },
+  "publicBoard": {
+    "actions": {
+      "viewOnly": "Solo lectura",
+      "cloneToProjects": "Clonar en mis proyectos",
+      "addComment": "Añadir comentario",
+      "download": "Descargar"
+    },
+    "comments": {
+      "title": "Comentarios",
+      "empty": "Aún no hay comentarios.",
+      "placeholder": "Escribe un comentario...",
+      "submit": "Añadir comentario"
+    },
+    "errors": {
+      "load": "No se pudo cargar el tablero público"
+    }
+  },
+  "boardActions": {
+    "videoSummary": "Crear resumen en vídeo",
+    "moreActions": "Más acciones...",
+    "chatWithSelection": "Chat con la selección",
+    "topInsightsSelection": "Ideas clave (selección)",
+    "videoSummaryModal": "Resumen en vídeo"
+  },
+  "metaTitle": "Projects",
+  "metaDescription": "Manage your explorer projects and pinboards.",
+  "eyebrow": "Projects",
+  "title": "Your projects",
+  "subtitle": "Create and switch between projects to organize pins and saved searches.",
+  "emptyTitle": "No projects yet",
+  "emptyDescription": "Create a project to start pinning and saving searches.",
+  "createButton": "Create project",
+  "modalCreateTitle": "Create project",
+  "modalEditTitle": "Edit project",
+  "nameLabel": "Project name",
+  "namePlaceholder": "My adaptation project",
+  "promptName": "Enter a name for the new project:",
+  "confirmDelete": "Delete this project? Pins and saved searches will be removed.",
+  "cardDescription": "Each project card opens your workspace in the explorer. Use Go to explorer at the bottom of a card (or click anywhere on the card) to browse case studies.",
+  "signInToCreateProjects": "Sign in to create projects",
+  "signInToManageHeading": "Sign in to manage projects",
+  "signInToManageBody": "Projects are saved to your account. Sign in to create and manage projects across devices.",
+  "emptyFirstHeading": "No projects yet",
+  "emptyFirstBody": "Create your first project to start organizing your climate adaptation research and pinned items.",
+  "createFirstProject": "Create your first project",
+  "createNewProjectButton": "Create new project",
+  "enterProjectName": "Enter project name…",
+  "cancel": "Cancel",
+  "createProject": "Create project",
+  "renameProject": "Rename project",
+  "deleteProject": "Delete project",
+  "confirmDeleteTitle": "Delete project?",
+  "facets": {
+    "climate_impacts": {
+      "Droughts": "Sequías",
+      "Extreme cold": "Frío extremo",
+      "Extreme heat": "Calor extremo",
+      "Flooding": "Inundaciones",
+      "Ice and Snow": "Hielo y nieve",
+      "Non specific": "No específico",
+      "Sea Level Rise": "Aumento del nivel del mar",
+      "Storms": "Tormentas",
+      "Water Scarcity": "Escasez de agua",
+      "Wildfires": "Incendios forestales"
+    },
+    "adaptation_approaches": {
+      "Adaptation Measures and Actions": "Medidas y acciones de adaptación",
+      "Adaptation Plans and Strategies": "Planes y estrategias de adaptación",
+      "Climate services": "Servicios climáticos",
+      "Cost-benefit analysis and maintenance costs": "Análisis coste-beneficio y costes de mantenimiento",
+      "Economic aspects": "Aspectos económicos",
+      "Environmental aspects": "Aspectos ambientales",
+      "Just Resilience": "Resiliencia justa",
+      "MRE": "MRE",
+      "Mitigation aspects": "Aspectos de mitigación",
+      "Nature-based solutions": "Soluciones basadas en la naturaleza",
+      "Observations and Scenarios": "Observaciones y escenarios",
+      "Replication/upscaling potential": "Potencial de replicación/ampliación",
+      "Sector Policies": "Políticas sectoriales",
+      "Societal aspects": "Aspectos sociales",
+      "Vulnerability Assessment": "Evaluación de vulnerabilidad"
+    },
+    "sectors": {
+      "Agriculture": "Agricultura",
+      "Biodiversity protection": "Protección de la biodiversidad",
+      "Buildings": "Edificios",
+      "Business and industry": "Negocios e industria",
+      "Coastal areas": "Zonas costeras",
+      "Cultural heritage": "Patrimonio cultural",
+      "Disaster Risk Reduction": "Reducción del riesgo de desastres",
+      "Energy": "Energía",
+      "Financial": "Financiero",
+      "Forestry": "Silvicultura",
+      "Health": "Salud",
+      "Land use planning": "Planificación del uso del suelo",
+      "Marine and Fisheries": "Marino y pesca",
+      "Mountain areas": "Zonas de montaña",
+      "Non specific": "No específico",
+      "Tourism": "Turismo",
+      "Transport": "Transporte",
+      "Urban": "Urbano",
+      "Water management": "Gestión del agua"
+    },
+    "biogeographical_regions": {
+      "Alpine": "Alpino",
+      "Arctic": "Ártico",
+      "Atlantic": "Atlántico",
+      "Boreal": "Boreal",
+      "Continental": "Continental",
+      "Mediterranean": "Mediterráneo",
+      "Pannonian": "Panónico",
+      "no-identificados": "No identificados"
+    },
+    "keywords": {
+      "Governance": "Gobernanza",
+      "Wildfires": "Incendios forestales",
+      "early warning": "alerta temprana",
+      "early warning system": "sistema de alerta temprana",
+      "green infrastructure": "infraestructura verde",
+      "green roofs": "cubiertas verdes",
+      "heat island effect": "efecto isla de calor",
+      "heatwave": "ola de calor",
+      "water quality": "calidad del agua",
+      "water retention": "retención de agua",
+      "wetlands": "humedales"
+    }
+  },
+  "lab": {
+    "subtitle": "Lab · capa de la Misión UE",
+    "badge": "Experimental",
+    "stableVersion": "Versión estable",
+    "sources": "Fuentes de datos",
+    "cutoff": "corte",
+    "generated": "datos generados el"
+  }
+}

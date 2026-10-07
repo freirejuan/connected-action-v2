@@ -1,0 +1,590 @@
+CNTR_CODE,CNTR_NAME,NUTS_ID,NUTS_Name_Excel,LEVEL_CODE,SIMPLIFIED_LEVEL,Batch,Status,Status_Literal,LAU_NAME,URAU_NAME,LEVEL_CODE_CRH
+,choose a region or a local authority,,To,,,,begin,,,,nuts_1
+AL,Albania,AL03,Jug,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+AL,Albania,AL02,Qender,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+AL,Albania,AL01,Veri,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+AT,Austria,AT11,Burgenland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+AT,Austria,AT221,Graz City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Graz,Graz,nuts_2
+AT,Austria,AT21,Kärnten,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+AT,Austria,AT125,KLAR! March-Thaya-Auen,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,Hohenau an der March,Wien,nuts_2
+AT,Austria,AT223,KLAR! Murraum Leoben,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Sankt Peter-Freienstein,,nuts_2
+AT,Austria,AT122,KLAR! Naturpark Ötscher-Tormäuer,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Mitterbach am Erlaufsee,,nuts_2
+AT,Austria,AT212,KLAR! Nockregion,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Reichenau,,nuts_2
+AT,Austria,AT222,KLAR! Steirische Eisenwurzen,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Sankt Gallen,,nuts_2
+AT,Austria,AT224,KLAR! Stiefingtal,FUA,Local Authorities,Second batch,(Signatory),Mission signatory,Sankt Radegund bei Graz,Graz,nuts_2
+AT,Austria,AT124,KLAR! Wachau-Dunkelsteinerwald-Jauerling,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Rossatz-Arnsdorf,,nuts_2
+AT,Austria,AT222,KLAR! Zukunftsregion Ennstal,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Aigen im Ennstal,,nuts_2
+AT,Austria,AT12,Lower Austria,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+AT,Austria,AT31,Oberösterreich,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+AT,Austria,AT127,Römerland Carnuntum,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Hainburg a.d.Donau,Wien,nuts_2
+AT,Austria,AT32,Salzburg,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+AT,Austria,AT22,Steiermark,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+AT,Austria,AT33,Tirol,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+AT,Austria,AT34,Vorarlberg,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+AT,Austria,AT13,Wien,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE251,Blankenberge,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Blankenberge,Brugge,nuts_2
+BE,Belgium,BE2,Flanders,NUTS 1,Regions,First Batch,(Signatory),Mission signatory,,,nuts_1
+BE,Belgium,BE224,Hasselt,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Hasselt,,nuts_2
+BE,Belgium,BE242,Leuven City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Leuven,Leuven,nuts_2
+BE,Belgium,BE310,Ottignies-Louvain-La-Neuve,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,Ottignies-Louvain-la-Neuve,Bruxelles/Brussel/Leuven,nuts_2
+BE,Belgium,BE21,Prov. Antwerpen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE31,Prov. Brabant Wallon,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE32,Prov. Hainaut,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE33,Prov. Liège,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE22,Prov. Limburg (BE),NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE34,Prov. Luxembourg (BE),NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE35,Prov. Namur,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE23,Prov. Oost-Vlaanderen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE24,Prov. Vlaams-Brabant,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE25,Prov. West-Vlaanderen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE10,Région de Bruxelles-Capitale/ Brussels Hoofdstedelijk Gewest,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BE,Belgium,BE3,Wallonia,NUTS 1,Regions,Second batch,(Signatory),Mission signatory,,,nuts_1
+BG,Bulgaria,BG314,Belene Muncipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Белене,,nuts_2
+BG,Bulgaria,BG341,Burgas,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Бургас,Burgas,nuts_2
+BG,Bulgaria,BG314,Cherven Bryag Muncipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Червен бряг,,nuts_2
+BG,Bulgaria,BG413,Garmen Muncipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Гоце Делчев,,nuts_2
+BG,Bulgaria,BG324,Isperih Muncipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Исперих,,nuts_2
+BG,Bulgaria,BG425,Kardzhali Muncipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Кърджали,,nuts_2
+BG,Bulgaria,BG414,Pernik Muncipality ,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Перник,Pernik,nuts_2
+BG,Bulgaria,BG324,Razgrad Muncipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Разград,,nuts_2
+BG,Bulgaria,BG32,Severen tsentralen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BG,Bulgaria,BG33,Severoiztochen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BG,Bulgaria,BG31,Severozapaden,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BG,Bulgaria,BG424,Smolyan Muncipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Смолян,,nuts_2
+BG,Bulgaria,BG422,Stambolovo Municipality,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Хасково,Haskovo,nuts_2
+BG,Bulgaria,BG343,Straldzha Muncipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Стралджа,,nuts_2
+BG,Bulgaria,BG321,Svishtov Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Свищов,,nuts_2
+BG,Bulgaria,BG412,Svoge Muncipality,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,Своге,Sofia,nuts_2
+BG,Bulgaria,BG34,Yugoiztochen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BG,Bulgaria,BG41,Yugozapaden,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+BG,Bulgaria,BG42,Yuzhen tsentralen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CH,Switzerland,CH02,Espace Mittelland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CH,Switzerland,CH03,Nordwestschweiz,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CH,Switzerland,CH05,Ostschweiz,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CH,Switzerland,CH01,Région lémanique,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CH,Switzerland,CH07,Ticino,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CH,Switzerland,CH06,Zentralschweiz,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CH,Switzerland,CH04,Zürich,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CY,Cyprus,CY000,Athienou Municipality,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Αθιένου,Lefkosia,nuts_2
+CY,Cyprus,CY00,Kýpros,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CY,Cyprus,CY000,Nicosia Municipality ,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Λευκωσία,Lefkosia,nuts_2
+CY,Cyprus,CY000,Pafos Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Πάφος,,nuts_2
+CZ,Czechia,CZ06,Jihovýchod,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CZ,Czechia,CZ03,Jihozápad,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CZ,Czechia,CZ08,Moravskoslezsko,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CZ,Czechia,CZ01,Praha,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CZ,Czechia,CZ05,Severovýchod,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CZ,Czechia,CZ04,Severozápad,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CZ,Czechia,CZ02,Střední Čechy,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+CZ,Czechia,CZ07,Střední Morava,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEA5,Arnsberg,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE271,Augsburg City,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DE71E,Bad Nauheim,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,"Bad Nauheim, Stadt",Frankfurt am Main,nuts_2
+DE,Germany,DE30,Berlin,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE40,Brandenburg,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE91,Braunschweig,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE50,Bremen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DED4,Chemnitz,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE71,Darmstadt,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEA4,Detmold,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DED2,Dresden,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEA1,Düsseldorf,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEA28,Euskirchen County,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DE501,Free Hanseatic City of Bremen,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DE13,Freiburg,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE72,Gießen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE91C,Göttingen City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,"Göttingen, Stadt",Göttingen,nuts_2
+DE,Germany,DE60,Hamburg,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE600,Hamburg City,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DE92,Hannover,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE211,Ingolstadt City,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DE12,Karlsruhe,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE73,Kassel,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEB1,Koblenz,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEA2,Köln,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEA43,Kreis Herford ,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DEA46,Kreis Minden-Lübbecke,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DEA5A,Kreis Siegen-Wittgenstein,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DE94F,Landkreis Vechta ,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DED5,Leipzig,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEA45,Lügde,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,"Lügde, Stadt der Osterräder",,nuts_2
+DE,Germany,DE93,Lüneburg,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE80,Mecklenburg-Vorpommern,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE25,Mittelfranken,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE212,Munich City,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DEA3,Münster,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE22,Niederbayern,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEA,North Rhine-Westphalia,NUTS 1,Regions,Third batch,(Signatory),Mission signatory,,,nuts_1
+DE,Germany,DE21,Oberbayern,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE24,Oberfranken,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE23,Oberpfalz,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE139,Rheinfelden (Baden),LAU,Local Authorities,Third batch,(Signatory),Mission signatory,"Rheinfelden (Baden), Stadt",,nuts_2
+DE,Germany,DEB3,Rheinhessen-Pfalz,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE717,Rüsselsheim am Main City,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,"Rüsselsheim am Main, Stadt",Frankfurt am Main,nuts_2
+DE,Germany,DEC0,Saarland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEE0,Sachsen-Anhalt,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEF0,Schleswig-Holstein,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE27,Schwaben,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEA43,Stadt Enger,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,"Enger, Widukindstadt",Bielefeld,nuts_2
+DE,Germany,DED51,Stadt Leipzig,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DE129,Stadt Pforzheim,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+DE,Germany,DE11,Stuttgart,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEG0,Thüringen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DEB2,Trier,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE14,Tübingen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE26,Unterfranken,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE94,Weser-Ems,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+DE,Germany,DE721,Wettenberg Municipality,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,"Gießen, Universitätsstadt",Gießen,nuts_2
+DK,Denmark,DK042,Aarhus City,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Aarhus,Århus,nuts_2
+DK,Denmark,DK01,Capital Region of Denmark,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+DK,Denmark,DK04,Central Denmark Region,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+DK,Denmark,DK022,Kalundborg Municipality,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Kalundborg,,nuts_2
+DK,Denmark,DK05,North Denmark Region,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+DK,Denmark,DK02,Region Zealand,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+DK,Denmark,DK03,Southern Denmark Region,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+DK,Denmark,DK022,Vordingborg Municipality,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Vordingborg,,nuts_2
+EE,Estonia,EE00,Eesti,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EE,Estonia,EE004,Pärnu City,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Pärnu linn,,nuts_2
+EE,Estonia,EE001,Saue Rural Municipality,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Keila linn,Tallinn,nuts_2
+EE,Estonia,EE001,Tallinn City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Tallinn,Tallinn,nuts_2
+EE,Estonia,EE008,Tartu City,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Tartu linn,Tartu,nuts_2
+EE,Estonia,EE001,Viimsi Municipality,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Viimsi vald,Tallinn,nuts_2
+EL,Greece,EL522,Ampelokipi Menemeni Municipality,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Κοινότητα Ευόσμου,Thessaloniki,nuts_2
+EL,Greece,EL51,"Anatoliki Makedonia, Thraki",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL30,Attiki,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL302,Chaidari Municipality,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Ψευδοκοινοτητα Χαϊδαριου,Athina,nuts_2
+EL,Greece,EL421,Chalki Island,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Ψευδοκοινοτητα Χαλκης,,nuts_2
+EL,Greece,EL652,Corinth Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Κοινότητα Κορίνθου,,nuts_2
+EL,Greece,EL43,Crete Region,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+EL,Greece,EL63,Dytiki Elláda,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL53,Dytiki Makedonia,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL302,Fyli Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Ψευδοκοινοτητα Ασπροπυργου,,nuts_2
+EL,Greece,EL302,Ilion Municipality,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Ψευδοκοινοτητα Πετρουπολεως,Athina,nuts_2
+EL,Greece,EL62,Ionia Nisia,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL54,Ipeiros,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL52,Kentriki Makedonia,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL307,Kythira Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Κοινότητα Φρατσίων,,nuts_2
+EL,Greece,EL612,Larissa Municipality,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Ψευδοκοινοτητα Λαρισαιων,Larisa,nuts_2
+EL,Greece,EL301,Likovrisi Pefki Municipality,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Ψευδοκοινοτητα Ηρακλειου,Athina,nuts_2
+EL,Greece,EL411,Mytilene Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Κοινότητα Μυτιλήνης,,nuts_2
+EL,Greece,EL421,Nisyros Island,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Κοινότητα Μανδρακίου,,nuts_2
+EL,Greece,EL42,Notio Aigaio,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL65,Peloponnisos,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL301,Penteli Municipality ,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Κοινότητα Πεντέλης,Athina,nuts_2
+EL,Greece,EL613,Skiathos Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Ψευδοκοινοτητα Σκιαθου,,nuts_2
+EL,Greece,EL613,Skopelos,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Κοινότητα Σκοπέλου,,nuts_2
+EL,Greece,EL64,Sterea Elláda,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+EL,Greece,EL522,Thermaikos Municipality,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Κοινότητα Πανοράματος,Thessaloniki,nuts_2
+EL,Greece,EL522,Thermi Municipality,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Κοινότητα Θέρμης,Thessaloniki,nuts_2
+EL,Greece,EL522,Thessaloniki Municipality,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Ψευδοκοινοτητα Θεσσαλονικης,Thessaloniki,nuts_2
+EL,Greece,EL61,Thessaly,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+EL,Greece,EL305,Vari - Voula - Vouliagmeni Municipality,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Κοινότητα Βάρης,Athina,nuts_2
+EL,Greece,EL41,Voreio Aigaio,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+ES,Spain,ES61,Andalusia,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES24,Aragon,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES620,Ayuntamiento de Los Alcázares,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,"Alcázares, Los",,nuts_2
+ES,Spain,ES114,Ayuntamiento de Soutomaior,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Redondela,Vigo,nuts_2
+ES,Spain,ES53,Balearic Islands,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES21,Basque Country ,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES70,Canary Islands,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES13,Cantabria,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+ES,Spain,ES42,Castilla La Mancha,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES41,Castilla y León,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES51,Catalonia,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES63,Ciudad de Ceuta,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+ES,Spain,ES64,Ciudad de Melilla,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+ES,Spain,ES30,Comunidad de Madrid,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+ES,Spain,ES22,Comunidad Foral de Navarra,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+ES,Spain,ES52,Comunitat Valenciana,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES43,Extremadura,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES11,Galicia,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES705,Gran Canaria,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES23,La Rioja,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES30,Las Rozas de Madrid,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,"Rozas de Madrid, Las",Madrid,nuts_2
+ES,Spain,ES523,Municipality of Valencia,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,València,Valencia,nuts_2
+ES,Spain,ES620,Murcia City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Murcia,Murcia,nuts_2
+ES,Spain,ES620,Murcia Region,NUTS 3,Regions,ADDED 3 March,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES220,Navarra,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES12,Principality of Asturias,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES614,Province of Granada,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+ES,Spain,ES62,Región de Murcia,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+ES,Spain,ES418,Valladolid,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Valladolid,Valladolid,nuts_2
+ES,Spain,ES211,Vitoria-Gasteiz ,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Vitoria-Gasteiz,Vitoria/Gasteiz,nuts_2
+FI,Finland,FI20,Åland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FI,Finland,FI1B1,Espoo City,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Espoo,Espoo/Esbo,nuts_2
+FI,Finland,FI1C,Etelä-Suomi,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FI,Finland,FI1C2,Häme Region,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+FI,Finland,FI1B,Helsinki-Uusimaa,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+FI,Finland,FI1C4,Kymenlaakso,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+FI,Finland,FI19,Länsi-Suomi,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FI,Finland,FI1D7,Lapland,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+FI,Finland,FI195,Ostrobothnia,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+FI,Finland,FI1C3,Päijät-Häme,NUTS 3,Regions,ADDED 27 Nov ,(Signatory),Mission signatory,,,nuts_2
+FI,Finland,FI1D,Pohjois- ja Itä-Suomi,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FI,Finland,FI1C1,Southwest Finland Region,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+FI,Finland,FI197,Tampere City,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Tampere,Tampere/Tammerfors,nuts_2
+FI,Finland,FI1C1,Turku City,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Turku,Turku/Åbo,nuts_2
+FI,Finland,FI195,Vaasa City,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Vaasa,,nuts_2
+FR,France,FRF1,Alsace,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRG02,Angers Loire Metropole ,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Angers,Angers,nuts_2
+FR,France,FRI1,Aquitaine,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRK1,Auvergne,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRK,Auvergne Rhône Alpes Region,NUTS 1,Regions,Second batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRD1,Basse-Normandie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRI12,Bordeaux Métropole ,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Bordeaux,Bordeaux,nuts_2
+FR,France,FRC1,Bourgogne,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRC,Bourgogne-Franche-Comté ,NUTS 1,Regions,Second batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRH0,Bretagne,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRH,Brittany Region,NUTS 1,Regions,Second batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRB0,Centre — Val de Loire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRB,Centre-Val de Loire Region,NUTS 1,Regions,Second batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRF2,Champagne-Ardenne,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRK14,Clermont Auvergne Métropole,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Clermont-Ferrand,Clermont-Ferrand,nuts_2
+FR,France,FRM0,Corse,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRF11,Eurometropole de Strasbourg,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Strasbourg,Strasbourg,nuts_2
+FR,France,FRC2,Franche-Comté,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRF,Grand Est Region,NUTS 1,Regions,Second batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRD2,Haute-Normandie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRE,Hauts-de-France Region,NUTS 1,Regions,ADDED 27 Nov ,(Signatory),Mission signatory,,,nuts_1
+FR,France,FR10,Ile-de-France,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FR1,Île-de-France Region,NUTS 1,Regions,First Batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRI32,La Rochelle Urban Community,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,La Rochelle,La Rochelle,nuts_2
+FR,France,FRJ1,Languedoc-Roussillon,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRI2,Limousin,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRF3,Lorraine,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRE11,Métropole Européenne de Lille ,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Lille,Lille,nuts_2
+FR,France,FRJ2,Midi-Pyrénées,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRG01,Nantes Métropole ,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Nantes,Nantes,nuts_2
+FR,France,FRE1,Nord-Pas de Calais,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRD,Normandie Region,NUTS 1,Regions,First Batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRI,Nouvelle-Aquitaine Region,NUTS 1,Regions,ADDED since 7,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRJ,Occitanie Region ,NUTS 1,Regions,First Batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FR101,Paris City,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+FR,France,FRG0,Pays de la Loire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRG,Pays de la Loire Region,NUTS 1,Regions,Second batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRE2,Picardie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRI3,Poitou-Charentes,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRL,Provence-Alpes-Côte d'Azur Region,NUTS 1,Regions,First Batch,(Signatory),Mission signatory,,,nuts_1
+FR,France,FRL0,Provence-Alpes-Côte d’Azur,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRK14,Puy-de-Dôme,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+FR,France,FRK2,Rhône-Alpes,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+FR,France,FRD22,Rouen Normandie Métropole,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Rouen,Rouen,nuts_2
+FR,France,FRF11,Strasbourg City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Strasbourg,Strasbourg,nuts_2
+FR,France,FRJ23,Toulouse Métropole,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Toulouse,Toulouse,nuts_2
+HR,Croatia,HR05,Grad Zagreb,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HR,Croatia,HR03,Jadranska Hrvatska,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HR,Croatia,HR027,Karlovac City,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Karlovac,,nuts_2
+HR,Croatia,HR027,Karlovac County ,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+HR,Croatia,HR063,Koprivnica Križevci County,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+HR,Croatia,HR064,Krapina-zagorje county,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+HR,Croatia,HR062,Ludbreg,LAU,Local Authorities,ADDED since 7,(Signatory),Mission signatory,Ludbreg,,nuts_2
+HR,Croatia,HR02,Panonska Hrvatska,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HR,Croatia,HR034,Sibenik-Knin County,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+HR,Croatia,HR06,Sjeverna Hrvatska,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HR,Croatia,HR035,Split City,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Split,Split,nuts_2
+HR,Croatia,HR050,Zagreb City,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+HU,Hungary,HU11,Budapest,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HU,Hungary,HU33,Dél-Alföld,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HU,Hungary,HU23,Dél-Dunántúl,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HU,Hungary,HU32,Észak-Alföld,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HU,Hungary,HU31,Észak-Magyarország,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HU,Hungary,HU312,Gyöngyös Municipality,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Gyöngyös,,nuts_2
+HU,Hungary,HU321,Hajdú-Bihar County,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+HU,Hungary,HU322,Jászkisér Municipality,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Nagykőrös,Kecskemét,nuts_2
+HU,Hungary,HU21,Közép-Dunántúl,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HU,Hungary,HU22,Nyugat-Dunántúl,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HU,Hungary,HU12,Pest,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+HU,Hungary,HU332,Szarvas Municipality,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Szarvas,,nuts_2
+IE,Ireland,IE053,Cork City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Cork City South Central,Cork,nuts_2
+IE,Ireland,IE061,Dublin City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,North Inner City,Dublin,nuts_2
+IE,Ireland,IE06,Eastern and Midland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IE,Ireland,IE042,Galway City,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Galway City Central,Galway,nuts_2
+IE,Ireland,IE062,Louth,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Dundalk South,,nuts_2
+IE,Ireland,IE042,Mayo,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Castlebar,,nuts_2
+IE,Ireland,IE04,Northern and Western,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IE,Ireland,IE063,Offaly,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Tullamore,,nuts_2
+IE,Ireland,IE042,Sligo,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Sligo-Strandhill,,nuts_2
+IE,Ireland,IE05,Southern,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IS,Iceland,IS00,Ísland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IS,Iceland,IS0,The Icelandic Association of Local Authorities,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Sveitarfélagið Skagafjörður,,nuts_1
+IT,Italy,ITF1,Abruzzo Region,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITI18,Arezzo City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Arezzo,Arezzo,nuts_2
+IT,Italy,ITH2,Autonomous Province of Trento,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITF5,Basilicata,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITF6,Calabria,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITF3,Campania Region,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITC4D,Cesano Maderno Municipality,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Cesano Maderno,Milano,nuts_2
+IT,Italy,ITH5,Emilia-Romagna Region,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITH4,Friuli Venezia Giulia Autonomous Region ,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITF11,L'Aquila Municipality,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,L'Aquila,L'Aquila,nuts_2
+IT,Italy,ITI4,Lazio,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITC3,Liguria Region,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITC4,Lombardia,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITI3,Marche,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITF2,Molise Region,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITC44,Mountain Community of Valchiavenna,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Novate Mezzola,,nuts_2
+IT,Italy,ITC1,Piemonte,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITF51,Potenza Province,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITH1,Provincia Autonoma di Bolzano/Bozen,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITF4,Puglia Region,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITG2,Sardinia Region,NUTS 2,Regions,ADDED since 7,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITG1,Sicily  Region,NUTS 2,Regions,ADDED 27 Nov ,(Signatory),Mission signatory,,,nuts_2
+IT,Italy,ITI1,Toscana,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITI2,Umbria,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITC2,Valle d’Aosta/Vallée d’Aoste,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+IT,Italy,ITH3,Veneto,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+LI,Liechtenstein,LI00,Liechtenstein,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+LT,Lithuania,LT021,Alytus City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Alytaus miesto savivaldybė,Alytus,nuts_2
+LT,Lithuania,LT022,Kedainiai District Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Kėdainių rajono savivaldybė,,nuts_2
+LT,Lithuania,LT023,Klaipeda City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Klaipėdos miesto savivaldybė,Klaipėda,nuts_2
+LT,Lithuania,LT025,Panevėžys City,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Panevėžio miesto savivaldybė,Panevėžys,nuts_2
+LT,Lithuania,LT01,Sostinės regionas,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+LT,Lithuania,LT027,Taurage District Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Tauragės rajono savivaldybė,,nuts_2
+LT,Lithuania,LT011,Ukmerge District Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Ukmergės rajono savivaldybė,,nuts_2
+LT,Lithuania,LT029,Utena District Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Utenos rajono savivaldybė,,nuts_2
+LT,Lithuania,LT02,Vidurio ir vakarų Lietuvos regionas,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+LT,Lithuania,LT011,Vilnius City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Vilniaus miesto savivaldybė,Vilnius,nuts_2
+LU,Luxembourg,LU00,Luxembourg,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+LV,Latvia,LV00,Latvija,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+LV,Latvia,LV008,Vidzeme Planning Region,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+LV,Latvia,LV009,Zemgale Region,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+ME,Montenegro,ME00,Crna Gora,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+MK,North Macedonia,MK00,Severna Makedonija,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+MT,Malta,MT001,Eastern Region,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Valletta,Greater Valletta,nuts_2
+MT,Malta,MT00,Malta,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+MT,Malta,MT001,Port Region,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Floriana,Greater Valletta,nuts_2
+NL,Netherlands,NL13,Drenthe Province,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+NL,Netherlands,NL23,Flevoland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NL,Netherlands,NL12,Friesland Province,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+NL,Netherlands,NL22,Gelderland Province,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+NL,Netherlands,NL226,Groene Metropoolregio Arnhem-Nijmegen,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+NL,Netherlands,NL11,Groningen en North Drenthe Region,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+NL,Netherlands,NL42,Limburg (NL),NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NL,Netherlands,NL41,Noord-Brabant,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NL,Netherlands,NL32,Noord-Holland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NL,Netherlands,NL21,Overijssel,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NL,Netherlands,NL33C,Rotterdam City,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Rotterdam,Rotterdam ,nuts_2
+NL,Netherlands,NL310,Utrecht Municipality,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Utrecht,Utrecht ,nuts_2
+NL,Netherlands,NL31,Utrecht Province,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+NL,Netherlands,NL34,Zeeland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NL,Netherlands,NL33,Zuid-Holland Province,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+NL,Netherlands,NL211,Zwolle,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+NO,Norway,NO09,Agder og Sør-Østlandet,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NO,Norway,NO020,Gjøvik Kommune,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Gjøvik,,nuts_2
+NO,Norway,NO02,Innlandet,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NO,Norway,NO020,Innlandet County,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+NO,Norway,NO0B,Jan Mayen and Svalbard,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NO,Norway,NO092,Kristiansand Kommune,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Kristiansand,,nuts_2
+NO,Norway,NO07,Nord-Norge,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NO,Norway,NO08,Oslo og Viken,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NO,Norway,NO0A1,Rogaland,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+NO,Norway,NO074,Troms & Finnmark County,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+NO,Norway,NO074,Tromsø municipality,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Tromsø,,nuts_2
+NO,Norway,NO06,Trøndelag,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+NO,Norway,NO071,Vesteraalen,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Sortland - Suortá,,nuts_2
+NO,Norway,NO0A,Vestland County,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+PL,Poland,PL416,Aglomeracja Kalisko-Ostrowska,FUA,Local Authorities,Second batch,(Signatory),Mission signatory,Opatówek,Kalisz,nuts_2
+PL,Poland,PL51,Dolnośląskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL225,Gmina Czechowice-Dziedzice,FUA,Local Authorities,Second batch,(Signatory),Mission signatory,Czechowice-Dziedzice,Bielsko-Biała,nuts_2
+PL,Poland,PL617,Gmina Janikowo,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Janikowo,,nuts_2
+PL,Poland,PL622,Gmina Miejska Lidzbark Warmiński,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Lidzbark Warmiński,,nuts_2
+PL,Poland,PL622,Gmina Sorkwity,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Świątki,Olsztyn,nuts_2
+PL,Poland,PL518,Gmina Żmigród,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,Boniewo,Włocławek,nuts_2
+PL,Poland,PL227,Jastrzębie-Zdrój City,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Jastrzębie-Zdrój,Jastrzębie-Zdrój,nuts_2
+PL,Poland,PL22A,Katowice City,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Katowice,Katowice,nuts_2
+PL,Poland,PL414,Konin City,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Konin,Konin,nuts_2
+PL,Poland,PL61,Kujawsko-pomorskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL21,Lesser Poland Voivodeship,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+PL,Poland,PL711,Łódź City,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+PL,Poland,PL71,Łódzkie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL81,Lubelskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL814,Lublin City,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Lublin,Lublin,nuts_2
+PL,Poland,PL43,Lubusz Voivodeship,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+PL,Poland,PL9,Mazovian Voivodeship,NUTS 1,Regions,First Batch,(Signatory),Mission signatory,,,nuts_1
+PL,Poland,PL92,Mazowiecki regionalny,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL52,Opolskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL82,Podkarpackie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL84,Podlaskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL63,Pomorskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL823,Rzeszow City,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Rzeszów,Rzeszów,nuts_2
+PL,Poland,PL22,Silesian Voivodeship,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+PL,Poland,PL913,Stare Babice,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,Warszawa,Warszawa,nuts_2
+PL,Poland,PL72,Świętokrzyskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL62,Warmińsko-mazurskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL911,Warsaw City,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+PL,Poland,PL91,Warszawski stołeczny,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL41,Wielkopolskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PL,Poland,PL514,Wroclaw,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+PL,Poland,PL42,Zachodniopomorskie,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PT,Portugal,PT187,Alandroal Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,"União das freguesias de Alandroal (Nossa Senhora da Conceição), São Brás dos Matos (Mina do Bugalho)",,nuts_2
+PT,Portugal,PT18,Alentejo,NUTS 2,Regions,Second Batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT150,Algarve,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT15,Algarve,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PT,Portugal,PT170,Almada Municipality,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,"União das freguesias de Almada, Cova da Piedade, Pragal e Cacilhas",Lisboa,nuts_2
+PT,Portugal,PT11C,Amarante Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,"União das freguesias de Amarante (São Gonçalo), Madalena, Cepelos e Gatão",,nuts_2
+PT,Portugal,PT119,Ave Intermunicipal Community,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT11C,Baião,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,União das freguesias de Campelo e Ovil,,nuts_2
+PT,Portugal,PT184,Baixo Alentejo Intermunicipal Community,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT185,Benavente Municipality,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,Benavente,Lisboa,nuts_2
+PT,Portugal,PT112,Braga Municipality,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,"União das freguesias de Braga (Maximinos, Sé e Cividade)",Braga,nuts_2
+PT,Portugal,PT16B,Caldas da Rainha Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,"União das freguesias de Caldas da Rainha - Nossa Senhora do Pópulo, Coto e São Gregório",,nuts_2
+PT,Portugal,PT300,Câmara de Lobos,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,Câmara de Lobos,Funchal,nuts_2
+PT,Portugal,PT170,Cascais,CITY CORE,Local Authorities,First Batch,(Signatory),Mission signatory,União das freguesias de Cascais e Estoril,Lisboa,nuts_2
+PT,Portugal,PT112,Cávado Intermunicipal Community,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT16,Centro region,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT16E,Coimbra Region,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT185,Coruche Municipality ,LAU,Local Authorities,Added 17 apri,(Signatory),Mission signatory,"União das freguesias de Coruche, Fajarda e Erra",,nuts_2
+PT,Portugal,PT112,Esposende,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,"União das freguesias de Esposende, Marinhas e Gandra",,nuts_2
+PT,Portugal,PT187,Évora Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,União das freguesias de Malagueira e Horta das Figueiras,,nuts_2
+PT,Portugal,PT16E,Figueira da Foz Municipality,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,São Pedro,,nuts_2
+PT,Portugal,PT300,Funchal,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,São Roque,Funchal,nuts_2
+PT,Portugal,PT16H,Fundão,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,"União das freguesias de Fundão, Valverde, Donas, Aldeia de Joanes e Aldeia Nova do Cabo",,nuts_2
+PT,Portugal,PT119,Guimarães Municipality ,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,"União das freguesias de Oliveira, São Paio e São Sebastião",Guimarães,nuts_2
+PT,Portugal,PT16H,Idanha-a-Nova,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,União das freguesias de Idanha-a-Nova e Alcafozes,,nuts_2
+PT,Portugal,PT17,Lisbon Metropolitan Area,NUTS 2,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT170,Lisbon Municipality,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Arroios,Lisboa,nuts_2
+PT,Portugal,PT150,Loulé Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Loulé (São Clemente),,nuts_2
+PT,Portugal,PT170,Loures,CITY CORE,Local Authorities,Added 17 apri,(Signatory),Mission signatory,Loures,Lisboa,nuts_2
+PT,Portugal,PT170,Mafra Municipality,FUA,Local Authorities,First Batch,(Signatory),Mission signatory,Mafra,Lisboa,nuts_2
+PT,Portugal,PT11A,Marco de Canaveses,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Marco,,nuts_2
+PT,Portugal,PT11A,Matosinhos,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,União das freguesias de Matosinhos e Leça da Palmeira,Porto,nuts_2
+PT,Portugal,PT16I,Médio Tejo Intermunicipal Community,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT184,Mértola Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Mértola,,nuts_2
+PT,Portugal,PT16B,Nazaré Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Nazaré,,nuts_2
+PT,Portugal,PT11,Norte Region,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+PT,Portugal,PT170,Oeiras Municipality,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,"União das freguesias de Oeiras e São Julião da Barra, Paço de Arcos e Caxias",Lisboa,nuts_2
+PT,Portugal,PT170,Palmela Municipality,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,Palmela,Lisboa,nuts_2
+PT,Portugal,PT11A,Porto Municipality,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,"União das freguesias de Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",Porto,nuts_2
+PT,Portugal,PT187,Redondo Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Redondo,,nuts_2
+PT,Portugal,PT30,Região Autónoma da Madeira,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PT,Portugal,PT20,Região Autónoma dos Açores,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+PT,Portugal,PT170,Sesimbra Municipality,FUA,Local Authorities,Third batch,(Signatory),Mission signatory,Sesimbra (Santiago),Lisboa,nuts_2
+PT,Portugal,PT170,Setúbal Municipality,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,"União das freguesias de Setúbal (São Julião, Nossa Senhora da Anunciada e Santa Maria da Graça)",Setúbal,nuts_2
+PT,Portugal,PT170,Sintra Municipality ,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,"União das freguesias de Sintra (Santa Maria e São Miguel, São Martinho e São Pedro de Penaferrim)",Sintra,nuts_2
+PT,Portugal,PT16B,Torres Vedras Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,"Santa Maria, São Pedro e Matacães",,nuts_2
+PT,Portugal,PT11A,Valongo,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Valongo,Porto,nuts_2
+PT,Portugal,PT170,Vila Franca de Xira,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Vila Franca de Xira,Vila Franca de Xira,nuts_2
+PT,Portugal,PT119,Vila Nova de Famalicao Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,União das freguesias de Vila Nova de Famalicão e Calendário,,nuts_2
+PT,Portugal,PT11B,Vila Pouca de Aguiar ,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,Vila Pouca de Aguiar,,nuts_2
+PT,Portugal,PT187,Vila Viçosa,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Nossa Senhora da Conceição e São Bartolomeu,,nuts_2
+RO,Romania,RO122,Brasov Municipality,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Municipiul Braşov,Braşov,nuts_2
+RO,Romania,RO32,Bucureşti-Ilfov,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RO,Romania,RO12,Centru,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RO,Romania,RO113,Cluj-Napoca Municipality,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Municipiul Cluj-Napoca,Cluj-Napoca,nuts_2
+RO,Romania,RO315,Fierbinti-Targ Municipality,FUA,Local Authorities,Second batch,(Signatory),Mission signatory,Brăneşti,Bucureşti,nuts_2
+RO,Romania,RO21,Iasi,NUTS 2,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+RO,Romania,RO11,Nord-Vest,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RO,Romania,RO214,Roman Municipality,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Municipiul Roman,Roman,nuts_2
+RO,Romania,RO126,Sibiu,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Municipiul Sibiu,Sibiu,nuts_2
+RO,Romania,RO215,Suceava City,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Municipiul Suceava,Suceava,nuts_2
+RO,Romania,RO22,Sud-Est,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RO,Romania,RO31,Sud-Muntenia,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RO,Romania,RO41,Sud-Vest Oltenia,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RO,Romania,RO123,Targu Secuiesc Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Municipiul Târgu Secuiesc,,nuts_2
+RO,Romania,RO42,Vest,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RS,Serbia,RS12,Autonomous Province of Vojvodina,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RS,Serbia,RS11,City of Belgrade,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RS,Serbia,RS22,Region Južne i Istočne Srbije,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+RS,Serbia,RS21,Region Šumadije i Zapadne Srbije,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SE,Sweden,SE221,Blekinge Region,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+SE,Sweden,SE232,Gothernburg Metropolitan Area,CITY CORE,Local Authorities,Second batch,(Signatory),Mission signatory,Göteborg,Göteborg,nuts_2
+SE,Sweden,SE224,Kristianstad Municipality,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,Kristianstad,,nuts_2
+SE,Sweden,SE224,Malmö,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Malmö,Malmö,nuts_2
+SE,Sweden,SE32,Mellersta Norrland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SE,Sweden,SE31,Norra Mellansverige,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SE,Sweden,SE12,Östra Mellansverige,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SE,Sweden,SE33,Övre Norrland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SE,Sweden,SE21,Småland med öarna,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SE,Sweden,SE11,Stockholm County,NUTS 2,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+SE,Sweden,SE22,Sydsverige,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SE,Sweden,SE331,Umeå Municipality ,CITY CORE,Local Authorities,Third batch,(Signatory),Mission signatory,Umeå,Umeå,nuts_2
+SE,Sweden,SE311,Värmland County,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+SE,Sweden,SE331,Västerbotten County,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+SE,Sweden,SE23,Västsverige,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SI,Slovenia,SI042,Gorenjska Region,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+SI,Slovenia,SI043,Goriška Region,NUTS 3,Regions,ADDED since 7,(Signatory),Mission signatory,,,nuts_2
+SI,Slovenia,SI031,Občina Lendava,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Lendava/Lendva,,nuts_2
+SI,Slovenia,SI03,Vzhodna Slovenija,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SI,Slovenia,SI04,Zahodna Slovenija,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SK,Slovakia,SK032,Banská Bystrica Self Governing Region,NUTS 3,Regions,Second Batch,(Signatory),Mission signatory,,,nuts_2
+SK,Slovakia,SK01,Bratislavský kraj,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SK,Slovakia,SK042,Košice Self Governing Region,NUTS 3,Regions,First Batch,(Signatory),Mission signatory,,,nuts_2
+SK,Slovakia,SK032,Lucenek Municipality ,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,Svätý Anton,,nuts_2
+SK,Slovakia,SK03,Stredné Slovensko,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SK,Slovakia,SK021,Trnava Self Governing Region,NUTS 3,Regions,Third batch,(Signatory),Mission signatory,,,nuts_2
+SK,Slovakia,SK04,Východné Slovensko,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SK,Slovakia,SK02,Západné Slovensko,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+SK,Slovakia,SK031,Žilina Self Governing Region,NUTS 3,Regions,Second batch,(Signatory),Mission signatory,,,nuts_2
+TR,Türkiye,TR62,"Adana, Mersin",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TRA2,"Ağrı, Kars, Iğdır, Ardahan",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR51,Ankara,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR61,"Antalya, Isparta, Burdur",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR32,"Aydın, Denizli, Muğla",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR22,"Balıkesir, Çanakkale",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR323,Bodrum Municipality,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,,,nuts_2
+TR,Türkiye,TR411,Bursa Metropolitan Municipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,,,nuts_2
+TR,Türkiye,TR41,"Bursa, Eskişehir, Bilecik",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TRA1,"Erzurum, Erzincan, Bayburt",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR412,Eskisehir Metropolitan Muncipality,LAU,Local Authorities,Third batch,(Signatory),Mission signatory,,,nuts_2
+TR,Türkiye,TRC1,"Gaziantep, Adıyaman, Kilis",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR63,"Hatay, Kahramanmaraş, Osmaniye",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR10,İstanbul,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR100,İstanbul Metropolitan Municipality,LAU,Local Authorities,Second batch,(Signatory),Mission signatory,,,nuts_2
+TR,Türkiye,TR31,İzmir,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR310,Izmir City,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,,,nuts_2
+TR,Türkiye,TR421,Izmit Municipality,LAU,Local Authorities,First Batch,(Signatory),Mission signatory,,,nuts_2
+TR,Türkiye,TR82,"Kastamonu, Çankırı, Sinop",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR72,"Kayseri, Sivas, Yozgat",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR71,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR42,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR52,"Konya, Karaman",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TRB1,"Malatya, Elazığ, Bingöl, Tunceli",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR33,"Manisa, Afyonkarahisar, Kütahya, Uşak",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TRC3,"Mardin, Batman, Şırnak, Siirt",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR83,"Samsun, Tokat, Çorum, Amasya",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TRC2,"Şanlıurfa, Diyarbakır",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR21,"Tekirdağ, Edirne, Kırklareli",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR90,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TRB2,"Van, Muş, Bitlis, Hakkari",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+TR,Türkiye,TR81,"Zonguldak, Karabük, Bartın",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKH2,Bedfordshire and Hertfordshire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKJ1,"Berkshire, Buckinghamshire and Oxfordshire",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKD6,Cheshire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKK3,Cornwall and Isles of Scilly,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKD1,Cumbria,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKF1,Derbyshire and Nottinghamshire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKK4,Devon,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKK2,Dorset and Somerset,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKH1,East Anglia,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKL2,East Wales,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKE1,East Yorkshire and Northern Lincolnshire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKM7,Eastern Scotland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKH3,Essex,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKK1,"Gloucestershire, Wiltshire and Bristol/Bath area",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKD3,Greater Manchester,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKJ3,Hampshire and Isle of Wight,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKG1,"Herefordshire, Worcestershire and Warwickshire",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKM6,Highlands and Islands,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKI4,Inner London — East,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKI3,Inner London — West,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKJ4,Kent,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKD4,Lancashire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKF2,"Leicestershire, Rutland and Northamptonshire",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKF3,Lincolnshire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKD7,Merseyside,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKM5,North Eastern Scotland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKE2,North Yorkshire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKN0,Northern Ireland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKC2,Northumberland and Tyne and Wear,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKI5,Outer London — East and North East,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKI6,Outer London — South,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKI7,Outer London — West and North West,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKG2,Shropshire and Staffordshire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKE3,South Yorkshire,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKM9,Southern Scotland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKJ2,"Surrey, East and West Sussex",NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKC1,Tees Valley and Durham,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKM8,West Central Scotland,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKG3,West Midlands,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKL1,West Wales and The Valleys,NUTS 2,Regions,,,Non-signatory,,,nuts_2
+UK,United Kingdom,UKE4,West Yorkshire,NUTS 2,Regions,,,Non-signatory,,,nuts_2

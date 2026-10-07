@@ -1,0 +1,871 @@
+source_row,project_id,project_name,authority_name,country_iso,territory_code,territory_label,code_system,nuts_level,region_role,is_signatory,project_type,cleaning_category,territory_id
+2,101093921,Adaptation AGORA,Dresden,DE,DED2,Dresden,NUTS 2024,2.0,,False,RIA,ok,T0143
+3,101093921,Adaptation AGORA,Rome,IT,ITI43,Roma,NUTS 2024,3.0,,False,RIA,ok,T0440
+4,101093921,Adaptation AGORA,Malmö,SE,SE22,Sydsverige,NUTS 2024,2.0,,True,RIA,ok,T0305
+5,101112737,ARCADIA,Lower Austria,AT,AT12,Niederösterreich,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0288
+6,101112737,ARCADIA,Plovdiv,BG,BG421,Plovdiv,NUTS 2024,3.0,Replicator,False,IA,ok,T0397
+7,101112737,ARCADIA,Krapina-zagorje county,HR,HR064,Krapinsko-zagorska županija,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0250
+8,101112737,ARCADIA,Zagreb City,HR,HR050,Grad Zagreb,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0602
+9,101112737,ARCADIA,Funen,DK,DK031,Fyn,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0177
+10,101112737,ARCADIA,Emilia-Romagna Region,IT,ITH5,Emilia-Romagna,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0157
+11,101112737,ARCADIA,Centru Region,RO,RO12,Centru,NUTS 2024,2.0,Replicator,False,IA,ok,T0101
+12,101112737,ARCADIA,Podravska,SI,SI032,Podravska,NUTS 2024,3.0,Replicator,True,IA,ok,T0400
+13,101112737,ARCADIA,Skåne Region,SE,SE224,Skåne län,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0475
+14,101037424,ARSINOE,Black Sea Region,BG|RO|TR,,,none,,Demonstrator,False,IA,revisar,T0063
+15,101037424,ARSINOE,Limassol,CY,CY000,Kýpros,NUTS 2024,3.0,Demonstrator,False,IA,error,T0279
+16,101037424,ARSINOE,Southern Denmark Region,DK,DK03,Syddanmark,NUTS 2024,2.0,Demonstrator,True,IA,nivel,T0486
+17,101037424,ARSINOE,Main River Basin,DE,DE712,"Frankfurt am Main, Kreisfreie Stadt",NUTS 2024,3.0,Demonstrator,False,IA,ok,T0303
+18,101037424,ARSINOE,Athens Metropolitan Area,EL,EL304,Notios Tomeas Athinon,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0036
+19,101037424,ARSINOE,Mediterranean Ports Piraeus,EL,EL302,Dytikos Tomeas Athinon,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0317
+20,101037424,ARSINOE,Sardinia Region,IT,ITG2,Sardegna,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0455
+21,101037424,ARSINOE,Ohrid/Prespa Lakes,MK,MK002,Источен,SR 2024,3.0,Demonstrator,False,IA,ok,T0374
+22,101037424,ARSINOE,Canary Islands,ES,ES70,Canarias,NUTS 2024,2.0,Demonstrator,True,IA,nivel,T0085
+23,101037424,ARSINOE,Municipality of Valencia,ES,ES523,Valencia/València,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0338
+24,101037424,ARSINOE,Torbay and Devon County,UK,UKK42,Torbay,NUTS 2021 (UK),3.0,Demonstrator,False,IA,error,T0530
+24,101037424,ARSINOE,Torbay and Devon County,UK,UKK43,Devon CC,NUTS 2021 (UK),3.0,Demonstrator,False,IA,error,T0530
+25,101157643,AURORA,Tallinn City,EE,EE001,Põhja-Eesti,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0509
+26,101157643,AURORA,Porti,FI,FI198,Keski-Suomi,NUTS 2024,3.0,Demonstrator,False,IA,version,T0403
+27,101157643,AURORA,Tampere City,FI,FI19B,Pirkanmaa,NUTS 2024,3.0,Demonstrator,True,IA,version,T0510
+28,101157643,AURORA,Jūrmala,LV,LV00A,Rīga,NUTS 2024,3.0,Replicator,False,IA,version,T0233
+29,101157643,AURORA,Riga,LV,LV00A,Rīga,NUTS 2024,3.0,Demonstrator,False,IA,version,T0436
+30,101157643,AURORA,Joniskis,LT,LT026,Šiaulių apskritis,NUTS 2024,3.0,Replicator,False,IA,error,T0231
+31,101157643,AURORA,Klaipeda City,LT,LT023,Klaipėdos apskritis,NUTS 2024,3.0,Replicator,True,IA,ok,T0242
+32,101157643,AURORA,Vilnius City,LT,LT011,Vilniaus apskritis,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0572
+33,101214563,BLOSSOM,Aarhus City,DK,DK042,Østjylland,NUTS 2024,3.0,Replicator,True,IA,ok,T0003
+34,101214563,BLOSSOM,Parma,IT,ITH52,Parma,NUTS 2024,3.0,Replicator,False,IA,ok,T0388
+35,101214563,BLOSSOM,Kielce city,PL,PL721,Kielecki,NUTS 2024,3.0,Demonstrator,False,IA,error,T0241
+36,101214563,BLOSSOM,Alentejo,PT,PT1C,Alentejo,NUTS 2024,2.0,Replicator,True,IA,version,T0013
+37,101214563,BLOSSOM,Lisbon Metropolitan Area,PT,PT1A0,Grande Lisboa,NUTS 2024,3.0,Demonstrator,True,IA,version,T0281
+37,101214563,BLOSSOM,Lisbon Metropolitan Area,PT,PT1B0,Península de Setúbal,NUTS 2024,3.0,Demonstrator,True,IA,version,T0281
+38,101214563,BLOSSOM,Birmingham City,UK,UKG31,Birmingham,NUTS 2021 (UK),3.0,Demonstrator,False,IA,ok,T0062
+39,101214563,BLOSSOM,London Borough of Newham,UK,UKI4,Inner London — East,NUTS 2021 (UK),2.0,Replicator,False,IA,ok,T0286
+40,101112731,CARDIMED,Carinthi,AT,AT21,Kärnten,NUTS 2024,2.0,Replicator,False,IA,ok,T0087
+41,101112731,CARDIMED,Adriatic Croatia,HR,HR03,Jadranska Hrvatska,NUTS 2024,2.0,Replicator,False,IA,ok,T0004
+42,101112731,CARDIMED,Nicosia Municipality,CY,CY000,Kýpros,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0352
+43,101112731,CARDIMED,Provence-Alpes-Côte d'Azur Region,FR,FRL,Provence-Alpes-Côte d’Azur,NUTS 2024,1.0,Demonstrator,True,IA,ok,T0411
+44,101112731,CARDIMED,Central Greece Region,EL,EL6,Kentriki Elláda,NUTS 2024,1.0,Demonstrator,False,IA,ok,T0095
+45,101112731,CARDIMED,North - South Aegean,EL,EL41,Voreio Aigaio,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0359
+46,101112731,CARDIMED,Alghero,IT,ITG2D,Sassari,NUTS 2024,3.0,Demonstrator,False,IA,version,T0016
+47,101112731,CARDIMED,Sicily Region,IT,ITG1,Sicilia,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0467
+48,101112731,CARDIMED,Catania,IT,ITG17,Catania,NUTS 2024,3.0,Replicator,True,IA,ok,T0092
+49,101112731,CARDIMED,Malta,MT,MT001,Malta,NUTS 2024,3.0,Replicator,False,IA,ok,T0306
+50,101112731,CARDIMED,Alentejo,PT,PT1C,Alentejo,NUTS 2024,2.0,Demonstrator,True,IA,version,T0013
+51,101112731,CARDIMED,Aragon,ES,ES24,Aragón,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0029
+52,101112731,CARDIMED,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,Replicator,True,IA,ok,T0091
+53,101112731,CARDIMED,Murcia City,ES,ES620,Murcia,NUTS 2024,3.0,Replicator,True,IA,ok,T0340
+54,101112731,CARDIMED,Izmit Municipality,TR,TR310,İzmir,SR 2024,3.0,Demonstrator,True,IA,ok,T0230
+55,101093864,CLIMAAX,Municipality of Belsh,AL,AL02,Qender,SR 2024,2.0,,False,Cascade,ok,T0326
+56,101093864,CLIMAAX,Municipality of Libohove,AL,AL03,Jug,SR 2024,2.0,,False,Cascade,ok,T0330
+57,101093864,CLIMAAX,Neum Municipality,BA,BA01,Federacija Bosne i Hercegovine,SR 2024,2.0,,False,Cascade,no_nuts,T0350
+58,101093864,CLIMAAX,"Dobrich Municipality, Dobrich district",BG,BG332,Dobrich,NUTS 2024,3.0,,False,Cascade,ok,T0141
+59,101093864,CLIMAAX,Garmen Muncipality,BG,BG413,Blagoevgrad,NUTS 2024,3.0,,True,Cascade,ok,T0183
+60,101093864,CLIMAAX,Svoge Muncipality,BG,BG41,Yugozapaden,NUTS 2024,2.0,,True,Cascade,ok,T0506
+61,101093864,CLIMAAX,Pernik Muncipality,BG,BG414,Pernik,NUTS 2024,3.0,,True,Cascade,ok,T0393
+62,101093864,CLIMAAX,Pomorie Municipality,BG,BG34,Yugoiztochen,NUTS 2024,2.0,,False,Cascade,ok,T0401
+63,101093864,CLIMAAX,Ruse Municipality,BG,BG323,Ruse,NUTS 2024,3.0,,False,Cascade,ok,T0445
+64,101093864,CLIMAAX,Silistra Municipality,BG,BG325,Silistra,NUTS 2024,3.0,,False,Cascade,ok,T0470
+65,101093864,CLIMAAX,Kula Norinska municipality,HR,HR037,Dubrovačko-neretvanska županija,NUTS 2024,3.0,,False,Cascade,ok,T0256
+66,101093864,CLIMAAX,Nicosia Municipality,CY,CY000,Kýpros,NUTS 2024,3.0,,True,Cascade,ok,T0352
+67,101093864,CLIMAAX,Southwest Finland Region,FI,FI1C1,Varsinais-Suomi,NUTS 2024,3.0,,True,Cascade,ok,T0490
+68,101093864,CLIMAAX,Département du Nord,FR,FRE11,Nord,NUTS 2024,3.0,,False,Cascade,ok,T0145
+69,101093864,CLIMAAX,Hauts-de-France Region,FR,FRE,Hauts-de-France,NUTS 2024,1.0,,True,Cascade,ok,T0211
+70,101093864,CLIMAAX,Region Reunion,FR,FRY4,La Réunion,NUTS 2024,2.0,,False,Cascade,ok,T0426
+71,101093864,CLIMAAX,District of St. Wendel,DE,DEC06,St. Wendel,NUTS 2024,3.0,,False,Cascade,ok,T0139
+72,101093864,CLIMAAX,Crete Region,EL,EL43,Kriti,NUTS 2024,2.0,,True,Cascade,ok,T0127
+73,101093864,CLIMAAX,Dimos Egaleo,EL,EL302,Dytikos Tomeas Athinon,NUTS 2024,3.0,,False,Cascade,ok,T0137
+74,101093864,CLIMAAX,Municipality of Mantoudi - Limni - Agia Anna,EL,EL64,Sterea Elláda,NUTS 2024,2.0,,False,Cascade,ok,T0331
+75,101093864,CLIMAAX,Municipality of Rafina-Pikermi,EL,EL306,Dytiki Attiki,NUTS 2024,3.0,,False,Cascade,ok,T0335
+76,101093864,CLIMAAX,Municipality of Xanthi,EL,EL512,Xanthi,NUTS 2024,3.0,,False,Cascade,ok,T0339
+77,101093864,CLIMAAX,Perifereia Attikis,EL,EL30,Attiki,NUTS 2024,2.0,,False,Cascade,ok,T0392
+78,101093864,CLIMAAX,Region of Central Macedonia,EL,EL52,Kentriki Makedonia,NUTS 2024,2.0,,False,Cascade,ok,T0429
+79,101093864,CLIMAAX,Region of Eastern Macedonia & Thrace,EL,EL51,"Anatoliki Makedonia, Thraki",NUTS 2024,2.0,,True,Cascade,ok,T0430
+80,101093864,CLIMAAX,Municipality of Budapest,HU,HU110,Budapest,NUTS 2024,3.0,,True,Cascade,ok,T0328
+81,101093864,CLIMAAX,Louth,IE,IE062,Mid-East,NUTS 2024,3.0,,True,Cascade,ok,T0287
+82,101093864,CLIMAAX,Tipperary County,IE,IE051,Mid-West,NUTS 2024,3.0,,True,Cascade,ok,T0527
+83,101093864,CLIMAAX,Gemeinde Bozen,IT,ITH10,Bolzano-Bozen,NUTS 2024,3.0,,False,Cascade,ok,T0186
+84,101093864,CLIMAAX,Marche,IT,ITI3,Marche,NUTS 2024,2.0,,True,Cascade,ok,T0309
+85,101093864,CLIMAAX,Mountain Community of Valchiavenna,IT,ITC44,Sondrio,NUTS 2024,3.0,,True,Cascade,ok,T0325
+86,101093864,CLIMAAX,Molise Region,IT,ITF2,Molise,NUTS 2024,2.0,,True,Cascade,ok,T0323
+87,101093864,CLIMAAX,Unione dei Comuni della Valcerrina,IT,ITC18,Alessandria,NUTS 2024,3.0,,False,Cascade,ok,T0548
+88,101093864,CLIMAAX,Municipality of Bijelo Polje,ME,ME000,Црна Гора,SR 2024,3.0,,False,Cascade,ok,T0327
+89,101093864,CLIMAAX,Meteorological Department Curaçao,NL,,,none,,,False,Cascade,no_nuts,T0319
+90,101093864,CLIMAAX,Lodzkie Region,PL,PL711,Miasto Łódź,NUTS 2024,3.0,,False,Cascade,ok,T0284
+91,101093864,CLIMAAX,CIMAT - Comunidade Intermunicipal do Alto Tâmega e Barroso,PT,PT11B,Alto Tâmega e Barroso,NUTS 2024,3.0,,False,Cascade,ok,T0081
+92,101093864,CLIMAAX,CIMRL - Comunidade Intermunicipal da Região de Leiria,PT,PT193,Região de Leiria,NUTS 2024,3.0,,False,Cascade,ok,T0082
+93,101093864,CLIMAAX,Comunidade Intermunicipal da Beira Baixa,PT,PT195,Beira Baixa,NUTS 2024,3.0,,False,Cascade,nivel,T0120
+94,101093864,CLIMAAX,Comunidade Intermunicipal das Beiras e Serra da Estrela,PT,PT196,Beiras e Serra da Estrela,NUTS 2024,3.0,,False,Cascade,nivel,T0121
+95,101093864,CLIMAAX,Comunidade Intermunicipal das Região de Aveiro,PT,PT191,Região de Aveiro,NUTS 2024,3.0,,False,Cascade,ok,T0122
+96,101093864,CLIMAAX,Baixo Alentejo Intermunicipal Community,PT,PT1C2,Baixo Alentejo,NUTS 2024,3.0,,True,Cascade,error,T0049
+97,101093864,CLIMAAX,Viana do Castelo,PT,PT11,Norte,NUTS 2024,2.0,,True,Cascade,ok,T0568
+98,101093864,CLIMAAX,Cluj Metropolitan area,RO,RO11,Nord-Vest,NUTS 2024,2.0,,True,Cascade,ok,T0115
+99,101093864,CLIMAAX,National Institute of Hydrology and Water Management,RO,RO321,Bucureşti,NUTS 2024,3.0,,False,Cascade,ok,T0347
+100,101093864,CLIMAAX,Targu Secuiesc Municipality,RO,RO12,Centru,NUTS 2024,2.0,,True,Cascade,ok,T0511
+101,101093864,CLIMAAX,Provincial Secretariat for Urban Planning and Environmental Protection,RS,RS12,Регион Војводине,SR 2024,2.0,,False,Cascade,no_nuts,T0415
+102,101093864,CLIMAAX,Banská Bystrica Self Governing Region,SK,SK03,Stredné Slovensko,NUTS 2024,2.0,,True,Cascade,ok,T0051
+103,101093864,CLIMAAX,Košice Self Governing Region,SK,SK042,Košický kraj,NUTS 2024,3.0,,True,Cascade,nivel,T0249
+104,101093864,CLIMAAX,Trnava Self Governing Region,SK,SK021,Trnavský kraj,NUTS 2024,3.0,,True,Cascade,ok,T0537
+105,101093864,CLIMAAX,Žilina Region,SK,SK031,Žilinský kraj,NUTS 2024,3.0,,True,Cascade,ok,T0618
+106,101093864,CLIMAAX,Pososki razvojni center,SI,SI043,Goriška,NUTS 2024,3.0,,False,Cascade,ok,T0405
+107,101093864,CLIMAAX,Ayuntamiento de Huércal-Overa,ES,ES611,Almería,NUTS 2024,3.0,,False,Cascade,ok,T0045
+108,101093864,CLIMAAX,Diputación Provincial de Alicante,ES,ES521,Alicante/Alacant,NUTS 2024,3.0,,False,Cascade,ok,T0138
+109,101093864,CLIMAAX,Municipality of Quart de Poblet,ES,ES523,Valencia/València,NUTS 2024,3.0,,False,Cascade,ok,T0334
+110,101093864,CLIMAAX,Murcia Region,ES,ES62,Región de Murcia,NUTS 2024,2.0,,True,Cascade,ok,T0341
+111,101093864,CLIMAAX,Håbo kommun,SE,SE211,Jönköpings län,NUTS 2024,3.0,,False,Cascade,ok,T0217
+112,101093864,CLIMAAX,Länsstyrelsen Västernorrland,SE,SE321,Västernorrlands län,NUTS 2024,3.0,,False,Cascade,ok,T0298
+113,101093864,CLIMAAX,Skåne,SE,SE224,Skåne län,NUTS 2024,3.0,,False,Cascade,ok,T0474
+114,101093864,CLIMAAX,Antalya Metropolitan Municipality,TR,TR611,Antalya,SR 2024,3.0,,False,Cascade,ok,T0027
+115,101093864,CLIMAAX,Aydın İli Damizlik Siğir Yetiştiricileri Birliği,TR,TR32,"Aydın, Denizli, Muğla",SR 2024,2.0,,False,Cascade,ok,T0044
+116,101093864,CLIMAAX,Hopa Belediyesi,TR,TR905,Artvin,SR 2024,3.0,,False,Cascade,ok,T0215
+117,101093864,CLIMAAX,Izmir City,TR,TR31,İzmir,SR 2024,2.0,,True,Cascade,ok,T0229
+118,101093864,CLIMAAX,Marmara Municipalities Union,TR,TR2,Batı Marmara,SR 2024,1.0,,False,Cascade,ok,T0311
+119,101093864,CLIMAAX,Mersin Metropolitan Municipality,TR,TR622,Mersin,SR 2024,3.0,,False,Cascade,ok,T0318
+120,101093864,CLIMAAX,Şanlıurfa Metropolitan Municipality,TR,TRC2,"Şanlıurfa, Diyarbakır",SR 2024,2.0,,True,Cascade,ok,T0616
+121,101093864,CLIMAAX,Bilhorod Dnistrovskyi,UA,UA422,Білгород-Дністровський Район,SR 2024,3.0,,False,Cascade,ok,T0061
+122,101139637,ClimaGen,Tartu City,EE,EE008,Lõuna-Eesti,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0512
+123,101139637,ClimaGen,Thessaloniki Municipality,EL,EL522,Thessaloniki,NUTS 2024,3.0,Replicator,True,IA,ok,T0523
+124,101139637,ClimaGen,Torino,IT,ITC11,Torino,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0531
+125,101139637,ClimaGen,Eindhoven,NL,NL414,Zuidoost-Noord-Brabant,NUTS 2024,3.0,Replicator,False,IA,ok,T0155
+126,101139637,ClimaGen,Trondheim,NO,NO060,Trøndelag/Trööndelage,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0539
+127,101139637,ClimaGen,Gdansk,PL,PL633,Trójmiejski,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0184
+128,101139637,ClimaGen,Cluj-Napoca Municipality,RO,RO113,Cluj,NUTS 2024,3.0,Replicator,True,IA,error,T0116
+129,101139637,ClimaGen,Belgrade,RS,RS110,Београдска област,SR 2024,3.0,Demonstrator,False,IA,ok,T0058
+130,101139637,ClimaGen,Gernika,ES,ES213,Bizkaia,NUTS 2024,3.0,Replicator,False,IA,ok,T0188
+131,101156281,ClimaPannonia,Koprivnica Križevci County,HR,HR063,Koprivničko-križevačka županija,NUTS 2024,3.0,Replicator,True,IA,ok,T0244
+132,101156281,ClimaPannonia,Southern Moravia,CZ,CZ064,Jihomoravský kraj,NUTS 2024,3.0,Replicator,False,IA,ok,T0487
+133,101156281,ClimaPannonia,Fertőd,HU,HU221,Győr-Moson-Sopron,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0167
+134,101156281,ClimaPannonia,Püspökszilágy,HU,HU120,Pest,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0420
+135,101156281,ClimaPannonia,Szarvas Municipality,HU,HU332,Békés,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0507
+136,101156281,ClimaPannonia,Rusca,RO,RO422,Caraş-Severin,NUTS 2024,3.0,Replicator,False,IA,ok,T0444
+137,101156281,ClimaPannonia,Autonomous Province of Vojvodina,RS,RS127,Сремска област,SR 2024,3.0,Demonstrator,True,IA,ok,T0040
+138,101156281,ClimaPannonia,Temerin,RS,RS127,Сремска област,SR 2024,3.0,Demonstrator,False,IA,ok,T0516
+139,101156281,ClimaPannonia,Bački Jarak,RS,RS123,Јужнобачка област,SR 2024,3.0,Demonstrator,False,IA,ok,T0055
+140,101156281,ClimaPannonia,Rimski Šančevi,RS,RS123,Јужнобачка област,SR 2024,3.0,Demonstrator,False,IA,no_nuts,T0437
+141,101094021,CLIMAS,Municipality of Edermünde,DE,DE735,Schwalm-Eder-Kreis,NUTS 2024,3.0,,False,RIA,ok,T0329
+142,101094021,CLIMAS,Chios,EL,EL413,Chios,NUTS 2024,3.0,,False,RIA,ok,T0107
+143,101094021,CLIMAS,Riga,LV,LV00A,Rīga,NUTS 2024,3.0,,False,RIA,version,T0436
+144,101094021,CLIMAS,Vilnius City,LT,LT011,Vilniaus apskritis,NUTS 2024,3.0,,True,RIA,ok,T0572
+145,101094021,CLIMAS,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,,True,RIA,ok,T0091
+146,101112705,CLIMATEFIT,Flanders,BE,BE2,Vlaams Gewest,NUTS 2024,1.0,,True,RIA,ok,T0172
+147,101112705,CLIMATEFIT,Bohemia Region,CZ,CZ02,Střední Čechy,NUTS 2024,2.0,,False,RIA,ok,T0068
+148,101112705,CLIMATEFIT,Strasbourg City,FR,FRF11,Bas-Rhin,NUTS 2024,3.0,,True,RIA,version,T0500
+149,101112705,CLIMATEFIT,Lombardia Region,IT,ITC4,Lombardia,NUTS 2024,2.0,,False,RIA,ok,T0285
+150,101112705,CLIMATEFIT,Porto Municipality,PT,PT11A,Área Metropolitana do Porto,NUTS 2024,3.0,,True,RIA,ok,T0404
+151,101112705,CLIMATEFIT,Centru Region,RO,RO12,Centru,NUTS 2024,2.0,,False,RIA,ok,T0101
+152,101112705,CLIMATEFIT,Podravska,SI,SI032,Podravska,NUTS 2024,3.0,,True,RIA,ok,T0400
+153,101112705,CLIMATEFIT,Province of Àvila,ES,ES411,Ávila,NUTS 2024,3.0,,False,RIA,ok,T0414
+154,101112728,ClimEmpower,Osijek-Baranja County,HR,HR025,Osječko-baranjska županija,NUTS 2024,3.0,,False,RIA,ok,T0376
+155,101112728,ClimEmpower,Troodos,CY,CY0,Kýpros,NUTS 2024,1.0,,False,RIA,ok,T0540
+156,101112728,ClimEmpower,Central Greece Region,EL,EL64,Sterea Elláda,NUTS 2024,2.0,,False,RIA,version,T0095
+157,101112728,ClimEmpower,Sicily Region,IT,ITG1,Sicilia,NUTS 2024,2.0,,True,RIA,ok,T0467
+158,101112728,ClimEmpower,Western Costa del Sol,ES,ES61,Andalucía,NUTS 2024,2.0,,False,RIA,ok,T0595
+159,101212947,CLIMINVEST,Amathouda Municipality,CY,CY000,Kýpros,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0020
+160,101212947,CLIMINVEST,"Tavropos, Thessaly",EL,EL61,Thessalia,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0514
+161,101212947,CLIMINVEST,Trikala - Astiki Anaptyxi Trikalon,EL,EL611,"Karditsa, Trikala",NUTS 2024,3.0,Replicator,False,IA,ok,T0536
+162,101212947,CLIMINVEST,Ventimiglia,IT,ITC31,Imperia,NUTS 2024,3.0,Replicator,False,IA,ok,T0566
+163,101212947,CLIMINVEST,Principality of Asturias,ES,ES120,Asturias,NUTS 2024,3.0,Replicator,True,IA,ok,T0410
+164,101213138,COAST-SCAPES,Magdalena Estuary,CO,,,none,,Demonstrator,False,IA,no_nuts,T0302
+165,101213138,COAST-SCAPES,Wadden Sea,DK,DK03,Syddanmark,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0581
+166,101213138,COAST-SCAPES,Venice lagoon,IT,ITH35,Venezia,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0565
+167,101213138,COAST-SCAPES,Mar Chica Lagoon,MA,,,none,,Demonstrator,False,IA,no_nuts,T0308
+168,101213138,COAST-SCAPES,Inhambane Bay,MZ,,,none,,Demonstrator,False,IA,no_nuts,T0221
+169,101213138,COAST-SCAPES,Aveiro lagoon,PT,PT191,Região de Aveiro,NUTS 2024,3.0,Replicator,False,IA,ok,T0043
+170,101213138,COAST-SCAPES,Danube delta,RO,RO225,Tulcea,NUTS 2024,3.0,Replicator,False,IA,ok,T0134
+171,101213138,COAST-SCAPES,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,Replicator,True,IA,ok,T0091
+172,101213138,COAST-SCAPES,Murcia Region,ES,ES620,Murcia,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0341
+173,101213138,COAST-SCAPES,Danube delta,UA,,,none,,Replicator,False,IA,no_nuts,T0135
+174,101139598,Commit2Green,Sarajevo,BA,BA01,Federacija Bosne i Hercegovine,SR 2024,2.0,Demonstrator,False,IA,no_nuts,T0454
+175,101139598,Commit2Green,Vejle,DK,DK032,Sydjylland,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0563
+176,101139598,Commit2Green,Mannheim,DE,DE126,"Mannheim, Stadtkreis",NUTS 2024,3.0,Demonstrator,False,IA,ok,T0307
+177,101139598,Commit2Green,Thessaloniki Municipality,EL,EL522,Thessaloniki,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0523
+178,101139598,Commit2Green,Milan,IT,ITC4C,Milano,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0322
+179,101139598,Commit2Green,The Hague,NL,NL361,Agglomeratie ’s-Gravenhage,NUTS 2024,3.0,Demonstrator,False,IA,version,T0520
+180,101139598,Commit2Green,Warsaw City,PL,PL911,Miasto Warszawa,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0584
+181,101139598,Commit2Green,Barcelona Metropolitan Area,ES,ES511,Barcelona,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0052
+182,101112972,DesirMED,Split City,HR,HR035,Splitsko-dalmatinska županija,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0492
+183,101112972,DesirMED,Cyprus,CY,CY000,Kýpros,NUTS 2024,3.0,Replicator,False,IA,ok,T0129
+184,101112972,DesirMED,Provence-Alpes-Côte d'Azur Region,FR,FRL,Provence-Alpes-Côte d’Azur,NUTS 2024,1.0,Replicator,True,IA,ok,T0411
+185,101112972,DesirMED,Region of Eastern Macedonia & Thrace,EL,EL51,"Anatoliki Makedonia, Thraki",NUTS 2024,2.0,Replicator,True,IA,ok,T0430
+186,101112972,DesirMED,Potenza Province,IT,ITF51,Potenza,NUTS 2024,3.0,Replicator,True,IA,ok,T0406
+187,101112972,DesirMED,Sardinia Region,IT,ITG2,Sardegna,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0455
+188,101112972,DesirMED,Comunidade Intermunicipal das Beiras e Serra da Estrela,PT,PT196,Beiras e Serra da Estrela,NUTS 2024,3.0,Demonstrator,False,IA,version,T0121
+189,101112972,DesirMED,Municipality of Valencia,ES,ES523,Valencia/València,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0338
+190,101156076,DRYAD,Pays des Cévennes,FR,FRJ12,Gard,NUTS 2024,3.0,Replicator,False,IA,ok,T0389
+191,101156076,DRYAD,Aetoloakarnania,EL,EL631,Aitoloakarnania,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0005
+192,101156076,DRYAD,Sardinia Region,IT,ITG2,Sardegna,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0455
+193,101156076,DRYAD,Tuscany,IT,ITI1,Toscana,NUTS 2024,2.0,Replicator,False,IA,ok,T0543
+194,101156076,DRYAD,Alentejo,PT,PT1C,Alentejo,NUTS 2024,2.0,Demonstrator,True,IA,version,T0013
+195,101156076,DRYAD,Andalusia,ES,ES61,Andalucía,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0024
+196,101156076,DRYAD,Castilla y León,ES,ES41,Castilla y León,NUTS 2024,2.0,Replicator,True,IA,ok,T0090
+197,101156076,DRYAD,Extremadura,ES,ES43,Extremadura,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0165
+198,101214343,FairFuture,Zagreb City,HR,HR050,Grad Zagreb,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0602
+199,101214343,FairFuture,Centre-Val de Loire Region,FR,FRB0,Centre — Val de Loire,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0099
+200,101214343,FairFuture,Hamburg city,DE,DE600,Hamburg,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0209
+201,101214343,FairFuture,Thessaloniki Municipality,EL,EL522,Thessaloniki,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0523
+202,101214343,FairFuture,Castilla y León,ES,ES41,Castilla y León,NUTS 2024,2.0,Replicator,True,IA,ok,T0090
+203,101214343,FairFuture,Vinnystsia,UA,UA51,Вінницька Область,SR 2024,2.0,Replicator,False,IA,ok,T0573
+204,101112860,FARCLIMATE,Vlore Municipality,AL,AL035,Vlorë,SR 2024,3.0,,False,RIA,no_nuts,T0575
+205,101112860,FARCLIMATE,North Savo,FI,FI1DB,Pohjois-Savo,NUTS 2024,3.0,,False,RIA,version,T0363
+206,101112860,FARCLIMATE,Aleppo Pine in Provence,FR,FRL02,Hautes-Alpes,NUTS 2024,3.0,,False,RIA,formato,T0014
+206,101112860,FARCLIMATE,Aleppo Pine in Provence,FR,FRL03,Alpes-Maritimes,NUTS 2024,3.0,,False,RIA,formato,T0014
+206,101112860,FARCLIMATE,Aleppo Pine in Provence,FR,FRL04,Bouches-du-Rhône,NUTS 2024,3.0,,False,RIA,formato,T0014
+206,101112860,FARCLIMATE,Aleppo Pine in Provence,FR,FRL05,Var,NUTS 2024,3.0,,False,RIA,formato,T0014
+206,101112860,FARCLIMATE,Aleppo Pine in Provence,FR,FRL06,Vaucluse,NUTS 2024,3.0,,False,RIA,formato,T0014
+207,101112860,FARCLIMATE,Thessaloniki Municipality,EL,EL522,Thessaloniki,NUTS 2024,3.0,,True,RIA,version,T0523
+208,101112860,FARCLIMATE,Kozani,EL,EL531,"Grevena, Kozani",NUTS 2024,3.0,,False,RIA,ok,T0248
+209,101112860,FARCLIMATE,Emilia-Romagna Region,IT,ITH5,Emilia-Romagna,NUTS 2024,2.0,,True,RIA,ok,T0157
+210,101112860,FARCLIMATE,Potenza Province,IT,ITF51,Potenza,NUTS 2024,3.0,,True,RIA,ok,T0406
+211,101112860,FARCLIMATE,Sicily Region,IT,ITG1,Sicilia,NUTS 2024,2.0,,True,RIA,ok,T0467
+212,101112860,FARCLIMATE,Torino,IT,ITC11,Torino,NUTS 2024,3.0,,False,RIA,ok,T0531
+213,101112860,FARCLIMATE,Tuscany,IT,ITI1,Toscana,NUTS 2024,2.0,,False,RIA,ok,T0543
+214,101112860,FARCLIMATE,Aveiro,PT,PT191,Região de Aveiro,NUTS 2024,3.0,,False,RIA,error,T0042
+215,101112860,FARCLIMATE,Fundão,PT,PT196,Beiras e Serra da Estrela,NUTS 2024,3.0,,True,RIA,error,T0176
+216,101112860,FARCLIMATE,Setúbal Peninsula,PT,PT1B0,Península de Setúbal,NUTS 2024,3.0,,False,RIA,version,T0465
+217,101112860,FARCLIMATE,Paredes de Coura,PT,PT111,Alto Minho,NUTS 2024,3.0,,False,RIA,ok,T0385
+218,101112860,FARCLIMATE,Ilfov,RO,RO322,Ilfov,NUTS 2024,3.0,,False,RIA,ok,T0218
+219,101112860,FARCLIMATE,Gorenjska Region,SI,SI042,Gorenjska,NUTS 2024,3.0,,True,RIA,ok,T0193
+220,101112860,FARCLIMATE,Alava,ES,ES211,Araba/Álava,NUTS 2024,3.0,,False,RIA,ok,T0011
+221,101112860,FARCLIMATE,Cáceres,ES,ES432,Cáceres,NUTS 2024,3.0,,False,RIA,ok,T0130
+222,101112860,FARCLIMATE,Cádiz,ES,ES612,Cádiz,NUTS 2024,3.0,,False,RIA,ok,T0131
+223,101112860,FARCLIMATE,Arousa,ES,ES114,Pontevedra,NUTS 2024,3.0,,False,RIA,ok,T0034
+224,101112860,FARCLIMATE,Malaga City,ES,ES617,Málaga,NUTS 2024,3.0,,True,RIA,ok,T0304
+225,101112860,FARCLIMATE,"Pontevedra: Ría de Pontevedra, Ría de Arousa",ES,ES114,Pontevedra,NUTS 2024,3.0,,False,RIA,ok,T0402
+226,101112860,FARCLIMATE,Soria,ES,ES417,Soria,NUTS 2024,3.0,,False,RIA,error,T0481
+227,101112860,FARCLIMATE,Ourense,ES,ES113,Ourense,NUTS 2024,3.0,,False,RIA,ok,T0381
+228,101157447,GENESIS,Santiago,CV,,,none,,Demonstrator,False,IA,no_nuts,T0453
+229,101157447,GENESIS,Guadeloupe,FR,FRY10,Guadeloupe,NUTS 2024,3.0,Replicator,False,IA,ok,T0205
+230,101157447,GENESIS,Martinique,FR,FRY20,Martinique,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0312
+231,101157447,GENESIS,Reunion,FR,FRY40,La Réunion,NUTS 2024,3.0,Replicator,False,IA,ok,T0434
+232,101157447,GENESIS,Faial,PT,PT200,Região Autónoma dos Açores,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0166
+233,101157447,GENESIS,Graciosa,PT,PT200,Região Autónoma dos Açores,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0196
+234,101157447,GENESIS,Madeira,PT,PT300,Região Autónoma da Madeira,NUTS 2024,3.0,Replicator,False,IA,ok,T0300
+235,101157447,GENESIS,Santa Maria,PT,PT200,Região Autónoma dos Açores,NUTS 2024,3.0,Replicator,False,IA,ok,T0452
+236,101157447,GENESIS,El Hierro,ES,ES703,El Hierro,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0156
+237,101157447,GENESIS,Gran Canaria,ES,ES705,Gran Canaria,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0198
+238,101157447,GENESIS,La Palma,ES,ES707,La Palma,NUTS 2024,3.0,Replicator,False,IA,version,T0261
+239,101214172,GRACE,Bucklige Welt - Wechselland,AT,AT122,Niederösterreich-Süd,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0078
+240,101214172,GRACE,Limfjorden / Aalborg,DK,DK050,Nordjylland,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0280
+241,101214172,GRACE,Thessaly,EL,EL61,Thessalia,NUTS 2024,2.0,Replicator,True,IA,ok,T0524
+242,101214172,GRACE,Mayo / Atlantic Seaboard North,IE,IE042,West,NUTS 2024,3.0,Replicator,False,IA,ok,T0315
+243,101214172,GRACE,Cavallino-Treporti,IT,ITH35,Venezia,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0093
+244,101214172,GRACE,Vidzeme Planning Region,LV,LV00C,Vidzeme,NUTS 2024,3.0,Replicator,True,IA,version,T0569
+245,101214172,GRACE,Baixo Alentejo Intermunicipal Community,PT,PT1C2,Baixo Alentejo,NUTS 2024,3.0,Demonstrator,True,IA,version,T0049
+246,101214172,GRACE,Žilina Region,SK,SK031,Žilinský kraj,NUTS 2024,3.0,Replicator,True,IA,ok,T0618
+247,101214172,GRACE,Västerbotten County,SE,SE33,Övre Norrland,NUTS 2024,2.0,Replicator,True,IA,ok,T0580
+248,101214172,GRACE,Zalishchyky,UA,UA522,Тернопільський Район,SR 2024,3.0,Replicator,False,IA,ok,T0603
+249,101139730,GreenInCities,Helsinki-Uusimaa,FI,FI1B1,Helsinki-Uusimaa,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0212
+250,101139730,GreenInCities,Athens,EL,EL303,Kentrikos Tomeas Athinon,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0035
+251,101139730,GreenInCities,Hersonissos,EL,EL431,Irakleio,NUTS 2024,3.0,Replicator,False,IA,ok,T0213
+252,101139730,GreenInCities,Pecs,HU,HU231,Baranya,NUTS 2024,3.0,Replicator,False,IA,error,T0390
+253,101139730,GreenInCities,Reykjavik,IS,IS001,Höfuðborgarsvæði,NUTS 2024,3.0,Replicator,False,IA,ok,T0435
+254,101139730,GreenInCities,Cork City,IE,IE053,South-West,NUTS 2024,3.0,Replicator,True,IA,ok,T0125
+255,101139730,GreenInCities,Prato,IT,ITI15,Prato,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0407
+256,101139730,GreenInCities,Bristonas,LT,LT022,Kauno apskritis,NUTS 2024,3.0,Replicator,False,IA,ok,T0074
+257,101139730,GreenInCities,Matosinhos,PT,PT11A,Área Metropolitana do Porto,NUTS 2024,3.0,Replicator,True,IA,ok,T0313
+258,101139730,GreenInCities,Nova Gorica,SI,SI043,Goriška,NUTS 2024,3.0,Demonstrator,False,IA,error,T0370
+259,101139730,GreenInCities,Barcelona Metropolitan Area,ES,ES511,Barcelona,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0052
+260,101157458,healthRiskADAPT,Grenoble,FR,FRK24,Isère,NUTS 2024,3.0,Replicator,False,IA,ok,T0204
+261,101157458,healthRiskADAPT,Lyon,FR,FRK26,Rhône,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0297
+262,101157458,healthRiskADAPT,Athens,EL,EL303,Kentrikos Tomeas Athinon,NUTS 2024,3.0,Replicator,False,IA,ok,T0035
+263,101157458,healthRiskADAPT,Milan,IT,ITC4C,Milano,NUTS 2024,3.0,Replicator,False,IA,ok,T0322
+264,101157458,healthRiskADAPT,Naples,IT,ITF33,Napoli,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0346
+265,101157458,healthRiskADAPT,Zeist,NL,NL350,Utrecht,NUTS 2024,3.0,Demonstrator,False,IA,version,T0605
+266,101157458,healthRiskADAPT,Oslo,NO,NO081,Oslo,NUTS 2024,3.0,Demonstrator,False,IA,version,T0377
+267,101157458,healthRiskADAPT,Trondheim,NO,NO060,Trøndelag/Trööndelage,NUTS 2024,3.0,Replicator,False,IA,version,T0539
+268,101157458,healthRiskADAPT,Gdansk,PL,PL633,Trójmiejski,NUTS 2024,3.0,Replicator,False,IA,ok,T0184
+269,101157458,healthRiskADAPT,Gothernburg Metropolitan Area,SE,SE232,Västra Götalands län,NUTS 2024,3.0,Replicator,True,IA,ok,T0195
+270,101157458,healthRiskADAPT,Arlesheim,CH,CH032,Basel-Landschaft,NUTS 2024,3.0,Replicator,False,IA,error,T0032
+271,101157458,healthRiskADAPT,Bern,CH,CH021,Bern / Berne,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0060
+272,101093806,ICARIA,Salzburg Region,AT,AT32,Salzburg,NUTS 2024,2.0,,False,RIA,ok,T0450
+273,101093806,ICARIA,South Aegean Region,EL,EL42,Notio Aigaio,NUTS 2024,2.0,,True,RIA,ok,T0482
+274,101093806,ICARIA,Barcelona Metropolitan Area,ES,ES511,Barcelona,NUTS 2024,3.0,,True,RIA,ok,T0052
+275,101037084,IMPETUS,Berlin-Brandenburg,DE,DE30,Berlin,NUTS 2024,2.0,Demonstrator,False,IA,formato,T0059
+275,101037084,IMPETUS,Berlin-Brandenburg,DE,DE40,Brandenburg,NUTS 2024,2.0,Demonstrator,False,IA,formato,T0059
+276,101037084,IMPETUS,Attiki,EL,DE300,Berlin,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0038
+277,101037084,IMPETUS,Valle el Laghi,IT,ITH20,Trento,NUTS 2024,3.0,Demonstrator,False,IA,error,T0559
+278,101037084,IMPETUS,Zemgale Region,LV,LV009,Zemgale,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0606
+279,101037084,IMPETUS,Zeeland,NL,NL34,Zeeland,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0604
+280,101037084,IMPETUS,Troms & Finnmark County,NO,NO072,Troms/Romsa/Tromssa,NUTS 2024,3.0,Demonstrator,True,IA,error,T0538
+280,101037084,IMPETUS,Troms & Finnmark County,NO,NO073,Finnmark/Finnmárku/Finmarkku,NUTS 2024,3.0,Demonstrator,True,IA,error,T0538
+281,101037084,IMPETUS,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,Demonstrator,True,IA,nivel,T0091
+282,101156653,ISMED-CLIM,Limassol,CY,CY000,Kýpros,NUTS 2024,3.0,Demonstrator,False,IA,error,T0279
+283,101156653,ISMED-CLIM,Nicosia Municipality,CY,CY000,Kýpros,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0352
+284,101156653,ISMED-CLIM,Athens,EL,EL303,Kentrikos Tomeas Athinon,NUTS 2024,3.0,Replicator,False,IA,ok,T0035
+285,101156653,ISMED-CLIM,Korydallos,EL,EL301,Voreios Tomeas Athinon,NUTS 2024,3.0,Replicator,False,IA,ok,T0245
+286,101156653,ISMED-CLIM,Trikala,EL,EL611,"Karditsa, Trikala",NUTS 2024,3.0,Demonstrator,False,IA,ok,T0535
+287,101156653,ISMED-CLIM,Catania,IT,ITG17,Catania,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0092
+288,101156653,ISMED-CLIM,Rome,IT,ITI43,Roma,NUTS 2024,3.0,Replicator,False,IA,ok,T0440
+289,101156653,ISMED-CLIM,Agueda,PT,PT191,Região de Aveiro,NUTS 2024,3.0,Replicator,False,IA,error,T0009
+290,101156653,ISMED-CLIM,Lisbon Metropolitan Area,PT,PT1A0,Grande Lisboa,NUTS 2024,3.0,Demonstrator,True,IA,version,T0281
+290,101156653,ISMED-CLIM,Lisbon Metropolitan Area,PT,PT1B0,Península de Setúbal,NUTS 2024,3.0,Demonstrator,True,IA,version,T0281
+291,101156653,ISMED-CLIM,Barcelona Metropolitan Area,ES,ES511,Barcelona,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0052
+292,101156653,ISMED-CLIM,León,ES,ES413,León,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0276
+293,101212990,JUST4CARE,Zagreb City,HR,HR050,Grad Zagreb,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0602
+294,101212990,JUST4CARE,Municipality of Budapest,HU,HU110,Budapest,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0328
+295,101212990,JUST4CARE,Las Rozas de Madrid,ES,ES300,Madrid,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0270
+296,101212990,JUST4CARE,Çankaya,TR,TR51,Ankara,SR 2024,2.0,Demonstrator,False,IA,ok,T0611
+297,101214666,JustREACH,Zagreb City,HR,HR050,Grad Zagreb,NUTS 2024,3.0,,True,RIA,ok,T0602
+298,101214666,JustREACH,Nouvelle-Aquitaine Region,FR,FRI,Nouvelle-Aquitaine,NUTS 2024,1.0,,True,RIA,ok,T0369
+299,101214666,JustREACH,Lake Constance Region,DE,DE147,Bodenseekreis,NUTS 2024,3.0,,False,RIA,formato,T0265
+299,101214666,JustREACH,Lake Constance Region,DE,DE148,Ravensburg,NUTS 2024,3.0,,False,RIA,formato,T0265
+300,101214666,JustREACH,Athens,EL,EL303,Kentrikos Tomeas Athinon,NUTS 2024,3.0,,False,RIA,ok,T0035
+301,101214666,JustREACH,Belfast,UK,UKN06,Belfast,NUTS 2021 (UK),3.0,,False,RIA,ok,T0057
+302,101215174,JUSTSAFE,Hamburg city,DE,DE600,Hamburg,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0209
+303,101215174,JUSTSAFE,Chios,EL,EL413,Chios,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0107
+304,101215174,JUSTSAFE,Egaleo,EL,EL302,Dytikos Tomeas Athinon,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0152
+305,101215174,JUSTSAFE,Smiltene,LV,LV00C,Vidzeme,NUTS 2024,3.0,Replicator,False,IA,version,T0478
+306,101215174,JUSTSAFE,Constanta,RO,RO223,Constanţa,NUTS 2024,3.0,Replicator,False,IA,ok,T0124
+307,101215174,JUSTSAFE,Žilina Region,SK,SK031,Žilinský kraj,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0618
+308,101215174,JUSTSAFE,Amposta,ES,ES514,Tarragona,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0022
+309,101215174,JUSTSAFE,Hatay Province,TR,TR631,Hatay,SR 2024,3.0,Demonstrator,False,IA,ok,T0210
+310,101215174,JUSTSAFE,Osmaniye Province,TR,TR633,Osmaniye,SR 2024,3.0,Replicator,False,IA,ok,T0378
+311,101112781,LAND4CLIMATE,Lafnitz River Catchment,AT,AT22,Steiermark,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0264
+312,101112781,LAND4CLIMATE,Weinviertel,AT,AT125,Weinviertel,NUTS 2024,3.0,Replicator,False,IA,ok,T0585
+313,101112781,LAND4CLIMATE,Bohemian Switzerland and Krasna Lipa,CZ,CZ042,Ústecký kraj,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0069
+314,101112781,LAND4CLIMATE,Ruzova,CZ,CZ042,Ústecký kraj,NUTS 2024,3.0,Replicator,False,IA,ok,T0446
+315,101112781,LAND4CLIMATE,Stare Krecany,CZ,CZ042,Ústecký kraj,NUTS 2024,3.0,Replicator,False,IA,ok,T0495
+316,101112781,LAND4CLIMATE,Euskirchen County,DE,DEA28,Euskirchen,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0163
+317,101112781,LAND4CLIMATE,Vulkaneifel,DE,DEB24,Vulkaneifel,NUTS 2024,3.0,Replicator,False,IA,error,T0578
+318,101112781,LAND4CLIMATE,Eastern Po Valley and Po Delta,IT,ITH56,Ferrara,NUTS 2024,3.0,Replicator,True,IA,ok,T0150
+319,101112781,LAND4CLIMATE,Emilia-Romagna Region,IT,ITH5,Emilia-Romagna,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0157
+320,101112781,LAND4CLIMATE,Lower Timiş River Catchment,RO,RO421,Arad,NUTS 2024,3.0,Replicator,False,IA,ok,T0289
+321,101112781,LAND4CLIMATE,Upper Timiş River,RO,RO421,Arad,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0552
+322,101112781,LAND4CLIMATE,Košice Self Governing Region,SK,SK042,Košický kraj,NUTS 2024,3.0,Replicator,True,IA,ok,T0249
+323,101112781,LAND4CLIMATE,Rovana River Basin,SK,SK032,Banskobystrický kraj,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0443
+324,101157707,Med-IREN,Burgas,BG,BG341,Burgas,NUTS 2024,3.0,Replicator,True,IA,ok,T0079
+325,101157707,Med-IREN,Larnaka,CY,CY000,Kýpros,NUTS 2024,3.0,Replicator,False,IA,ok,T0269
+326,101157707,Med-IREN,Helsinki-Uusimaa,FI,FI1B1,Helsinki-Uusimaa,NUTS 2024,3.0,Replicator,True,IA,ok,T0212
+327,101157707,Med-IREN,Provence-Alpes-Côte d'Azur Region,FR,FRL,Provence-Alpes-Côte d’Azur,NUTS 2024,1.0,Demonstrator,True,IA,ok,T0411
+328,101157707,Med-IREN,Crete Region,EL,EL432,Lasithi,NUTS 2024,3.0,Replicator,True,IA,ok,T0127
+329,101157707,Med-IREN,Egaleo,EL,EL302,Dytikos Tomeas Athinon,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0152
+330,101157707,Med-IREN,"Ischia, Campania Region",IT,ITF33,Napoli,NUTS 2024,3.0,Demonstrator,False,IA,error,T0224
+331,101157707,Med-IREN,Tuscany,IT,ITI1,Toscana,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0543
+332,101157707,Med-IREN,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,Demonstrator,True,IA,nivel,T0091
+333,101093854,MIRACA,TEN-T Corridors - Trans European,EU,,,none,,,False,RIA,no_nuts,T0508
+334,101093854,MIRACA,Greece,EL,EL,Elláda,NUTS 2024,0.0,,False,RIA,ok,T0202
+335,101093854,MIRACA,Netherlands,NL,NL,Nederland,NUTS 2024,0.0,,False,RIA,ok,T0349
+336,101093854,MIRACA,Slovenia,SI,SI0,Slovenija,NUTS 2024,1.0,,False,RIA,formato,T0477
+337,101093854,MIRACA,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,,True,RIA,ok,T0091
+338,101155958,MOUNTADAPT,Andorra,AD,,,none,,Replicator,False,IA,no_nuts,T0025
+339,101155958,MOUNTADAPT,Tirol,AT,AT33,Tirol,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0529
+340,101155958,MOUNTADAPT,Grenoble,FR,FRK24,Isère,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0204
+341,101155958,MOUNTADAPT,Hamburg City,DE,DE600,Hamburg,NUTS 2024,3.0,Replicator,True,IA,ok,T0208
+342,101155958,MOUNTADAPT,Alba Iulia,RO,RO121,Alba,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0012
+343,101155958,MOUNTADAPT,Timiș County,RO,RO424,Timiş,NUTS 2024,3.0,Replicator,False,IA,error,T0525
+344,101155958,MOUNTADAPT,Selnica,SI,SI032,Podravska,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0462
+345,101112876,MountResilience,Tirol,AT,AT33,Tirol,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0529
+346,101112876,MountResilience,Gabrovo,BG,BG322,Gabrovo,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0179
+347,101112876,MountResilience,Primorje-Gorski Kotar County,HR,HR031,Primorsko-goranska županija,NUTS 2024,3.0,Replicator,False,IA,ok,T0409
+348,101112876,MountResilience,Lapland,FI,FI1D7,Lappi,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0266
+349,101112876,MountResilience,Friuli Venezia Giulia Autonomous Region,IT,ITH4,Friuli-Venezia Giulia,NUTS 2024,2.0,Replicator,True,IA,ok,T0175
+350,101112876,MountResilience,Piemonte Region,IT,ITC1,Piemonte,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0394
+351,101112876,MountResilience,Subcarpathian Region,PL,PL82,Podkarpackie,NUTS 2024,2.0,Replicator,False,IA,ok,T0502
+352,101112876,MountResilience,Râu Sadului,RO,RO126,Sibiu,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0448
+353,101112876,MountResilience,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,Replicator,True,IA,ok,T0091
+354,101112876,MountResilience,Valais,CH,CH012,Valais / Wallis,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0556
+355,101112859,NATALIE,Blue Horizon Limburg,BE,NL42,Limburg (NL),NUTS 2024,2.0,Demonstrator,False,IA,ok,T0067
+356,101112859,NATALIE,Grand Est Region,FR,FRF,Grand Est,NUTS 2024,1.0,Replicator,True,IA,error,T0199
+357,101112859,NATALIE,Nouvelle-Aquitaine Region,FR,FRI,Nouvelle-Aquitaine,NUTS 2024,1.0,Demonstrator,True,IA,ok,T0369
+358,101112859,NATALIE,Lelantine Plain,EL,EL642,Evvoia,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0272
+359,101112859,NATALIE,The Icelandic Association of Local Authorities,IS,IS0,Ísland,NUTS 2024,1.0,Replicator,True,IA,ok,T0521
+360,101112859,NATALIE,Veneto,IT,ITH3,Veneto,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0564
+361,101112859,NATALIE,Zemgale Region,LV,LV009,Zemgale,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0606
+362,101112859,NATALIE,Lithuania,LT,LT,Lietuva,NUTS 2024,0.0,Replicator,False,IA,nivel,T0282
+363,101112859,NATALIE,Troms & Finnmark County,NO,NO072,Troms/Romsa/Tromssa,NUTS 2024,3.0,Demonstrator,True,IA,version,T0538
+363,101112859,NATALIE,Troms & Finnmark County,NO,NO073,Finnmark/Finnmárku/Finmarkku,NUTS 2024,3.0,Demonstrator,True,IA,version,T0538
+364,101112859,NATALIE,Bucharest Children World Park,RO,RO321,Bucureşti,NUTS 2024,3.0,Replicator,False,IA,ok,T0077
+365,101112859,NATALIE,Vacaresti Natural Park,RO,RO321,Bucureşti,NUTS 2024,3.0,Demonstrator,False,IA,error,T0555
+366,101112859,NATALIE,Balearic Islands,ES,ES53,Illes Balears,NUTS 2024,2.0,Replicator,True,IA,ok,T0050
+367,101112859,NATALIE,Canary Islands,ES,ES70,Canarias,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0085
+368,101157448,NATURE-DEMO,Lattenbach,AT,AT33,Tirol,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0271
+369,101157448,NATURE-DEMO,Globocica,MK,MK007,Североисточен,SR 2024,3.0,Demonstrator,False,IA,ok,T0191
+370,101157448,NATURE-DEMO,Brasov Municipality,RO,RO122,Braşov,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0073
+371,101157448,NATURE-DEMO,Zvolen,SK,SK032,Banskobystrický kraj,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0609
+372,101157448,NATURE-DEMO,Ljubljana,SI,SI041,Osrednjeslovenska,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0283
+373,101112836,NBRACER,East Flanders,BE,BE23,Prov. Oost-Vlaanderen,NUTS 2024,2.0,Replicator,False,IA,ok,T0147
+374,101112836,NBRACER,West Flanders,BE,BE25,Prov. West-Vlaanderen,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0590
+375,101112836,NBRACER,Central Denmark Region,DK,DK04,Midtjylland,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0094
+376,101112836,NBRACER,Nouvelle-Aquitaine Region,FR,FRI,Nouvelle-Aquitaine,NUTS 2024,1.0,Demonstrator,True,IA,ok,T0369
+377,101112836,NBRACER,Friesland Province,NL,NL12,Friesland (NL),NUTS 2024,2.0,Replicator,True,IA,ok,T0174
+378,101112836,NBRACER,Cávado Intermunicipal Community,PT,PT112,Cávado,NUTS 2024,3.0,Replicator,True,IA,ok,T0132
+379,101112836,NBRACER,Porto Municipality,PT,PT11A,Área Metropolitana do Porto,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0404
+380,101112836,NBRACER,Cantabria,ES,ES130,Cantabria,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0086
+381,101214414,NURISH,Athienou Municipality,CY,CY000,Kýpros,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0037
+382,101214414,NURISH,Ranua & Pudasjarvi,FI,FI1D7,Lappi,NUTS 2024,3.0,Demonstrator,False,IA,error,T0422
+382,101214414,NURISH,Ranua & Pudasjarvi,FI,FI1D9,Pohjois-Pohjanmaa,NUTS 2024,3.0,Demonstrator,False,IA,error,T0422
+383,101214414,NURISH,Skiathos Municipality,EL,EL511,Evros,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0473
+384,101214414,NURISH,West Lesvos,EL,EL411,"Lesvos, Limnos",NUTS 2024,3.0,Replicator,False,IA,ok,T0591
+385,101214414,NURISH,Valle di Comino,IT,ITI45,Frosinone,NUTS 2024,3.0,Replicator,False,IA,ok,T0558
+386,101214414,NURISH,Malaga City,ES,ES617,Málaga,NUTS 2024,3.0,Replicator,True,IA,ok,T0304
+387,101214414,NURISH,Essex (Uttlesford & Epping),UK,UKH3,Essex,NUTS 2021 (UK),2.0,Demonstrator,False,IA,ok,T0159
+388,101214414,NURISH,Oxfordshire (Cherwell & West Oxfordshire),UK,UKJ1,"Berkshire, Buckinghamshire and Oxfordshire",NUTS 2021 (UK),2.0,Replicator,False,IA,ok,T0382
+389,101214414,NURISH,Northern Region of Malta,MT,MT001,Malta,NUTS 2024,3.0,Replicator,False,IA,ok,T0368
+390,101112919,OCEANIDS,Coastal Finland,FI,FI1B1,Helsinki-Uusimaa,NUTS 2024,3.0,,False,RIA,formato,T0117
+390,101112919,OCEANIDS,Coastal Finland,FI,FI1C2,Kanta-Häme,NUTS 2024,3.0,,False,RIA,formato,T0117
+390,101112919,OCEANIDS,Coastal Finland,FI,FI1D7,Lappi,NUTS 2024,3.0,,False,RIA,formato,T0117
+390,101112919,OCEANIDS,Coastal Finland,FI,FI1D8,Kainuu,NUTS 2024,3.0,,False,RIA,formato,T0117
+391,101112919,OCEANIDS,Brittany Region,FR,FRH,Bretagne,NUTS 2024,1.0,,True,RIA,version,T0075
+392,101112919,OCEANIDS,Free Hanseatic City of Bremen,DE,DE501,"Bremen, Kreisfreie Stadt",NUTS 2024,3.0,,True,RIA,ok,T0173
+393,101112919,OCEANIDS,Crete Region,EL,EL43,Kriti,NUTS 2024,2.0,,True,RIA,ok,T0127
+394,101112919,OCEANIDS,Greek Islands,EL,EL4,"Nisia Aigaiou, Kriti",NUTS 2024,1.0,,False,RIA,ok,T0203
+395,101112919,OCEANIDS,Azores,PT,PT2,Região Autónoma dos Açores,NUTS 2024,1.0,,False,RIA,ok,T0047
+396,101112919,OCEANIDS,Malaga City,ES,ES617,Málaga,NUTS 2024,3.0,,True,RIA,ok,T0304
+397,101093942,Pathways2Resilience,Selenice,AL,AL035,Vlorë,SR 2024,3.0,,False,Cascade,ok,T0461
+398,101093942,Pathways2Resilience,Ararat Community,AM,,,none,,,False,Cascade,no_nuts,T0030
+399,101093942,Pathways2Resilience,Herzegovina-Neretva Canton,BA,BA01,Federacija Bosne i Hercegovine,SR 2024,2.0,,False,Cascade,no_nuts,T0214
+400,101093942,Pathways2Resilience,Istria County,HR,HR036,Istarska županija,NUTS 2024,3.0,,False,Cascade,ok,T0225
+401,101093942,Pathways2Resilience,Aradippou,CY,CY000,Kýpros,NUTS 2024,3.0,,True,Cascade,ok,T0028
+402,101093942,Pathways2Resilience,Přerov,CZ,CZ07,Střední Morava,NUTS 2024,2.0,,False,Cascade,ok,T0421
+403,101093942,Pathways2Resilience,Zlín Region,CZ,CZ072,Zlínský kraj,NUTS 2024,3.0,,False,Cascade,ok,T0608
+404,101093942,Pathways2Resilience,Region Zealand,DK,DK02,Sjælland,NUTS 2024,2.0,,True,Cascade,ok,T0427
+405,101093942,Pathways2Resilience,Saue Rural Municipality,EE,EE001,Põhja-Eesti,NUTS 2024,3.0,,True,Cascade,ok,T0457
+406,101093942,Pathways2Resilience,Kymenlaakso,FI,FI1C7,Kymenlaakso,NUTS 2024,3.0,,True,Cascade,ok,T0258
+407,101093942,Pathways2Resilience,Île-de-France Region,FR,FR10,Ile-de-France,NUTS 2024,2.0,,True,Cascade,ok,T0612
+408,101093942,Pathways2Resilience,Normandy Region,FR,FRD,Normandie,NUTS 2024,1.0,,True,Cascade,version,T0358
+409,101093942,Pathways2Resilience,Free Hanseatic City of Bremen,DE,DE501,"Bremen, Kreisfreie Stadt",NUTS 2024,3.0,,True,Cascade,ok,T0173
+410,101093942,Pathways2Resilience,Ithaki,EL,EL623,"Ithaki, Kefallinia",NUTS 2024,3.0,,False,Cascade,ok,T0228
+411,101093942,Pathways2Resilience,Region of Western Greece,EL,EL63,Dytiki Elláda,NUTS 2024,2.0,,False,Cascade,ok,T0431
+412,101093942,Pathways2Resilience,Municipality of Budapest,HU,HU110,Budapest,NUTS 2024,3.0,,True,Cascade,ok,T0328
+413,101093942,Pathways2Resilience,Donegal,IE,IE041,Border,NUTS 2024,3.0,,False,Cascade,ok,T0142
+414,101093942,Pathways2Resilience,Tipperary County,IE,IE051,Mid-West,NUTS 2024,3.0,,True,Cascade,ok,T0527
+415,101093942,Pathways2Resilience,Marche,IT,ITI3,Marche,NUTS 2024,2.0,,True,Cascade,error,T0309
+416,101093942,Pathways2Resilience,Umbria Region,IT,ITI2,Umbria,NUTS 2024,2.0,,False,Cascade,ok,T0547
+417,101093942,Pathways2Resilience,Klaipeda City,LT,LT023,Klaipėdos apskritis,NUTS 2024,3.0,,True,Cascade,ok,T0242
+418,101093942,Pathways2Resilience,Cetinje,ME,ME000,Црна Гора,SR 2024,3.0,,False,Cascade,ok,T0103
+419,101093942,Pathways2Resilience,Arnhem-Nijmegen,NL,NL226,Arnhem/Nijmegen,NUTS 2024,3.0,,True,Cascade,ok,T0033
+420,101093942,Pathways2Resilience,Gelderland Province,NL,NL22,Gelderland,NUTS 2024,2.0,,True,Cascade,ok,T0185
+421,101093942,Pathways2Resilience,Municipality of Sveti Nikole,MK,MK001,Вардарски,SR 2024,3.0,,False,Cascade,no_nuts,T0337
+422,101093942,Pathways2Resilience,Warmińsko-Mazurskie Voivodship,PL,PL62,Warmińsko-mazurskie,NUTS 2024,2.0,,False,Cascade,ok,T0583
+423,101093942,Pathways2Resilience,Alentejo,PT,PT1C,Alentejo,NUTS 2024,2.0,,True,Cascade,ok,T0013
+424,101093942,Pathways2Resilience,Terras de Trás-os-Montes,PT,PT11E,Terras de Trás-os-Montes,NUTS 2024,3.0,,False,Cascade,ok,T0517
+425,101093942,Pathways2Resilience,West Region Romania,RO,RO42,Vest,NUTS 2024,2.0,,False,Cascade,ok,T0593
+426,101093942,Pathways2Resilience,The Arilje Municipality,RS,RS211,Златиборска област,SR 2024,3.0,,False,Cascade,no_nuts,T0519
+427,101093942,Pathways2Resilience,Prešov Region,SK,SK041,Prešovský kraj,NUTS 2024,3.0,,False,Cascade,ok,T0408
+428,101093942,Pathways2Resilience,Gorenjska Region,SI,SI042,Gorenjska,NUTS 2024,3.0,,True,Cascade,ok,T0193
+429,101093942,Pathways2Resilience,Castilla y León,ES,ES41,Castilla y León,NUTS 2024,2.0,,True,Cascade,ok,T0090
+430,101093942,Pathways2Resilience,Malaga City,ES,ES617,Málaga,NUTS 2024,3.0,,True,Cascade,ok,T0304
+431,101093942,Pathways2Resilience,Skåne,SE,SE224,Skåne län,NUTS 2024,3.0,,False,Cascade,ok,T0474
+432,101093942,Pathways2Resilience,Şanlıurfa Metropolitan Municipality,TR,TRC22,Diyarbakır,SR 2024,3.0,,True,Cascade,ok,T0616
+433,101093942,Pathways2Resilience,Greater London,UK,UKI,London,NUTS 2021 (UK),1.0,,False,Cascade,ok,T0200
+434,101093942,Pathways2Resilience,Greater Manchester,UK,UKD3,Greater Manchester,NUTS 2021 (UK),2.0,,False,Cascade,ok,T0201
+435,101093942,Pathways2Resilience,Tirana Region,AL,AL011,Dibër,SR 2024,3.0,,False,Cascade,ok,T0528
+436,101093942,Pathways2Resilience,Kotayk region,AM,,,none,,,False,Cascade,no_nuts,T0247
+437,101093942,Pathways2Resilience,Region Elsbeere-Wienerwald,AT,AT121,Mostviertel-Eisenwurzen,NUTS 2024,3.0,,False,Cascade,revisar,T0424
+438,101093942,Pathways2Resilience,Styria,AT,AT22,Steiermark,NUTS 2024,2.0,,False,Cascade,ok,T0501
+439,101093942,Pathways2Resilience,Commune d'Ixelles,BE,BE100,Arr. de Bruxelles-Capitale/Arr. Brussel-Hoofdstad,NUTS 2024,3.0,,False,Cascade,ok,T0119
+440,101093942,Pathways2Resilience,Etterbeek,BE,BE100,Arr. de Bruxelles-Capitale/Arr. Brussel-Hoofdstad,NUTS 2024,3.0,,False,Cascade,ok,T0161
+441,101093942,Pathways2Resilience,Walloon Region,BE,BE3,Région wallonne,NUTS 2024,1.0,,True,Cascade,ok,T0582
+442,101093942,Pathways2Resilience,Blidinje Nature Park and Surrounding Mountain Communities,BA,BA01,Federacija Bosne i Hercegovine,SR 2024,2.0,,False,Cascade,no_nuts,T0066
+443,101093942,Pathways2Resilience,Sarajevo,BA,BA01,Federacija Bosne i Hercegovine,SR 2024,2.0,,False,Cascade,no_nuts,T0454
+444,101093942,Pathways2Resilience,Dobrich Municipality,BG,BG332,Dobrich,NUTS 2024,3.0,,False,Cascade,ok,T0140
+445,101093942,Pathways2Resilience,Silistra,BG,BG325,Silistra,NUTS 2024,3.0,,False,Cascade,ok,T0469
+446,101093942,Pathways2Resilience,Križevci Prigorje,HR,HR063,Koprivničko-križevačka županija,NUTS 2024,3.0,,True,Cascade,ok,T0255
+447,101093942,Pathways2Resilience,Limassol,CY,CY000,Kýpros,NUTS 2024,3.0,,False,Cascade,error,T0279
+448,101093942,Pathways2Resilience,Podipsko Region,CZ,CZ020,Středočeský kraj,NUTS 2024,3.0,,False,Cascade,ok,T0399
+449,101093942,Pathways2Resilience,Aalborg Municipality,DK,DK050,Nordjylland,NUTS 2024,3.0,,False,Cascade,ok,T0002
+450,101093942,Pathways2Resilience,Egedal Municipality,DK,DK013,Nordsjælland,NUTS 2024,3.0,,False,Cascade,error,T0153
+451,101093942,Pathways2Resilience,West Estonian Archipelago,EE,EE004,Lääne-Eesti,NUTS 2024,3.0,,False,Cascade,ok,T0588
+452,101093942,Pathways2Resilience,Ostrobothnia,FI,FI19A,Pohjanmaa,NUTS 2024,3.0,,True,Cascade,version,T0380
+453,101093942,Pathways2Resilience,Département du Nord,FR,FRE11,Nord,NUTS 2024,3.0,,False,Cascade,version,T0145
+454,101093942,Pathways2Resilience,Nouvelle-Aquitaine Region,FR,FRI,Nouvelle-Aquitaine,NUTS 2024,1.0,,True,Cascade,ok,T0369
+455,101093942,Pathways2Resilience,La Réunion,FR,FRY40,La Réunion,NUTS 2024,3.0,,False,Cascade,ok,T0263
+456,101093942,Pathways2Resilience,Kakheti,GE,,,none,,,False,Cascade,no_nuts,T0236
+457,101093942,Pathways2Resilience,Tusheti,GE,,,none,,,False,Cascade,no_nuts,T0544
+458,101093942,Pathways2Resilience,Upper Svaneti,GE,,,none,,,False,Cascade,no_nuts,T0550
+459,101093942,Pathways2Resilience,Kreis Lippe,DE,DEA45,Lippe,NUTS 2024,3.0,,False,Cascade,ok,T0251
+460,101093942,Pathways2Resilience,Luckau,DE,DE406,Dahme-Spreewald,NUTS 2024,3.0,,False,Cascade,error,T0294
+461,101093942,Pathways2Resilience,Worms,DE,DEB39,"Worms, Kreisfreie Stadt",NUTS 2024,3.0,,False,Cascade,error,T0598
+462,101093942,Pathways2Resilience,North Aegean,EL,EL41,Voreio Aigaio,NUTS 2024,2.0,,False,Cascade,ok,T0360
+463,101093942,Pathways2Resilience,Region of Attica,EL,EL30,Attiki,NUTS 2024,2.0,,False,Cascade,ok,T0428
+464,101093942,Pathways2Resilience,East of Iceland,IS,IS002,Landsbyggð,NUTS 2024,3.0,,False,Cascade,ok,T0149
+465,101093942,Pathways2Resilience,Emilia-Romagna Region,IT,ITH5,Emilia-Romagna,NUTS 2024,2.0,,True,Cascade,ok,T0157
+466,101093942,Pathways2Resilience,Municipality of Pescara,IT,ITF13,Pescara,NUTS 2024,3.0,,False,Cascade,ok,T0332
+467,101093942,Pathways2Resilience,Sardinia Region,IT,ITG2,Sardegna,NUTS 2024,2.0,,True,Cascade,ok,T0455
+468,101093942,Pathways2Resilience,Municipality of Podujeva,XK,XK001,Prishtinë/Priština,SR 2024,3.0,,False,Cascade,no_nuts,T0333
+469,101093942,Pathways2Resilience,Alytus Region,LT,LT021,Alytaus apskritis,NUTS 2024,3.0,,True,Cascade,error,T0018
+470,101093942,Pathways2Resilience,Cimișlia,MD,,,none,,,False,Cascade,no_nuts,T0109
+471,101093942,Pathways2Resilience,Nisporeni Municipality,MD,,,none,,,False,Cascade,no_nuts,T0354
+472,101093942,Pathways2Resilience,Twente,NL,NL213,Twente,NUTS 2024,3.0,,False,Cascade,ok,T0545
+473,101093942,Pathways2Resilience,Northeastern Statistical Region,MK,MK004,Југоисточен,SR 2024,3.0,,False,Cascade,ok,T0366
+474,101093942,Pathways2Resilience,Akershus County,NO,NO084,Akershus,NUTS 2024,3.0,,False,Cascade,version,T0010
+475,101093942,Pathways2Resilience,Region Kristiansand,NO,NO092,Agder,NUTS 2024,3.0,,False,Cascade,ok,T0425
+476,101093942,Pathways2Resilience,Braga Municipality,PT,PT112,Cávado,NUTS 2024,3.0,,True,Cascade,ok,T0072
+477,101093942,Pathways2Resilience,Região de Aveiro,PT,PT191,Região de Aveiro,NUTS 2024,3.0,,False,Cascade,version,T0433
+478,101093942,Pathways2Resilience,North-West Region,RO,RO11,Nord-Vest,NUTS 2024,2.0,,False,Cascade,ok,T0365
+479,101093942,Pathways2Resilience,Teleorman County,RO,RO317,Teleorman,NUTS 2024,3.0,,False,Cascade,ok,T0515
+480,101093942,Pathways2Resilience,Southern Serbia region,RS,RS22,Регион Јужне и Источне Србије,SR 2024,2.0,,False,Cascade,no_nuts,T0488
+481,101093942,Pathways2Resilience,Kosice region,SK,SK042,Košický kraj,NUTS 2024,3.0,,True,Cascade,ok,T0246
+482,101093942,Pathways2Resilience,Žilina Region,SK,SK031,Žilinský kraj,NUTS 2024,3.0,,True,Cascade,ok,T0618
+483,101093942,Pathways2Resilience,Goriška Region,SI,SI043,Goriška,NUTS 2024,3.0,,True,Cascade,ok,T0194
+484,101093942,Pathways2Resilience,Trbovlje,SI,SI035,Zasavska,NUTS 2024,3.0,,False,Cascade,error,T0533
+485,101093942,Pathways2Resilience,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,,True,Cascade,ok,T0091
+486,101093942,Pathways2Resilience,Province of Cádiz,ES,ES612,Cádiz,NUTS 2024,3.0,,False,Cascade,ok,T0412
+487,101093942,Pathways2Resilience,Cukurova Region,TR,TR62,"Adana, Mersin",SR 2024,2.0,,False,Cascade,ok,T0128
+488,101093942,Pathways2Resilience,Üsküdar,TR,TR100,İstanbul,SR 2024,3.0,,False,Cascade,ok,T0614
+489,101093942,Pathways2Resilience,West Marmara Region,TR,TRB2,"Van, Muş, Bitlis, Hakkari",SR 2024,2.0,,False,Cascade,ok,T0592
+490,101093942,Pathways2Resilience,Chernihiv region,UA,,,none,,,False,Cascade,no_nuts,T0106
+491,101093942,Pathways2Resilience,Lviv region,UA,,,none,,,False,Cascade,no_nuts,T0296
+492,101093942,Pathways2Resilience,Odesa,UA,,,none,,,False,Cascade,no_nuts,T0372
+493,101093942,Pathways2Resilience,Volyn Region,UA,,,none,,,False,Cascade,no_nuts,T0576
+494,101093942,Pathways2Resilience,Belfast,UK,UKN06,Belfast,NUTS 2021 (UK),3.0,,False,Cascade,ok,T0057
+495,101093942,Pathways2Resilience,Kent,UK,UKJ4,Kent,NUTS 2021 (UK),2.0,,False,Cascade,ok,T0240
+496,101093942,Pathways2Resilience,Plymouth,UK,UKK41,Plymouth,NUTS 2021 (UK),3.0,,False,Cascade,ok,T0398
+497,101112841,PIISA,Finland,FI,FI,Suomi/Finland,NUTS 2024,0.0,,False,RIA,ok,T0170
+498,101112841,PIISA,Lyon,FR,FRK26,Rhône,NUTS 2024,3.0,,False,RIA,ok,T0297
+499,101112841,PIISA,Germany,DE,DE,Deutschland,NUTS 2024,0.0,,False,RIA,ok,T0187
+500,101112841,PIISA,Italy,IT,IT,Italia,NUTS 2024,0.0,,False,RIA,ok,T0227
+501,101112841,PIISA,Amsterdam,NL,NL32B,Groot-Amsterdam,NUTS 2024,3.0,,False,RIA,version,T0023
+502,101112841,PIISA,Centro region,PT,PT19,Centro (PT),NUTS 2024,2.0,,True,RIA,version,T0100
+503,101112841,PIISA,Spain,ES,ES,España,NUTS 2024,0.0,,False,RIA,ok,T0491
+504,101157094,Precilience,Central-Jutland,DK,DK04,Midtjylland,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0098
+505,101157094,Precilience,Sjælland,DK,DK02,Sjælland,NUTS 2024,2.0,Replicator,False,IA,ok,T0472
+506,101157094,Precilience,Estonia,EE,EE00,Eesti,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0160
+507,101157094,Precilience,East Finland,FI,FI1D,Pohjois- ja Itä-Suomi,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0146
+508,101157094,Precilience,West Finland,FI,FI19,Länsi-Suomi,NUTS 2024,2.0,Demonstrator,True,IA,error,T0589
+509,101157094,Precilience,Agder and Sør-Østlandet,NO,NO09,Agder og Sør-Østlandet,NUTS 2024,2.0,Replicator,False,IA,version,T0006
+510,101157094,Precilience,Innlandet,NO,NO02,Innlandet,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0222
+511,101157094,Precilience,Østfold County,NO,NO083,Østfold,NUTS 2024,3.0,Demonstrator,True,IA,version,T0613
+512,101157094,Precilience,Trøndelag,NO,NO06,Trøndelag/Trööndelage,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0541
+513,101157094,Precilience,East Middle Sweden,SE,SE12,Östra Mellansverige,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0148
+514,101157094,Precilience,North Middle Sweden,SE,SE31,Norra Mellansverige,NUTS 2024,2.0,Replicator,False,IA,ok,T0362
+515,101157094,Precilience,Skåne,SE,SE22,Sydsverige,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0474
+516,101157094,Precilience,Småland and Islands,SE,SE21,Småland med öarna,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0479
+517,101036560,REGILIENCE,Yuzhen tsentralen,BG,BG42,Yuzhen tsentralen,NUTS 2024,2.0,,False,CSA,ok,T0600
+518,101036560,REGILIENCE,Istrian County,HR,HR03,Jadranska Hrvatska,NUTS 2024,2.0,,False,CSA,ok,T0226
+519,101036560,REGILIENCE,La Réunion,FR,FRY40,La Réunion,NUTS 2024,3.0,,False,CSA,ok,T0263
+520,101036560,REGILIENCE,Central Macedonia,EL,EL52,Kentriki Makedonia,NUTS 2024,2.0,,False,CSA,ok,T0096
+521,101036560,REGILIENCE,Autonomous region of Madeira,PT,PT30,Região Autónoma da Madeira,NUTS 2024,2.0,,False,CSA,version,T0041
+522,101036560,REGILIENCE,Comunitat Valenciana,ES,ES523,Valencia/València,NUTS 2024,3.0,,True,CSA,ok,T0123
+523,101036560,REGILIENCE,Murcia Region,ES,ES62,Región de Murcia,NUTS 2024,2.0,,True,CSA,ok,T0341
+524,101093873,Regions4Climate,Burgas,BG,BG341,Burgas,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0079
+525,101093873,Regions4Climate,Troodos,CY,CY000,Kýpros,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0540
+526,101093873,Regions4Climate,Køge Bay,DK,DK021,Østsjælland,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0259
+527,101093873,Regions4Climate,Pärnu City,EE,EE004,Lääne-Eesti,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0418
+528,101093873,Regions4Climate,Helsinki-Uusimaa,FI,FI1B1,Helsinki-Uusimaa,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0212
+529,101093873,Regions4Climate,South Aquitaine,FR,FRI1,Aquitaine,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0483
+530,101093873,Regions4Climate,Crete Region,EL,EL432,Lasithi,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0127
+531,101093873,Regions4Climate,Tuscany,IT,ITI1,Toscana,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0543
+532,101093873,Regions4Climate,Azores,PT,PT20,Região Autónoma dos Açores,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0047
+533,101093873,Regions4Climate,Basque Country,ES,ES21,País Vasco,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0053
+534,101093873,Regions4Climate,Castilla y León,ES,ES41,Castilla y León,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0090
+535,101093873,Regions4Climate,Nordic Archipelago,SE|FI,FI200,Åland,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0357
+536,101139636,ReGreeneration,Ghent,BE,BE234,Arr. Gent,NUTS 2024,3.0,Replicator,False,IA,ok,T0190
+537,101139636,ReGreeneration,Lappeenranta,FI,FI1C5,Etelä-Karjala,NUTS 2024,3.0,Replicator,False,IA,ok,T0267
+538,101139636,ReGreeneration,Paris,FR,FR101,Paris,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0386
+539,101139636,ReGreeneration,Rome,IT,ITI43,Roma,NUTS 2024,3.0,Replicator,False,IA,ok,T0440
+540,101139636,ReGreeneration,Segrate,IT,ITC4C,Milano,NUTS 2024,3.0,Replicator,False,IA,ok,T0460
+541,101139636,ReGreeneration,Alverca,PT,PT1A0,Grande Lisboa,NUTS 2024,3.0,Demonstrator,False,IA,version,T0017
+542,101139636,ReGreeneration,Bucharest,RO,RO321,Bucureşti,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0076
+543,101139636,ReGreeneration,Ljubljana,SI,SI041,Osrednjeslovenska,NUTS 2024,3.0,Replicator,False,IA,ok,T0283
+544,101139636,ReGreeneration,Barcelona Metropolitan Area,ES,ES511,Barcelona,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0052
+545,101214051,REHUBS,Međimurje County,HR,HR061,Međimurska županija,NUTS 2024,3.0,Replicator,False,IA,ok,T0320
+546,101214051,REHUBS,South Nicosia-Idalion Municipality,CY,CY000,Kýpros,NUTS 2024,3.0,Replicator,False,IA,ok,T0484
+547,101214051,REHUBS,Sofades & Tavropos (Thessaly),EL,EL61,Thessalia,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0480
+548,101214051,REHUBS,Sakiai,LT,LT024,Marijampolės apskritis,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0449
+549,101214051,REHUBS,Beira Baixa,PT,PT195,Beira Baixa,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0056
+550,101214051,REHUBS,Murska Sobota (Pomurje region),SI,SI031,Pomurska,NUTS 2024,3.0,Replicator,False,IA,version,T0342
+551,101093968,RESIST,Central Denmark Region,DK,DK04,Midtjylland,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0094
+552,101093968,RESIST,Southwest Finland Region,FI,FI1C1,Varsinais-Suomi,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0490
+553,101093968,RESIST,Normandy Region,FR,FRD,Normandie,NUTS 2024,1.0,Demonstrator,True,IA,ok,T0358
+554,101093968,RESIST,Region of Eastern Macedonia & Thrace,EL,EL51,"Anatoliki Makedonia, Thraki",NUTS 2024,2.0,Demonstrator,True,IA,ok,T0430
+555,101093968,RESIST,Puglia Region,IT,ITF4,Puglia,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0416
+556,101093968,RESIST,Zemgale Region,LV,LV009,Zemgale,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0606
+557,101093968,RESIST,Vestland County,NO,NO0A2,Vestland,NUTS 2024,3.0,Demonstrator,True,IA,error,T0567
+558,101093968,RESIST,Baixo Alentejo Intermunicipal Community,PT,PT1C2,Baixo Alentejo,NUTS 2024,3.0,Demonstrator,True,IA,version,T0049
+559,101093968,RESIST,Centro region,PT,PT19,Centro (PT),NUTS 2024,2.0,Demonstrator,True,IA,version,T0100
+560,101093968,RESIST,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0091
+561,101093968,RESIST,Extremadura,ES,ES43,Extremadura,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0165
+562,101093968,RESIST,Blekinge Region,SE,SE221,Blekinge län,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0065
+563,101214441,RISE-IN,Ghent,BE,BE234,Arr. Gent,NUTS 2024,3.0,Replicator,False,IA,ok,T0190
+564,101214441,RISE-IN,Cesena,IT,ITH58,Forlì-Cesena,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0102
+565,101214441,RISE-IN,Christchurch,NZ,,,none,,Demonstrator,False,IA,no_nuts,T0108
+566,101214441,RISE-IN,Póvoa de Varzim,PT,PT11,Norte,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0419
+567,101214441,RISE-IN,Kadikoy,TR,TR100,İstanbul,SR 2024,3.0,Replicator,False,IA,ok,T0234
+568,101214441,RISE-IN,Zhytomyr,UA,UA822,Житомирський Район,SR 2024,3.0,Replicator,False,IA,ok,T0607
+569,101093939,RISKADAPT,Fingrid Oyj,FI,FI1B,Helsinki-Uusimaa,NUTS 2024,2.0,,False,RIA,ok,T0169
+570,101093939,RISKADAPT,Finnish Meteorological Institute,FI,FI1B,Helsinki-Uusimaa,NUTS 2024,2.0,,False,RIA,ok,T0171
+571,101093939,RISKADAPT,Region of Western Macedonia,EL,EL53,Dytiki Makedonia,NUTS 2024,2.0,,False,RIA,version,T0432
+572,101093939,RISKADAPT,Trieste,IT,ITH44,Trieste,NUTS 2024,3.0,,False,RIA,ok,T0534
+573,101212794,SMARTER,Flanders,BE,BE2,Vlaams Gewest,NUTS 2024,1.0,Replicator,True,IA,ok,T0172
+574,101212794,SMARTER,Ostende,BE,BE255,Arr. Oostende,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0379
+575,101212794,SMARTER,Kuopio,FI,FI1DB,Pohjois-Savo,NUTS 2024,3.0,Replicator,False,IA,ok,T0257
+576,101212794,SMARTER,Tampere City,FI,FI19B,Pirkanmaa,NUTS 2024,3.0,Demonstrator,True,IA,version,T0510
+577,101212794,SMARTER,Western Greece,EL,EL63,Dytiki Elláda,NUTS 2024,2.0,Replicator,False,IA,ok,T0596
+578,101212794,SMARTER,Friesland Province,NL,NL12,Friesland (NL),NUTS 2024,2.0,Demonstrator,True,IA,ok,T0174
+579,101212794,SMARTER,Noord Holland,NL,NL32,Noord-Holland,NUTS 2024,2.0,Replicator,False,IA,ok,T0355
+580,101212794,SMARTER,Gdansk,PL,PL633,Trójmiejski,NUTS 2024,3.0,Replicator,False,IA,ok,T0184
+581,101212794,SMARTER,Lisbon Metropolitan Area,PT,PT1A0,Grande Lisboa,NUTS 2024,3.0,Demonstrator,True,IA,version,T0281
+581,101212794,SMARTER,Lisbon Metropolitan Area,PT,PT1B0,Península de Setúbal,NUTS 2024,3.0,Demonstrator,True,IA,version,T0281
+582,101112867,SOTERIA,Gabrovo,BG,BG322,Gabrovo,NUTS 2024,3.0,,False,RIA,ok,T0179
+583,101112867,SOTERIA,Zadar,HR,HR033,Zadarska županija,NUTS 2024,3.0,,False,RIA,ok,T0601
+584,101112867,SOTERIA,Saxonian Cities,DE,DED,Sachsen,NUTS 2024,1.0,,False,RIA,ok,T0458
+585,101112867,SOTERIA,Saxony-Anhalt,DE,DEE,Sachsen-Anhalt,NUTS 2024,1.0,,False,RIA,ok,T0459
+586,101112867,SOTERIA,West Athens,EL,EL302,Dytikos Tomeas Athinon,NUTS 2024,3.0,,False,RIA,ok,T0587
+587,101112867,SOTERIA,Trøndelag,NO,NO06,Trøndelag/Trööndelage,NUTS 2024,2.0,,False,RIA,ok,T0541
+588,101112867,SOTERIA,Comunitat Valenciana,ES,ES523,Valencia/València,NUTS 2024,3.0,,True,RIA,ok,T0123
+589,101112867,SOTERIA,Bavaria,DE,DE2,Bayern,NUTS 2024,1.0,,False,RIA,nivel,T0054
+590,101112906,SpongeBoost,Eifel - High Fens,BE,BE33,Prov. Liège,NUTS 2024,2.0,,False,RIA,ok,T0154
+591,101112906,SpongeBoost,Pärnu City,EE,EE004,Lääne-Eesti,NUTS 2024,3.0,,True,RIA,ok,T0418
+592,101112906,SpongeBoost,Weisse Elster catchment,DE,DED45,Zwickau,NUTS 2024,3.0,,False,RIA,formato,T0586
+592,101112906,SpongeBoost,Weisse Elster catchment,DE,DED52,Leipzig,NUTS 2024,3.0,,False,RIA,formato,T0586
+592,101112906,SpongeBoost,Weisse Elster catchment,DE,DEG0,Thüringen,NUTS 2024,2.0,,False,RIA,formato,T0586
+593,101112906,SpongeBoost,San Miguel Island,PT,PT20,Região Autónoma dos Açores,NUTS 2024,2.0,,False,RIA,ok,T0451
+594,101112906,SpongeBoost,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,,True,RIA,ok,T0091
+595,101112906,SpongeBoost,Galicia,ES,ES11,Galicia,NUTS 2024,2.0,,True,RIA,ok,T0180
+596,101112738,SpongeScapes,Leze catchment,FR,FRH,Bretagne,NUTS 2024,1.0,,False,RIA,version,T0275
+597,101112738,SpongeScapes,Kavouropotamos,EL,EL422,"Andros, Thira, Kea - Kythnos, Milos, Mykonos, Naxos, Paros,  Syros, Tinos",NUTS 2024,3.0,,False,RIA,ok,T0238
+598,101112738,SpongeScapes,Agripolis,IT,ITH36,Padova,NUTS 2024,3.0,,False,RIA,version,T0008
+599,101112738,SpongeScapes,Bosco Limite,IT,ITH36,Padova,NUTS 2024,3.0,,False,RIA,error,T0071
+600,101112738,SpongeScapes,Municipality of Santorso,IT,ITH35,Venezia,NUTS 2024,3.0,,False,RIA,ok,T0336
+601,101112738,SpongeScapes,Timonchio,IT,ITH35,Venezia,NUTS 2024,3.0,,False,RIA,revisar,T0526
+602,101112738,SpongeScapes,Aa en Maas catchment,NL,NL41,Noord-Brabant,NUTS 2024,2.0,,False,RIA,ok,T0001
+603,101112738,SpongeScapes,Chamse beken catchment,NL,NL41,Noord-Brabant,NUTS 2024,2.0,,False,RIA,ok,T0105
+604,101112738,SpongeScapes,Upper Biebrza,PL,PL84,Podlaskie,NUTS 2024,2.0,,False,RIA,ok,T0549
+605,101112738,SpongeScapes,Gradascica catchment,SI,SI041,Osrednjeslovenska,NUTS 2024,3.0,,False,RIA,ok,T0197
+606,101112738,SpongeScapes,Evenlode,UK,UKK1,"Gloucestershire, Wiltshire and Bristol/Bath area",NUTS 2021 (UK),2.0,,False,RIA,ok,T0164
+607,101112738,SpongeScapes,New Forest and Cole catchment,UK,UKJ36,Central Hampshire,NUTS 2021 (UK),3.0,,False,RIA,ok,T0351
+608,101112738,SpongeScapes,Riseholme catchment,UK,UKF3,Lincolnshire,NUTS 2021 (UK),2.0,,False,RIA,ok,T0438
+609,101112738,SpongeScapes,Upper Thames,UK,UKK1,"Gloucestershire, Wiltshire and Bristol/Bath area",NUTS 2021 (UK),2.0,,False,RIA,ok,T0551
+610,101156116,SpongeWorks,Flanders,BE,BE2,Vlaams Gewest,NUTS 2024,1.0,Replicator,True,IA,ok,T0172
+611,101156116,SpongeWorks,Southwest Finland,FI,FI1C,Etelä-Suomi,NUTS 2024,2.0,Replicator,True,IA,ok,T0489
+612,101156116,SpongeWorks,Lèze River Basin,FR,FRJ23,Haute-Garonne,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0299
+613,101156116,SpongeWorks,Pinios River Basin,EL,EL612,Larisa,NUTS 2024,3.0,Demonstrator,False,IA,formato,T0396
+613,101156116,SpongeWorks,Pinios River Basin,EL,EL613,"Magnisia, Sporades",NUTS 2024,3.0,Demonstrator,False,IA,formato,T0396
+614,101156116,SpongeWorks,Lower Tisza,HU,HU33,Dél-Alföld,NUTS 2024,2.0,Replicator,False,IA,ok,T0290
+615,101156116,SpongeWorks,Wicklow,IE,IE06,Eastern and Midland,NUTS 2024,2.0,Replicator,False,IA,ok,T0597
+616,101156116,SpongeWorks,Cornia River watershed,IT,ITI1,Toscana,NUTS 2024,2.0,Replicator,False,IA,ok,T0126
+617,101156116,SpongeWorks,Šavnik,ME,ME000,Црна Гора,SR 2024,3.0,Replicator,False,IA,no_nuts,T0617
+618,101156116,SpongeWorks,Vecht River Basin,NL|DE,NL21,Overijssel,NUTS 2024,2.0,Demonstrator,False,IA,formato,T0562
+618,101156116,SpongeWorks,Vecht River Basin,NL|DE,DE94,Weser-Ems,NUTS 2024,2.0,Demonstrator,False,IA,formato,T0562
+619,101156116,SpongeWorks,Júcar River Basin,ES,ES52,Comunitat Valenciana,NUTS 2024,2.0,Replicator,False,IA,ok,T0232
+620,101156116,SpongeWorks,Lviv Region,UA,,,none,,Replicator,False,IA,no_nuts,T0295
+621,101212761,SystR,Guadeloupe,FR,FRY10,Guadeloupe,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0205
+622,101212761,SystR,Strasbourg City,FR,FRF11,Bas-Rhin,NUTS 2024,3.0,Replicator,True,IA,version,T0500
+623,101212761,SystR,Egaleo,EL,EL302,Dytikos Tomeas Athinon,NUTS 2024,3.0,Replicator,True,IA,ok,T0152
+624,101212761,SystR,Rome,IT,ITI43,Roma,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0440
+625,101212761,SystR,Banská Bystrica Self Governing Region,SK,SK032,Banskobystrický kraj,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0051
+626,101212761,SystR,Galicia,ES,ES11,Galicia,NUTS 2024,2.0,Replicator,True,IA,ok,T0180
+627,101214557,TerraTwin,Flanders,BE,BE2,Vlaams Gewest,NUTS 2024,1.0,,True,RIA,ok,T0172
+628,101214557,TerraTwin,North-East Attica,EL,EL30,Attiki,NUTS 2024,2.0,,False,RIA,ok,T0364
+629,101214557,TerraTwin,Northern Evia,EL,EL642,Evvoia,NUTS 2024,3.0,,False,RIA,ok,T0367
+630,101214557,TerraTwin,Galway,IE,IE042,West,NUTS 2024,3.0,,True,RIA,ok,T0181
+631,101214557,TerraTwin,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,,True,RIA,ok,T0091
+632,101214311,TiCCA4Danu,Burgas,BG,BG341,Burgas,NUTS 2024,3.0,,True,RIA,ok,T0079
+633,101214311,TiCCA4Danu,Debrecen & Hajdú-Bihar County,HU,HU321,Hajdú-Bihar,NUTS 2024,3.0,,False,RIA,ok,T0136
+634,101214311,TiCCA4Danu,Suceava & Nord-Est Region,RO,RO21,Nord-Est,NUTS 2024,2.0,,True,RIA,ok,T0503
+635,101214311,TiCCA4Danu,Maribor& Podravje,SI,SI032,Podravska,NUTS 2024,3.0,,False,RIA,ok,T0310
+636,101214311,TiCCA4Danu,Edirne Province,TR,TR212,Edirne,SR 2024,3.0,,False,RIA,ok,T0151
+637,101155748,TRANSFORM,Midtjylland,DK,DK04,Midtjylland,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0321
+638,101155748,TRANSFORM,Southern Denmark,DK,DK03,Syddanmark,NUTS 2024,2.0,Replicator,True,IA,ok,T0485
+639,101155748,TRANSFORM,Brittany Region,FR,FRH,Bretagne,NUTS 2024,1.0,Demonstrator,True,IA,version,T0075
+640,101155748,TRANSFORM,Gers,FR,FRJ24,Gers,NUTS 2024,3.0,Replicator,False,IA,ok,T0189
+641,101155748,TRANSFORM,Normandy Region,FR,FRD,Normandie,NUTS 2024,1.0,Replicator,True,IA,ok,T0358
+642,101155748,TRANSFORM,Niedersachsen,DE,DE9,Niedersachsen,NUTS 2024,1.0,Replicator,False,IA,ok,T0353
+643,101155748,TRANSFORM,Ireland,IE,IE,Éire/Ireland,NUTS 2024,0.0,Replicator,False,IA,nivel,T0223
+644,101155748,TRANSFORM,Noord-Brabant,NL,NL41,Noord-Brabant,NUTS 2024,2.0,Demonstrator,False,IA,ok,T0356
+645,101155748,TRANSFORM,Zeeland,NL,NL34,Zeeland,NUTS 2024,2.0,Replicator,False,IA,ok,T0604
+646,101155748,TRANSFORM,Navarra,ES,ES22,Comunidad Foral de Navarra,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0348
+647,101155748,TRANSFORM,Basque Country,ES,ES21,País Vasco,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0053
+648,101155748,TRANSFORM,Thames River Basin District,UK,UKI,London,NUTS 2021 (UK),1.0,Demonstrator,False,IA,formato,T0518
+648,101155748,TRANSFORM,Thames River Basin District,UK,UKJ,South East (England),NUTS 2021 (UK),1.0,Demonstrator,False,IA,formato,T0518
+648,101155748,TRANSFORM,Thames River Basin District,UK,UKH,East of England,NUTS 2021 (UK),1.0,Demonstrator,False,IA,formato,T0518
+649,101036683,TransformAr,City of Lappeenranta,FI,FI1C5,Etelä-Karjala,NUTS 2024,3.0,Demonstrator,False,IA,error,T0113
+650,101036683,TransformAr,Guadeloupe Archipelago,FR,FI1C5,Etelä-Karjala,NUTS 2024,3.0,Demonstrator,False,IA,ok,T0206
+651,101036683,TransformAr,City of Egaleo,EL,EL302,Dytikos Tomeas Athinon,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0110
+652,101036683,TransformAr,Oristano Gulf,IT,ITG2G,Oristano,NUTS 2024,3.0,Demonstrator,False,IA,version,T0375
+653,101036683,TransformAr,City of Gjøvik,NO,NO020,Innlandet,NUTS 2024,3.0,Replicator,False,IA,version,T0111
+654,101036683,TransformAr,Galicia,ES,ES11,Galicia,NUTS 2024,2.0,Demonstrator,True,IA,ok,T0180
+655,101036683,TransformAr,Westcountry Region,UK,UKK43,Devon CC,NUTS 2021 (UK),3.0,Demonstrator,False,IA,ok,T0594
+656,101213184,Trees4Adapt,Satakunta,FI,FI196,Satakunta,NUTS 2024,3.0,,False,RIA,ok,T0456
+657,101213184,Trees4Adapt,Serra da Estrela,PT,PT196,Beiras e Serra da Estrela,NUTS 2024,3.0,,False,RIA,ok,T0463
+658,101213184,Trees4Adapt,Central and north Germany,DE,DE4,Brandenburg,NUTS 2024,1.0,,False,RIA,formato,T0097
+658,101213184,Trees4Adapt,Central and north Germany,DE,DE5,Bremen,NUTS 2024,1.0,,False,RIA,formato,T0097
+658,101213184,Trees4Adapt,Central and north Germany,DE,DE6,Hamburg,NUTS 2024,1.0,,False,RIA,formato,T0097
+658,101213184,Trees4Adapt,Central and north Germany,DE,DE7,Hessen,NUTS 2024,1.0,,False,RIA,formato,T0097
+658,101213184,Trees4Adapt,Central and north Germany,DE,DE8,Mecklenburg-Vorpommern,NUTS 2024,1.0,,False,RIA,formato,T0097
+658,101213184,Trees4Adapt,Central and north Germany,DE,DE9,Niedersachsen,NUTS 2024,1.0,,False,RIA,formato,T0097
+658,101213184,Trees4Adapt,Central and north Germany,DE,DEF,Schleswig-Holstein,NUTS 2024,1.0,,False,RIA,formato,T0097
+658,101213184,Trees4Adapt,Central and north Germany,DE,DED,Sachsen,NUTS 2024,1.0,,False,RIA,formato,T0097
+658,101213184,Trees4Adapt,Central and north Germany,DE,DEG,Thüringen,NUTS 2024,1.0,,False,RIA,formato,T0097
+658,101213184,Trees4Adapt,Central and north Germany,DE,DEE,Sachsen-Anhalt,NUTS 2024,1.0,,False,RIA,formato,T0097
+659,101215153,UNDERPIN,Normandy Region,FR,FRD,Normandie,NUTS 2024,1.0,,True,RIA,ok,T0358
+660,101215153,UNDERPIN,Cluj Metropolitan Area,RO,RO113,Cluj,NUTS 2024,3.0,,True,RIA,ok,T0114
+661,101215153,UNDERPIN,City of Kosice,SK,SK042,Košický kraj,NUTS 2024,3.0,,True,RIA,ok,T0112
+662,101215153,UNDERPIN,Basque Country,ES,ES21,País Vasco,NUTS 2024,2.0,,True,RIA,ok,T0053
+663,101139711,URBREATH,Leuven city,BE,BE242,Arr. Leuven,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0274
+664,101139711,URBREATH,Pilsen,CZ,CZ032,Plzeňský kraj,NUTS 2024,3.0,Replicator,False,IA,ok,T0395
+665,101139711,URBREATH,Aarhus City,DK,DK042,Østjylland,NUTS 2024,3.0,Replicator,True,IA,ok,T0003
+666,101139711,URBREATH,Tallinn City,EE,EE001,Põhja-Eesti,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0509
+667,101139711,URBREATH,Kajaani,FI,FI1D8,Kainuu,NUTS 2024,3.0,Replicator,False,IA,ok,T0235
+668,101139711,URBREATH,Athens,EL,EL303,Kentrikos Tomeas Athinon,NUTS 2024,3.0,Replicator,False,IA,ok,T0035
+669,101139711,URBREATH,Parma,IT,ITH52,Parma,NUTS 2024,3.0,Replicator,False,IA,ok,T0388
+670,101139711,URBREATH,Cluj-Napoca Municipality,RO,RO113,Cluj,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0116
+671,101139711,URBREATH,Las Rozas de Madrid,ES,ES300,Madrid,NUTS 2024,3.0,Demonstrator,True,IA,ok,T0270
+672,101112837,VALORADA,Burgas,BG,BG341,Burgas,NUTS 2024,3.0,,True,RIA,ok,T0079
+673,101112837,VALORADA,Gabrovo,BG,BG322,Gabrovo,NUTS 2024,3.0,,False,RIA,ok,T0179
+674,101112837,VALORADA,Statutory city of Mladá Boleslav,CZ,CZ020,Středočeský kraj,NUTS 2024,3.0,,False,RIA,ok,T0496
+675,101112837,VALORADA,Statutory city of Přerov,CZ,CZ071,Olomoucký kraj,NUTS 2024,3.0,,False,RIA,ok,T0497
+676,101112837,VALORADA,Occitanie Region,FR,FRJ,Occitanie,NUTS 2024,1.0,,True,RIA,ok,T0371
+677,101112837,VALORADA,Central Greece Region,EL,EL6,Kentriki Elláda,NUTS 2024,1.0,,False,RIA,ok,T0095
+678,101112837,VALORADA,Molise region,IT,ITF2,Molise,NUTS 2024,2.0,,True,RIA,ok,T0324
+679,CINEA/2022/OP/0013,MIP4Adapt,Aglomeracja Kalisko-Ostrowska,PL,PL416,Kaliski,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0007
+680,CINEA/2022/OP/0013,MIP4Adapt,Algarve,PT,PT150,Algarve,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0015
+681,CINEA/2022/OP/0013,MIP4Adapt,Alytus Region,LT,LT021,Alytaus apskritis,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0018
+682,CINEA/2022/OP/0013,MIP4Adapt,Amarante Municipality,PT,PT11C,Tâmega e Sousa,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0019
+683,CINEA/2022/OP/0013,MIP4Adapt,Ampelokipi Menemeni Municipality,EL,EL522,Thessaloniki,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0021
+684,CINEA/2022/OP/0013,MIP4Adapt,Andalusia,ES,ES61,Andalucía,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0024
+685,CINEA/2022/OP/0013,MIP4Adapt,Angers Loire Metropole,FR,FRG02,Maine-et-Loire,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0026
+686,CINEA/2022/OP/0013,MIP4Adapt,Arezzo City,IT,ITI18,Arezzo,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0031
+687,CINEA/2022/OP/0013,MIP4Adapt,Athienou Municipality,CY,CY000,Kýpros,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0037
+688,CINEA/2022/OP/0013,MIP4Adapt,Autonomous Province of Trento,IT,ITH20,Trento,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0039
+689,CINEA/2022/OP/0013,MIP4Adapt,Ayuntamiento de Los Alcázares,ES,ES620,Murcia,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0046
+690,CINEA/2022/OP/0013,MIP4Adapt,Bad Nauheim,DE,DE71E,Wetteraukreis,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0048
+691,CINEA/2022/OP/0013,MIP4Adapt,Balearic Islands,ES,ES53,Illes Balears,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0050
+692,CINEA/2022/OP/0013,MIP4Adapt,Banská Bystrica Self Governing Region,SK,SK032,Banskobystrický kraj,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0051
+693,CINEA/2022/OP/0013,MIP4Adapt,Basque Country,ES,ES21,País Vasco,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0053
+694,CINEA/2022/OP/0013,MIP4Adapt,Blankenberge,BE,BE251,Arr. Brugge,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0064
+695,CINEA/2022/OP/0013,MIP4Adapt,Bordeaux Métropole,FR,FRI12,Gironde,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0070
+696,CINEA/2022/OP/0013,MIP4Adapt,Brasov Municipality,RO,RO122,Braşov,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0073
+697,CINEA/2022/OP/0013,MIP4Adapt,Bursa Metropolitan Municipality,TR,TR411,Bursa,SR 2024,3.0,,True,MIP4Adapt,ok,T0080
+698,CINEA/2022/OP/0013,MIP4Adapt,Caldas da Rainha Municipality,PT,PT1D1,Oeste,NUTS 2024,3.0,,True,MIP4Adapt,version,T0083
+699,CINEA/2022/OP/0013,MIP4Adapt,Câmara de Lobos,PT,PT300,Região Autónoma da Madeira,NUTS 2024,3.0,,True,MIP4Adapt,version,T0133
+700,CINEA/2022/OP/0013,MIP4Adapt,Campania Region,IT,ITF3,Campania,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0084
+701,CINEA/2022/OP/0013,MIP4Adapt,Canary Islands,ES,ES70,Canarias,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0085
+702,CINEA/2022/OP/0013,MIP4Adapt,Cascais,PT,PT1A0,Grande Lisboa,NUTS 2024,3.0,,True,MIP4Adapt,version,T0088
+703,CINEA/2022/OP/0013,MIP4Adapt,Castilla La Mancha,ES,ES42,Castilla-La Mancha,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0089
+704,CINEA/2022/OP/0013,MIP4Adapt,Castilla y León,ES,ES41,Castilla y León,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0090
+705,CINEA/2022/OP/0013,MIP4Adapt,Cávado Intermunicipal Community,PT,PT112,Cávado,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0132
+706,CINEA/2022/OP/0013,MIP4Adapt,Centre-Val de Loire Region,FR,FRB,Centre — Val de Loire,NUTS 2024,1.0,,True,MIP4Adapt,ok,T0099
+707,CINEA/2022/OP/0013,MIP4Adapt,Chalki Island,EL,EL421,"Kalymnos, Karpathos, Kasos, Kos, Rodos",NUTS 2024,3.0,,True,MIP4Adapt,ok,T0104
+708,CINEA/2022/OP/0013,MIP4Adapt,Coimbra Region,PT,PT192,Região de Coimbra,NUTS 2024,3.0,,True,MIP4Adapt,version,T0118
+709,CINEA/2022/OP/0013,MIP4Adapt,Comunitat Valenciana,ES,ES52,Comunitat Valenciana,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0123
+710,CINEA/2022/OP/0013,MIP4Adapt,Cork City,IE,IE053,South-West,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0125
+711,CINEA/2022/OP/0013,MIP4Adapt,Crete Region,EL,EL43,Kriti,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0127
+712,CINEA/2022/OP/0013,MIP4Adapt,Dublin City,IE,IE061,Dublin,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0144
+713,CINEA/2022/OP/0013,MIP4Adapt,Emilia-Romagna Region,IT,ITH5,Emilia-Romagna,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0157
+714,CINEA/2022/OP/0013,MIP4Adapt,Eskisehir Metropolitan Muncipality,TR,TR412,Eskişehir,SR 2024,3.0,,True,MIP4Adapt,ok,T0158
+715,CINEA/2022/OP/0013,MIP4Adapt,Eurometropole de Strasbourg,FR,FRF11,Bas-Rhin,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0162
+716,CINEA/2022/OP/0013,MIP4Adapt,Euskirchen County,DE,DEA28,Euskirchen,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0163
+717,CINEA/2022/OP/0013,MIP4Adapt,Figueira da Foz Municipality,PT,PT192,Região de Coimbra,NUTS 2024,3.0,,True,MIP4Adapt,version,T0168
+718,CINEA/2022/OP/0013,MIP4Adapt,Flanders,BE,BE2,Vlaams Gewest,NUTS 2024,1.0,,True,MIP4Adapt,ok,T0172
+719,CINEA/2022/OP/0013,MIP4Adapt,Free Hanseatic City of Bremen,DE,DE501,"Bremen, Kreisfreie Stadt",NUTS 2024,3.0,,True,MIP4Adapt,ok,T0173
+720,CINEA/2022/OP/0013,MIP4Adapt,Friesland Province,NL,NL12,Friesland (NL),NUTS 2024,2.0,,True,MIP4Adapt,nivel,T0174
+721,CINEA/2022/OP/0013,MIP4Adapt,Friuli Venezia Giulia Autonomous Region,IT,ITH4,Friuli-Venezia Giulia,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0175
+722,CINEA/2022/OP/0013,MIP4Adapt,Fundão,PT,PT196,Beiras e Serra da Estrela,NUTS 2024,3.0,,True,MIP4Adapt,error,T0176
+723,CINEA/2022/OP/0013,MIP4Adapt,Fyli Municipality,EL,EL302,Dytikos Tomeas Athinon,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0178
+724,CINEA/2022/OP/0013,MIP4Adapt,Galicia,ES,ES11,Galicia,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0180
+725,CINEA/2022/OP/0013,MIP4Adapt,Galway City,IE,IE042,West,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0182
+726,CINEA/2022/OP/0013,MIP4Adapt,Gmina Żmigród,PL,PL518,Wrocławski,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0192
+727,CINEA/2022/OP/0013,MIP4Adapt,Gorenjska Region,SI,SI042,Gorenjska,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0193
+728,CINEA/2022/OP/0013,MIP4Adapt,Goriška Region,SI,SI043,Goriška,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0194
+729,CINEA/2022/OP/0013,MIP4Adapt,Gothernburg Metropolitan Area,SE,SE232,Västra Götalands län,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0195
+730,CINEA/2022/OP/0013,MIP4Adapt,Gran Canaria,ES,ES705,Gran Canaria,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0198
+731,CINEA/2022/OP/0013,MIP4Adapt,Häme Region,FI,FI1C2,Kanta-Häme,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0216
+732,CINEA/2022/OP/0013,MIP4Adapt,Hauts-de-France Region,FR,FRE,Hauts-de-France,NUTS 2024,1.0,,True,MIP4Adapt,ok,T0211
+733,CINEA/2022/OP/0013,MIP4Adapt,Helsinki-Uusimaa,FI,FI1B,Helsinki-Uusimaa,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0212
+734,CINEA/2022/OP/0013,MIP4Adapt,Ilion Municipality,EL,EL302,Dytikos Tomeas Athinon,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0219
+735,CINEA/2022/OP/0013,MIP4Adapt,İstanbul Metropolitan Municipality,TR,TR100,İstanbul,SR 2024,3.0,,True,MIP4Adapt,ok,T0615
+736,CINEA/2022/OP/0013,MIP4Adapt,Izmir City,TR,TR310,İzmir,SR 2024,3.0,,True,MIP4Adapt,ok,T0229
+737,CINEA/2022/OP/0013,MIP4Adapt,Katowice City,PL,PL22A,Katowicki,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0237
+738,CINEA/2022/OP/0013,MIP4Adapt,Kedainiai District Municipality,LT,LT022,Kauno apskritis,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0239
+739,CINEA/2022/OP/0013,MIP4Adapt,Klaipeda City,LT,LT023,Klaipėdos apskritis,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0242
+740,CINEA/2022/OP/0013,MIP4Adapt,Konin City,PL,PL414,Koniński,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0243
+741,CINEA/2022/OP/0013,MIP4Adapt,Košice Self Governing Region,SK,SK042,Košický kraj,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0249
+742,CINEA/2022/OP/0013,MIP4Adapt,Krapina-zagorje county,HR,HR064,Krapinsko-zagorska županija,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0250
+743,CINEA/2022/OP/0013,MIP4Adapt,Kreis Minden-Lübbecke,DE,DEA46,Minden-Lübbecke,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0252
+744,CINEA/2022/OP/0013,MIP4Adapt,Kreis Siegen-Wittgenstein,DE,DEA5A,Siegen-Wittgenstein,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0253
+745,CINEA/2022/OP/0013,MIP4Adapt,Kristiansand Kommune,NO,NO092,Agder,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0254
+746,CINEA/2022/OP/0013,MIP4Adapt,Kymenlaakso,FI,FI1C7,Kymenlaakso,NUTS 2024,3.0,,True,MIP4Adapt,version,T0258
+747,CINEA/2022/OP/0013,MIP4Adapt,La Rochelle Urban Community,FR,FRI32,Charente-Maritime,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0262
+748,CINEA/2022/OP/0013,MIP4Adapt,Lapland,FI,FI1D7,Lappi,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0266
+749,CINEA/2022/OP/0013,MIP4Adapt,L'Aquila Municipality,IT,ITF11,L’Aquila,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0260
+750,CINEA/2022/OP/0013,MIP4Adapt,Larissa Municipality,EL,EL612,Larisa,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0268
+751,CINEA/2022/OP/0013,MIP4Adapt,Las Rozas de Madrid,ES,ES30,Comunidad de Madrid,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0270
+752,CINEA/2022/OP/0013,MIP4Adapt,Lesser Poland Voivodeship,PL,PL21,Małopolskie,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0273
+753,CINEA/2022/OP/0013,MIP4Adapt,Leuven city,BE,BE242,Arr. Leuven,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0274
+754,CINEA/2022/OP/0013,MIP4Adapt,Liguria Region,IT,ITC3,Liguria,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0277
+755,CINEA/2022/OP/0013,MIP4Adapt,Likovrisi Pefki Municipality,EL,EL301,Voreios Tomeas Athinon,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0278
+756,CINEA/2022/OP/0013,MIP4Adapt,Lisbon Metropolitan Area,PT,PT1A0,Grande Lisboa,NUTS 2024,3.0,,True,MIP4Adapt,version,T0281
+756,CINEA/2022/OP/0013,MIP4Adapt,Lisbon Metropolitan Area,PT,PT1B0,Península de Setúbal,NUTS 2024,3.0,,True,MIP4Adapt,version,T0281
+757,CINEA/2022/OP/0013,MIP4Adapt,Louth,IE,IE062,Mid-East,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0287
+758,CINEA/2022/OP/0013,MIP4Adapt,Lublin City,PL,PL814,Lubelski,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0291
+759,CINEA/2022/OP/0013,MIP4Adapt,Lubusz Voivodeship,PL,PL43,Lubuskie,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0292
+760,CINEA/2022/OP/0013,MIP4Adapt,Lucenek Municipality,SK,SK032,Banskobystrický kraj,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0293
+761,CINEA/2022/OP/0013,MIP4Adapt,Mafra municipality,PT,PT1A0,Grande Lisboa,NUTS 2024,3.0,,True,MIP4Adapt,version,T0301
+762,CINEA/2022/OP/0013,MIP4Adapt,Mayo,IE,IE042,West,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0314
+763,CINEA/2022/OP/0013,MIP4Adapt,Mazovian Voivodeship,PL,PL92,Mazowiecki regionalny,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0316
+764,CINEA/2022/OP/0013,MIP4Adapt,Médio Tejo Intermunicipal Community,PT,PT1D2,Médio Tejo,NUTS 2024,3.0,,True,MIP4Adapt,version,T0343
+765,CINEA/2022/OP/0013,MIP4Adapt,Métropole Européenne de Lille,FR,FRE11,Nord,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0344
+766,CINEA/2022/OP/0013,MIP4Adapt,Mountain Community of Valchiavenna,IT,ITC44,Sondrio,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0325
+767,CINEA/2022/OP/0013,MIP4Adapt,Municipality of Valencia,ES,ES523,Valencia/València,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0338
+768,CINEA/2022/OP/0013,MIP4Adapt,Murcia City,ES,ES620,Murcia,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0340
+769,CINEA/2022/OP/0013,MIP4Adapt,Murcia Region,ES,ES620,Murcia,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0341
+770,CINEA/2022/OP/0013,MIP4Adapt,Nantes Métropole,FR,FRG01,Loire-Atlantique,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0345
+771,CINEA/2022/OP/0013,MIP4Adapt,Navarra,ES,ES220,Navarra,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0348
+772,CINEA/2022/OP/0013,MIP4Adapt,Nicosia Municipality,CY,CY000,Kýpros,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0352
+773,CINEA/2022/OP/0013,MIP4Adapt,Normandy Region,FR,FRD,Normandie,NUTS 2024,1.0,,True,MIP4Adapt,ok,T0358
+774,CINEA/2022/OP/0013,MIP4Adapt,North Denmark Region,DK,DK05,Nordjylland,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0361
+775,CINEA/2022/OP/0013,MIP4Adapt,Nouvelle-Aquitaine Region,FR,FRI,Nouvelle-Aquitaine,NUTS 2024,1.0,,True,MIP4Adapt,ok,T0369
+776,CINEA/2022/OP/0013,MIP4Adapt,Occitanie Region,FR,FRJ,Occitanie,NUTS 2024,1.0,,True,MIP4Adapt,ok,T0371
+777,CINEA/2022/OP/0013,MIP4Adapt,Offaly,IE,IE063,Midland,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0373
+778,CINEA/2022/OP/0013,MIP4Adapt,Ostrobothnia,FI,FI19A,Pohjanmaa,NUTS 2024,3.0,,True,MIP4Adapt,version,T0380
+779,CINEA/2022/OP/0013,MIP4Adapt,Päijät-Häme,FI,FI1C6,Päijät-Häme,NUTS 2024,3.0,,True,MIP4Adapt,version,T0417
+780,CINEA/2022/OP/0013,MIP4Adapt,Palmela Municipality,PT,PT1B0,Península de Setúbal,NUTS 2024,3.0,,True,MIP4Adapt,version,T0383
+781,CINEA/2022/OP/0013,MIP4Adapt,Panevėžys City,LT,LT025,Panevėžio apskritis,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0384
+782,CINEA/2022/OP/0013,MIP4Adapt,Paris City,FR,FR101,Paris,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0387
+783,CINEA/2022/OP/0013,MIP4Adapt,Pärnu City,EE,EE004,Lääne-Eesti,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0418
+784,CINEA/2022/OP/0013,MIP4Adapt,Penteli Municipality,EL,EL303,Kentrikos Tomeas Athinon,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0391
+785,CINEA/2022/OP/0013,MIP4Adapt,Potenza Province,IT,ITF51,Potenza,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0406
+786,CINEA/2022/OP/0013,MIP4Adapt,Principality of Asturias,ES,ES12,Principado de Asturias,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0410
+787,CINEA/2022/OP/0013,MIP4Adapt,Provence-Alpes-Côte d'Azur Region,FR,FRL,Provence-Alpes-Côte d’Azur,NUTS 2024,1.0,,True,MIP4Adapt,ok,T0411
+788,CINEA/2022/OP/0013,MIP4Adapt,Province of Granada,ES,ES614,Granada,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0413
+789,CINEA/2022/OP/0013,MIP4Adapt,Razgrad Muncipality,BG,BG324,Razgrad,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0423
+790,CINEA/2022/OP/0013,MIP4Adapt,Rogaland,NO,NO0A1,Rogaland,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0439
+791,CINEA/2022/OP/0013,MIP4Adapt,Rotterdam City,NL,NL366,Groot-Rijnmond,NUTS 2024,3.0,,True,MIP4Adapt,version,T0441
+792,CINEA/2022/OP/0013,MIP4Adapt,Rouen Normandie Métropole,FR,FRD22,Seine-Maritime,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0442
+793,CINEA/2022/OP/0013,MIP4Adapt,Rzeszow City,PL,PL823,Rzeszowski,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0447
+794,CINEA/2022/OP/0013,MIP4Adapt,Setúbal Municipality,PT,PT1B0,Península de Setúbal,NUTS 2024,3.0,,True,MIP4Adapt,version,T0464
+795,CINEA/2022/OP/0013,MIP4Adapt,Sicily Region,IT,ITG1,Sicilia,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0467
+796,CINEA/2022/OP/0013,MIP4Adapt,Silesian Voivodeship,PL,PL22,Śląskie,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0468
+797,CINEA/2022/OP/0013,MIP4Adapt,Sintra Municipality,PT,PT1A0,Grande Lisboa,NUTS 2024,3.0,,True,MIP4Adapt,version,T0471
+798,CINEA/2022/OP/0013,MIP4Adapt,Sligo,IE,IE041,Border,NUTS 2024,3.0,,True,MIP4Adapt,error,T0476
+799,CINEA/2022/OP/0013,MIP4Adapt,Split City,HR,HR035,Splitsko-dalmatinska županija,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0492
+800,CINEA/2022/OP/0013,MIP4Adapt,Stambolovo Municipality,BG,BG422,Haskovo,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0493
+801,CINEA/2022/OP/0013,MIP4Adapt,Stare Babice,PL,PL913,Warszawski zachodni,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0494
+802,CINEA/2022/OP/0013,MIP4Adapt,Steiermark,AT,AT22,Steiermark,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0498
+803,CINEA/2022/OP/0013,MIP4Adapt,Stockholm County,SE,SE110,Stockholms län,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0499
+804,CINEA/2022/OP/0013,MIP4Adapt,Suceava City,RO,RO215,Suceava,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0504
+805,CINEA/2022/OP/0013,MIP4Adapt,Svishtov Municipality,BG,BG321,Veliko Tarnovo,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0505
+806,CINEA/2022/OP/0013,MIP4Adapt,Tallinn City,EE,EE001,Põhja-Eesti,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0509
+807,CINEA/2022/OP/0013,MIP4Adapt,Tampere City,FI,FI19B,Pirkanmaa,NUTS 2024,3.0,,True,MIP4Adapt,version,T0510
+808,CINEA/2022/OP/0013,MIP4Adapt,Tartu City,EE,EE008,Lõuna-Eesti,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0512
+809,CINEA/2022/OP/0013,MIP4Adapt,Taurage District Municipality,LT,LT027,Tauragės apskritis,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0513
+810,CINEA/2022/OP/0013,MIP4Adapt,The Icelandic Association of Local Authorities,IS,IS0,Ísland,NUTS 2024,1.0,,True,MIP4Adapt,ok,T0521
+811,CINEA/2022/OP/0013,MIP4Adapt,Thermi Municipality,EL,EL522,Thessaloniki,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0522
+812,CINEA/2022/OP/0013,MIP4Adapt,Thessaloniki Municipality,EL,EL522,Thessaloniki,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0523
+813,CINEA/2022/OP/0013,MIP4Adapt,Thessaly,EL,EL61,Thessalia,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0524
+814,CINEA/2022/OP/0013,MIP4Adapt,Torres Vedras Municipality,PT,PT1D1,Oeste,NUTS 2024,3.0,,True,MIP4Adapt,version,T0532
+815,CINEA/2022/OP/0013,MIP4Adapt,Turku City,FI,FI1C1,Varsinais-Suomi,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0542
+816,CINEA/2022/OP/0013,MIP4Adapt,Utena District Municipality,LT,LT029,Utenos apskritis,NUTS 2024,3.0,,True,MIP4Adapt,error,T0553
+817,CINEA/2022/OP/0013,MIP4Adapt,Vaasa City,FI,FI19A,Pohjanmaa,NUTS 2024,3.0,,True,MIP4Adapt,version,T0554
+818,CINEA/2022/OP/0013,MIP4Adapt,Valladolid,ES,ES418,Valladolid,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0557
+819,CINEA/2022/OP/0013,MIP4Adapt,Valongo,PT,PT11A,Área Metropolitana do Porto,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0560
+820,CINEA/2022/OP/0013,MIP4Adapt,Vari - Voula - Vouliagmeni Municipality,EL,EL305,Anatoliki Attiki,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0561
+821,CINEA/2022/OP/0013,MIP4Adapt,Värmland County,SE,SE311,Värmlands län,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0579
+822,CINEA/2022/OP/0013,MIP4Adapt,Veneto,IT,ITH3,Veneto,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0564
+823,CINEA/2022/OP/0013,MIP4Adapt,Vidzeme Planning Region,LV,LV00C,Vidzeme,NUTS 2024,3.0,,True,MIP4Adapt,version,T0569
+824,CINEA/2022/OP/0013,MIP4Adapt,Vila Franca de Xira,PT,PT1A0,Grande Lisboa,NUTS 2024,3.0,,True,MIP4Adapt,version,T0571
+825,CINEA/2022/OP/0013,MIP4Adapt,Vilnius City,LT,LT011,Vilniaus apskritis,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0572
+826,CINEA/2022/OP/0013,MIP4Adapt,Vordingborg Municipality,DK,DK022,Vest- og Sydsjælland,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0577
+827,CINEA/2022/OP/0013,MIP4Adapt,Wroclaw,PL,PL514,Miasto Wrocław,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0599
+828,CINEA/2022/OP/0013,MIP4Adapt,Zemgale Region,LV,LV009,Zemgale,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0606
+829,CINEA/2022/OP/0013,MIP4Adapt,Žilina Region,SK,SK031,Žilinský kraj,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0618
+830,CINEA/2022/OP/0013,MIP4Adapt,Zwolle,NL,NL211,Noord-Overijssel,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0610
+831,CINEA/2022/OP/0013,MIP4Adapt,Warsaw City,PL,PL911,Miasto Warszawa,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0584
+832,CINEA/2022/OP/0013,MIP4Adapt,Guimarães Municipality,PT,PT11C,Tâmega e Sousa,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0207
+833,CINEA/2022/OP/0013,MIP4Adapt,Sibenik-Knin County,HR,HR034,Šibensko-kninska županija,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0466
+834,CINEA/2022/OP/0013,MIP4Adapt,Ingolstadt City,DE,DE211,"Ingolstadt, Kreisfreie Stadt",NUTS 2024,3.0,,True,MIP4Adapt,ok,T0220
+835,CINEA/2022/OP/0013,MIP4Adapt,Vitoria-Gasteiz,ES,ES211,Araba/Álava,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0574
+836,CINEA/2022/OP/0013,MIP4Adapt,Catalonia,ES,ES51,Cataluña,NUTS 2024,2.0,,True,MIP4Adapt,ok,T0091
+837,CINEA/2022/OP/0013,MIP4Adapt,Viimsi Municipality,EE,EE001,Põhja-Eesti,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0570
+838,CINEA/2022/OP/0013,MIP4Adapt,Ukmerge District Municipality,LT,LT011,Vilniaus apskritis,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0546
+839,CINEA/2022/OP/0013,MIP4Adapt,Matosinhos,PT,PT11A,Área Metropolitana do Porto,NUTS 2024,3.0,,True,MIP4Adapt,ok,T0313

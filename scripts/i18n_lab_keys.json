@@ -1,0 +1,7 @@
+{
+  "lab": {
+    "en": {"subtitle": "Lab · EU Mission layer", "badge": "Experimental", "stableVersion": "Stable version", "sources": "Data sources", "cutoff": "cut-off", "generated": "data built"},
+    "es": {"subtitle": "Lab · capa de la Misión UE", "badge": "Experimental", "stableVersion": "Versión estable", "sources": "Fuentes de datos", "cutoff": "corte", "generated": "datos generados el"},
+    "it": {"subtitle": "Lab · livello della Missione UE", "badge": "Sperimentale", "stableVersion": "Versione stabile", "sources": "Fonti dei dati", "cutoff": "aggiornato al", "generated": "dati generati il"}
+  }
+}
