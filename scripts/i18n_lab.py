@@ -6,6 +6,8 @@ for lang in ('en', 'es', 'it'):
     p = os.path.join(ROOT, 'i18n', 'locales', f'{lang}.json')
     d = json.load(open(p, encoding='utf-8'))
     for top, block in KEYS.items():
+        if top == '_index':
+            d['connected']['index'].update(block[lang]); continue
         if top == '_cards':
             for card, by_lang in block.items():
                 d['connected']['index']['cards'][card] = by_lang[lang]

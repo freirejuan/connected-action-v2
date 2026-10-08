@@ -99,14 +99,14 @@
       "metaDescription": "Browse the EU Climate Adaptation Mission network of projects and organisations across five interactive views.",
       "eyebrow": "Connected Action",
       "heroTitle": "Explore the EU Climate Adaptation Mission ecosystem",
-      "heroIntro": "Browse the network of projects and organisations shaping climate adaptation across Europe. Five lenses reveal how Mission-funded initiatives connect across topics, places and partnerships.",
+      "heroIntro": "Browse the network of projects and organisations shaping climate adaptation across Europe. Six lenses reveal how Mission-funded initiatives connect across topics, places and partnerships.",
       "stats": {
         "projects": "projects",
         "entities": "entities",
         "countries": "countries",
         "themes": "themes"
       },
-      "cardsHeading": "Four ways to explore",
+      "cardsHeading": "Six ways to explore",
       "helpTitle": "How to use this",
       "helpBody": "Each card opens a live visualization. Use the tab bar at the top to switch between them at any time; every view has its own short explainer and help tips.",
       "cards": {
