@@ -13,7 +13,7 @@ Versión experimental y autónoma de la **Connected Action** de FARCLIMATE, con 
 | Carpeta | Contenido | Origen |
 | --- | --- | --- |
 | `data-src/cordis/` | Proyectos, entidades, relaciones, riesgos, temas y productos (65 proyectos, 1.196 entidades, 1.632 relaciones) | Pipeline CORDIS de `farclimate_hub` (`pnpm cordis:download && pnpm cordis:parse`), ejecutado el 7-oct-2026: las mismas tablas que se cargan en Supabase |
-| `data-src/mission/` | Tipo de proyecto (RIA/IA/CSA/Cascade), topic, agregados territoriales; 618 territorios y 870 relaciones proyecto–territorio | Barómetro de la Misión, 6.ª actualización (apéndices 4 y 5), limpiado por Inviable; ver el registro de correcciones en la carpeta del proyecto |
+| `data-src/mission/` | Tipo de proyecto (RIA/IA/CSA/Cascade), topic, agregados territoriales; 617 territorios y 869 relaciones proyecto–territorio (una fila duplicada del anexo excluida) | Barómetro de la Misión, 6.ª actualización (apéndices 4 y 5), limpiado por Inviable; ver el registro de correcciones en la carpeta del proyecto |
 | `data-src/mission/EEA_…csv` | Firmantes de la Charter con código NUTS (309) | Servicio REST del EEA Adaptation Dashboard |
 
 ## Desarrollo

@@ -29,3 +29,12 @@ Registro para la integración posterior. Cada cambio indica si debe volver al Hu
 | Vista nueva "Territories" (05): mapa NUTS-3 de dónde actúan los proyectos (anexo 5), dónde tienen sede sus socios (CORDIS) y contraste; filtro por tipo; MIP4Adapt opcional; autoridades nacionales y NUTS-1 fuera por defecto; contorno de firmantes de la Charter (EEA); ficha por proyecto (actúa en / sedes / ambos) y por región; firmantes sin ningún proyecto de la Misión; territorios fuera del mapa | `app/pages/connected/territories.vue`, `app/components/mission/MissionTerritoryMap.vue`, `app/composables/useMissionTerritories.ts`, `app/assets/geo/NUTS_RG_60M_2021_4326_LEVL_3_UK.json` | Sí |
 | Ficha de proyecto: bloque "EU Mission" con tipo, ciclo de vida, regiones, firmantes, demostradores, replicadores y topic | `app/components/connected/ui/CaProjectDetailModal.vue` | Sí |
 | Portada y navegación: quinta vista | `app/pages/connected/index.vue`, `app/components/connected/connectedNav.ts`, `i18n/locales/*.json` | Sí |
+
+## Auditoría de Beatriz (8-oct-2026)
+
+| Cambio | Archivos | ¿Vuelve al Hub? |
+| --- | --- | --- |
+| Datos: la fila "Arousa" (ES114) de FARCLIMATE se excluye por duplicar "Pontevedra: Ría de Pontevedra, Ría de Arousa" (Catálogo 2026, p. 48 lista 23 regiones). Queda en el registro con categoría `duplicado`; territorios 618 → 617, relaciones 870 → 869 | `data-src/mission/*.csv` (generados en `30_trabajo/Connected_Action_v2/scripts/clean_annex5.py`) | Sí, con la carga de datos |
+| Cobertura visible: Territories y Dashboard dicen que el anexo 5 trae regiones para 63 de 65 proyectos y nombran los dos sin regiones | `app/pages/connected/territories.vue`, `app/pages/connected/dashboard.vue` | Sí |
+| Nota por proyecto sin regiones (`territory_note`): AdaptationHubs, escala nacional (27 hubs, 54 hermanamientos); REGILIENCE+, materiales para actores regionales y nacionales | `scripts/build_data.py`, `app/types/mission.ts`, `CaProjectDetailModal.vue`, `territories.vue` | Sí (campo nuevo en `project_mission_attributes`) |
+| MIP4Adapt identificado como contrato de servicio, no proyecto Horizon | `app/pages/connected/territories.vue` | Sí |

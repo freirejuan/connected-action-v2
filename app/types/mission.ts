@@ -15,6 +15,8 @@ export interface MissionProject {
   topic_title: string;
   lifecycle: "ongoing" | "ended" | "not started";
   in_annex5: boolean;
+  /** por qué el proyecto no tiene regiones en el anexo 5 (null si las tiene) */
+  territory_note: string | null;
   n_authorities: number;
   n_demonstrators: number;
   n_replicators: number;

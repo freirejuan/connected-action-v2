@@ -21,6 +21,21 @@
           </div>
         </div>
 
+        <!-- coverage -->
+        <p class="-mt-3 mb-6 max-w-[1100px] font-sans text-[12px] leading-snug text-neutral-dark">
+          <strong class="font-semibold text-neutral-darkest">Coverage.</strong>
+          Appendix 5 lists regions for {{ coverage.withRegions }} of the {{ coverage.total }} Mission projects.
+          <template v-if="coverage.without.length">
+            Without regions:
+            <template v-for="(m, i) in coverage.without" :key="m.cordis_id">
+              {{ i ? (i === coverage.without.length - 1 ? " and " : ", ") : "" }}<button type="button" class="font-semibold underline decoration-dotted" @click="openProject(m.cordis_id)">{{ m.mission_name }}</button>
+            </template>
+            (coordination and support actions working at national or European scale; open them for details).
+          </template>
+          MIP4Adapt, the Mission Implementation Platform, is a service contract rather than a Horizon project; the regions
+          it supports with technical assistance are also in Appendix 5 and can be switched off below.
+        </p>
+
         <div class="grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1fr)_380px]">
           <!-- map -->
           <div class="relative h-[78vh] min-h-[640px] overflow-hidden border border-neutral-darkest">
@@ -84,7 +99,7 @@
               </div>
               <label class="mt-3 flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
                 <input v-model="includeMip" type="checkbox" class="accent-neutral-darkest" />
-                INCLUDE MIP4ADAPT TECHNICAL ASSISTANCE
+                INCLUDE MIP4ADAPT TECHNICAL ASSISTANCE (SERVICE CONTRACT)
               </label>
               <label class="mt-1.5 flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
                 <input v-model="includeCoarse" type="checkbox" class="accent-neutral-darkest" />
@@ -112,7 +127,7 @@
                     <button type="button" class="flex w-full items-center gap-2 px-1 py-1 text-left hover:bg-warm-neutral-100" @click="selectProject(p.id)">
                       <span class="h-2 w-2 shrink-0" :style="{ background: missionTypeColor(p.type) }" />
                       <span class="font-mono text-[11px]">{{ p.name }}</span>
-                      <span class="ml-auto font-mono text-[11px] text-neutral-dark">{{ p.n }}</span>
+                      <span class="ml-auto font-mono text-[11px] text-neutral-dark">{{ p.n || "no regions" }}</span>
                     </button>
                   </li>
                 </ul>
@@ -123,6 +138,7 @@
                 <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold text-[#fc4b08]">{{ projectSummary.seats }}</span><span class="font-mono text-[10px] text-neutral-dark">PARTNER SEATS</span></div>
                 <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold text-[#249489]">{{ projectSummary.both }}</span><span class="font-mono text-[10px] text-neutral-dark">BOTH</span></div>
               </div>
+              <p v-if="selectedProjectNote" class="mt-3 border-l-2 border-neutral-darkest pl-2 font-sans text-[12px] leading-snug text-neutral-dark">{{ selectedProjectNote }}</p>
               <ul v-if="selectedProject" class="mt-3 max-h-56 overflow-y-auto">
                 <li v-for="l in selectedProjectLinks" :key="l.territory_id" class="flex items-start gap-2 border-b border-neutral-lighter py-1.5">
                   <span class="min-w-0 flex-1">
@@ -369,7 +385,7 @@ const projectOptions = computed(() => {
   const nByProject = new Map<string, number>();
   for (const l of payload.value?.links ?? []) nByProject.set(l.project_id, (nByProject.get(l.project_id) ?? 0) + 1);
   const list = [...(payload.value?.mission ?? []).map((m) => ({ id: m.cordis_id, name: m.mission_name, type: m.project_type as string | null, n: nByProject.get(m.cordis_id) ?? 0 })),
-    { id: MIP4ADAPT, name: "MIP4Adapt (technical assistance)", type: null, n: nByProject.get(MIP4ADAPT) ?? 0 }];
+    { id: MIP4ADAPT, name: "MIP4Adapt (technical assistance, service contract)", type: null, n: nByProject.get(MIP4ADAPT) ?? 0 }];
   return list
     .filter((p) => projectAllowed(p.id) || p.id === MIP4ADAPT)
     .filter((p) => !q || p.name.toLowerCase().includes(q))
@@ -387,9 +403,17 @@ function selectRegion(id: string) {
 const selectedProjectInfo = computed(() => {
   const id = selectedProject.value;
   if (!id) return null;
-  if (id === MIP4ADAPT) return { name: "MIP4Adapt", sub: "Mission Implementation Platform · technical assistance to regions" };
+  if (id === MIP4ADAPT) return { name: "MIP4Adapt", sub: "Mission Implementation Platform · service contract, not a Horizon project · technical assistance to regions" };
   const m = missionById.value.get(id);
   return { name: m?.mission_name ?? id, sub: [missionTypeLabel(m?.project_type), m?.topic_code].filter(Boolean).join(" · ") };
+});
+const selectedProjectNote = computed(() =>
+  selectedProject.value && selectedProject.value !== MIP4ADAPT ? missionById.value.get(selectedProject.value)?.territory_note ?? null : null
+);
+const coverage = computed(() => {
+  const mission = payload.value?.mission ?? [];
+  const without = mission.filter((m) => !m.in_annex5).sort((a, b) => a.mission_name.localeCompare(b.mission_name));
+  return { total: mission.length, withRegions: mission.length - without.length, without };
 });
 const selectedProjectLinks = computed(() => (selectedProject.value ? linksForProject(selectedProject.value) : []));
 const projectSummary = computed(() => {

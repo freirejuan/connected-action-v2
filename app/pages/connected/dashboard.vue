@@ -46,6 +46,12 @@ const { data: rawRisks } = await useAsyncData(CONNECTED_CORDIS_KEYS.risks, fetch
 const { data: rawThemes } = await useAsyncData(CONNECTED_CORDIS_KEYS.themes, fetchAuxThemes);
 const { data: rawMission } = await useAsyncData("mission-projects", fetchMissionProjects);
 const { data: dataMeta } = await useAsyncData("lab-data-meta", fetchDataMeta);
+const territoryCoverage = computed(() => {
+  const all = rawMission.value ?? [];
+  if (!all.length) return null;
+  const without = all.filter((m) => !m.in_annex5).map((m) => m.mission_name).sort();
+  return { total: all.length, with: all.length - without.length, without };
+});
 
 const missionById = computed(() => new Map((rawMission.value || []).map((m) => [m.cordis_id, m])));
 
@@ -740,6 +746,10 @@ const statStripItems = computed(() => [
             <span v-for="(s, i) in dataMeta.sources.filter((x) => ['cordis', 'types', 'annex5'].includes(x.key))" :key="s.key">
               {{ i ? " · " : "" }}{{ s.key === "cordis" ? "CORDIS" : s.key === "types" ? "Project types" : "Territories" }} {{ s.date }}
             </span>
+          </p>
+          <p v-if="territoryCoverage" class="mt-1 font-mono text-2xs text-neutral-dark">
+            TERRITORIES · {{ territoryCoverage.with }} of {{ territoryCoverage.total }} projects have regions in Appendix 5 (none for
+            {{ territoryCoverage.without.join(" and ") }}, which work at national or European scale)
           </p>
       </CaCard>
 

@@ -52,7 +52,7 @@
             <span class="font-mono text-[10px] text-neutral-dark">{{ mission.topic_code }}</span><br />
             {{ mission.topic_title }}
             <p v-if="mission.type_note" class="mt-1 text-[11px] text-neutral-dark">{{ mission.type_note }}</p>
-            <p v-if="!mission.in_annex5" class="mt-1 text-[11px] text-neutral-dark">No regions listed for this project in the Mission Barometer (Appendix 5).</p>
+            <p v-if="mission.territory_note" class="mt-1 text-[11px] text-neutral-dark">{{ mission.territory_note }}</p>
           </div>
         </section>
 
