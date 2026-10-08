@@ -5,6 +5,7 @@ Versión experimental y autónoma de la **Connected Action** de FARCLIMATE, con 
 - Origen: extraída de [`isInviable/farclimate_hub`](https://github.com/isInviable/farclimate_hub), `apps/web`, commit `e75dbae` (6-oct-2026). Solo las vistas `/connected/*`, sus componentes y su lógica.
 - **Sitio 100 % estático**: sin servidor ni Supabase. Los datos se leen de `public/data/*.json`.
 - Una vez validada, las mejoras se integran en `farclimate_hub` (componentes nuevos + tablas de la migración `sql/`).
+- Estado, hoja de ruta y decisiones: doc vivo *Connected Action v2 · Hoja de ruta y estado* (https://claude.ai/code/artifact/17a165c0-fab4-47f9-8683-441f7f285f4d). Guías de validación y de revisión del Catálogo: doc *Connected Action v2 · Materiales de trabajo con la Misión*.
 
 ## Datos
 
