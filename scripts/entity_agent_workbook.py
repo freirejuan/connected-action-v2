@@ -70,7 +70,7 @@ txt = [
     ['Por dónde empezar', 'Hojas 1 y 3 (dudas): decidir cada fila. Después, hojas 2 y 4 (resueltas): repaso rápido, empezando por las filas con confianza media (en amarillo). La hoja 5 son los cruces automáticos ya aplicados: marcar "Distinta" solo si alguno está mal.'],
     ['Desplegables', 'Las columnas de decisión tienen una lista desplegable en Excel y Google Sheets. Numbers (Mac) no muestra estas listas: en ese caso, escribir el valor exacto (aparece en la columna de la propuesta).'],
     ['Criterio acordado', 'Asociaciones empresariales y sectoriales, plataformas, hubs, clústeres y fundaciones (no de investigación) van en "ONG / fundación / asociación". Ya está aplicado: esas filas llevan la nota "[criterio aplicado]".'],
-    ['Criterio pendiente', 'Cámaras (de comercio, de agricultura) y cooperativas: filas con la nota "[pendiente]" en la hoja 3. Propuesta: cámaras → "Otro organismo público" (corporaciones de derecho público); cooperativas → "Empresa".'],
+    ['Criterio acordado (2)', 'Cámaras de comercio, industria y agricultura → "Otro organismo público" (corporaciones de derecho público); cooperativas → "Empresa". "Otra" queda para formas atípicas (GEIE/EEIG, comunidades privadas de usuarios, partenariados sin forma jurídica) y entidades sin información.'],
     ['Cómo se aplica', 'Al devolver el libro: python3 scripts/apply_entity_review.py <libro> && pnpm run data. Las decisiones se guardan en data-src/mission/entity_review.csv y entity_nature_review.csv.'],
 ]
 for r in txt: ws.append(r)
@@ -157,7 +157,7 @@ rows = [['Qué', 'Número', 'Nota'],
         ['  · dudas (hoja 1)', len(p_doubt), 'dudosas o con confianza media o baja'],
         ['  · resueltas (hoja 2)', len(p_ok), 'confianza alta'],
         ['Tipos revisados por agente', len(nin), f"{sum(1 for n in nin if N[n['k']]['nature'] != n['proposal'])} cambian respecto a la propuesta automática"],
-        ['  · dudas (hoja 3)', len(n_doubt), f"{sum(1 for n in n_doubt if is_criterion(n))} cámaras y cooperativas pendientes de criterio, el resto con confianza baja"],
+        ['  · dudas (hoja 3)', len(n_doubt), 'confianza baja'],
         ['  · resueltos (hoja 4)', len(n_ok), f"{sum(1 for n in n_ok if N[n['k']]['confidence'] == 'media')} con confianza media (amarillo)"],
         ['Cruces automáticos (hoja 5)', w.max_row - 1, 'ya aplicados en el Lab'],
         [], ['Tipo propuesto por el agente', 'Entidades', '']] + [[k, v, ''] for k, v in Counter(N[n['k']]['nature'] for n in nin).most_common()]
