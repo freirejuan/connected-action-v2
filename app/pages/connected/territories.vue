@@ -143,6 +143,7 @@
                 <li v-for="l in selectedProjectLinks" :key="l.territory_id" class="flex items-start gap-2 border-b border-neutral-lighter py-1.5">
                   <span class="min-w-0 flex-1">
                     <span class="block text-[12px] text-neutral-darkest">{{ l.territory?.name }}</span>
+                    <span v-if="l.territory?.catalogue_name" class="block text-[11px] italic text-neutral-dark">Catalogue: {{ l.territory.catalogue_name }}</span>
                     <span class="font-mono text-[10px] text-neutral-dark">{{ l.code || l.territory?.country || "no code" }}{{ l.role ? " · " + l.role : "" }}</span>
                   </span>
                   <span v-if="l.is_signatory" class="shrink-0 border border-neutral-darkest px-1 font-mono text-[9px] font-bold">SIGNATORY</span>
@@ -178,6 +179,7 @@
                     <span class="min-w-0 flex-1">
                       <button type="button" class="block text-left font-mono text-[11px] font-bold hover:underline" @click="selectProject(l.project_id)">{{ l.mission?.mission_name ?? l.project_id }}</button>
                       <span class="block text-[12px] text-neutral-darkest">{{ l.territory?.name }}</span>
+                      <span v-if="l.territory?.catalogue_name" class="block text-[11px] italic text-neutral-dark">Catalogue: {{ l.territory.catalogue_name }}</span>
                       <span class="font-mono text-[10px] text-neutral-dark">{{ l.code }}{{ l.role ? " · " + l.role : "" }}</span>
                     </span>
                     <span v-if="l.is_signatory" class="shrink-0 border border-neutral-darkest px-1 font-mono text-[9px] font-bold">SIGNATORY</span>

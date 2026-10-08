@@ -115,8 +115,13 @@ assert not missing, f'proyectos CORDIS sin capa de la Misión: {missing}'
 counts['mission_projects'] = dump('mission_projects', list(mission.values()))
 
 terr = rows('mission', 'territories.csv')
+# Nombres del Catálogo de proyectos 2026 confirmados en la revisión manual (apply_catalogue_review.py); opcional
+CAT_NAMES = {}
+if os.path.exists(os.path.join(SRC, 'mission', 'catalogue_names_reviewed.csv')):
+    for r in rows('mission', 'catalogue_names_reviewed.csv'):
+        if r['catalogue_name'] and r['catalogue_name'] != r['annex_name']: CAT_NAMES.setdefault(r['territory_id'], r['catalogue_name'])
 territories = [{
-    'id': r['territory_id'], 'name': r['authority_name'], 'country': txt(r['country_iso']),
+    'id': r['territory_id'], 'name': r['authority_name'], 'catalogue_name': CAT_NAMES.get(r['territory_id']), 'country': txt(r['country_iso']),
     'codes': [c for c in (r['territory_codes'] or '').split('|') if c], 'is_signatory': B(r['is_signatory']),
     'n_projects': int(r['n_projects']), 'roles': [x for x in (r['roles'] or '').split('|') if x],
     'lat': num(r['geo_lat']), 'lon': num(r['geo_lon']),

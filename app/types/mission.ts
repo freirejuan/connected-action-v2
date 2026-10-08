@@ -28,6 +28,8 @@ export interface MissionProject {
 export interface MissionTerritory {
   id: string;
   name: string;
+  /** nombre con que aparece en el Catálogo de proyectos 2026, si la revisión manual lo confirmó */
+  catalogue_name: string | null;
   country: string | null;
   codes: string[];
   is_signatory: boolean;
