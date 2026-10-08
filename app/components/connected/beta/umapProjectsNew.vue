@@ -310,13 +310,15 @@
   // a reactive variable to hold visual variables from UMAP
   const umapVisualVariables = ref<any>(null);
   const umapPadding = computed(() => height.value * 0.333);
+  // horizontal padding: same idea, but capped so a narrower plot area keeps room to spread
+  const umapPadX = computed(() => Math.min(umapPadding.value, width.value * 0.2));
 
   // scale X and Y to fit in SVG
   const scaleX = computed(() => {
     if (!umapVisualVariables.value) return d3.scaleLinear().domain([-10, 10]).range([0, width.value]);
     const extent = d3.extent(umapVisualVariables.value, (d: any) => d.umapX as number);
     const domain = extent[0] !== undefined && extent[1] !== undefined ? extent : [-10, 10];
-    return d3.scaleLinear().domain(domain).range([umapPadding.value, width.value - umapPadding.value]);
+    return d3.scaleLinear().domain(domain).range([umapPadX.value, width.value - umapPadX.value]);
   });
 
   const scaleY = computed(() => {

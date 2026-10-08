@@ -49,9 +49,18 @@ projects = [{
 projects.sort(key=lambda p: p['start_date'] or '', reverse=True)
 counts['projects'] = dump('projects', projects)
 
+def org_name(v):
+    # CORDIS escapes quotes twice in a few names (e.g. NCSR "D"): undo the extra layer
+    v = txt(v)
+    if v and '""' in v:
+        if v.startswith('"') and v.endswith('"'):
+            v = v[1:-1]
+        v = v.replace('""', '"')
+    return v
+
 entities = [{
-    'id': r['id'], 'cordis_id': r['id'], 'vat_number': txt(r['vatNumber']), 'legal_name': txt(r['legalName']),
-    'short_name': txt(r['shortName']), 'address_street': txt(r['addressStreet']), 'address_city': txt(r['addressCity']),
+    'id': r['id'], 'cordis_id': r['id'], 'vat_number': txt(r['vatNumber']), 'legal_name': org_name(r['legalName']),
+    'short_name': org_name(r['shortName']), 'address_street': txt(r['addressStreet']), 'address_city': txt(r['addressCity']),
     'address_postal_code': txt(r['addressPostalCode']), 'address_country': txt(r['addressCountry']),
     'address_url': txt(r['addressUrl']), 'address_geolocation': txt(r['addressGeolocation']),
     'organization_activity_type_id': type_id.get(r['organizationActivityType']),

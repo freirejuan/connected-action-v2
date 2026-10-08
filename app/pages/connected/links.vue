@@ -139,7 +139,7 @@
             <p class="mb-2 font-mono text-[11px] text-neutral-dark">{{ bridges.length }} organisations</p>
             <table class="w-full text-left text-[12px]">
               <thead class="font-mono text-[10px] text-neutral-dark">
-                <tr><th class="py-1 font-normal">ORGANISATION</th><th class="font-normal">COUNTRY</th><th class="font-normal">RIA</th><th class="font-normal">IA</th></tr>
+                <tr class="border-b border-neutral-darkest"><th class="py-1.5 pr-3 text-left font-normal tracking-[0.12em]">ORGANISATION</th><th class="w-20 px-3 py-1.5 text-left font-normal tracking-[0.12em]">COUNTRY</th><th class="w-14 px-3 py-1.5 text-right font-normal tracking-[0.12em]" title="Research projects (RIA) it takes part in">RIA</th><th class="w-14 py-1.5 pl-3 text-right font-normal tracking-[0.12em]" title="Demonstration projects (IA) it takes part in">IA</th></tr>
               </thead>
               <tbody>
                 <tr v-for="b in bridges.slice(0, 25)" :key="b.id" class="border-t border-neutral-lighter align-top">
@@ -147,9 +147,9 @@
                     <button type="button" class="text-left hover:underline" @click="openEntity(b.id)">{{ b.name }}</button>
                     <span class="block font-mono text-[10px] text-neutral-dark">{{ b.ria.map(name).join(", ") }} ↔ {{ b.ia.map(name).join(", ") }}</span>
                   </td>
-                  <td class="font-mono text-[11px]">{{ b.country }}</td>
-                  <td>{{ b.ria.length }}</td>
-                  <td>{{ b.ia.length }}</td>
+                  <td class="px-3 py-1 font-mono text-[11px]">{{ b.country }}</td>
+                  <td class="px-3 py-1 text-right font-mono text-[12px] tabular-nums">{{ b.ria.length }}</td>
+                  <td class="py-1 pl-3 text-right font-mono text-[12px] tabular-nums">{{ b.ia.length }}</td>
                 </tr>
               </tbody>
             </table>

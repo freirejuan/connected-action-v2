@@ -16,6 +16,8 @@ Registro para la integración posterior. Cada cambio indica si debe volver al Hu
 
 | Error | Corrección | Archivo |
 | --- | --- | --- |
+| En la vista UMAP las burbujas quedan debajo del panel de leyenda (a la derecha) y de la leyenda de tamaño (abajo a la izquierda) | El área del gráfico termina donde empieza el panel (`md:right-[312px]`); la leyenda de tamaño pasa dentro del panel; el margen horizontal del layout se limita al 20 % del ancho | `app/pages/connected/ProjectsUmapNew.vue`, `app/components/connected/beta/umapProjectsNew.vue` |
+| Nombres de CORDIS con comillas escapadas dos veces (`"NCSR ""D"""`, Riga Energy Agency) | `org_name()` en el script de datos quita la capa de escape sobrante | `scripts/build_data.py` (en el Hub, en la carga a Supabase) |
 | La vista UMAP colapsa todos los proyectos en la esquina superior izquierda cuando los datos llegan de golpe: el layout se calcula en `onMounted`, antes de que `useElementSize` conozca el tamaño (0×0). En producción no se ve porque los datos llegan en varias tandas y el `watch` de `projects` lo recalcula | Recalcular el layout (determinista, con semilla) cuando el contenedor tiene tamaño y cada vez que cambia | `app/components/connected/beta/umapProjectsNew.vue` |
 
 ## Capa de la Misión

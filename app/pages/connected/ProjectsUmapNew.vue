@@ -15,7 +15,8 @@
           <USkeleton class="h-full w-full" />
         </div>
 
-        <div v-else class="absolute inset-0">
+        <!-- plot area stops where the legend panel starts so bubbles never sit under it -->
+        <div v-else class="absolute inset-y-0 left-0 right-0 md:right-[312px]">
           <UmapProjectsNew
             :projects="projectItems"
             :years="yearsRange"
@@ -35,17 +36,6 @@
           @select-entity="onSelectEntityFromProject"
         />
         <CaEntityDetailModal v-model:open="isEntityOpen" :entity-id="entityId" />
-
-        <!-- bubble-size legend -->
-        <div class="absolute bottom-3 left-3 z-10 border border-neutral-darkest bg-neutral-lightest p-3">
-          <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">BUBBLE SIZE = FUNDING</span>
-          <div class="flex items-end gap-3">
-            <span v-for="b in [6, 11, 16]" :key="b" class="flex flex-col items-center gap-1">
-              <span class="block rounded-full border-2 border-neutral-darkest bg-neutral-lightest" :style="{ width: `${b * 2}px`, height: `${b * 2}px` }" />
-            </span>
-            <span class="font-mono text-2xs text-neutral-dark">low → high</span>
-          </div>
-        </div>
 
         <!-- category clusters (floating panel) -->
         <div class="absolute right-3 top-3 z-10 max-h-[calc(100%-24px)] w-[280px] overflow-y-auto border border-neutral-darkest bg-neutral-lightest">
@@ -75,6 +65,16 @@
               <input v-model="colorByType" type="checkbox" class="accent-neutral-darkest" />
               COLOUR BY TYPE
             </label>
+          </div>
+          <!-- bubble-size legend (inside the panel so it never covers bubbles) -->
+          <div class="border-b border-neutral-darkest px-4 py-3">
+            <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">BUBBLE SIZE = FUNDING</span>
+            <div class="flex items-end gap-3">
+              <span v-for="b in [6, 11, 16]" :key="b" class="flex flex-col items-center gap-1">
+                <span class="block rounded-full border-2 border-neutral-darkest bg-neutral-lightest" :style="{ width: `${b * 2}px`, height: `${b * 2}px` }" />
+              </span>
+              <span class="font-mono text-2xs text-neutral-dark">low → high</span>
+            </div>
           </div>
           <div class="flex border-b border-neutral-darkest">
             <button
