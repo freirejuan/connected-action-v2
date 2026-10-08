@@ -130,6 +130,18 @@ export function useTerritoryProfiles(f: Filters) {
     return m;
   });
   const actorById = computed(() => new Map((payload.value?.actors ?? []).map((a) => [a.id, a])));
+  /** entrada del anexo 5 -> entidad unificada (varias entradas pueden ser la misma autoridad con otro nombre) */
+  const actorOfTerritory = computed(() => {
+    const m = new Map<string, Actor>();
+    for (const a of payload.value?.actors ?? []) for (const t of a.annex_ids) m.set(t, a);
+    return m;
+  });
+  /** nombre de la autoridad unificada y, si el proyecto la escribe de otra forma, ese nombre */
+  function territoryLabel(territoryId: string) {
+    const original = territoryById.value.get(territoryId)?.name ?? territoryId;
+    const unified = actorOfTerritory.value.get(territoryId)?.name;
+    return unified && unified !== original ? `${unified} (as "${original}")` : original;
+  }
   /** el área de una entidad: los códigos de la autoridad (anexo 5, EEA) o, si no es autoridad, la sede CORDIS */
   const areaOf = (a: Actor) => (a.codes.length ? a.codes : a.seats);
 
@@ -309,6 +321,7 @@ export function useTerritoryProfiles(f: Filters) {
     missionById,
     territoryById,
     actorById,
+    territoryLabel,
     profiles,
     stats,
     participation,

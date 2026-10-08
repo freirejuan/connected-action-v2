@@ -171,7 +171,7 @@
                       <span class="font-normal text-neutral-dark">{{ missionById.get(p.project)?.project_type ?? "service" }}</span>
                     </button>
                     <span v-for="l in p.links" :key="l.territory_id" class="block pl-3.5 text-[12px] leading-snug text-neutral-darkest">
-                      {{ territoryById.get(l.territory_id)?.name }}
+                      {{ territoryLabel(l.territory_id) }}
                       <span class="font-mono text-[10px] text-neutral-dark">· {{ roleLabel(l.role) }}</span>
                     </span>
                   </li>
@@ -182,7 +182,7 @@
                   <ul>
                     <li v-for="p in profile.projectsAbove" :key="p.project" class="py-0.5 text-[12px] leading-snug">
                       <button type="button" class="font-mono text-[11px] font-bold hover:underline" @click="openMission(p.project)">{{ projectName(p.project) }}</button>
-                      <span class="text-neutral-dark"> · {{ p.links.map((l) => `${territoryById.get(l.territory_id)?.name} (${roleLabel(l.role)})`).join("; ") }}</span>
+                      <span class="text-neutral-dark"> · {{ p.links.map((l) => `${territoryLabel(l.territory_id)} · ${roleLabel(l.role)}`).join("; ") }}</span>
                     </li>
                   </ul>
                 </template>
@@ -388,7 +388,7 @@ const ready = T.ready;
 const features = T.features;
 const missionById = T.missionById;
 const territoryById = T.territoryById;
-const { projectName, takesPart, regionProfile, actorRow } = T;
+const { projectName, takesPart, regionProfile, actorRow, territoryLabel } = T;
 
 // --- mapa ---
 const CLS: Record<ProfileClass, { color: string; short: string; label: string; style: Record<string, string> }> = {

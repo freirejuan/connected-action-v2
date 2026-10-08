@@ -236,17 +236,27 @@ RANK = {n: i for i, n in enumerate(NATURES)}
 def title(s):
     return s if not s or not s.isupper() else ' '.join(w if len(w) <= 3 and w.isupper() and w not in ('DE', 'DI', 'DEL', 'LA', 'OF', 'THE', 'AND') else w.capitalize() for w in s.split())
 
+# nombre a mostrar cuando se unen varias entradas del anexo 5 (revisión A-A)
+DISPLAY = {}
+disp_path = os.path.join(SRC, 'authority_display_names.csv')
+if os.path.exists(disp_path):
+    for r in csv.DictReader(open(disp_path, encoding='utf-8')): DISPLAY[r['territory_id']] = r['display_name']
+
 actors = []
 for i, (root, members) in enumerate(sorted(groups.items(), key=lambda kv: sorted(kv[1])[0])):
     a_ids = sorted(m[2:] for m in members if m.startswith('A:'))
     e_ids = sorted(m[2:] for m in members if m.startswith('E:'))
     c_ids = sorted(m[2:] for m in members if m.startswith('C:'))
-    if a_ids: name = A_by[a_ids[0]]['name']
+    if a_ids:
+        shown = [DISPLAY[x] for x in a_ids if x in DISPLAY]
+        name = shown[0] if shown else max((A_by[x] for x in a_ids), key=lambda a: (kind(a['name']) == 'region', kind(a['name']) is not None, a.get('n_projects') or 0, -len(a['name'])))['name']
     elif e_ids: name = E_by[e_ids[0]]['name']
     else:
         c = C_by[c_ids[0]]; name = title(c.get('short_name') if c.get('short_name') and len(c['legal_name']) > 60 else c['legal_name'])
     # naturaleza: las autoridades del anexo 5 y de la EEA mandan sobre el tipo CORDIS
-    if a_ids: nature = min((a_level(A_by[x]) for x in a_ids), key=lambda n: RANK[n])
+    # varias entradas del anexo 5 unidas: ante la duda, la entidad superior (nacional > regional > local)
+    LEVEL_UP = {'Autoridad nacional': 0, 'Autoridad regional': 1, 'Autoridad local': 2}
+    if a_ids: nature = min((a_level(A_by[x]) for x in a_ids), key=lambda n: LEVEL_UP[n])
     elif e_ids: nature = e_level(E_by[e_ids[0]])
     else: nature = c_nat[c_ids[0]]
     for x in c_ids:
