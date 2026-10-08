@@ -120,8 +120,37 @@
               :signatories="signatoryRegions"
               :selected-region="selected"
               :describe="describeRegion"
+              :flows="mapFlows"
+              :dim="mapFlows.length > 0"
               @select-region="selectRegion"
             />
+            <!-- C · flows from the selected territory -->
+            <div v-if="selected && flowData" class="absolute left-3 top-3 z-10 max-w-[360px] border border-neutral-darkest bg-neutral-lightest p-3">
+              <div class="mb-2 flex items-center gap-2">
+                <span class="font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">FLOWS</span>
+                <div class="ml-auto flex border border-neutral-darkest">
+                  <button
+                    v-for="(f, i) in flowModes"
+                    :key="f.id"
+                    type="button"
+                    class="px-2 py-1 font-mono text-[10px] font-bold tracking-[0.06em] transition-colors"
+                    :class="[i ? 'border-l border-neutral-darkest' : '', flowMode === f.id ? 'bg-neutral-darkest text-neutral-lightest' : 'text-neutral-dark hover:bg-neutral-lighter']"
+                    @click="flowMode = f.id"
+                  >
+                    {{ f.label }}
+                  </button>
+                </div>
+              </div>
+              <p v-if="flowMode !== 'none'" class="flex items-start gap-2 text-[11px] leading-snug text-neutral-darkest" :class="flowMode === 'in' ? 'opacity-40' : ''">
+                <span class="mt-1 h-0.5 w-5 shrink-0" :style="{ background: FLOW_OUT }" />
+                <span><strong>Out.</strong> Partners from here take part in {{ flowData.summary.outProjects }} project{{ flowData.summary.outProjects === 1 ? "" : "s" }} acting in {{ flowData.summary.outAreas }} other area{{ flowData.summary.outAreas === 1 ? "" : "s" }} ({{ flowData.summary.outCountries }} countr{{ flowData.summary.outCountries === 1 ? "y" : "ies" }}).</span>
+              </p>
+              <p v-if="flowMode !== 'none'" class="mt-1 flex items-start gap-2 text-[11px] leading-snug text-neutral-darkest" :class="flowMode === 'out' ? 'opacity-40' : ''">
+                <span class="mt-1 h-0.5 w-5 shrink-0" :style="{ background: FLOW_IN }" />
+                <span><strong>In.</strong> The {{ flowData.summary.inProjects }} project{{ flowData.summary.inProjects === 1 ? "" : "s" }} acting here have partners based in {{ flowData.summary.inAreas }} other area{{ flowData.summary.inAreas === 1 ? "" : "s" }} ({{ flowData.summary.inCountries }} countr{{ flowData.summary.inCountries === 1 ? "y" : "ies" }}).</span>
+              </p>
+              <p v-if="flowMode !== 'none'" class="mt-1.5 border-t border-neutral-lighter pt-1 text-[10px] leading-snug text-neutral-dark">Line width: number of entity–project links. Only areas where projects act directly.</p>
+            </div>
             <div class="absolute bottom-3 left-3 z-10 max-w-[330px] border border-neutral-darkest bg-neutral-lightest p-3">
               <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">{{ level === 3 ? "NUTS-3 AREAS" : "NUTS-2 REGIONS" }} BY PROFILE</span>
               <div class="flex flex-col gap-1">
@@ -255,6 +284,24 @@
             </template>
           </aside>
         </div>
+
+        <!-- D · small multiples -->
+        <CaCard class="mt-6" title="The three layers side by side" body-class="p-4">
+          <template #help>
+            <CaHelp title="Small multiples" :w="320">
+              The same {{ level === 3 ? "NUTS-3 areas" : "NUTS-2 regions" }} and filters as the map above, one layer per map: where Mission projects act
+              directly, where their CORDIS partners are based, and where Charter signatories are. Zoom, pan and hover are shared.
+            </CaHelp>
+          </template>
+          <MissionSmallMultiples
+            :features="features"
+            :profiles="T.profiles.value"
+            :selected="selected"
+            :unit="level === 3 ? 'NUTS-3' : 'NUTS-2'"
+            :names="T.regionName.value"
+            @select="selectRegion"
+          />
+        </CaCard>
 
         <!-- entities table -->
         <CaCard class="mt-6" :title="profile ? `Entities of ${profile.name}` : 'All entities'" body-class="p-0">
@@ -436,6 +483,26 @@ function describeRegion(id: string) {
     `${p.signatories.size} Charter signator${p.signatories.size === 1 ? "y" : "ies"}`,
   ];
 }
+
+// --- C · flujos ---
+const FLOW_OUT = "#3d3436";
+const FLOW_IN = "#7945ab";
+const flowModes = [
+  { id: "both" as const, label: "BOTH" },
+  { id: "out" as const, label: "OUT" },
+  { id: "in" as const, label: "IN" },
+  { id: "none" as const, label: "OFF" },
+];
+const flowMode = ref<"both" | "out" | "in" | "none">("both");
+const flowData = computed(() => (selected.value ? T.flowsFor(selected.value) : null));
+const mapFlows = computed(() => {
+  const f = flowData.value;
+  if (!f || flowMode.value === "none") return [];
+  return [
+    ...(flowMode.value !== "in" ? f.out.map((x) => ({ ...x, color: FLOW_OUT })) : []),
+    ...(flowMode.value !== "out" ? f.in.map((x) => ({ ...x, color: FLOW_IN })) : []),
+  ];
+});
 
 // --- ficha ---
 const profile = computed(() => (selected.value ? regionProfile(selected.value) : null));

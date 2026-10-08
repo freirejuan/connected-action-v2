@@ -219,6 +219,63 @@ export function useTerritoryProfiles(f: Filters) {
     return c;
   });
 
+  // --- flujos desde y hacia una región (vista C) ---
+  const partnersByProject = computed(() => {
+    const m = new Map<string, Set<string>>();
+    for (const a of payload.value?.actors ?? [])
+      for (const c of a.cordis_ids)
+        for (const p of projectsByCordisEntity.value.get(c) ?? []) {
+          if (!m.has(p)) m.set(p, new Set());
+          m.get(p)!.add(a.id);
+        }
+    return m;
+  });
+  /**
+   * out: de la región a las zonas donde actúan los proyectos en los que sus entidades son socias (peso = entidad × proyecto);
+   * in: de las sedes de los socios de los proyectos que actúan en la región hacia ella (peso = socio × proyecto).
+   */
+  function flowsFor(r: string) {
+    const n = idLen.value;
+    const regionOf = (a: Actor) => {
+      const c = areaOf(a).find((x) => x.length >= n);
+      return c ? c.slice(0, n) : null;
+    };
+    const out = new Map<string, number>();
+    const inn = new Map<string, number>();
+    const outProjects = new Set<string>();
+    const inProjects = new Set<string>();
+    for (const a of payload.value?.actors ?? []) {
+      if (!actorAllowed(a) || regionOf(a) !== r) continue;
+      for (const p of participation.value.get(a.id)?.partner ?? []) {
+        for (const dest of projectRegions.value.get(p) ?? []) {
+          if (dest === r) continue;
+          out.set(dest, (out.get(dest) ?? 0) + 1);
+          outProjects.add(p);
+        }
+      }
+    }
+    for (const [p, regs] of projectRegions.value) {
+      if (!regs.has(r) || !projectAllowed(p)) continue;
+      for (const id of partnersByProject.value.get(p) ?? []) {
+        const a = actorById.value.get(id)!;
+        if (!actorAllowed(a)) continue;
+        const o = regionOf(a);
+        if (!o || o === r) continue;
+        inn.set(o, (inn.get(o) ?? 0) + 1);
+        inProjects.add(p);
+      }
+    }
+    const countries = (m: Map<string, number>) => new Set([...m.keys()].map((k) => k.slice(0, 2))).size;
+    return {
+      out: [...out.entries()].map(([to, weight]) => ({ from: r, to, weight })),
+      in: [...inn.entries()].map(([from, weight]) => ({ from, to: r, weight })),
+      summary: {
+        outAreas: out.size, outCountries: countries(out), outProjects: outProjects.size,
+        inAreas: inn.size, inCountries: countries(inn), inProjects: inProjects.size,
+      },
+    };
+  }
+
   // --- ficha de una región ---
   function regionProfile(r: string) {
     const actors = (payload.value?.actors ?? []).filter(actorAllowed);
@@ -326,6 +383,7 @@ export function useTerritoryProfiles(f: Filters) {
     stats,
     participation,
     regionProfile,
+    flowsFor,
     roleOf,
     actorRow,
     takesPart,
