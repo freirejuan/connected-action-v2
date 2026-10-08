@@ -1,40 +1,40 @@
 id,name,short_name,country,cordis_type,nature,confidence,rule
 998314786,3E,3E,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
-999422235,A SUD ECOLOGIA E COOPERAZIONE APS,A SUD,IT,Other,ONG / fundación / asociación,media,otros + nombre
+999422235,A SUD ECOLOGIA E COOPERAZIONE APS,A SUD,IT,Other,ONG / fundación / asociación,revisada,revisión manual
 999652804,AALBORG KOMMUNE,AAK,DK,Public bodies,Autoridad local,media,organismo público + nombre
 999904034,AALBORG UNIVERSITET,AAU,DK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 992597994,AARHUS KOMMUNE,AAKS,DK,Public bodies,Autoridad local,media,organismo público + nombre
 999997736,AARHUS UNIVERSITET,AU,DK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 952549216,ABUD MERNOKIRODA KFT,ABUD,HU,Private for-profit entities,Empresa,alta,tipo CORDIS
 999887253,ACCADEMIA EUROPEA DI BOLZANO,Eurac Research,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-889350709,ACCENT SUD - ASSOCIATION POUR LA COOPERATION CULTURELLE ET L'ECONOMIE NUMERIQUE TRANSREGIONALE AVEC L'EUROPE DU SUD,ACCENT SUD,FR,Other,ONG / fundación / asociación,media,otros + nombre
-891813733,ACCLIMATERRA - COMITE SCIENTIFIQUE REGIONAL SUR LE CHANGEMENT CLIMATIQUE,,FR,Other,Autoridad regional,baja,otros + nombre
+889350709,ACCENT SUD - ASSOCIATION POUR LA COOPERATION CULTURELLE ET L'ECONOMIE NUMERIQUE TRANSREGIONALE AVEC L'EUROPE DU SUD,ACCENT SUD,FR,Other,ONG / fundación / asociación,revisada,revisión manual
+891813733,ACCLIMATERRA - COMITE SCIENTIFIQUE REGIONAL SUR LE CHANGEMENT CLIMATIQUE,,FR,Other,Centro de investigación,revisada,revisión manual
 879064344,ACEA ATO 5 SPA,ACEA ATO5,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 950742785,ACEA ATO2 SPA,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 958114300,ACONIUM GMBH,aconium,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
 891590633,ACTERRA,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 894585605,"ADCOGITO ELGSENOS TYRIMU INSTITUTAS, VSI","ADCOGITO, INSTITUTE FOR ADVANCED BEHAVIORAL RESEARCH",LT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999693350,ADELPHI RESEARCH GEMEINNÜTZIGE GMBH,,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
-909584812,ADEPORTO - AGÊNCIA DE ENERGIA DO PORTO,ADEPORTO,PT,Other,Otra,baja,"otros, nombre sin pista"
+909584812,ADEPORTO - AGÊNCIA DE ENERGIA DO PORTO,ADEPORTO,PT,Other,Otro organismo público,revisada,revisión manual
 891619248,ADICT,ADICT SOLUTIONS,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
-885098908,ADMINISTRATIA BAZINALA DE APA BANAT,BANAT RIVER BASIN ADMINISTRATION ADMINISTRATION DU BASSIN D EAU BANAT,RO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-880859717,ADMINISTRATIA DOMENIULUI PUBLIC SECTOR 2,,RO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-999628457,ADMINISTRATIA NATIONALA DE METEOROLOGIE R.A.,ANM,RO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-950152346,ADRAL - AGENCIA DE DESENVOLVIMENTO REGIONAL DO ALENTEJO SA,ADRAL,PT,Other,Autoridad regional,baja,otros + nombre
+885098908,ADMINISTRATIA BAZINALA DE APA BANAT,BANAT RIVER BASIN ADMINISTRATION ADMINISTRATION DU BASSIN D EAU BANAT,RO,Public bodies,Otro organismo público,revisada,revisión manual
+880859717,ADMINISTRATIA DOMENIULUI PUBLIC SECTOR 2,,RO,Public bodies,Otro organismo público,revisada,revisión manual
+999628457,ADMINISTRATIA NATIONALA DE METEOROLOGIE R.A.,ANM,RO,Public bodies,Otro organismo público,revisada,revisión manual
+950152346,ADRAL - AGENCIA DE DESENVOLVIMENTO REGIONAL DO ALENTEJO SA,ADRAL,PT,Other,Otro organismo público,revisada,revisión manual
 883398692,ADVIESBUREAU INZAKE GRONDWATERTECHNIEKEN,AGT,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
-999964271,AEROSPACE VALLEY,,FR,Other,Otra,baja,"otros, nombre sin pista"
-999963301,AGENCE DE L'ENVIRONNEMENT ET DE LAMAITRISE DE L'ENERGIE,,FR,Public bodies,Otro organismo público,media,organismo público + nombre
-888059445,"AGENCE DU CLIMAT, LE GUICHET DES SOLUTIONS",,FR,Other,Otra,baja,"otros, nombre sin pista"
+999964271,AEROSPACE VALLEY,,FR,Other,ONG / fundación / asociación,revisada,revisión manual
+999963301,AGENCE DE L'ENVIRONNEMENT ET DE LAMAITRISE DE L'ENERGIE,,FR,Public bodies,Otro organismo público,revisada,revisión manual
+888059445,"AGENCE DU CLIMAT, LE GUICHET DES SOLUTIONS",,FR,Other,Otro organismo público,revisada,revisión manual
 999991722,AGENCIA ESTATAL CONSEJO SUPERIOR DE INVESTIGACIONES CIENTIFICAS,CSIC,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-917950286,AGENCIA PORTUGUESA DO AMBIENTE IP,,PT,Public bodies,Otro organismo público,media,organismo público + nombre
-999550954,AGENTIA PENTRU DEZVOLTARE REGIONALA CENTRU,THE REGIONAL DEVELOPMENT AGENCY ADR CENTRU RDA CENTRU,RO,Other,Autoridad regional,baja,otros + nombre
-997538786,AGENTURA NA PODPORU REGIONALNEHO ROZVOJA KOSICE NO,AGENCY FOR THE SUPPORT OF REGIONAL DEVELOPMENT KOSICE,SK,Other,Autoridad regional,baja,otros + nombre
+917950286,AGENCIA PORTUGUESA DO AMBIENTE IP,,PT,Public bodies,Otro organismo público,revisada,revisión manual
+999550954,AGENTIA PENTRU DEZVOLTARE REGIONALA CENTRU,THE REGIONAL DEVELOPMENT AGENCY ADR CENTRU RDA CENTRU,RO,Other,Otro organismo público,revisada,revisión manual
+997538786,AGENTURA NA PODPORU REGIONALNEHO ROZVOJA KOSICE NO,AGENCY FOR THE SUPPORT OF REGIONAL DEVELOPMENT KOSICE,SK,Other,Otro organismo público,revisada,revisión manual
 999808780,AGENZIA ANSA - AGENZIA NAZIONALE STAMPA ASSOCIATA - SOCIETA COOPERATIVA,ANSA,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-915866629,AGENZIA FORESTALE REGIONALE PER LOSVILUPPO DEL TERRITORIO E DELL AMBIENTE DELLA SARDEGNA,AGENZIA FORESTAS - FORESTAS AGENCY,IT,Public bodies,Otro organismo público,media,organismo público + nombre
+915866629,AGENZIA FORESTALE REGIONALE PER LOSVILUPPO DEL TERRITORIO E DELL AMBIENTE DELLA SARDEGNA,AGENZIA FORESTAS - FORESTAS AGENCY,IT,Public bodies,Otro organismo público,revisada,revisión manual
 999988521,"AGENZIA NAZIONALE PER LE NUOVE TECNOLOGIE, L'ENERGIA E LO SVILUPPO ECONOMICO SOSTENIBILE",ENEA,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999514191,AGENZIA PER LA PROMOZIONE DELLA RICERCA EUROPEA,APRE,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-999454633,"AGENZIA REGIONALE PER LA PREVENZIONE, L'AMBIENTE E L'ENERGIA DELL'EMILIA-ROMAGNA",ARPAE,IT,Public bodies,Otro organismo público,media,organismo público + nombre
-926686882,AGJENCIA KOMBËTARE E PLANIFIKIMIT TË TERRITORIT,NATIONAL TERRITORIAL PLANNING AGENCY,AL,Public bodies,Otro organismo público,media,organismo público + nombre
+999454633,"AGENZIA REGIONALE PER LA PREVENZIONE, L'AMBIENTE E L'ENERGIA DELL'EMILIA-ROMAGNA",ARPAE,IT,Public bodies,Otro organismo público,revisada,revisión manual
+926686882,AGJENCIA KOMBËTARE E PLANIFIKIMIT TË TERRITORIT,NATIONAL TERRITORIAL PLANNING AGENCY,AL,Public bodies,Otro organismo público,revisada,revisión manual
 999870278,AGRAREN UNIVERSITET - PLOVDIV,AGRICULTURAL UNIVERSITY PLOVDIV,BG,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 920803250,AGRICULTURAL APPLICATIONS IKE,AgroApps P.C.,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 997594173,AGRIS SARDEGNA,AGENZIA PER LA RICERCA IN AGRICOLTURA DELLA REGIONE AUTONOMA DELLA SARDEGNA,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
@@ -43,398 +43,398 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 911244676,AIDEAS OU,,EE,Private for-profit entities,Empresa,alta,tipo CORDIS
 949821091,"AIGUES DE BARCELONA, EMPRESA METROPOLITANA DE GESTIO DEL CICLE INTEGRAL DE L'AIGUA SA",AB,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 892135579,AINIGMA TECHNOLOGIES,AINIGMA,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
-896906912,AIRFIELD ESTATE,,IE,Other,Otra,baja,"otros, nombre sin pista"
+896906912,AIRFIELD ESTATE,,IE,Other,ONG / fundación / asociación,revisada,revisión manual
 999584128,AIT AUSTRIAN INSTITUTE OF TECHNOLOGY GMBH,AIT,AT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 997628123,AJUNTAMENT DE BARCELONA,,ES,Public bodies,Autoridad local,media,organismo público + nombre
-886632090,AJUNTAMENT DE BLANES,AJUNTAMENT DE BLANES,ES,Public bodies,Autoridad local,media,organismo público + nombre
-950897306,AJUNTAMENT DE GRANOLLERS,AJUNTAMENT DE GRANOLLERS,ES,Public bodies,Autoridad local,media,organismo público + nombre
-945228529,AJUNTAMENT DE MANLLEU,CERM-MTer,ES,Public bodies,Autoridad local,media,organismo público + nombre
-997474572,AJUNTAMENT DE TERRASSA,AYUNTAMIENTO DE TERRASSA,ES,Public bodies,Autoridad local,media,organismo público + nombre
+886632090,AJUNTAMENT DE BLANES,AJUNTAMENT DE BLANES,ES,Public bodies,Autoridad local,revisada,revisión manual
+950897306,AJUNTAMENT DE GRANOLLERS,AJUNTAMENT DE GRANOLLERS,ES,Public bodies,Autoridad local,revisada,revisión manual
+945228529,AJUNTAMENT DE MANLLEU,CERM-MTer,ES,Public bodies,Autoridad local,revisada,revisión manual
+997474572,AJUNTAMENT DE TERRASSA,AYUNTAMIENTO DE TERRASSA,ES,Public bodies,Autoridad local,revisada,revisión manual
 941618577,AKTI KENTRO MELETON KE EREVNAS,AKTI Project and Research Centre,CY,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999841760,ALBERT-LUDWIGS-UNIVERSITAET FREIBURG,UFR,DE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 902449880,ALCHEMIA-NOVA RESEARCH & INNOVATION GEMEINNUTZIGE GMBH,,AT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-963194384,ALDA - ASSOCIATION EUROPEENNE POUR LA DEMOCRATIE LOCALE,ALDA,FR,Other,ONG / fundación / asociación,media,otros + nombre
+963194384,ALDA - ASSOCIATION EUROPEENNE POUR LA DEMOCRATIE LOCALE,ALDA,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 887709275,ALEA SRL,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 999993953,ALMA MATER STUDIORUM - UNIVERSITA DI BOLOGNA,UNIBO,IT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 867662770,AMBIENTE ITALIA SRL,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 998322449,AMBIT 1995 S.R.L. in liquidazione,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 949718562,AMIGO SRL,AMIGO SRL,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-882236729,AMT DER BURGENLANDISCHEN LANDESREGIERUNG,,AT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-996312415,AMT DER NIEDEROSTERREICHISCHEN LANDESREGIERUNG,,AT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-997385720,AMT DER STEIERMARK LANDESREGIERUNG,,AT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-893313062,AMT DER TIROLER LANDESREGIERUNG,,AT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+882236729,AMT DER BURGENLANDISCHEN LANDESREGIERUNG,,AT,Public bodies,Autoridad regional,revisada,revisión manual
+996312415,AMT DER NIEDEROSTERREICHISCHEN LANDESREGIERUNG,,AT,Public bodies,Autoridad regional,revisada,revisión manual
+997385720,AMT DER STEIERMARK LANDESREGIERUNG,,AT,Public bodies,Autoridad regional,revisada,revisión manual
+893313062,AMT DER TIROLER LANDESREGIERUNG,,AT,Public bodies,Autoridad regional,revisada,revisión manual
 888540468,ANAPLASI DIMOSION CHORON ANONYMI ETAIREIA,ANAPLASSIS S.A.,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-883214004,ANAPTIXIAKI ETERIA KINOTITON PERIOCHIS TROODOYS LTD,TROODOS DEVELOPMENT COMPANY LTD,CY,Other,Otra,baja,"otros, nombre sin pista"
+883214004,ANAPTIXIAKI ETERIA KINOTITON PERIOCHIS TROODOYS LTD,TROODOS DEVELOPMENT COMPANY LTD,CY,Other,Otro organismo público,revisada,revisión manual
 996713801,ANAPTYXIAKI ATHINAS ANONYMI ETAIREIA - ANAPTYXIAKOS ORGANISMOS TOPIKIS AYTODIOIKISIS,DEVELOP ATHENS S.A. - LOCAL GOVERNMENT ORGANISATION,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-991940043,ANAPTYXIAKI ETAIREIA DIMOU TRIKKAION ANAPTYXIAKI ANONYMI ETAIREIA OTA,E TRIKALA AE,EL,Other,Otra,baja,"otros, nombre sin pista"
-939316185,ANAPTYXIAKI ETAIREIA LEFKOSIAS (ANEL) LTD,NICOSIA DEVELOPMENT AGENCY (ANEL) LTD,CY,Other,Otra,baja,"otros, nombre sin pista"
-939158754,ANAPTYXIAKI MEIZONOS ASTIKIS THESSALONIKIS AE - ANAPTYXIAKOS ORGANISMOS TOPIKIS AUTODIOIKISIS,,EL,Other,Otra,baja,"otros, nombre sin pista"
-939773346,ANAPTYXIAKOS SYNDESMOS DYTIKIS ATHINAS,ASDA ASSOCIATION FOR THE DEVELOPMENT OF WEST ATHENS,EL,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+991940043,ANAPTYXIAKI ETAIREIA DIMOU TRIKKAION ANAPTYXIAKI ANONYMI ETAIREIA OTA,E TRIKALA AE,EL,Other,Otro organismo público,revisada,revisión manual
+939316185,ANAPTYXIAKI ETAIREIA LEFKOSIAS (ANEL) LTD,NICOSIA DEVELOPMENT AGENCY (ANEL) LTD,CY,Other,Otro organismo público,revisada,revisión manual
+939158754,ANAPTYXIAKI MEIZONOS ASTIKIS THESSALONIKIS AE - ANAPTYXIAKOS ORGANISMOS TOPIKIS AUTODIOIKISIS,,EL,Other,Otro organismo público,revisada,revisión manual
+939773346,ANAPTYXIAKOS SYNDESMOS DYTIKIS ATHINAS,ASDA ASSOCIATION FOR THE DEVELOPMENT OF WEST ATHENS,EL,Public bodies,Autoridad local,revisada,revisión manual
 886553617,ANDFJORD SALMON AS,,NO,Private for-profit entities,Empresa,alta,tipo CORDIS
 997130028,ANTEJA ECG D.O.O.,,SI,Private for-profit entities,Empresa,alta,tipo CORDIS
 999815376,APPLIED RESEARCH AND COMMUNICATIONS FUND,ARC Fund,BG,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999514773,AQUAFIN NV,Aquafin NV,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
 972702033,"AQUATEC SOLUCIONES MEDIOAMBIENTALES, S.A.",AQUA,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-937664954,AREA METROPOLITANA DE BARCELONA,AMB,ES,Public bodies,Autoridad local,media,organismo público + nombre
-908315955,AREA METROPOLITANA DE LISBOA,,PT,Public bodies,Autoridad local,media,organismo público + nombre
+937664954,AREA METROPOLITANA DE BARCELONA,AMB,ES,Public bodies,Autoridad local,revisada,revisión manual
+908315955,AREA METROPOLITANA DE LISBOA,,PT,Public bodies,Autoridad local,revisada,revisión manual
 999895692,ARISTOTELIO PANEPISTIMIO THESSALONIKIS,ARISTOTLE UNIVERSITY OF THESSALONIKI,EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-899261102,ART-ER-SOCIETA CONSORTILE PER AZIONI,ART-ER,IT,Other,Otra,baja,"otros, nombre sin pista"
+899261102,ART-ER-SOCIETA CONSORTILE PER AZIONI,ART-ER,IT,Other,Otro organismo público,revisada,revisión manual
 999963980,ARTELIA,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 949756877,ARX NET AE YPIRESIES KAI EPICHIRISIS DIADIKTYOU ANONIMI ETAIRIA,ARX.NET S.A.,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 892524646,ASITIS SRO,ASITIS,CZ,Private for-profit entities,Empresa,alta,tipo CORDIS
 998253579,ASOCIACION BC3 BASQUE CENTRE FOR CLIMATE CHANGE - KLIMA ALDAKETA IKERGAI,BC3,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-892020440,ASOCIACION BRIGAID CONNECT,,ES,Other,ONG / fundación / asociación,media,otros + nombre
-876520616,ASOCIACION CULTURAL ESPACIO BELLAS VISTAS,,ES,Other,ONG / fundación / asociación,media,otros + nombre
-998526052,ASOCIACION DE INDUSTRIAS DE CONOCIMIENTO Y TECNOLOGIA - GAIA - EUSKALHERRIKO EZAGUTZA ETA TEKNOLOGIA INDUSTRIEN ELKARTEA,GAIA,ES,Other,ONG / fundación / asociación,media,otros + nombre
+892020440,ASOCIACION BRIGAID CONNECT,,ES,Other,ONG / fundación / asociación,revisada,revisión manual
+876520616,ASOCIACION CULTURAL ESPACIO BELLAS VISTAS,,ES,Other,ONG / fundación / asociación,revisada,revisión manual
+998526052,ASOCIACION DE INDUSTRIAS DE CONOCIMIENTO Y TECNOLOGIA - GAIA - EUSKALHERRIKO EZAGUTZA ETA TEKNOLOGIA INDUSTRIEN ELKARTEA,GAIA,ES,Other,ONG / fundación / asociación,revisada,revisión manual
 954154469,ASOCIACION EMPRESARIAL DE INVESTIGACION CENTRO TECNOLOGICO DE LA CONSTRUCCION REGION DE MURCIA,CTCON,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-891896474,ASOCIACION PARA EL DESARROLLO DE LADEMOCRACIA DELIBERATIVA Y PARTICIPATIVA,DELIBERATIVA,ES,Other,ONG / fundación / asociación,media,otros + nombre
-972498430,ASOCIACION PARA LA DEFENSA DE LA NATURALEZA,ASSOCIATION FOR THE DEFENSE OF THE NATURE,ES,Other,ONG / fundación / asociación,media,otros + nombre
-887300517,ASOCIACION PARA LA INVESTIGACION DE LA MACARONESIA,AIM,ES,Other,ONG / fundación / asociación,media,otros + nombre
-918145741,ASOCIACION RED CAMBERA,CAMBERA,ES,Other,ONG / fundación / asociación,media,otros + nombre
-883921619,ASOCIATIA CLIMATO SFERA,,RO,Other,Otra,baja,"otros, nombre sin pista"
-889113738,ASOCIATIA CLUSTER DE EDUCATIE C-EDU,,RO,Other,Otra,baja,"otros, nombre sin pista"
-939180676,ASOCIATIA DE DEZVOLTARE INTERCOMUNITARA ZONA METROPOLITANA CONSTANTA,ZMC,RO,Other,Autoridad local,baja,otros + nombre
-890633243,ASOCIATIA EURO ATLANTIC DIPLOMACY SOCIETY,EAD SOCIETY,RO,Other,ONG / fundación / asociación,media,otros + nombre
-898858067,ASOCIATIA INSTITUTUL DE DEZVOLTARE LOCALA THINK GLOBAL ACT LOCAL,INSTITUTE FOR LOCAL DEVELOPMENT THINK GLOBAL ACT LOCAL,RO,Other,Otra,baja,"otros, nombre sin pista"
-901323613,ASOCIATIA PARCUL NATURAL BUCURESTI,BUCHAREST NATURE PARK ASSOCIATION,RO,Other,ONG / fundación / asociación,media,otros + nombre
-959320495,ASOCIATIA WWF ROMANIA,WWF Romania,RO,Other,ONG / fundación / asociación,media,otros + nombre
+891896474,ASOCIACION PARA EL DESARROLLO DE LADEMOCRACIA DELIBERATIVA Y PARTICIPATIVA,DELIBERATIVA,ES,Other,ONG / fundación / asociación,revisada,revisión manual
+972498430,ASOCIACION PARA LA DEFENSA DE LA NATURALEZA,ASSOCIATION FOR THE DEFENSE OF THE NATURE,ES,Other,ONG / fundación / asociación,revisada,revisión manual
+887300517,ASOCIACION PARA LA INVESTIGACION DE LA MACARONESIA,AIM,ES,Other,Centro de investigación,revisada,revisión manual
+918145741,ASOCIACION RED CAMBERA,CAMBERA,ES,Other,ONG / fundación / asociación,revisada,revisión manual
+883921619,ASOCIATIA CLIMATO SFERA,,RO,Other,ONG / fundación / asociación,revisada,revisión manual
+889113738,ASOCIATIA CLUSTER DE EDUCATIE C-EDU,,RO,Other,ONG / fundación / asociación,revisada,revisión manual
+939180676,ASOCIATIA DE DEZVOLTARE INTERCOMUNITARA ZONA METROPOLITANA CONSTANTA,ZMC,RO,Other,Autoridad local,revisada,revisión manual
+890633243,ASOCIATIA EURO ATLANTIC DIPLOMACY SOCIETY,EAD SOCIETY,RO,Other,ONG / fundación / asociación,revisada,revisión manual
+898858067,ASOCIATIA INSTITUTUL DE DEZVOLTARE LOCALA THINK GLOBAL ACT LOCAL,INSTITUTE FOR LOCAL DEVELOPMENT THINK GLOBAL ACT LOCAL,RO,Other,ONG / fundación / asociación,revisada,revisión manual
+901323613,ASOCIATIA PARCUL NATURAL BUCURESTI,BUCHAREST NATURE PARK ASSOCIATION,RO,Other,ONG / fundación / asociación,revisada,revisión manual
+959320495,ASOCIATIA WWF ROMANIA,WWF Romania,RO,Other,ONG / fundación / asociación,revisada,revisión manual
 892844164,ASSOCIACAO BIOPOLIS,,PT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 951433134,ASSOCIACAO BLC3-CAMPUS DE TECNOLOGIA E INOVACAO,BLC3,PT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-881391762,ASSOCIACAO ESTACAO BIOLOGICA DE MERTOLA,,PT,Other,ONG / fundación / asociación,media,otros + nombre
+881391762,ASSOCIACAO ESTACAO BIOLOGICA DE MERTOLA,,PT,Other,Centro de investigación,revisada,revisión manual
 902624480,ASSOCIACAO PARA O DESENVOLVIMENTO DO ATLANTIC INTERNATIONAL RESEARCH CENTRE,AD AIR CENTRE,PT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 953501562,ASSOCIACAO PARA UM CENTRO DE ESTUDOS EM DESENVOLVIMENTO SUSTENTAVEL,CEDES,PT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-928775583,ASSOCIACAO PORTUGUESA DE ETICA EMPRESARIAL,APEE,PT,Other,ONG / fundación / asociación,media,otros + nombre
-882219851,ASSOCIACAO PORTUGUESA DE MEDICOS VETERINARIOS ESPECIALISTAS  EM ANIMAIS DE COMPANHIA,APMVEAC,PT,Other,ONG / fundación / asociación,media,otros + nombre
-907047195,ASSOCIACIO REVOLVE MEDITERRANEO,,ES,Other,Otra,baja,"otros, nombre sin pista"
-948663008,ASSOCIATION DES CHAMBRES D'AGRICULTURE DE L'ARC ATLANTIQUE,CHAMBERS OFAGRICULTURE ATLANTIC AREA,FR,Other,ONG / fundación / asociación,media,otros + nombre
-993675955,ASSOCIATION EUROPEENNE DES AGENCESDE DEVELOPPEMENT,,BE,Other,ONG / fundación / asociación,media,otros + nombre
-950744725,ASSOCIATION EUROPEENNE POUR L'INNOVATION DANS LE DEVELOPPEMENT LOCAL,EUROPEAN ASSOCIATION FOR INNOVATION IN LOCAL DEVELOPMENT,BE,Other,ONG / fundación / asociación,media,otros + nombre
-873319713,ASSOCIATION POUR LA RENATURATION DES TERRITOIRES,,FR,Other,ONG / fundación / asociación,media,otros + nombre
+928775583,ASSOCIACAO PORTUGUESA DE ETICA EMPRESARIAL,APEE,PT,Other,ONG / fundación / asociación,revisada,revisión manual
+882219851,ASSOCIACAO PORTUGUESA DE MEDICOS VETERINARIOS ESPECIALISTAS  EM ANIMAIS DE COMPANHIA,APMVEAC,PT,Other,ONG / fundación / asociación,revisada,revisión manual
+907047195,ASSOCIACIO REVOLVE MEDITERRANEO,,ES,Other,ONG / fundación / asociación,revisada,revisión manual
+948663008,ASSOCIATION DES CHAMBRES D'AGRICULTURE DE L'ARC ATLANTIQUE,CHAMBERS OFAGRICULTURE ATLANTIC AREA,FR,Other,ONG / fundación / asociación,revisada,revisión manual
+993675955,ASSOCIATION EUROPEENNE DES AGENCESDE DEVELOPPEMENT,,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+950744725,ASSOCIATION EUROPEENNE POUR L'INNOVATION DANS LE DEVELOPPEMENT LOCAL,EUROPEAN ASSOCIATION FOR INNOVATION IN LOCAL DEVELOPMENT,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+873319713,ASSOCIATION POUR LA RENATURATION DES TERRITOIRES,,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 876258910,ASTIKI ANAPTYXI MONOMETOCHIKI DIMOTIKI ETAIRIA,ASTIKI ANAPTYXI TRIKALON,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 999751744,ATHENS TECHNOLOGY CENTER ANONYMI VIOMICHANIKI EMPORIKI KAI TECHNIKI ETAIREIA EFARMOGON YPSILIS TECHNOLOGIAS,ATC A.E.,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 999896856,ATHENS UNIVERSITY OF ECONOMICS AND BUSINESS - RESEARCH CENTER,AUEB-RC,EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 907666928,ATHIENOU DIMOS,MUNICIPALITY OF ATHIENOU,CY,Public bodies,Autoridad local,media,organismo público + nombre
 999562788,"ATHINA-EREVNITIKO KENTRO KAINOTOMIAS STIS TECHNOLOGIES TIS PLIROFORIAS, TON EPIKOINONION KAI TIS GNOSIS",ATHENA - RESEARCH AND INNOVATION CENTER,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 887857685,ATLANTIC TECHNOLOGICAL UNIVERSITY,OLLSCOIL TEICNEOLAIOCHTA AN ATLANTAIGH,IE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-908292384,ATMO AUVERGNE RHONE ALPES,,FR,Other,Otra,baja,"otros, nombre sin pista"
+908292384,ATMO AUVERGNE RHONE ALPES,,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 996484008,ATOS FRANCE,ATOS france,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 889667511,AUGMENTCITY AS,,NO,Private for-profit entities,Empresa,alta,tipo CORDIS
-941019602,AUSTURBRU SES,EAST-BRIDGE,IS,Other,Otra,baja,"otros, nombre sin pista"
-989041683,AUTORITA' DI BACINO DISTRETTUALE DEL FIUME PO,PO RIVER BASIN DISTRICT AUTHORITY,IT,Public bodies,Otro organismo público,media,organismo público + nombre
+941019602,AUSTURBRU SES,EAST-BRIDGE,IS,Other,Otro organismo público,revisada,revisión manual
+989041683,AUTORITA' DI BACINO DISTRETTUALE DEL FIUME PO,PO RIVER BASIN DISTRICT AUTHORITY,IT,Public bodies,Otro organismo público,revisada,revisión manual
 883425561,AXA CLIMATE,AXA Climate,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
-997513178,AYUNTAMIENTO DE MADRID,,ES,Public bodies,Autoridad local,media,organismo público + nombre
-983310438,AYUNTAMIENTO DE MALAGA,,ES,Public bodies,Autoridad local,media,organismo público + nombre
+997513178,AYUNTAMIENTO DE MADRID,,ES,Public bodies,Autoridad local,revisada,revisión manual
+983310438,AYUNTAMIENTO DE MALAGA,,ES,Public bodies,Autoridad local,revisada,revisión manual
 983820173,AYUNTAMIENTO DE MURCIA,,ES,Public bodies,Autoridad local,media,organismo público + nombre
-883215653,AYUNTAMIENTO DE SAN CRISTOBAL DE LA LAGUNA,,ES,Public bodies,Autoridad local,media,organismo público + nombre
-989900036,AYUNTAMIENTO DE SANTANDER,,ES,Public bodies,Autoridad local,media,organismo público + nombre
-888631163,AZIENDA OSPEDALIERA DI RILIEVO NAZIONALE GARIBALDI CATANIA,ARNAS CATANIA,IT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-912924134,AZIENDA SANITARIA LOCALE ROMA 1,ASL ROMA 1,IT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-984462119,Agentia Locala a Energiei Alba,ALEA,RO,Other,Otra,baja,"otros, nombre sin pista"
-920868143,AgriFood Lithuania DIH,,LT,Other,Otra,baja,"otros, nombre sin pista"
+883215653,AYUNTAMIENTO DE SAN CRISTOBAL DE LA LAGUNA,,ES,Public bodies,Autoridad local,revisada,revisión manual
+989900036,AYUNTAMIENTO DE SANTANDER,,ES,Public bodies,Autoridad local,revisada,revisión manual
+888631163,AZIENDA OSPEDALIERA DI RILIEVO NAZIONALE GARIBALDI CATANIA,ARNAS CATANIA,IT,Public bodies,Otro organismo público,revisada,revisión manual
+912924134,AZIENDA SANITARIA LOCALE ROMA 1,ASL ROMA 1,IT,Public bodies,Otro organismo público,revisada,revisión manual
+984462119,Agentia Locala a Energiei Alba,ALEA,RO,Other,ONG / fundación / asociación,revisada,revisión manual
+920868143,AgriFood Lithuania DIH,,LT,Other,ONG / fundación / asociación,revisada,revisión manual
 885202310,Allianz Agrar AG,Allianz Agrar AG,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
-881117058,Americares Foundation Inc.,Americares Foundation Inc.,US,Other,ONG / fundación / asociación,media,otros + nombre
+881117058,Americares Foundation Inc.,Americares Foundation Inc.,US,Other,ONG / fundación / asociación,revisada,revisión manual
 873804325,BAB Project Einrichtung mit eigener Rechtspersönlichkeit an der Bundesanstalt für Agrarwirtschaft und Bergbauernfragen,,AT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999529323,BALTI UURINGUTE INSTITUUT,INSTITUTE OF BALTIC STUDIES,EE,Research Organisations,Centro de investigación,alta,tipo CORDIS
-999533106,BALTIJAS VIDES FORUMS,BEF LATVIA,LV,Other,Otra,baja,"otros, nombre sin pista"
+999533106,BALTIJAS VIDES FORUMS,BEF LATVIA,LV,Other,ONG / fundación / asociación,revisada,revisión manual
 884880852,BANCA POPOLARE ETICA SOCIETA COOPERATIVA PER AZIONI,BANCA ETICA BPE,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-911763529,BANK GOSPODARSTWA KRAJOWEGO,BGK,PL,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-887161128,BANSKOBYSTRICKY SAMOSPRAVNY KRAJ,Banskobystrický samosprávny kraj,SK,Public bodies,Autoridad regional,media,organismo público + nombre
+911763529,BANK GOSPODARSTWA KRAJOWEGO,BGK,PL,Public bodies,Otro organismo público,revisada,revisión manual
+887161128,BANSKOBYSTRICKY SAMOSPRAVNY KRAJ,Banskobystrický samosprávny kraj,SK,Public bodies,Autoridad regional,revisada,revisión manual
 999655520,BARCELONA SUPERCOMPUTING CENTER CENTRO NACIONAL DE SUPERCOMPUTACION,BSC CNS,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-917148969,BASURAMA ASOCIACION,,ES,Other,ONG / fundación / asociación,media,otros + nombre
+917148969,BASURAMA ASOCIACION,,ES,Other,ONG / fundación / asociación,revisada,revisión manual
 911121389,BAYWA R.E. OPERATION SERVICES SRL,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 915594544,BBV Landsiedlung GmbH,BBV Landsiedlung GmbH,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
 891492663,BEHAVIOR SMART OOD,Behavior Smart,BG,Private for-profit entities,Empresa,alta,tipo CORDIS
-938070026,"BEHOERDE FUER GESUNDHEIT, SOZIALES UND INTEGRATION HAMBURG",SOZIALBEHOERDE HAMBURG,DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+938070026,"BEHOERDE FUER GESUNDHEIT, SOZIALES UND INTEGRATION HAMBURG",SOZIALBEHOERDE HAMBURG,DE,Public bodies,Autoridad local,revisada,revisión manual
 926006912,BENEDICT PEAX CONSULTANTS BV,BPx,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
-994305776,BERLINER WASSERBETRIEBE,BERLINER WASSERBETRIEBE,DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+994305776,BERLINER WASSERBETRIEBE,BERLINER WASSERBETRIEBE,DE,Public bodies,Otro organismo público,revisada,revisión manual
 998638087,"BIOAZUL, SL",BIOAZUL,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-887901917,"BIOEAST HUB CR, Z. U.",,CZ,Other,Otra,baja,"otros, nombre sin pista"
+887901917,"BIOEAST HUB CR, Z. U.",,CZ,Other,ONG / fundación / asociación,revisada,revisión manual
 999624480,BIRMINGHAM CITY COUNCIL,BCC,UK,Public bodies,Autoridad local,media,organismo público + nombre
-882000728,BIRSTONO SAVIVALDYBES ADMINISTRACIJA,BIRSTONO MUNICIPALITY ADMINISTRATION,LT,Public bodies,Autoridad local,media,organismo público + nombre
-941221265,BIRZU RAJONO SAVIVALDYBES ADMINISTRACIJA,,LT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-995943233,BLEKINGE LANS LANDSTING,BLEKINGE  LAN COUNTY COUNCIL OF BLEKINGE,SE,Public bodies,Autoridad regional,media,organismo público + nombre
+882000728,BIRSTONO SAVIVALDYBES ADMINISTRACIJA,BIRSTONO MUNICIPALITY ADMINISTRATION,LT,Public bodies,Autoridad local,revisada,revisión manual
+941221265,BIRZU RAJONO SAVIVALDYBES ADMINISTRACIJA,,LT,Public bodies,Autoridad local,revisada,revisión manual
+995943233,BLEKINGE LANS LANDSTING,BLEKINGE  LAN COUNTY COUNCIL OF BLEKINGE,SE,Public bodies,Autoridad regional,revisada,revisión manual
 999589172,BLEKINGE TEKNISKA HOGSKOLA,BTH,SE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 900826682,BLUE GOLD SRL,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 876286070,BLUEMAPPING,BLUEMAPPING,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
-932674207,BODENSEE STIFTUNG,,DE,Other,ONG / fundación / asociación,media,otros + nombre
+932674207,BODENSEE STIFTUNG,,DE,Other,ONG / fundación / asociación,revisada,revisión manual
 898834205,BORSBOOM-VAN BEURDEN JUDITH ANNA MARIA,LOCALITY,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
 918176102,BREAK-EVEN SYMVOULEFTIKI IKE,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 999749610,BRUNEL UNIVERSITY LONDON,,UK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 881264692,BSPOKE SOLUTIONS PRIVATE COMPANY,BSPOKE SOLUTIONS LIMITEDPARTNERSHIP,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 959102439,BUDAPEST FOVAROS ONKORMANYZATA,MUNICIPALITY OF BUDAPEST,HU,Public bodies,Autoridad local,media,organismo público + nombre
-895646009,BUDAPEST FOVAROS VIII. KERULET JOZSEFVAROSI ONKORMANYZAT,,HU,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+895646009,BUDAPEST FOVAROS VIII. KERULET JOZSEFVAROSI ONKORMANYZAT,,HU,Public bodies,Autoridad local,revisada,revisión manual
 999904228,BUDAPESTI MUSZAKI ES GAZDASAGTUDOMANYI EGYETEM,BME,HU,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 998876513,BUNDESANSTALT FUR AGRARWIRTSCHAFT UND BERGBAUERNFRAGEN,BAB,AT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-996409512,"BUNDESMINISTERIUM FUR LAND- UND FORSTWIRTSCHAFT, KLIMA- UND UMWELTSCHUTZ, REGIONEN UND WASSERWIRTSCHAFT","FEDERAL MINISTRY AGRICULTURE FORESTRY, CLIMATE ENVIRONMENTAL PROTECTION, REGIONS WATER MANAGEMENT",AT,Public bodies,Autoridad nacional,media,organismo público + nombre
+996409512,"BUNDESMINISTERIUM FUR LAND- UND FORSTWIRTSCHAFT, KLIMA- UND UMWELTSCHUTZ, REGIONEN UND WASSERWIRTSCHAFT","FEDERAL MINISTRY AGRICULTURE FORESTRY, CLIMATE ENVIRONMENTAL PROTECTION, REGIONS WATER MANAGEMENT",AT,Public bodies,Autoridad nacional,revisada,revisión manual
 999993662,BUREAU DE RECHERCHES GEOLOGIQUES ET MINIERES,BRGM,FR,Research Organisations,Centro de investigación,alta,tipo CORDIS
-953676744,BUREAU INTERNATIONAL DU BETON MANUFACTURE,BIBM,BE,Other,Otra,baja,"otros, nombre sin pista"
+953676744,BUREAU INTERNATIONAL DU BETON MANUFACTURE,BIBM,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 997723959,BURSA ULUDAG UNIVERSITESI,BUU,TR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 964360324,BUSINESS DEVELOPMENT GROUP SRL,BDG,RO,Private for-profit entities,Empresa,alta,tipo CORDIS
-892417461,BWB CONNECT CLG,,IE,Other,Otra,baja,"otros, nombre sin pista"
-892660252,BlueArk Entremont,BlueArk Entremont,CH,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+892417461,BWB CONNECT CLG,,IE,Other,ONG / fundación / asociación,revisada,revisión manual
+892660252,BlueArk Entremont,BlueArk Entremont,CH,Public bodies,Otro organismo público,revisada,revisión manual
 932044386,"C4G - CONSULTING AND TRAINING NETWORK, LDA",,PT,Private for-profit entities,Empresa,alta,tipo CORDIS
 921018008,CAISSE CENTRALE DE REASSURANCE,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
-972290171,CAMARA MUNICIPAL DE LISBOA,,PT,Public bodies,Autoridad local,media,organismo público + nombre
-938047328,CAMBIAMO SOCIEDAD COOPERATIVA MADRILENA,,ES,Other,ONG / fundación / asociación,media,otros + nombre
+972290171,CAMARA MUNICIPAL DE LISBOA,,PT,Public bodies,Autoridad local,revisada,revisión manual
+938047328,CAMBIAMO SOCIEDAD COOPERATIVA MADRILENA,,ES,Other,Empresa,revisada,revisión manual
 998039209,CAN THO UNIVERSITY,,VN,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 887693852,CANARAGUA CONCESIONES SA,,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 937224574,CANKAYA BELEDIYESI,CANKAYA MUNICIPALITY,TR,Public bodies,Autoridad local,media,organismo público + nombre
 891614689,CANTINA TOBLINO SCA,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-876293442,CARBON NEUTRAL CITIES ALLIANCE,,BE,Other,Otra,baja,"otros, nombre sin pista"
-938217272,CDP WORLDWIDE (EUROPE) GEMEINNUTZIGE GMBH,CDP WW Europe,DE,Other,Otra,baja,"otros, nombre sin pista"
-954810286,CENTAR ZA PROMOCIJU NAUKE,CENTER FOR THE PROMOTION OF SCIENCE,RS,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-947861788,CENTAR ZA PRUZANJE USLUGA U ZAJEDNICI MALI DOM,CENTAR MALI DOM,HR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-948933735,CENTRE D ETUDES ET D EXPERTISE SUR LES RISQUES L ENVIRONNEMENT LA MOBILITE ET L AMENAGEMENT,CEREMA,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+876293442,CARBON NEUTRAL CITIES ALLIANCE,,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+938217272,CDP WORLDWIDE (EUROPE) GEMEINNUTZIGE GMBH,CDP WW Europe,DE,Other,ONG / fundación / asociación,revisada,revisión manual
+954810286,CENTAR ZA PROMOCIJU NAUKE,CENTER FOR THE PROMOTION OF SCIENCE,RS,Public bodies,Otro organismo público,revisada,revisión manual
+947861788,CENTAR ZA PRUZANJE USLUGA U ZAJEDNICI MALI DOM,CENTAR MALI DOM,HR,Public bodies,Otro organismo público,revisada,revisión manual
+948933735,CENTRE D ETUDES ET D EXPERTISE SUR LES RISQUES L ENVIRONNEMENT LA MOBILITE ET L AMENAGEMENT,CEREMA,FR,Public bodies,Otro organismo público,revisada,revisión manual
 928399029,CENTRE FOR EXPERIMENTS IN URBAN STUDIES  - CEUS,CEUS,RS,Research Organisations,Centro de investigación,alta,tipo CORDIS
-997220723,CENTRE HOSPITALIER UNIVERSITAIRE DE GRENOBLE,CHU,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+997220723,CENTRE HOSPITALIER UNIVERSITAIRE DE GRENOBLE,CHU,FR,Public bodies,Otro organismo público,revisada,revisión manual
 997415887,CENTRE INTERNATIONAL DE HAUTES ETUDES AGRONOMIQUES MEDITERRANEENNES,CIHEAM,FR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999997930,CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE CNRS,CNRS,FR,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999580151,CENTRE SCIENTIFIQUE ET TECHNIQUE DU BATIMENT,CSTB,FR,Research Organisations,Centro de investigación,alta,tipo CORDIS
 995821886,CENTRO DE ESTUDIOS DE MATERIALES Y CONTROL DE OBRA SA,CEMOSA,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 998880005,CENTRO DE INVESTIGACION ECOLOGICA Y APLICACIONES FORESTALES,CREAF - CERCA,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999628069,"CENTRO DI RICERCA, SVILUPPO E STUDI SUPERIORI IN SARDEGNA SOCIETÀ A RESPONSABILITÀ LIMITATA",CRS4,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-892350725,CENTRO IBERICO DE RESTAURACION FLUVIAL,IBERIAN CENTRE FOR RIVER RESTORATION,ES,Other,Otra,baja,"otros, nombre sin pista"
+892350725,CENTRO IBERICO DE RESTAURACION FLUVIAL,IBERIAN CENTRE FOR RIVER RESTORATION,ES,Other,ONG / fundación / asociación,revisada,revisión manual
 997710476,CENTRO INTERNAZIONALE IN MONITORAGGIO AMBIENTALE - FONDAZIONE CIMA,FONDAZIONE CIMA,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 991809966,CENTRO TECNOLOGICO DEL MAR - FUNDACION CETMAR,CETMAR,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999912570,CESKA ZEMEDELSKA UNIVERZITA V PRAZE,CZECH UNIVERSITY OF LIFE SCIENCES PRAGUE,CZ,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 998224285,"CETAQUA, CENTRO TECNOLOGICO DEL AGUA, FUNDACION PRIVADA",CETAQUA,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-933126518,CHAMBRE DE COMMERCE ET D'INDUSTRIE DE REGION DES ILES DE GUADELOUPE,CCI IG,FR,Public bodies,Autoridad regional,media,organismo público + nombre
-881244128,CHAMBRE DEPARTEMENTALE D' AGRICULTURE,,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-888650369,CHAMBRE DEPARTEMENTALE D'AGRICULTURE,CHAMBRE D'AGRICULTURE DE L'ARIEGE,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-881817592,CHRISTCHURCH CITY COUNCIL,,NZ,Public bodies,Autoridad local,media,organismo público + nombre
+933126518,CHAMBRE DE COMMERCE ET D'INDUSTRIE DE REGION DES ILES DE GUADELOUPE,CCI IG,FR,Public bodies,Otro organismo público,revisada,revisión manual
+881244128,CHAMBRE DEPARTEMENTALE D' AGRICULTURE,,FR,Public bodies,Otro organismo público,revisada,revisión manual
+888650369,CHAMBRE DEPARTEMENTALE D'AGRICULTURE,CHAMBRE D'AGRICULTURE DE L'ARIEGE,FR,Public bodies,Otro organismo público,revisada,revisión manual
+881817592,CHRISTCHURCH CITY COUNCIL,,NZ,Public bodies,Autoridad local,revisada,revisión manual
 876169573,CHRISTCHURCHNZ LIMITED,ChristchurchNZ Limited,NZ,Private for-profit entities,Empresa,alta,tipo CORDIS
-936789432,CIMAC - COMUNIDADE INTERMUNICIPAL DO ALENTEJO CENTRAL,,PT,Public bodies,Autoridad local,media,organismo público + nombre
+936789432,CIMAC - COMUNIDADE INTERMUNICIPAL DO ALENTEJO CENTRAL,,PT,Public bodies,Autoridad local,revisada,revisión manual
 951450206,CITTA RICERCHE TERRITORIO INNOVAZIONE AMBIENTE SRL,CRITERIA,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 891782596,CLIMATE RISK ADVISORY AS,,NO,Private for-profit entities,Empresa,alta,tipo CORDIS
 899786163,CMMI CYPRUS MARINE AND MARITIME INSTITUTE,,CY,Research Organisations,Centro de investigación,alta,tipo CORDIS
-913576750,COMISSAO DE COORDENACAO E DESENVOLVIMENTO REGIONAL DO ALENTEJO,,PT,Public bodies,Autoridad regional,media,organismo público + nombre
-955664468,COMISSAO DE COORDENACAO E DESENVOLVIMENTO REGIONAL DO CENTRO,,PT,Public bodies,Autoridad regional,media,organismo público + nombre
-951114683,COMITE DES DONNEES SCIENTIFIQUES ETTECHNOLOGIQUES ASSOCIATION,CODATA,FR,Other,ONG / fundación / asociación,media,otros + nombre
-881437255,COMM. STRAORD. DEL GOV.PER LA RIC.NEI TERRITORI DEI COM.DI CASAMICCIOLA-FORIO E LACCO AMENO,Commissariato Ricostruzione Ischia,IT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+913576750,COMISSAO DE COORDENACAO E DESENVOLVIMENTO REGIONAL DO ALENTEJO,,PT,Public bodies,Autoridad regional,revisada,revisión manual
+955664468,COMISSAO DE COORDENACAO E DESENVOLVIMENTO REGIONAL DO CENTRO,,PT,Public bodies,Autoridad regional,revisada,revisión manual
+951114683,COMITE DES DONNEES SCIENTIFIQUES ETTECHNOLOGIQUES ASSOCIATION,CODATA,FR,Other,ONG / fundación / asociación,revisada,revisión manual
+881437255,COMM. STRAORD. DEL GOV.PER LA RIC.NEI TERRITORI DEI COM.DI CASAMICCIOLA-FORIO E LACCO AMENO,Commissariato Ricostruzione Ischia,IT,Public bodies,Autoridad nacional,revisada,revisión manual
 951678738,COMMPLA SRL,Commpla Srl,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-873503625,COMMUNAUTE D'AGGLOMERATION DU  NORD GRANDE TERRE,CANGT,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-906406607,COMMUNAUTE D'AGGLOMERATION DU PAYS BASQUE,,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-865921426,COMMUNE DE VERNOUILLET,MAIRIE DE VERNOUILLET,FR,Public bodies,Autoridad local,media,organismo público + nombre
+873503625,COMMUNAUTE D'AGGLOMERATION DU  NORD GRANDE TERRE,CANGT,FR,Public bodies,Autoridad local,revisada,revisión manual
+906406607,COMMUNAUTE D'AGGLOMERATION DU PAYS BASQUE,,FR,Public bodies,Autoridad local,revisada,revisión manual
+865921426,COMMUNE DE VERNOUILLET,MAIRIE DE VERNOUILLET,FR,Public bodies,Autoridad local,revisada,revisión manual
 882054466,COMPANHIA DAS LEZIRIAS SA,,PT,Private for-profit entities,Empresa,alta,tipo CORDIS
-885087850,COMUNA RAU SADULUI,,RO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+885087850,COMUNA RAU SADULUI,,RO,Public bodies,Autoridad local,revisada,revisión manual
 877936816,COMUNE DI ALGHERO,,IT,Public bodies,Autoridad local,media,organismo público + nombre
-928116856,COMUNE DI BERGAMO,COMUNE DI BERGAMO,IT,Public bodies,Autoridad local,media,organismo público + nombre
-996500401,COMUNE DI BRESCIA,CBS,IT,Public bodies,Autoridad local,media,organismo público + nombre
-888629126,COMUNE DI CASAMICCIOLA TERME,CASAMICCIOLA TERME,IT,Public bodies,Autoridad local,media,organismo público + nombre
+928116856,COMUNE DI BERGAMO,COMUNE DI BERGAMO,IT,Public bodies,Autoridad local,revisada,revisión manual
+996500401,COMUNE DI BRESCIA,CBS,IT,Public bodies,Autoridad local,revisada,revisión manual
+888629126,COMUNE DI CASAMICCIOLA TERME,CASAMICCIOLA TERME,IT,Public bodies,Autoridad local,revisada,revisión manual
 952406432,COMUNE DI CATANIA,MUNICIPALITY OF CATANIA,IT,Public bodies,Autoridad local,media,organismo público + nombre
 984882226,COMUNE DI CESENA,MUNICIPALITY OF CESENA,IT,Public bodies,Autoridad local,media,organismo público + nombre
-998702204,COMUNE DI MILANO,MIL,IT,Public bodies,Autoridad local,media,organismo público + nombre
+998702204,COMUNE DI MILANO,MIL,IT,Public bodies,Autoridad local,revisada,revisión manual
 996097754,COMUNE DI PARMA,,IT,Public bodies,Autoridad local,media,organismo público + nombre
 997608529,COMUNE DI PRATO,,IT,Public bodies,Autoridad local,media,organismo público + nombre
 894283547,COMUNE DI SEGRATE,,IT,Public bodies,Autoridad local,media,organismo público + nombre
 986538792,COMUNE DI TORINO,CITTA DI TORINO,IT,Public bodies,Autoridad local,media,organismo público + nombre
-884918391,COMUNIDAD DE AGUAS TENISCA,COMUNIDAD DE AGUAS TENISCA,ES,Other,Otra,baja,"otros, nombre sin pista"
+884918391,COMUNIDAD DE AGUAS TENISCA,COMUNIDAD DE AGUAS TENISCA,ES,Other,Otra,revisada,revisión manual
 934451926,COMUNIDADE INTERMUNICIPAL DA BEIRA BAIXA,,PT,Public bodies,Autoridad local,media,organismo público + nombre
-929602993,COMUNIDADE INTERMUNICIPAL DA REGIAO DE COIMBRA,CIM-RC,PT,Public bodies,Autoridad local,media,organismo público + nombre
+929602993,COMUNIDADE INTERMUNICIPAL DA REGIAO DE COIMBRA,CIM-RC,PT,Public bodies,Autoridad local,revisada,revisión manual
 884967085,COMUNIDADE INTERMUNICIPAL DAS BEIRAS E SERRA DA ESTRELA,,PT,Public bodies,Autoridad local,media,organismo público + nombre
 883229912,COMUNIDADE INTERMUNICIPAL DO CAVADO,CIM CAVADO,PT,Public bodies,Autoridad local,media,organismo público + nombre
 886540231,COMUNIDADE INTERMUNICIPAL DO MEDIO TEJO,COMUNIDADE INTERMUNICIPAL DO MEDIO TEJO,PT,Public bodies,Autoridad local,media,organismo público + nombre
-888539207,CONFAGRICOLTURA NUORO OGLIASTRA,CONFAGRICOLTURA NUORO OGLIASTRA,IT,Other,Otra,baja,"otros, nombre sin pista"
+888539207,CONFAGRICOLTURA NUORO OGLIASTRA,CONFAGRICOLTURA NUORO OGLIASTRA,IT,Other,ONG / fundación / asociación,revisada,revisión manual
 986368945,CONSEIL REGIONAL PROVENCE ALPES COTE D'AZUR,,FR,Public bodies,Autoridad regional,media,organismo público + nombre
-920952048,"CONSEJERIA DE AGRICULTURA , PESCA, AGUA  Y DESARROLLO RURAL",,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-885510770,"CONSEJERIA DE AGRICULTURA, GANADERIA Y DESARROLLO RURAL DE CASTILLA Y LEON",,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-920867270,"CONSEJERIA DE AGRICULTURA, GANADERIA Y MEDIO NATURAL - JUNTA DE EXTREMADURA",,ES,Public bodies,Autoridad regional,media,organismo público + nombre
-879924928,CONSEJERIA DE GESTION FORESTAL Y MUNDO RURAL,,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-999822069,CONSEJERÍA DE SOSTENIBILIDAD Y MEDIO AMBIENTE,,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-884975524,CONSEJO INSULAR DE AGUAS DE LA PALMA,CONSEJO INSULAR DE AGUAS DE LA PALMA,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-913299718,CONSELLERIA DE AGRICULTURA GANADERIA Y PESCA,"Conselleria de Agricultura, Desarrollo Rural, Emergencia Climática y Transición Ecológica.",ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-997697866,CONSELLERIA DE MEDIO AMBIENTE E CAMBIO CLIMATICO - XUNTA DE GALICIA,CONSELLERIA DE MEDIO AMBIENTE E CAMBIO CLIMATICO,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+920952048,"CONSEJERIA DE AGRICULTURA , PESCA, AGUA  Y DESARROLLO RURAL",,ES,Public bodies,Autoridad regional,revisada,revisión manual
+885510770,"CONSEJERIA DE AGRICULTURA, GANADERIA Y DESARROLLO RURAL DE CASTILLA Y LEON",,ES,Public bodies,Autoridad regional,revisada,revisión manual
+920867270,"CONSEJERIA DE AGRICULTURA, GANADERIA Y MEDIO NATURAL - JUNTA DE EXTREMADURA",,ES,Public bodies,Autoridad regional,revisada,revisión manual
+879924928,CONSEJERIA DE GESTION FORESTAL Y MUNDO RURAL,,ES,Public bodies,Autoridad regional,revisada,revisión manual
+999822069,CONSEJERÍA DE SOSTENIBILIDAD Y MEDIO AMBIENTE,,ES,Public bodies,Autoridad regional,revisada,revisión manual
+884975524,CONSEJO INSULAR DE AGUAS DE LA PALMA,CONSEJO INSULAR DE AGUAS DE LA PALMA,ES,Public bodies,Otro organismo público,revisada,revisión manual
+913299718,CONSELLERIA DE AGRICULTURA GANADERIA Y PESCA,"Conselleria de Agricultura, Desarrollo Rural, Emergencia Climática y Transición Ecológica.",ES,Public bodies,Autoridad regional,revisada,revisión manual
+997697866,CONSELLERIA DE MEDIO AMBIENTE E CAMBIO CLIMATICO - XUNTA DE GALICIA,CONSELLERIA DE MEDIO AMBIENTE E CAMBIO CLIMATICO,ES,Public bodies,Autoridad regional,revisada,revisión manual
 929081133,CONSERVATION EDUCATION AND RESEARCH TRUST,Earthwatch,UK,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999979500,CONSIGLIO NAZIONALE DELLE RICERCHE,CNR,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-907678859,CONSORCI BESOS TORDERA,,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-917739408,CONSORCI DEL BESOS,,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-986405514,CONSORCIO CENTRO INTERNACIONAL DE INVESTIGACION DE LOS RECURSOS COSTEROS,CENTRE INTERNATIONAL D INVESTIGACIO DELS RECURSOS COSTANERS,ES,Other,Otra,baja,"otros, nombre sin pista"
-913280609,CONSORCIO DE LA COMUNIDAD DE TRABAJO DE LOS PIRINEOS,CTP,ES,Public bodies,Otro organismo público,media,organismo público + nombre
-891626038,CONSORZIO DEI COMUNI DELLA PROVINCIA DI TRENTO COMPRESI NEL BACINO IMBRIFERO MONTANO DEL SARCA - MINCIO E GARDA,,IT,Public bodies,Autoridad regional,media,organismo público + nombre
-885077665,CONSORZIO DEL PESIO,,IT,Other,Otra,baja,"otros, nombre sin pista"
-926527414,CONSORZIO DI BONIFICA ACQUE RISORGIVE,,IT,Public bodies,Otro organismo público,media,organismo público + nombre
+907678859,CONSORCI BESOS TORDERA,,ES,Public bodies,Otro organismo público,revisada,revisión manual
+917739408,CONSORCI DEL BESOS,,ES,Public bodies,Otro organismo público,revisada,revisión manual
+986405514,CONSORCIO CENTRO INTERNACIONAL DE INVESTIGACION DE LOS RECURSOS COSTEROS,CENTRE INTERNATIONAL D INVESTIGACIO DELS RECURSOS COSTANERS,ES,Other,Centro de investigación,revisada,revisión manual
+913280609,CONSORCIO DE LA COMUNIDAD DE TRABAJO DE LOS PIRINEOS,CTP,ES,Public bodies,Otro organismo público,revisada,revisión manual
+891626038,CONSORZIO DEI COMUNI DELLA PROVINCIA DI TRENTO COMPRESI NEL BACINO IMBRIFERO MONTANO DEL SARCA - MINCIO E GARDA,,IT,Public bodies,Autoridad local,revisada,revisión manual
+885077665,CONSORZIO DEL PESIO,,IT,Other,Otro organismo público,revisada,revisión manual
+926527414,CONSORZIO DI BONIFICA ACQUE RISORGIVE,,IT,Public bodies,Otro organismo público,revisada,revisión manual
 994189958,CONSORZIO DI BONIFICA DI SECONDO GRADO PER IL CANALE EMILIANO ROMAGNOLO,CER,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 957958033,CONTACTICA SL,CTA,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 891712756,CORE KENTRO KAINOTOMIAS AMKE,CORE IC,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 997353225,CORILA - CONSORZIO PER IL COORDINAMENTO DELLE RICERCHE INERENTI AL SISTEMA LAGUNARE DI VENEZIA,CORILA,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 986290763,CORK CITY COUNCIL,,IE,Public bodies,Autoridad local,media,organismo público + nombre
-885074367,COUTENZA CANALI CAVOUR,,IT,Other,Otra,baja,"otros, nombre sin pista"
+885074367,COUTENZA CANALI CAVOUR,,IT,Other,Otro organismo público,revisada,revisión manual
 893633841,CREATIVE CLIMATE CITIES GmbH,CREATIVE CLIMATE CITIES,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
 913776473,CREOTECH INSTRUMENTS SPOLKA AKCYJNA,,PL,Private for-profit entities,Empresa,alta,tipo CORDIS
 890635668,CRISISOFT,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 885194938,CROATIA OSIGURANJE,CROATIA OSIGURANJE,HR,Private for-profit entities,Empresa,alta,tipo CORDIS
 938310489,CRTA,CENTER FOR RESEARCH TRANSPARENCY AND ACCOUNTABILITY,RS,Research Organisations,Centro de investigación,alta,tipo CORDIS
-909232605,Canton de Valais,,CH,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+909232605,Canton de Valais,,CH,Public bodies,Autoridad regional,revisada,revisión manual
 920413116,Comune di Cavallino Treporti,,IT,Public bodies,Autoridad local,media,organismo público + nombre
-949799848,Comune di Napoli,Comune di Napoli,IT,Public bodies,Autoridad local,media,organismo público + nombre
+949799848,Comune di Napoli,Comune di Napoli,IT,Public bodies,Autoridad local,revisada,revisión manual
 996855421,Comune di Trieste,,IT,Public bodies,Autoridad local,media,organismo público + nombre
 876370751,Comune di Ventimiglia,,IT,Public bodies,Autoridad local,media,organismo público + nombre
 891931006,Comunidade Intermunicipal do Baixo Alentejo,CIMBAL,PT,Public bodies,Autoridad local,media,organismo público + nombre
 999990655,DANMARKS TEKNISKE UNIVERSITET,TECHNICAL UNIVERSITY OF DENMARK DTU,DK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 897764683,DARK MATTER LABORATORIES BV,,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
-890303928,DARK MATTER LABORATORIES LIMITED,,UK,Other,Otra,baja,"otros, nombre sin pista"
+890303928,DARK MATTER LABORATORIES LIMITED,,UK,Other,ONG / fundación / asociación,revisada,revisión manual
 996147806,DEDA NEXT SRL,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 998325941,DEEP BLUE SRL,DEEP BLUE,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 889351291,DELOITTE ADVISORY S.R.L. SOCIETA BENEFIT,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 939734255,DELOITTE LIMITED,DELOITTE LIMITED,CY,Private for-profit entities,Empresa,alta,tipo CORDIS
 906147035,DEMOS HELSINKI OY,DEMOS RESEARCH INSTITUTE,FI,Research Organisations,Centro de investigación,alta,tipo CORDIS
-905413036,DEN INSTITUTE,DEN - Design Entrepreneurship Institute,BE,Other,Otra,baja,"otros, nombre sin pista"
-999703438,DEPARTAMENT D'INTERIOR I SEGURETAT PUBLICA  - GENERALITAT DE CATALUNYA,ISP,ES,Public bodies,Autoridad regional,media,organismo público + nombre
-919818312,DEPARTAMENT DE LA PRESIDENCIA - GENERALITAT DE CATALUNYA,,ES,Public bodies,Autoridad regional,media,organismo público + nombre
-961820476,"DEPARTAMENT DE TERRITORI, HABITATGE I TRANSICIO ECOLOGICA",,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-999778225,"DEPARTAMENTO DE INDUSTRIA, TRANSICION ENERGETICA Y SOSTENIBILIDAD - GOBIERNO VASCO","INDUSTRIA, TRANTSIZIO ENERGETIKO ETA JASANGARRITASUN SAILA",ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-897440703,DEPARTAMENTO DE MEDIO AMBIENTE Y TURISMO - GOBIERNO DE ARAGON,,ES,Public bodies,Autoridad regional,media,organismo público + nombre
+905413036,DEN INSTITUTE,DEN - Design Entrepreneurship Institute,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+999703438,DEPARTAMENT D'INTERIOR I SEGURETAT PUBLICA  - GENERALITAT DE CATALUNYA,ISP,ES,Public bodies,Autoridad regional,revisada,revisión manual
+919818312,DEPARTAMENT DE LA PRESIDENCIA - GENERALITAT DE CATALUNYA,,ES,Public bodies,Autoridad regional,revisada,revisión manual
+961820476,"DEPARTAMENT DE TERRITORI, HABITATGE I TRANSICIO ECOLOGICA",,ES,Public bodies,Autoridad regional,revisada,revisión manual
+999778225,"DEPARTAMENTO DE INDUSTRIA, TRANSICION ENERGETICA Y SOSTENIBILIDAD - GOBIERNO VASCO","INDUSTRIA, TRANTSIZIO ENERGETIKO ETA JASANGARRITASUN SAILA",ES,Public bodies,Autoridad regional,revisada,revisión manual
+897440703,DEPARTAMENTO DE MEDIO AMBIENTE Y TURISMO - GOBIERNO DE ARAGON,,ES,Public bodies,Autoridad regional,revisada,revisión manual
 891899675,DESIGN CLIPS IDIOTIKI KEFALAIOUCHIKI ETAIREIA,DESIGN CLIPS PRIVATE COMPANY,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-950599031,DEUTSCHE UMWELTHILFE EV,ENVIRONMENTAL ACTION GERMANY,DE,Other,ONG / fundación / asociación,media,otros + nombre
+950599031,DEUTSCHE UMWELTHILFE EV,ENVIRONMENTAL ACTION GERMANY,DE,Other,ONG / fundación / asociación,revisada,revisión manual
 983764495,DIADIKASIA BUSINESS CONSULTING SYMVOULOI EPICHEIRISEON AE,DIADIKASIA BUSINESS CONSULTANTS SA,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 884060135,DIGINNOCENT S.R.O.,,CZ,Private for-profit entities,Empresa,alta,tipo CORDIS
 905282474,DIGIOTOUCH OU,,EE,Private for-profit entities,Empresa,alta,tipo CORDIS
-897171237,DIGITAL FOR PLANET-D4P,D4P,CH,Other,Otra,baja,"otros, nombre sin pista"
-907509788,DIKTYO POLEON GIA TI VIOSIMI ANAPTYXI KAI KYKLIKI OIKONOMIA A.M.K.E.,,EL,Other,Otra,baja,"otros, nombre sin pista"
-876922875,DIKTYO POLEON GIA TIN POLITIKI PROSTASIA THN ANTHEKTIKOTITA KAI TIN AEIFORIA,ELLINIKO DIKTYO ANTHEKTIKON POLEON,EL,Other,Otra,baja,"otros, nombre sin pista"
-941129794,DIKTYO THEMATIKON KENTRON TROODOUS(DITHEKET) LTD,,CY,Other,Otra,baja,"otros, nombre sin pista"
+897171237,DIGITAL FOR PLANET-D4P,D4P,CH,Other,ONG / fundación / asociación,revisada,revisión manual
+907509788,DIKTYO POLEON GIA TI VIOSIMI ANAPTYXI KAI KYKLIKI OIKONOMIA A.M.K.E.,,EL,Other,ONG / fundación / asociación,revisada,revisión manual
+876922875,DIKTYO POLEON GIA TIN POLITIKI PROSTASIA THN ANTHEKTIKOTITA KAI TIN AEIFORIA,ELLINIKO DIKTYO ANTHEKTIKON POLEON,EL,Other,ONG / fundación / asociación,revisada,revisión manual
+941129794,DIKTYO THEMATIKON KENTRON TROODOUS(DITHEKET) LTD,,CY,Other,Otra,revisada,revisión manual
 998036008,DIL DEUTSCHES INSTITUT FUR LEBENSMITTELTECHNIK EV,DIL,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999659109,DIMOKRITIO PANEPISTIMIO THRAKIS,DEMOCRITUS UNIVERSITY OF THRACE (DUTH),EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-949866196,DIMOS AGIA,MUNICIPALITY OF AGIA,EL,Public bodies,Autoridad local,media,organismo público + nombre
-876729069,DIMOS AMATHOUNTAS,AMATHOUNTA MUNICIPALITY,CY,Public bodies,Autoridad local,media,organismo público + nombre
+949866196,DIMOS AGIA,MUNICIPALITY OF AGIA,EL,Public bodies,Autoridad local,revisada,revisión manual
+876729069,DIMOS AMATHOUNTAS,AMATHOUNTA MUNICIPALITY,CY,Public bodies,Autoridad local,revisada,revisión manual
 991350089,DIMOS ATHINAION EPICHEIRISI MICHANOGRAFISIS,DAEM MUNICIPALITY OF ATHENS INFORMATION TECHNOLOGY COMPANY,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-930610629,DIMOS CHALKIDEON,MUNICIPALITY OF CHALKIDA,EL,Public bodies,Autoridad local,media,organismo público + nombre
-949156641,DIMOS CHERSONISOU,CHERSONISOS MUNICIPALITY,EL,Public bodies,Autoridad local,media,organismo público + nombre
+930610629,DIMOS CHALKIDEON,MUNICIPALITY OF CHALKIDA,EL,Public bodies,Autoridad local,revisada,revisión manual
+949156641,DIMOS CHERSONISOU,CHERSONISOS MUNICIPALITY,EL,Public bodies,Autoridad local,revisada,revisión manual
 897743925,DIMOS DYTIKIS LESVOU,MUNICIPALITY OF WEST LESVOS,EL,Public bodies,Autoridad local,media,organismo público + nombre
-933973716,DIMOS EGALEO,MUNICIPALITY OF EGALEO,EL,Public bodies,Autoridad local,media,organismo público + nombre
-917517763,DIMOS KORYDALLOS,MUNICIPALITY OF KORYDALLOS,EL,Public bodies,Autoridad local,media,organismo público + nombre
+933973716,DIMOS EGALEO,MUNICIPALITY OF EGALEO,EL,Public bodies,Autoridad local,revisada,revisión manual
+917517763,DIMOS KORYDALLOS,MUNICIPALITY OF KORYDALLOS,EL,Public bodies,Autoridad local,revisada,revisión manual
 941259677,DIMOS LEFKOSIAS,MUNICIPALITY OF NICOSIA,CY,Public bodies,Autoridad local,media,organismo público + nombre
-938280322,DIMOS PANGAIOU,MUNICIPALITY OF PAGGAIO,EL,Public bodies,Autoridad local,media,organismo público + nombre
-887889113,DIMOS SITIAS,MUNICIPALITY OF SITIA,EL,Public bodies,Autoridad local,media,organismo público + nombre
+938280322,DIMOS PANGAIOU,MUNICIPALITY OF PAGGAIO,EL,Public bodies,Autoridad local,revisada,revisión manual
+887889113,DIMOS SITIAS,MUNICIPALITY OF SITIA,EL,Public bodies,Autoridad local,revisada,revisión manual
 886138263,DIMOS SKIATHOU,MUNICIPALITY OF SKIATHOS,EL,Public bodies,Autoridad local,media,organismo público + nombre
-876910362,DIMOS SOFADON,MUNICIPALITY OF SOFADES,EL,Public bodies,Autoridad local,media,organismo público + nombre
+876910362,DIMOS SOFADON,MUNICIPALITY OF SOFADES,EL,Public bodies,Autoridad local,revisada,revisión manual
 965342449,DIMOS THESSALONIKIS,MUNICIPALITY OF THESSALONIKI,EL,Public bodies,Autoridad local,media,organismo público + nombre
-880780274,DIMOS XIROMEROU,MUNICIPALITY OF XIROMERO,EL,Public bodies,Autoridad local,media,organismo público + nombre
+880780274,DIMOS XIROMEROU,MUNICIPALITY OF XIROMERO,EL,Public bodies,Autoridad local,revisada,revisión manual
 950982763,DIMOTIKI EPICHEIRISI YDREFSIS - APOCHETEFSIS SKIATHOU,MUNICIPAL ENTERPRISE WATER SUPPLY AND SEWAGE TREATEMENT SKIATHOS DEYASK,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-930696183,DIPUTACION DE AVILA,COUNTY COUNCIL OF AVILA,ES,Public bodies,Autoridad regional,media,organismo público + nombre
-948939167,DIPUTACION PROVINCIAL DE MALAGA,,ES,Public bodies,Autoridad regional,media,organismo público + nombre
-881179138,DIRECTIA DE ASISTENTA SOCIALA,SOCIAL ASSISTANCE DIRECTORATE,RO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-882369813,DIREKCIJA REPUBLIKE SLOVENIJE ZA VODE,SLOVENIAN WATER AGENCY,SI,Public bodies,Otro organismo público,media,organismo público + nombre
-880719843,"DOBROVOL'NE HASICSKE ZDRUZENIE ZVOLEN, OBCIANSKE ZDRUZENIE","Dobrovoľné hasičské združenie Zvolen, občianske združenie",SK,Other,Otra,baja,"otros, nombre sin pista"
-937439429,DOGA DERNEGI,,TR,Other,Otra,baja,"otros, nombre sin pista"
+930696183,DIPUTACION DE AVILA,COUNTY COUNCIL OF AVILA,ES,Public bodies,Autoridad regional,revisada,revisión manual
+948939167,DIPUTACION PROVINCIAL DE MALAGA,,ES,Public bodies,Autoridad regional,revisada,revisión manual
+881179138,DIRECTIA DE ASISTENTA SOCIALA,SOCIAL ASSISTANCE DIRECTORATE,RO,Public bodies,Otro organismo público,revisada,revisión manual
+882369813,DIREKCIJA REPUBLIKE SLOVENIJE ZA VODE,SLOVENIAN WATER AGENCY,SI,Public bodies,Otro organismo público,revisada,revisión manual
+880719843,"DOBROVOL'NE HASICSKE ZDRUZENIE ZVOLEN, OBCIANSKE ZDRUZENIE","Dobrovoľné hasičské združenie Zvolen, občianske združenie",SK,Other,ONG / fundación / asociación,revisada,revisión manual
+937439429,DOGA DERNEGI,,TR,Other,ONG / fundación / asociación,revisada,revisión manual
 885718059,DRAKOPOULOS SI ASOCIATII,,RO,Private for-profit entities,Empresa,alta,tipo CORDIS
 996151686,DRAXIS ENVIRONMENTAL SA,DRAXIS,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 888144611,DRAXIS RESEARCH VENTURES ASTIKI MI KERDOSKOPIKI ETAIRIA,DRAXIS RESEARCH VENTURES NON PROFIT SME,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 896290865,DREES & SOMMER SCHWEIZ AG,,CH,Private for-profit entities,Empresa,alta,tipo CORDIS
-950980726,DRUSTVO ZA OBLIKOVANJE ODRZIVOG RAZVOJA,SOCIETY FOR SUSTAINABLE DEVELOPMENT DESIGN,HR,Other,ONG / fundación / asociación,media,otros + nombre
+950980726,DRUSTVO ZA OBLIKOVANJE ODRZIVOG RAZVOJA,SOCIETY FOR SUSTAINABLE DEVELOPMENT DESIGN,HR,Other,ONG / fundación / asociación,revisada,revisión manual
 903199690,DYNAMIC VISION P C,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 885005109,DZI GENERAL INSURANCE JSC,DZI GENERAL INSURANCE JSC,BG,Private for-profit entities,Empresa,alta,tipo CORDIS
-947904080,"Departament d'Agricultura, Ramaderia, Pesca i Alimentació",DARPA,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+947904080,"Departament d'Agricultura, Ramaderia, Pesca i Alimentació",DARPA,ES,Public bodies,Autoridad regional,revisada,revisión manual
 937657194,E3-MODELLING AE,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 997848022,EBOS TECHNOLOGIES LIMITED,eBOS,CY,Private for-profit entities,Empresa,alta,tipo CORDIS
 999973971,ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,EPFL,CH,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999741171,ECOLOGIC INSTITUT GEMEINNUTZIGE GMBH,ECOLOGIC INSTITUT,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
-996700415,ECOPLUS.NIEDEROSTERREICHS WIRTSCHAFTSAGENTUR GMBH,ECOPLUS,AT,Other,Otra,baja,"otros, nombre sin pista"
-900351479,EDC DEBRECEN VAROS ES GAZDASAGFEJLESZTESI KOZPONT NONPROFIT KORLATOLT FELELOSSEGU TARSASAG,,HU,Other,ONG / fundación / asociación,media,otros + nombre
+996700415,ECOPLUS.NIEDEROSTERREICHS WIRTSCHAFTSAGENTUR GMBH,ECOPLUS,AT,Other,Otro organismo público,revisada,revisión manual
+900351479,EDC DEBRECEN VAROS ES GAZDASAGFEJLESZTESI KOZPONT NONPROFIT KORLATOLT FELELOSSEGU TARSASAG,,HU,Other,Otro organismo público,revisada,revisión manual
 881410095,EDENTIFY FOUNDATION MTU,,EE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999577726,EDEX - EDUCATIONAL EXCELLENCE CORPORATION LIMITED,UNIVERSITY OF NICOSIA,CY,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-998473769,EESTI ERAMETSALIIT,FOREST UNION EPFU,EE,Other,Otra,baja,"otros, nombre sin pista"
+998473769,EESTI ERAMETSALIIT,FOREST UNION EPFU,EE,Other,ONG / fundación / asociación,revisada,revisión manual
 915844901,EESTI KESKKONNAUURINGUTE KESKUS,EKUK,EE,Private for-profit entities,Empresa,alta,tipo CORDIS
 999857280,EESTI MAAULIKOOL,ESTONIAN UNIVERSITY OF LIFE SCIENCES EMU,EE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 998175591,EIGEN VERMOGEN VAN HET INSTITUUT VOOR LANDBOUW- EN VISSERIJONDERZOEK,EV ILVO,BE,Research Organisations,Centro de investigación,alta,tipo CORDIS
-914726200,EISENBAHN-BUNDESAMT,,DE,Public bodies,Autoridad nacional,media,organismo público + nombre
+914726200,EISENBAHN-BUNDESAMT,,DE,Public bodies,Otro organismo público,revisada,revisión manual
 997951618,EKONOMICKA UNIVERZITA V BRATISLAVE,EUBA,SK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 912450871,ELEFTHERIOU ANTONIOS,MARINE CONSERVATION GREECE,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 880394311,ELIS INNOVATION HUB SRL,ELIS Innovation Hub srl,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 995373940,ELITTORAL ESTUDIOS DE INGENIERIA COSTERA Y OCEANOGRAFICA SLNE,elittoral,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 953814096,ELLINIKOS GEORGIKOS ORGANISMOS - DIMITRA,HELLENIC AGRICULTURAL ORGANISATION DIMITRA (ELGO - DIMITRA),EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 912255319,ELVALHALCOR ELLINIKI VIOMIHANIA HALKOU KAI ALOUMINIOU ANONYMOS ETAIREIA,ELVALHALCOR HELLENIC COPPER AND ALUMINIUM INDUSTRY SA,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-948053945,EMBUILD VZW,EMBUILD,BE,Other,ONG / fundación / asociación,media,otros + nombre
+948053945,EMBUILD VZW,EMBUILD,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 891569390,EMPOWER INSIGHT (FRANCE),,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 943824454,EMPRESA MUNICIPAL DE AGUAS Y SANEAMIENTO DE MURCIA SA,EMUASA,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-986210447,ENERGEIAKO GRAFEIO KYPROU,CYPRUS ENERGY AGENCY CEA,CY,Other,Otra,baja,"otros, nombre sin pista"
+986210447,ENERGEIAKO GRAFEIO KYPROU,CYPRUS ENERGY AGENCY CEA,CY,Other,ONG / fundación / asociación,revisada,revisión manual
 998946644,ENERGETSKO PODNEBNA AGENCIJA ZA PODRAVJE,ENERGAP,SI,Research Organisations,Centro de investigación,alta,tipo CORDIS
-882801657,ENERGIEAGENTUR TIROL GMBH,ENERGIEAGENTUR TIROL,AT,Other,Otra,baja,"otros, nombre sin pista"
-950510179,ENERGIES 2050,,FR,Other,Otra,baja,"otros, nombre sin pista"
-940242632,ENERGY AND WATER AGENCY,,MT,Public bodies,Otro organismo público,media,organismo público + nombre
-966036484,ENERGY CITIES/ENERGIE-CITES ASSOCIATION,ENERGY CITIES,FR,Other,ONG / fundación / asociación,media,otros + nombre
+882801657,ENERGIEAGENTUR TIROL GMBH,ENERGIEAGENTUR TIROL,AT,Other,Otro organismo público,revisada,revisión manual
+950510179,ENERGIES 2050,,FR,Other,ONG / fundación / asociación,revisada,revisión manual
+940242632,ENERGY AND WATER AGENCY,,MT,Public bodies,Otro organismo público,revisada,revisión manual
+966036484,ENERGY CITIES/ENERGIE-CITES ASSOCIATION,ENERGY CITIES,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 999960488,ENGINEERING - INGEGNERIA INFORMATICA SPA,ENG,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 916720132,ENGITEC SYSTEMS INTERNATIONAL LIMITED,,CY,Private for-profit entities,Empresa,alta,tipo CORDIS
-884979986,ENONTEKION KUNTA,MUNICIPALITY OF ENONTEKIO,FI,Public bodies,Autoridad local,media,organismo público + nombre
+884979986,ENONTEKION KUNTA,MUNICIPALITY OF ENONTEKIO,FI,Public bodies,Autoridad local,revisada,revisión manual
 894788238,ENORA INNOVATION ETAIREIA PSIFIAKON TEXNOLOGION KAI ERGON KAINOTOMIAS IDIOTIKI KEFALAIOUXIKI ETAIREIA,ENORA INNOVATION IKE,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-890805515,ENRICH GLOBAL,,FR,Other,Otra,baja,"otros, nombre sin pista"
-883225159,ENTE DI GESTIONE PER I PARCHI E LA BIODIVERSITA' -  DELTA DEL PO,ENTE BIODIVERSITA' DELTA PO,IT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-925738901,ENTE PARCO NAZIONALE DELL'APPENNINO TOSCO-EMILIANO,ENTE PARCO NAZIONALE DELL'APPENNINO TOSCO-EMILIANO,IT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+890805515,ENRICH GLOBAL,,FR,Other,ONG / fundación / asociación,revisada,revisión manual
+883225159,ENTE DI GESTIONE PER I PARCHI E LA BIODIVERSITA' -  DELTA DEL PO,ENTE BIODIVERSITA' DELTA PO,IT,Public bodies,Otro organismo público,revisada,revisión manual
+925738901,ENTE PARCO NAZIONALE DELL'APPENNINO TOSCO-EMILIANO,ENTE PARCO NAZIONALE DELL'APPENNINO TOSCO-EMILIANO,IT,Public bodies,Otro organismo público,revisada,revisión manual
 989393987,ENTENTE POUR LA FORÊT MÉDITERRANÉENNE,,FR,Research Organisations,Centro de investigación,alta,tipo CORDIS
-906559770,ENTIDAD PUBLICA EMPRESARIAL CONSEJO INSULAR DE LA ENERGIA DE GRAN CANARIA,CIEGC,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+906559770,ENTIDAD PUBLICA EMPRESARIAL CONSEJO INSULAR DE LA ENERGIA DE GRAN CANARIA,CIEGC,ES,Public bodies,Otro organismo público,revisada,revisión manual
 899910129,ENVE.X SINGLE MEMBER PC,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 915868569,ENVIRONMENTAL RELIABILITY AND RISK ANALYSIS,ENVIRONMENTAL RELIABILITY AND RISK ANALYSIS,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 997911169,ENVIROS SRO,ENVIROS,CZ,Private for-profit entities,Empresa,alta,tipo CORDIS
 926101390,EPSILON MALTA LIMITED,,MT,Private for-profit entities,Empresa,alta,tipo CORDIS
 999654356,EREVNITIKO PANEPISTIMIAKO INSTITOUTO SYSTIMATON EPIKOINONION KAI YPOLOGISTON,RESEARCH UNIVERSITY INSTITUTE OF COMMUNICATION AND COMPUTER SYSTEMS,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 911539847,ERINN INNOVATION LIMITED,ERINN INNOVATION,IE,Private for-profit entities,Empresa,alta,tipo CORDIS
-890735287,ESBJERG KOMMUNE,,DK,Public bodies,Autoridad local,media,organismo público + nombre
-949852422,ESKILARA S KOOP TXIKIA,ESKILARA,ES,Other,Otra,baja,"otros, nombre sin pista"
-998795809,ESSEX COUNTY COUNCIL,,UK,Public bodies,Autoridad regional,media,organismo público + nombre
-878925537,ESTRAHUB LTD,,UK,Other,Otra,baja,"otros, nombre sin pista"
+890735287,ESBJERG KOMMUNE,,DK,Public bodies,Autoridad local,revisada,revisión manual
+949852422,ESKILARA S KOOP TXIKIA,ESKILARA,ES,Other,Empresa,revisada,revisión manual
+998795809,ESSEX COUNTY COUNCIL,,UK,Public bodies,Autoridad regional,revisada,revisión manual
+878925537,ESTRAHUB LTD,,UK,Other,Empresa,revisada,revisión manual
 948986115,ETABLISSEMENT D'ENSEIGNEMENT SUPERIEUR CONSULAIRE HAUTES ETUDES COMMERCIALES DE PARIS,,FR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-889260305,ETABLISSEMENT PUBLIC GARONNE GASCOGNE ET AFFLUENTS PYRENEENS,EP GARONNE,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-885264875,ETABLISSEMENT PUBLIC TERRITORIAL DU BASSIN DE LA VIENNE,,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+889260305,ETABLISSEMENT PUBLIC GARONNE GASCOGNE ET AFFLUENTS PYRENEENS,EP GARONNE,FR,Public bodies,Otro organismo público,revisada,revisión manual
+885264875,ETABLISSEMENT PUBLIC TERRITORIAL DU BASSIN DE LA VIENNE,,FR,Public bodies,Otro organismo público,revisada,revisión manual
 957970449,ETAIREIA YDREYSEOS KAI APOCHETEFSEOS PROTEYOYSIS ANONIMI ETAIREIA,ATHENS WATER SUPPLY AND SEWERAGE COMPANY EYDAP,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 999978142,ETHNICON METSOVION POLYTECHNION,NATIONAL TECHNICAL UNIVERSITY OF ATHENS - NTUA,EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999643007,ETHNIKO KAI KAPODISTRIAKO PANEPISTIMIO ATHINON,UOA,EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 998802502,ETHNIKO KENTRO EREVNAS KAI TECHNOLOGIKIS ANAPTYXIS,CENTRE FOR RESEARCH AND TECHNOLOGY HELLAS CERTH,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 950498442,ETIFOR SRL SOCIETA BENEFIT,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 995380051,EUROMETROPOLE DE STRASBOURG,,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-952204478,EUROPEAN ASSOCIATION OF REMOTE SENSING COMPANIES,EARSC,BE,Other,ONG / fundación / asociación,media,otros + nombre
+952204478,EUROPEAN ASSOCIATION OF REMOTE SENSING COMPANIES,EARSC,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 999916741,EUROPEAN CENTRE FOR MEDIUM-RANGE WEATHER FORECASTS,ECMWF,UK,Research Organisations,Centro de investigación,alta,tipo CORDIS
-994557879,EUROPEAN HOSPITAL AND HEALTHCARE FEDERATION,HOPE,BE,Other,ONG / fundación / asociación,media,otros + nombre
+994557879,EUROPEAN HOSPITAL AND HEALTHCARE FEDERATION,HOPE,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 986593888,EUROPEAN INTEGRATED PROJECT,EIP,RO,Private for-profit entities,Empresa,alta,tipo CORDIS
-984556306,EUROPEAN NETWORK OF LIVING LABS IVZW,ENoLL  IVZW,BE,Other,ONG / fundación / asociación,media,otros + nombre
+984556306,EUROPEAN NETWORK OF LIVING LABS IVZW,ENoLL  IVZW,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 969050177,EUROPEAN PUBLIC LAW ORGANIZATION,EPLO,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
-997382713,EUROPEAN REGIONS RESEARCH AND INNOVATION NETWORK,ERRIN,BE,Other,ONG / fundación / asociación,media,otros + nombre
+997382713,EUROPEAN REGIONS RESEARCH AND INNOVATION NETWORK,ERRIN,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 905106322,EUROPEAN RURAL DEVELOPMENT NETWORK,European Rural Development Network,PL,Research Organisations,Centro de investigación,alta,tipo CORDIS
-916295951,EUROPEAN SCIENCE COMMUNICATION INSTITUTE (ESCI) GGMBH,,DE,Other,Otra,baja,"otros, nombre sin pista"
+916295951,EUROPEAN SCIENCE COMMUNICATION INSTITUTE (ESCI) GGMBH,,DE,Other,ONG / fundación / asociación,revisada,revisión manual
 999543776,EUROQUALITY SAS,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 916943523,EXUS SOFTWARE MONOPROSOPI ETAIRIA PERIORISMENIS EVTHINIS,EXUS SOFTWARESINGLE MEMBER LIMITED LIABILITY COMPANY,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-961726483,EYROPAIKO INSTITOYTO TOPIKHS ANAPTYKSHS,EUROPEAN INSTITUTE FOR LOCAL DEVELOPMENT,EL,Other,Otra,baja,"otros, nombre sin pista"
+961726483,EYROPAIKO INSTITOYTO TOPIKHS ANAPTYKSHS,EUROPEAN INSTITUTE FOR LOCAL DEVELOPMENT,EL,Other,ONG / fundación / asociación,revisada,revisión manual
 997802238,Elliniko Idryma Evropaikis kai Exoterikis Politikis (HELLENIC FOUNDATION FOR EUROPEAN AND FOREIGN POLICY),ELIEEP (ELIAMEP),EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 884881725,Ethniki AEEGA,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-997361082,Euromontana,,FR,Other,Otra,baja,"otros, nombre sin pista"
+997361082,Euromontana,,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 877276828,"Euskalmet - Agencia Vasca de Meteorología, S.A",EUSKALMET,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-876576876,Ev.-luth. Kirchengemeinde Hamburg-Veddel,,DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+876576876,Ev.-luth. Kirchengemeinde Hamburg-Veddel,,DE,Public bodies,ONG / fundación / asociación,revisada,revisión manual
 900885658,F6S NETWORK IRELAND LIMITED,F6S IE,IE,Private for-profit entities,Empresa,alta,tipo CORDIS
 950220149,F6S NETWORK LIMITED,F6S NETWORK LIMITED,UK,Private for-profit entities,Empresa,alta,tipo CORDIS
 898469679,FASTTRACK VENTURES LDA,FASTTRACK,PT,Private for-profit entities,Empresa,alta,tipo CORDIS
 915056194,FCIENCIAS.ID - ASSOCIACAO PARA A INVESTIGACAO E DESENVOLVIMENTO DE CIENCIAS,FC.ID,PT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-911293079,FEDERACION ESPANOLA DE LA DEHESA,FEDEHESA,ES,Other,ONG / fundación / asociación,media,otros + nombre
-950466238,FEDERATION EUROPEENNE DE FINANCES ET BANQUES ETHIQUES ET ALTERNATIVES,FEBEA,BE,Other,ONG / fundación / asociación,media,otros + nombre
-998945868,FEDERATION EUROPEENNE DES AGENCES ET DES REGIONS POUR L'ENERGIE ET L'ENVIRONNEMENT,FEDARENE,BE,Other,ONG / fundación / asociación,media,otros + nombre
-907549752,FEDERATION EUROPEENNE DES GEOLOGUES,EUROPEAN FEDERATION OF GEOLOGISTSFEDERACION EUROPEA DE GEOLOGOS,BE,Other,ONG / fundación / asociación,media,otros + nombre
+911293079,FEDERACION ESPANOLA DE LA DEHESA,FEDEHESA,ES,Other,ONG / fundación / asociación,revisada,revisión manual
+950466238,FEDERATION EUROPEENNE DE FINANCES ET BANQUES ETHIQUES ET ALTERNATIVES,FEBEA,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+998945868,FEDERATION EUROPEENNE DES AGENCES ET DES REGIONS POUR L'ENERGIE ET L'ENVIRONNEMENT,FEDARENE,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+907549752,FEDERATION EUROPEENNE DES GEOLOGUES,EUROPEAN FEDERATION OF GEOLOGISTSFEDERACION EUROPEA DE GEOLOGOS,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 880887944,FIDELIDADE - COMPANHIA DE SEGUROS SA,FIDELIDADE,PT,Private for-profit entities,Empresa,alta,tipo CORDIS
 920747766,FIELD FACTORS BV,FIELD FACTORS,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
 986311327,FINGRID OYJ,FGRID,FI,Private for-profit entities,Empresa,alta,tipo CORDIS
-884973487,FINNISH LAPLAND TOURIST BOARD,LPTB,FI,Other,Otra,baja,"otros, nombre sin pista"
+884973487,FINNISH LAPLAND TOURIST BOARD,LPTB,FI,Other,ONG / fundación / asociación,revisada,revisión manual
 948982817,FJOLBRAUTASKOLINN I BREIDHOLTI,,IS,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999478883,FOLKEHELSEINSTITUTTET,NORWEGIAN INSTITUTE OF PUBLIC HEALTH NIPH,NO,Research Organisations,Centro de investigación,alta,tipo CORDIS
-999987939,FONDATION EUROPEENNE DE LA SCIENCE,,FR,Other,ONG / fundación / asociación,media,otros + nombre
+999987939,FONDATION EUROPEENNE DE LA SCIENCE,,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 972442364,FONDATSIYA TSENTAR ZA ENERGIYNA EFEKTIVNOST - ENEFEKT,ENEFFECT,BG,Research Organisations,Centro de investigación,alta,tipo CORDIS
 884987746,FONDAZIONE ALBERITALIA ETS,,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999419422,FONDAZIONE CENTRO EURO-MEDITERRANEOSUI CAMBIAMENTI CLIMATICI,FONDAZIONE CMCC,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-913606820,FONDAZIONE DELLA COMUNITA DI MIRAFIORI ENTE FILANTROPICO E.T.S.,FONDAZIONE MIRAFIORI ENTE FILANTROPICO E.T.S.,IT,Other,ONG / fundación / asociación,media,otros + nombre
+913606820,FONDAZIONE DELLA COMUNITA DI MIRAFIORI ENTE FILANTROPICO E.T.S.,FONDAZIONE MIRAFIORI ENTE FILANTROPICO E.T.S.,IT,Other,ONG / fundación / asociación,revisada,revisión manual
 998341461,FONDAZIONE EDMUND MACH,FEM,IT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 928046531,FONDAZIONE IMC CENTRO MARINO INTERNAZIONALE ONLUS,INTERNATIONAL MARINE CENTRE,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 916573856,FONDAZIONE LINKS - LEADING INNOVATION & KNOWLEDGE FOR SOCIETY,FONDAZIONE LINKS,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-889989551,FONDEN WORLD CLIMATE FOUNDATION,,DK,Other,ONG / fundación / asociación,media,otros + nombre
-885509218,FONDS NATURE 2050,FONDS NATURE 2050,FR,Other,Otra,baja,"otros, nombre sin pista"
-888171771,FONDUL ROMAN PENTRU EFICIENTA ENERGIEI,,RO,Other,Otra,baja,"otros, nombre sin pista"
-902877359,FORENINGEN BLOXHUB,BLOXHUB,DK,Other,Otra,baja,"otros, nombre sin pista"
-898575215,FORENINGEN C40 CITIES CLIMATE LEADERSHIP DENMARK,,DK,Other,Otra,baja,"otros, nombre sin pista"
+889989551,FONDEN WORLD CLIMATE FOUNDATION,,DK,Other,ONG / fundación / asociación,revisada,revisión manual
+885509218,FONDS NATURE 2050,FONDS NATURE 2050,FR,Other,ONG / fundación / asociación,revisada,revisión manual
+888171771,FONDUL ROMAN PENTRU EFICIENTA ENERGIEI,,RO,Other,Otro organismo público,revisada,revisión manual
+902877359,FORENINGEN BLOXHUB,BLOXHUB,DK,Other,ONG / fundación / asociación,revisada,revisión manual
+898575215,FORENINGEN C40 CITIES CLIMATE LEADERSHIP DENMARK,,DK,Other,ONG / fundación / asociación,revisada,revisión manual
 896462167,FORENINGEN KLIMATORIUM,,DK,Research Organisations,Centro de investigación,alta,tipo CORDIS
-882028470,FORENINGEN PADRIV TRONDHEIM,PADRIV TRONDHEIM,NO,Other,Otra,baja,"otros, nombre sin pista"
+882028470,FORENINGEN PADRIV TRONDHEIM,PADRIV TRONDHEIM,NO,Other,ONG / fundación / asociación,revisada,revisión manual
 896590692,FORESTWISE ASSOCIACAO PARA O LABORATORIO COLABORATIVO PARA A GESTAO INTEGRADA DA FLORESTA E DO FOGO,,PT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-912703168,FORUM PER LA FINANZA SOSTENIBILE ENTE DEL TERZO SETTORE,,IT,Other,Otra,baja,"otros, nombre sin pista"
-997534324,FORUM VIRIUM HELSINKI OY,RADIO- JATELEVISIOTEKNIIKAN TUTKIMUS RTT,FI,Other,Otra,baja,"otros, nombre sin pista"
+912703168,FORUM PER LA FINANZA SOSTENIBILE ENTE DEL TERZO SETTORE,,IT,Other,ONG / fundación / asociación,revisada,revisión manual
+997534324,FORUM VIRIUM HELSINKI OY,RADIO- JATELEVISIOTEKNIIKAN TUTKIMUS RTT,FI,Other,Otro organismo público,revisada,revisión manual
 999984059,FRAUNHOFER GESELLSCHAFT ZUR FORDERUNG DER ANGEWANDTEN FORSCHUNG EV,Fraunhofer,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 983974306,FREDERICK RESEARCH CENTER,FRC,CY,Research Organisations,Centro de investigación,alta,tipo CORDIS
-998928602,FREIE UND HANSESTADT HAMBURG,HAM,DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+998928602,FREIE UND HANSESTADT HAMBURG,HAM,DE,Public bodies,Autoridad local,revisada,revisión manual
 952610423,FRESH-THOUGHTS CONSULTING GMBH,FT,AT,Private for-profit entities,Empresa,alta,tipo CORDIS
-880771253,FRUCHTWASSERVERWERTUNGSVERBAND EMLICHHEIM,EMLICHHEIM WASTE WATER TREATMENT ASSOCIATION,DE,Public bodies,Otro organismo público,media,organismo público + nombre
+880771253,FRUCHTWASSERVERWERTUNGSVERBAND EMLICHHEIM,EMLICHHEIM WASTE WATER TREATMENT ASSOCIATION,DE,Public bodies,Otro organismo público,revisada,revisión manual
 928030235,FUNDACIO EURECAT,EURECAT,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999541642,FUNDACIO HOSPITAL UNIVERSITARI VALL D'HEBRON - INSTITUT DE RECERCA,VHIR,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 996435993,FUNDACIO INSTITUT DE RECERCA EN ENERGIA DE CATALUNYA,IREC-CERCA,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
@@ -444,75 +444,75 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 999514385,FUNDACION AZTI - AZTI FUNDAZIOA,AZTI,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999929836,FUNDACION CARTIF,CARTIF,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 998189850,FUNDACION CATEC CENTRO AVANZADO DE TECNOLOGIAS AEROESPACIALES,CATEC,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-947977218,FUNDACION CENTRO ANDALUZ DE INVESTIGACIONES DEL AGUA,,ES,Other,ONG / fundación / asociación,media,otros + nombre
+947977218,FUNDACION CENTRO ANDALUZ DE INVESTIGACIONES DEL AGUA,,ES,Other,Centro de investigación,revisada,revisión manual
 973346404,FUNDACION CENTRO DE SERVICIOS Y PROMOCION FORESTAL Y DE SU INDUSTRIA DE CASTILLA Y LEON,CESEFOR,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 929547315,FUNDACION CENTRO TECNOLOGICO DE INVESTIGACION MULTISECTORIAL,CETIM,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999516907,FUNDACION CIRCE CENTRO DE INVESTIGACION DE RECURSOS Y CONSUMOS ENERGETICOS,CIRCE,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 998709188,"FUNDACION DE LA COMUNIDAD VALENCIANA PARA LA INVESTIGACION, PROMOCION Y ESTUDIOS COMERCIALES DE VALENCIAPORT",FV,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-951915806,FUNDACION EMPRESA UNIVERSIDAD GALLEGA,FEUGA,ES,Other,ONG / fundación / asociación,media,otros + nombre
+951915806,FUNDACION EMPRESA UNIVERSIDAD GALLEGA,FEUGA,ES,Other,ONG / fundación / asociación,revisada,revisión manual
 951026025,FUNDACION FUNDECYT - PARQUE CIENTIFICO Y TECNOLOGICO DE EXTREMADURA,FUNDECYT PCTEX,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 952410118,FUNDACION IBERCIVIS,,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 941752728,FUNDACION INSTITUTO DE HIDRAULICA AMBIENTAL DE CANTABRIA,FIHAC,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 998383462,FUNDACION NUEVA CULTURA DEL AGUA,FNCA,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 952853408,FUNDACION PARA LA INVESTIGACION DEL CLIMA,FIC,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-940595421,FUNDACION PARA LA PESCA Y MARISQUEO FUNDAMAR,,ES,Other,ONG / fundación / asociación,media,otros + nombre
-953071367,FUNDACION PATRIMONIO NATURAL DE CASTILLA Y LEON,,ES,Other,ONG / fundación / asociación,media,otros + nombre
+940595421,FUNDACION PARA LA PESCA Y MARISQUEO FUNDAMAR,,ES,Other,ONG / fundación / asociación,revisada,revisión manual
+953071367,FUNDACION PATRIMONIO NATURAL DE CASTILLA Y LEON,,ES,Other,Otro organismo público,revisada,revisión manual
 999604110,FUNDACION TECNALIA RESEARCH & INNOVATION,TECNALIA,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 971958431,FUNDACION UNIVERSIDAD DEL NORTE,UNINORTE,CO,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 910545500,FUNDACJA NEUROLANDSCAPE,,PL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 951517330,FUNDACJA SENDZIMIRA,,PL,Research Organisations,Centro de investigación,alta,tipo CORDIS
-951227688,FUNDINGBOX ACCELERATOR SP ZOO,FBA,PL,Other,Otra,baja,"otros, nombre sin pista"
-952727405,FUNDO REGIONAL DA CIENCIA E TECNOLOGIA,FRCT,PT,Public bodies,Autoridad regional,media,organismo público + nombre
-885097162,Fondation pour le développement durable des régions de montagne,,CH,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-877187879,Fundacion Malagaport,,ES,Other,ONG / fundación / asociación,media,otros + nombre
+951227688,FUNDINGBOX ACCELERATOR SP ZOO,FBA,PL,Other,Empresa,revisada,revisión manual
+952727405,FUNDO REGIONAL DA CIENCIA E TECNOLOGIA,FRCT,PT,Public bodies,Otro organismo público,revisada,revisión manual
+885097162,Fondation pour le développement durable des régions de montagne,,CH,Public bodies,Otro organismo público,revisada,revisión manual
+877187879,Fundacion Malagaport,,ES,Other,ONG / fundación / asociación,revisada,revisión manual
 903166225,GAC,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 999604304,GCF - GLOBAL CLIMATE FORUM EV,GCF,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 913968436,GDANSKIE WODY SPOLKA Z OGRANICZONAODPOWIEDZIALNOSCIA,Gdańsk Water company,PL,Private for-profit entities,Empresa,alta,tipo CORDIS
 890814245,"GDI DRUSTVO S OGRANICENOM ODGOVORNOSCU ZA PROIZVODNJU, TRGOVINU I USLUGE",GDi d.o.o.,HR,Private for-profit entities,Empresa,alta,tipo CORDIS
 959248327,GECOSISTEMA SRL,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-957388352,GEMEENTE DEN HAAG,,NL,Public bodies,Autoridad local,media,organismo público + nombre
+957388352,GEMEENTE DEN HAAG,,NL,Public bodies,Autoridad local,revisada,revisión manual
 993619889,GEMEENTE EINDHOVEN,EINDHOVEN,NL,Public bodies,Autoridad local,media,organismo público + nombre
-880658248,GEMEENTE HARDENBERG,Hardenberg gemeente,NL,Public bodies,Autoridad local,media,organismo público + nombre
+880658248,GEMEENTE HARDENBERG,Hardenberg gemeente,NL,Public bodies,Autoridad local,revisada,revisión manual
 920168870,GENILLARD & CO GMBH,,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
 999872218,GEOPONIKO PANEPISTIMION ATHINON,AGRICULTURAL UNIVERSITY OF ATHENS,EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999845640,GEORG-AUGUST-UNIVERSITAT GOTTINGEN STIFTUNG OFFENTLICHEN RECHTS,UGOE,DE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 883926178,"GEOSPHERE AUSTRIA - BUNDESANSTALT FUR GEOLOGIE, GEOPHYSIK, KLIMATOLOGIE UND METEOROLOGIE",GEOSPHERE AUSTRIA,AT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 943294737,GEOSYSTEMS HELLAS IT KAI EFARMOGESGEOPLIROFORIAKON SYSTIMATON ANONIMIETAIREIA,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-897354858,GERNIKA-LUMOKO KULTUR ETXEA,CASA DE CULTURA DE GERNIKA-LUMO,ES,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+897354858,GERNIKA-LUMOKO KULTUR ETXEA,CASA DE CULTURA DE GERNIKA-LUMO,ES,Public bodies,Otro organismo público,revisada,revisión manual
 888617680,GESTIONE FORESTALE RESPONSABILE SERVIZI SOCIETA A RESPONSABILITA LIMITATA IMPRESA SOCIALE,FSC Italia,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-928836208,GESUNDHEIT OSTERREICH GMBH,GÖG,AT,Other,Otra,baja,"otros, nombre sin pista"
+928836208,GESUNDHEIT OSTERREICH GMBH,GÖG,AT,Other,Otro organismo público,revisada,revisión manual
 930109915,GFG GENOSSENSCHAFT FUR GEMEINWOHL EG,,AT,Private for-profit entities,Empresa,alta,tipo CORDIS
 950828727,GFT ITALIA SRL,GFT,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 926457380,GILAB DOO BEOGRAD,,RS,Private for-profit entities,Empresa,alta,tipo CORDIS
-900779637,GJOVIK KOMMUNE,,NO,Public bodies,Autoridad local,media,organismo público + nombre
+900779637,GJOVIK KOMMUNE,,NO,Public bodies,Autoridad local,revisada,revisión manual
 894895326,GKONELAS K. - PATELIS M. O.E.,ReonHydor,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 888809158,GLOBAL CONSULTING SUSTAINABILITY,GCS,NO,Private for-profit entities,Empresa,alta,tipo CORDIS
 882082790,GLORIOUS MARATHON S.A.,,PT,Private for-profit entities,Empresa,alta,tipo CORDIS
 999516616,GLOWNY INSTYTUT GORNICTWA - PANSTWOWY INSTYTUT BADAWCZY,CENTRAL MINING INSTITUTE - NATIONAL RESEARCH INSTITUTE,PL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 986156418,GMINA MIASTA GDANSKA,MIASTO GDANSK,PL,Public bodies,Autoridad local,media,organismo público + nombre
 999981828,GOTTFRIED WILHELM LEIBNIZ UNIVERSITAET HANNOVER,LUH,DE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-939608446,GRAD BEOGRAD,,RS,Public bodies,Autoridad local,media,organismo público + nombre
+939608446,GRAD BEOGRAD,,RS,Public bodies,Autoridad local,revisada,revisión manual
 917748332,GRAD SARAJEVO,CITY OF SARAJEVO,BA,Public bodies,Autoridad local,media,organismo público + nombre
 989531727,GRAD ZAGREB,CITY OF ZAGREB,HR,Public bodies,Autoridad local,media,organismo público + nombre
-893237208,GREEN DIGITAL FINANCE ALLIANCE,,CH,Other,Otra,baja,"otros, nombre sin pista"
-886959465,GREEN GROWTH GENERATION,GREEN GROWTH GENERATION,IT,Other,Otra,baja,"otros, nombre sin pista"
+893237208,GREEN DIGITAL FINANCE ALLIANCE,,CH,Other,ONG / fundación / asociación,revisada,revisión manual
+886959465,GREEN GROWTH GENERATION,GREEN GROWTH GENERATION,IT,Other,ONG / fundación / asociación,revisada,revisión manual
 874156726,GREENFISH HF,GREENFISH,IS,Private for-profit entities,Empresa,alta,tipo CORDIS
-941237755,GRENOBLE-ALPES-METROPOLE METRO,,FR,Public bodies,Autoridad local,media,organismo público + nombre
-881392247,GROUPEMENT D'INTERET PUBLIC - TRANSITIONS,LIA-GIP D' OCCITANIE,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+941237755,GRENOBLE-ALPES-METROPOLE METRO,,FR,Public bodies,Autoridad local,revisada,revisión manual
+881392247,GROUPEMENT D'INTERET PUBLIC - TRANSITIONS,LIA-GIP D' OCCITANIE,FR,Public bodies,Otro organismo público,revisada,revisión manual
 986044480,GRUPO DE ESTUDIOS Y ALTERNATIVAS 21SL - GEA 21,GEA21,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-885271471,Gemeinde Edermünde,Gemeinde Edermünde,DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-876623145,Gemeinsame Region Bucklige Welt - Wechselland,,AT,Other,Autoridad regional,baja,otros + nombre
+885271471,Gemeinde Edermünde,Gemeinde Edermünde,DE,Public bodies,Autoridad local,revisada,revisión manual
+876623145,Gemeinsame Region Bucklige Welt - Wechselland,,AT,Other,Autoridad local,revisada,revisión manual
 998914634,Generalitat Valenciana,COMUNITAT VALENCIANA,ES,Public bodies,Autoridad regional,media,organismo público + nombre
 885046916,Gjensidige Insurance ASA,,NO,Private for-profit entities,Empresa,alta,tipo CORDIS
 998143193,HAFENCITY UNIVERSITAT HAMBURG,HCU,DE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 997298614,HAMBURGISCHES WELTWIRTSCHAFTSINSTITUT GEMEINNUTZIGE GMBH,HWWI,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 953720200,HARVARD GLOBAL RESEARCH AND SUPPORT SERVICES INC.,HARVARD GLOBAL,US,Research Organisations,Centro de investigación,alta,tipo CORDIS
-898754859,HEALTH CARE WITHOUT HARM EUROPE,,BE,Other,Otra,baja,"otros, nombre sin pista"
+898754859,HEALTH CARE WITHOUT HARM EUROPE,,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 999577532,HELLENIC CENTRE FOR MARINE RESEARCH,,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999994632,HELMHOLTZ-ZENTRUM FUR UMWELTFORSCHUNG GMBH - UFZ,,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999507401,HELMHOLTZ-ZENTRUM HEREON GMBH,HEREON,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
-934666102,HELSINGBORGS KOMMUN,HELSINGBORGS STAD,SE,Public bodies,Autoridad local,media,organismo público + nombre
-997664207,HELSINGIN KAUPUNKI,HELSINGFORS STADCITY OF HELSINKI,FI,Public bodies,Autoridad local,media,organismo público + nombre
+934666102,HELSINGBORGS KOMMUN,HELSINGBORGS STAD,SE,Public bodies,Autoridad local,revisada,revisión manual
+997664207,HELSINGIN KAUPUNKI,HELSINGFORS STADCITY OF HELSINKI,FI,Public bodies,Autoridad local,revisada,revisión manual
 885707292,HELSINGIN SATAMA OY,PORT OF HELSINKI HELSINGFORS HAMN,FI,Private for-profit entities,Empresa,alta,tipo CORDIS
 999994535,HELSINGIN YLIOPISTO,,FI,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 924021419,HERAKLION PORT AUTHORITY AE,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
@@ -521,15 +521,15 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 883848578,HOLLAND FARMING AGRO SRL,HOLLAND FARMING AGRO,RO,Private for-profit entities,Empresa,alta,tipo CORDIS
 882323059,HORTAFERCAR S COOP,,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 932963364,HRVATSKA POLJOPRIVREDNA KOMORA,CROATIAN CHAMBER OF AGRICULTURE,HR,Research Organisations,Centro de investigación,alta,tipo CORDIS
-878369048,HUNGAROMET MAGYAR METEOROLOGIAI SZOLGALTATO NONPROFIT ZARTKORUEN MUKODO RESZVENYTARSASAG,HUNGAROMET HUNGARIAN METEOROLOGICAL SERVICE NONPROFIT PRIVATE LIMITED COMPANY,HU,Other,ONG / fundación / asociación,media,otros + nombre
-876672324,Hellenic Association of Insurance Companies,Hellenic Association of Insurance Companies,EL,Other,ONG / fundación / asociación,media,otros + nombre
+878369048,HUNGAROMET MAGYAR METEOROLOGIAI SZOLGALTATO NONPROFIT ZARTKORUEN MUKODO RESZVENYTARSASAG,HUNGAROMET HUNGARIAN METEOROLOGICAL SERVICE NONPROFIT PRIVATE LIMITED COMPANY,HU,Other,Otro organismo público,revisada,revisión manual
+876672324,Hellenic Association of Insurance Companies,Hellenic Association of Insurance Companies,EL,Other,ONG / fundación / asociación,revisada,revisión manual
 998268905,Hydrometeorological Innovative Solutions,HYDS,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 937459605,I-CATALIST SL,ICATALIST,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 912976223,I-ENER,I-ENER,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
-926787277,I4CE - INSTITUTE FOR CLIMATE ECONOMICS,I4CE,FR,Other,Otra,baja,"otros, nombre sin pista"
+926787277,I4CE - INSTITUTE FOR CLIMATE ECONOMICS,I4CE,FR,Other,Centro de investigación,revisada,revisión manual
 999909854,IBM RESEARCH GMBH,IBM,CH,Private for-profit entities,Empresa,alta,tipo CORDIS
 885227336,ICCREA BANCA S.P.A. ISTITUTO CENTRALE DEL CREDITO COOPERATIVO,ICCREA BANCA S.P.A.,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-998341364,ICLEI EUROPEAN SECRETARIAT GMBH (ICLEI EUROPASEKRETARIAT GMBH),ICLEI EURO,DE,Other,ONG / fundación / asociación,media,otros + nombre
+998341364,ICLEI EUROPEAN SECRETARIAT GMBH (ICLEI EUROPASEKRETARIAT GMBH),ICLEI EURO,DE,Other,ONG / fundación / asociación,revisada,revisión manual
 929853350,IDEAS 3493 SL,IFC,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 999995893,IDRYMA TECHNOLOGIAS KAI EREVNAS,FOUNDATION FOR RESEARCH AND TECHNOLOGYHELLAS,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 913909751,IES R&D,IES R&D,IE,Private for-profit entities,Empresa,alta,tipo CORDIS
@@ -538,7 +538,7 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 999993468,IMPERIAL COLLEGE OF SCIENCE TECHNOLOGY AND MEDICINE,,UK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 912518383,IN2 DIGITAL INNOVATIONS GMBH,,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
 957386218,"INAGRO, PROVINCIAAL EXTERN VERZELFSTANDIGD AGENTSCHAP IN PRIVAATRECHTELIJKE VORM VZW","INAGRO, PROVINCIAAL EVAP",BE,Research Organisations,Centro de investigación,alta,tipo CORDIS
-881129086,INDRE OSTFOLD KOMMUNE,MUNICIPALITYOF INDRE OSTFOLD,NO,Public bodies,Autoridad local,media,organismo público + nombre
+881129086,INDRE OSTFOLD KOMMUNE,MUNICIPALITYOF INDRE OSTFOLD,NO,Public bodies,Autoridad local,revisada,revisión manual
 996312318,INETUM,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 950601553,INETUM ESPAÑA S.A.,INETUM ES,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 944939857,INFRAS AG,,CH,Private for-profit entities,Empresa,alta,tipo CORDIS
@@ -549,11 +549,11 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 968028476,INST ADMINISTRATION ENTREPRISES PARIS,,FR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 998069182,INSTITOUTO ANAPTIXIS EPICHEIRIMATIKOTITAS ASTIKI ETAIREIA,INSTITUTE OF ENTREPRENEURSHIP DEVELOPMENT,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 957944453,INSTITUT D'ARQUITECTURA AVANCADA DE CATALUNYA,IAAC,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-898499652,INSTITUT DE L'INNOVATION DURABLE -SUSTAINABLE INNOVATION INSTITUTE,,FR,Other,Otra,baja,"otros, nombre sin pista"
+898499652,INSTITUT DE L'INNOVATION DURABLE -SUSTAINABLE INNOVATION INSTITUTE,,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 999750289,INSTITUT FUER LAENDLICHE STRUKTURFORSCHUNG EV,INSTITUTE FOR RURAL DEVELOPMENT RESEARCH - IFLS,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 998927923,INSTITUT FUR HOHERE STUDIEN - INSTITUTE FOR ADVANCED STUDIES,IHS,AT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999971837,INSTITUT JOZEF STEFAN,JSI,SI,Research Organisations,Centro de investigación,alta,tipo CORDIS
-891703056,INSTITUT MUNICIPAL D URBANISME,,ES,Public bodies,Autoridad local,media,organismo público + nombre
+891703056,INSTITUT MUNICIPAL D URBANISME,,ES,Public bodies,Otro organismo público,revisada,revisión manual
 999997833,INSTITUT NATIONAL DE LA SANTE ET DE LA RECHERCHE MEDICALE,INSERM,FR,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999993274,"INSTITUT NATIONAL DE RECHERCHE POUR L'AGRICULTURE, L'ALIMENTATION ET L'ENVIRONNEMENT",INRAE,FR,Research Organisations,Centro de investigación,alta,tipo CORDIS
 991798035,INSTITUT POLYTECHNIQUE DE BORDEAUX,Bordeaux INP,FR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
@@ -567,13 +567,13 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 986224803,INSTITUTO POLITECNICO DE BEJA,IPBeja,PT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 998463002,INSTITUTO SUPERIOR DE AGRONOMIA,,PT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999509341,INSTITUTO TECNOLOGICO DE ARAGON,ITA,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
-999947296,"INSTITUTO TECNOLOGICO DE CANARIAS,S.A.",ITC,ES,Other,Otra,baja,"otros, nombre sin pista"
+999947296,"INSTITUTO TECNOLOGICO DE CANARIAS,S.A.",ITC,ES,Other,Otro organismo público,revisada,revisión manual
 884857378,INSTITUTUL DE CERCETARE - DEZVOLTARE PENTRU MONTANOLOGIE CRISTIAN - SIBIU,,RO,Research Organisations,Centro de investigación,alta,tipo CORDIS
 998171129,INSTITUTUL NATIONAL DE CERCERTARE DEZVOLTARE PENTRU STIINTE BIOLOGICE RA,,RO,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999461617,INSTITUTUL NATIONAL DE CERCETARE DEZVOLTARE PENTRU GEOLOGIE SI GEOECOLOGIE MARINA - GEOECOMAR,NATIONAL RESEARCH DEVELOPMENT INSTITUTE MARINE,RO,Research Organisations,Centro de investigación,alta,tipo CORDIS
 972472240,INSTITUTUL NATIONAL DE CERCETARE-DEZVOLTARE DELTA DUNARII,INCDDD,RO,Research Organisations,Centro de investigación,alta,tipo CORDIS
 998750316,INSTYTUT OCHRONY SRODOWISKA - PANSTWOWY INSTYTUT BADAWCZY,INSTITUTE OFENVIRONMENTAL PROTECTION-NATIONALRESEARCH INSTITUTE IOS PIEP,PL,Research Organisations,Centro de investigación,alta,tipo CORDIS
-941718002,INTERNATIONAL FEDERATION OF LANDSCAPE ARCHITECTURE - EUROPE,IFLA EUROPE,BE,Other,ONG / fundación / asociación,media,otros + nombre
+941718002,INTERNATIONAL FEDERATION OF LANDSCAPE ARCHITECTURE - EUROPE,IFLA EUROPE,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 999452596,INTERNATIONALES INSTITUT FUER ANGEWANDTE SYSTEMANALYSE,IIASA,AT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 883749541,INVIABLE LIFE CYCLE THINKING SL,INVIABLE LIFE CYCLE THINKING,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 950650926,IRENA - ISTARSKA REGIONALNA ENERGETSKA AGENCIJA ZA ENERGETSKE DJELATNOSTI DOO,IRENA - ISTRIAN REGIONAL ENERGY AGENCY LTD,HR,Private for-profit entities,Empresa,alta,tipo CORDIS
@@ -588,41 +588,41 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 937057540,ITC - INOVACIJSKO TEHNOLOSKI GROZD MURSKA SOBOTA,ITC - INNOVATION TECHNOLOGY CLUSTER MURSKA SOBOTA,SI,Research Organisations,Centro de investigación,alta,tipo CORDIS
 953461695,ITECONS INSTITUTO DE INVESTIGACAO E DESENVOLVIMENTO TECNOLOGICO PARA A CONSTRUCAO ENERGIA AMBIENTE E SUSTENTABILIDADE,ITeCons,PT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 886275421,IZDOGA IZMIR BUYUKSEHIR BELEDIYESI CEVRE KORUNMASI IYILESTIRILMESI MUSAVIRLIK VE PROJE HIZMETLERI TICARET VE SANAYI ANONIM SIRKETI,IZMIR METROPOLITAN MUNICIPALITY IZDOGA COMPANY,TR,Private for-profit entities,Empresa,alta,tipo CORDIS
-968797880,IZMIR BUYUKSEHIR BELEDIYESI,IBB,TR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+968797880,IZMIR BUYUKSEHIR BELEDIYESI,IBB,TR,Public bodies,Autoridad local,revisada,revisión manual
 999869308,IZMIR INSTITUTE OF TECHNOLOGY,,TR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-891434657,IZMIR SU VE KANALIZASYON IDARESI GENEL MUDURLUGU,ISZU WATER AND SEWERAGE ADMINISTRATION,TR,Public bodies,Otro organismo público,media,organismo público + nombre
+891434657,IZMIR SU VE KANALIZASYON IDARESI GENEL MUDURLUGU,ISZU WATER AND SEWERAGE ADMINISTRATION,TR,Public bodies,Otro organismo público,revisada,revisión manual
 942602060,International Institute for Sustainable Development - Europe,IISD - Europe,CH,Research Organisations,Centro de investigación,alta,tipo CORDIS
-883836065,JAVNA USTANOVA AGENCIJA ZA UPRAVLJANJE ZASTICENIM PRIRODNIM VRIJEDNOSTIMA NA PODRUCJU OSJENSKO-BARANJSKE ZUPANIJE,,HR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-904482903,JAVNA USTANOVA ZA RAZVOJ MEDIMURSKEZUPANIJE REDEA,PUBLIC INSTITUTIONFOR THE DEVELOPMENT OF THE MEDIMURJE COUNTY REDEA,HR,Public bodies,Autoridad regional,media,organismo público + nombre
-907081727,JELGAVAS DIGITALAIS CENTRS,JELGAVAS DIGITALAIS CENTRS,LV,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+883836065,JAVNA USTANOVA AGENCIJA ZA UPRAVLJANJE ZASTICENIM PRIRODNIM VRIJEDNOSTIMA NA PODRUCJU OSJENSKO-BARANJSKE ZUPANIJE,,HR,Public bodies,Otro organismo público,revisada,revisión manual
+904482903,JAVNA USTANOVA ZA RAZVOJ MEDIMURSKEZUPANIJE REDEA,PUBLIC INSTITUTIONFOR THE DEVELOPMENT OF THE MEDIMURJE COUNTY REDEA,HR,Public bodies,Otro organismo público,revisada,revisión manual
+907081727,JELGAVAS DIGITALAIS CENTRS,JELGAVAS DIGITALAIS CENTRS,LV,Public bodies,Otro organismo público,revisada,revisión manual
 999981537,JOANNEUM RESEARCH FORSCHUNGSGESELLSCHAFT MBH,JOANNEUM RESEARCH,AT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-880576477,JONISKIO RAJONO SAVIVALDYBES ADMINISTRACIJA,JONISKIS DISTRICT MUNICIPALITY ADMINISTRATION,LT,Public bodies,Autoridad local,media,organismo público + nombre
+880576477,JONISKIO RAJONO SAVIVALDYBES ADMINISTRACIJA,JONISKIS DISTRICT MUNICIPALITY ADMINISTRATION,LT,Public bodies,Autoridad local,revisada,revisión manual
 999992304,JRC -JOINT RESEARCH CENTRE- EUROPEAN COMMISSION,JRC,BE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999697909,JRC CAPITAL MANAGEMENT CONSULTANCY & RESEARCH GMBH,JRC,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
 999853206,JULIUS-MAXIMILIANS-UNIVERSITAT WURZBURG,UNI WUERZBURG,DE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-946358773,JUNIOR ACHIEVEMENT EUROPE,JA EUROPE,BE,Other,Otra,baja,"otros, nombre sin pista"
-920499058,JURMALAS VALSTSPILSETAS ADMINISTRACIJA,ADMINISTRATION OF JURMALA LOCAL GOVERNMENT,LV,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-903042065,Javna ustanova za upravljanje zasticenim dijelovima prirode Krapinsko-zagorske zupanije,,HR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-919672424,KADIKOY BELEDIYESI,KM,TR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+946358773,JUNIOR ACHIEVEMENT EUROPE,JA EUROPE,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+920499058,JURMALAS VALSTSPILSETAS ADMINISTRACIJA,ADMINISTRATION OF JURMALA LOCAL GOVERNMENT,LV,Public bodies,Autoridad local,revisada,revisión manual
+903042065,Javna ustanova za upravljanje zasticenim dijelovima prirode Krapinsko-zagorske zupanije,,HR,Public bodies,Otro organismo público,revisada,revisión manual
+919672424,KADIKOY BELEDIYESI,KM,TR,Public bodies,Autoridad local,revisada,revisión manual
 949621465,KAJAANIN AMMATTIKORKEAKOULU OY,KAJAANI UNIVERSITY OF APPLIED SCIENCES LTD,FI,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 951250192,KAJAANIN KAUPUNKI,,FI,Public bodies,Autoridad local,media,organismo público + nombre
 937270746,KAJO SRO,KAJO,SK,Private for-profit entities,Empresa,alta,tipo CORDIS
 887760879,KARNTNER BETRIEBSANSIEDLUNGS- UND BETEILIGUNGSGESELLSCHAFT M.B.H.,BABEG,AT,Private for-profit entities,Empresa,alta,tipo CORDIS
 999991334,KATHOLIEKE UNIVERSITEIT LEUVEN,KU Leuven,BE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999844961,KAUNO TECHNOLOGIJOS UNIVERSITETAS,"UNIVERSITY OF TECHNOLOGY, KAUNAS",LT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-900031573,KAYNAK CEVRE VE IKLIM DERNEGI,RESOURCE ENVIRONMENT AND CLIMATE,TR,Other,Otra,baja,"otros, nombre sin pista"
+900031573,KAYNAK CEVRE VE IKLIM DERNEGI,RESOURCE ENVIRONMENT AND CLIMATE,TR,Other,ONG / fundación / asociación,revisada,revisión manual
 938303602,KIELCE MIASTO NA PRAWACH POWIATU,KIELCE,PL,Public bodies,Autoridad local,media,organismo público + nombre
-919854008,KLAIPEDOS MIESTO VISUOMENES SVEIKATOS BIURAS,,LT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-988679582,KLIMA-BUNDNIS DER EUROPAISCHEN STADTE MIT INDIGENEN VOLKERN DER REGENWALDER / ALIANZA DEL CLIMA EV,CLIMATE ALLIANCE,DE,Other,ONG / fundación / asociación,media,otros + nombre
-950751224,KLIMABUNDNIS TIROL,,AT,Other,Otra,baja,"otros, nombre sin pista"
-951387835,KLIYNTEH BULGARIA FONDATSIYA,CLEANTECH BULGARIA FOUNDATION,BG,Other,ONG / fundación / asociación,media,otros + nombre
+919854008,KLAIPEDOS MIESTO VISUOMENES SVEIKATOS BIURAS,,LT,Public bodies,Otro organismo público,revisada,revisión manual
+988679582,KLIMA-BUNDNIS DER EUROPAISCHEN STADTE MIT INDIGENEN VOLKERN DER REGENWALDER / ALIANZA DEL CLIMA EV,CLIMATE ALLIANCE,DE,Other,ONG / fundación / asociación,revisada,revisión manual
+950751224,KLIMABUNDNIS TIROL,,AT,Other,ONG / fundación / asociación,revisada,revisión manual
+951387835,KLIYNTEH BULGARIA FONDATSIYA,CLEANTECH BULGARIA FOUNDATION,BG,Other,ONG / fundación / asociación,revisada,revisión manual
 879901842,KLP Skadeforsikring AS,,NO,Private for-profit entities,Empresa,alta,tipo CORDIS
 999991043,KOBENHAVNS UNIVERSITET,UCPH,DK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-906367322,KOMUNALNA USTANOVA AGENTSIYA ROZVYTKU MISTA ZHYTOMYRSKOYI MISKOYI RADY,MUNICIPAL INSTITUTION CITY DEVELOPMENT AGENCY OF ZHYTOMYR CITY COUNCIL,UA,Public bodies,Autoridad local,media,organismo público + nombre
+906367322,KOMUNALNA USTANOVA AGENTSIYA ROZVYTKU MISTA ZHYTOMYRSKOYI MISKOYI RADY,MUNICIPAL INSTITUTION CITY DEVELOPMENT AGENCY OF ZHYTOMYR CITY COUNCIL,UA,Public bodies,Otro organismo público,revisada,revisión manual
 997539368,KOSICKY SAMOSPRAVNY KRAJ,KOSICE SELF-GOVERNING REGION,SK,Public bodies,Autoridad regional,media,organismo público + nombre
-960804401,KRAPINSKO-ZAGORSKA ZUPANIJA,,HR,Public bodies,Autoridad regional,media,organismo público + nombre
+960804401,KRAPINSKO-ZAGORSKA ZUPANIJA,,HR,Public bodies,Autoridad regional,revisada,revisión manual
 885450921,KREIS EUSKIRCHEN,COUNTY OF EUSKIRCHEN,DE,Public bodies,Autoridad regional,media,organismo público + nombre
-961026337,KRITI,PERIFEREIA,EL,Public bodies,Autoridad regional,media,organismo público + nombre
+961026337,KRITI,PERIFEREIA,EL,Public bodies,Autoridad regional,revisada,revisión manual
 999990946,KUNGLIGA TEKNISKA HOEGSKOLAN,KTH,SE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 975342373,KUOPION KAUPUNKI,KUOPIO STAD CITY OF KUOPIO,FI,Public bodies,Autoridad local,media,organismo público + nombre
 998307123,KWB KOMPETENZZENTRUM WASSER BERLIN GEMEINNUTZIGE GMBH,KWB,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
@@ -631,21 +631,21 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 954900496,LA PALMA RESEARCH CENTRE SL,LPRC,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 998850517,LABORATORIO NACIONAL DE ENGENHARIA CIVIL,LNEC,PT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 920200589,LAND ITALIA SRL,LAND Italia,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-881085533,LANDKREIS GRAFSCHAFT BENTHEIM,,DE,Public bodies,Autoridad regional,media,organismo público + nombre
-950934360,LANDWIRTSCHAFTSKAMMER NIEDERSACHSEN,LWK NIEDERSACHSEN,DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-997355650,LAPPEENRANNAN KAUPUNKI,CITY OF LAPPEENRANTA VILLMANSTRAND,FI,Public bodies,Autoridad local,media,organismo público + nombre
+881085533,LANDKREIS GRAFSCHAFT BENTHEIM,,DE,Public bodies,Autoridad regional,revisada,revisión manual
+950934360,LANDWIRTSCHAFTSKAMMER NIEDERSACHSEN,LWK NIEDERSACHSEN,DE,Public bodies,Otro organismo público,revisada,revisión manual
+997355650,LAPPEENRANNAN KAUPUNKI,CITY OF LAPPEENRANTA VILLMANSTRAND,FI,Public bodies,Autoridad local,revisada,revisión manual
 999591209,LAPPEENRANNAN-LAHDEN TEKNILLINEN YLIOPISTO LUT,LUT University,FI,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 974988420,LARNAKA MUNICIPALITY,LARNAKA MUNICIPALITY,CY,Public bodies,Autoridad local,media,organismo público + nombre
 910401164,LATITUDO 40 SRL,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 999933328,LATVIJAS BIOZINATNU UN TEHNOLOGIJU UNIVERSITATE,LBTU,LV,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-952929844,LATVIJAS PASVALDIBU SAVIENIBA BIEDRIBA LPS,LATVIAN ASSOCIATION OF LOCAL AND REGIONAL GOVERNMENTS,LV,Other,ONG / fundación / asociación,media,otros + nombre
+952929844,LATVIJAS PASVALDIBU SAVIENIBA BIEDRIBA LPS,LATVIAN ASSOCIATION OF LOCAL AND REGIONAL GOVERNMENTS,LV,Other,ONG / fundación / asociación,revisada,revisión manual
 986071446,LATVIJAS VIDES GEOLOGIJAS UN METEOROLOGIJAS CENTRS SIA,LVGMC,LV,Private for-profit entities,Empresa,alta,tipo CORDIS
 991816077,LAUREA-AMMATTIKORKEAKOULU OY,LAUREA UNIVERSITY OF APPLIED SCIENCES,FI,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 907142934,LEARNWORLDS (CY) LTD,LWCY,CY,Private for-profit entities,Empresa,alta,tipo CORDIS
 999677733,LGI SUSTAINABLE INNOVATION,LGI,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 896567509,LIBRA AI TECHNOLOGIES PRIVATE IDIOTIKI KEFALAIOUCHIKI ETAIREIA,LIBRA AI TECHONOLOGIES PRIVATE COMPANY,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 972782446,LIETUVOS SVEIKATOS MOKSLU UNIVERSITETAS,LITHUANIAN UNIVERSITY OF HEALTH SCIENCES,LT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-942564327,"LIFE - BILDUNG, UMWELT, CHANCENGLEICHHEIT EV",,DE,Other,ONG / fundación / asociación,media,otros + nombre
+942564327,"LIFE - BILDUNG, UMWELT, CHANCENGLEICHHEIT EV",,DE,Other,ONG / fundación / asociación,revisada,revisión manual
 999852236,LINKOPINGS UNIVERSITET,LIU,SE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 998079949,LIVERPOOL JOHN MOORES UNIVERSITY,LJMU,UK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 892041489,LNH WATER APS,,DK,Private for-profit entities,Empresa,alta,tipo CORDIS
@@ -656,18 +656,18 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 879620930,LUCAM BV,,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
 900638308,LUCIA SEEL INTERNATIONAL CONSULTING GMBH,,AT,Private for-profit entities,Empresa,alta,tipo CORDIS
 999978433,LUDWIG-MAXIMILIANS-UNIVERSITAET MUENCHEN,LMU MUENCHEN,DE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-999637866,LUNDS KOMMUN,LUND,SE,Public bodies,Autoridad local,media,organismo público + nombre
+999637866,LUNDS KOMMUN,LUND,SE,Public bodies,Autoridad local,revisada,revisión manual
 934887262,LUONNONVARAKESKUS,LUKE,FI,Research Organisations,Centro de investigación,alta,tipo CORDIS
 881485561,LUONTOA OY,LUONTOA,FI,Private for-profit entities,Empresa,alta,tipo CORDIS
 934320200,LUXEMBOURG INSTITUTE OF SCIENCE AND TECHNOLOGY,LIST,LU,Research Organisations,Centro de investigación,alta,tipo CORDIS
 994187921,Laboratorio Nacional de Energia e Geologia I.P.,LNEG,PT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-885046819,Landesamt für Umweltschutz Sachsen-Anhalt,Landesamt für Umweltschutz Sachsen-Anhalt,DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+885046819,Landesamt für Umweltschutz Sachsen-Anhalt,Landesamt für Umweltschutz Sachsen-Anhalt,DE,Public bodies,Otro organismo público,revisada,revisión manual
 892157501,Lemal SP ZOO,,PL,Private for-profit entities,Empresa,alta,tipo CORDIS
 885290289,LähiTapiola Palvelut Oy,LähiTapiola Palvelut Oy,FI,Private for-profit entities,Empresa,alta,tipo CORDIS
 884944387,MAELAB,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 996621457,MAGGIOLI S.P.A.,MAG,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 891269563,MAGYAR AGRAR- ES ELETTUDOMANYI EGYETEM,MATE,HU,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-914005684,MAGYAR PERMAKULTURA EGYESULET,,HU,Other,Otra,baja,"otros, nombre sin pista"
+914005684,MAGYAR PERMAKULTURA EGYESULET,,HU,Other,ONG / fundación / asociación,revisada,revisión manual
 993964045,MALMO KOMMUN,MALMO STAD CITY OF MALMO,SE,Public bodies,Autoridad local,media,organismo público + nombre
 898288580,MANTIS BUSINESS INNOVATION IDIOTIKIKEFALAIOUCHIKI ETAREIA,Mantis Business Innovation Private Company,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 999522824,MARINE INSTITUTE,,IE,Research Organisations,Centro de investigación,alta,tipo CORDIS
@@ -675,41 +675,41 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 930032121,MAYO COUNTY COUNCIL,Mayo County Council,IE,Public bodies,Autoridad regional,media,organismo público + nombre
 952387323,MEDI XXI GABINET DE SOLUCIONS AMBIENTALS SL,,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 879560208,MEDIDAS DE ADAPTACION COSTERA SOSTENIBLE SL,MACS,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-983970426,MEDIOTEJO 21 - AGENCIA REGIONAL DEENERGIA E AMBIENTE DA REGIAO DO MEDIO TEJO E PINHAL INTERIOR SUL,MédioTejo 21,PT,Other,Autoridad regional,baja,otros + nombre
+983970426,MEDIOTEJO 21 - AGENCIA REGIONAL DEENERGIA E AMBIENTE DA REGIAO DO MEDIO TEJO E PINHAL INTERIOR SUL,MédioTejo 21,PT,Other,Otro organismo público,revisada,revisión manual
 999884925,MEDITERRANEAN AGRONOMIC INSTITUTE OF CHANIA,CIHEAM/MAICH,EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-998675044,"MEDITERRANEAN INFORMATION OFFICE FOR ENVIRONMENT, CULTURE AND SUSTAINABLE DEVELOPMENT ASSOCIATION",MIO-ECSDE,EL,Other,ONG / fundación / asociación,media,otros + nombre
-927784243,MEDITERRANEAN SEA AND COAST FOUNDATION,MEDSEA,IT,Other,ONG / fundación / asociación,media,otros + nombre
+998675044,"MEDITERRANEAN INFORMATION OFFICE FOR ENVIRONMENT, CULTURE AND SUSTAINABLE DEVELOPMENT ASSOCIATION",MIO-ECSDE,EL,Other,ONG / fundación / asociación,revisada,revisión manual
+927784243,MEDITERRANEAN SEA AND COAST FOUNDATION,MEDSEA,IT,Other,ONG / fundación / asociación,revisada,revisión manual
 998813075,MENDELOVA UNIVERZITA V BRNE,Mendelova univerzita v Brně,CZ,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 892327154,MEOSS,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 951726462,MESOGEIAKO INSTITOUTO GIA TI FYSI KAI TON ANTHROPO - ASTIKI MI KERDOSKOPIKI ETAIREIA,MEDITERRANEAN INSTITUTE FOR NATURE AND ANTHROPOS,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999851557,MESTNA OBCINA LJUBLJANA,MUNICIPALITY OF LJUBLJANA,SI,Public bodies,Autoridad local,media,organismo público + nombre
-984134259,MESTNA OBCINA MARIBOR,MO MARIBOR,SI,Public bodies,Autoridad local,media,organismo público + nombre
+984134259,MESTNA OBCINA MARIBOR,MO MARIBOR,SI,Public bodies,Autoridad local,revisada,revisión manual
 954389888,MESTNA OBCINA NOVA GORICA,MUNICIPALITY OF NOVA GORICA,SI,Public bodies,Autoridad local,media,organismo público + nombre
-885055258,MESTO KRASNA LIPA,,CZ,Public bodies,Autoridad local,media,organismo público + nombre
+885055258,MESTO KRASNA LIPA,,CZ,Public bodies,Autoridad local,revisada,revisión manual
 956948457,MESTO ZILINA,,SK,Public bodies,Autoridad local,media,organismo público + nombre
 900146227,META,,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
 999735157,META GROUP SRL,META,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 914207929,METEOBLUE AG,,CH,Private for-profit entities,Empresa,alta,tipo CORDIS
 994575630,MIASTO STOLECZNE WARSZAWA,CITY OF WARSAW,PL,Public bodies,Autoridad local,media,organismo público + nombre
 999643492,MIDDLE EAST TECHNICAL UNIVERSITY,METU,TR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-936105873,MILJODIREKTORATET,NORWEGIAN ENVIRONMENT AGENCY,NO,Public bodies,Otro organismo público,media,organismo público + nombre
-916533310,MINISTARSTVO GOSPODARSTVA,Ministry of Economy,HR,Public bodies,Autoridad nacional,media,organismo público + nombre
-967944377,MINISTERIE VAN INFRASTRUCTUUR EN WATERSTAAT,MINISTRY OF INFRASTRUCTURE AND WATER MANAGEMENT,NL,Public bodies,Autoridad nacional,media,organismo público + nombre
-891136673,MINISTERIO PARA LA TRANSICION ECOLOGICA Y EL RETO DEMOGRAFICO,MINISTRY FOR THE ECOLOGICAL TRANSITION AND THE DEMOGRAPHIC CHALLENGE,ES,Public bodies,Autoridad nacional,media,organismo público + nombre
-996445790,MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI,MINISTRY OF INFRASTRUCTURE AND TRANSPORT,IT,Public bodies,Autoridad nacional,media,organismo público + nombre
-920448812,MINISTRSTVO ZA OKOLJE IN PROSTOR AGENCIJA REPUBLIKE SLOVENIJE ZA OKOLJE,ARSO,SI,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+936105873,MILJODIREKTORATET,NORWEGIAN ENVIRONMENT AGENCY,NO,Public bodies,Otro organismo público,revisada,revisión manual
+916533310,MINISTARSTVO GOSPODARSTVA,Ministry of Economy,HR,Public bodies,Autoridad nacional,revisada,revisión manual
+967944377,MINISTERIE VAN INFRASTRUCTUUR EN WATERSTAAT,MINISTRY OF INFRASTRUCTURE AND WATER MANAGEMENT,NL,Public bodies,Autoridad nacional,revisada,revisión manual
+891136673,MINISTERIO PARA LA TRANSICION ECOLOGICA Y EL RETO DEMOGRAFICO,MINISTRY FOR THE ECOLOGICAL TRANSITION AND THE DEMOGRAPHIC CHALLENGE,ES,Public bodies,Autoridad nacional,revisada,revisión manual
+996445790,MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI,MINISTRY OF INFRASTRUCTURE AND TRANSPORT,IT,Public bodies,Autoridad nacional,revisada,revisión manual
+920448812,MINISTRSTVO ZA OKOLJE IN PROSTOR AGENCIJA REPUBLIKE SLOVENIJE ZA OKOLJE,ARSO,SI,Public bodies,Autoridad nacional,revisada,revisión manual
 885638034,MITIGRATE AS,,NO,Private for-profit entities,Empresa,alta,tipo CORDIS
-907490485,MITTETULUNDUSUHING POLLUKULTUURIDEKLASTER,,EE,Other,Otra,baja,"otros, nombre sin pista"
+907490485,MITTETULUNDUSUHING POLLUKULTUURIDEKLASTER,,EE,Other,ONG / fundación / asociación,revisada,revisión manual
 885001423,MOREAU LAURE,EMPAN,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
-928623875,MOZGASSERULTEK BUDAPESTI EGYESULETE,BUDAPEST ASSOCIATION OF PERSONS WITH DISABILITY,HU,Other,ONG / fundación / asociación,media,otros + nombre
+928623875,MOZGASSERULTEK BUDAPESTI EGYESULETE,BUDAPEST ASSOCIATION OF PERSONS WITH DISABILITY,HU,Other,ONG / fundación / asociación,revisada,revisión manual
 900981203,MULTICRITERI-MCRIT AIE,,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-882229066,MUNICIPAL ENTERPRISE INSTITUTE OF URBAN DEVELOPMENT,,UA,Other,Autoridad local,baja,otros + nombre
+882229066,MUNICIPAL ENTERPRISE INSTITUTE OF URBAN DEVELOPMENT,,UA,Other,Otro organismo público,revisada,revisión manual
 952991536,MUNICIPALITY OF ALBA IULIA,AIM,RO,Public bodies,Autoridad local,media,organismo público + nombre
 938862225,MUNICIPALITY OF GABROVO,MoG,BG,Public bodies,Autoridad local,media,organismo público + nombre
 899334143,MUNICIPIA SPA,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-885203086,MUNICIPIO DA HORTA,HORTA CITY HALL,PT,Public bodies,Autoridad local,media,organismo público + nombre
+885203086,MUNICIPIO DA HORTA,HORTA CITY HALL,PT,Public bodies,Autoridad local,revisada,revisión manual
 876040466,MUNICIPIO DA POVOA DE VARZIM,,PT,Public bodies,Autoridad local,media,organismo público + nombre
-998359891,MUNICIPIO DE AGUEDA,CAMARA MUNICIPAL DE AGUEDA CMA,PT,Public bodies,Autoridad local,media,organismo público + nombre
+998359891,MUNICIPIO DE AGUEDA,CAMARA MUNICIPAL DE AGUEDA CMA,PT,Public bodies,Autoridad local,revisada,revisión manual
 920404774,MUNICIPIO DE MATOSINHOS,CAMARA MUNICIPAL DE MATOSINHOS,PT,Public bodies,Autoridad local,media,organismo público + nombre
 932749285,MUNICIPIO DE SETUBAL,CAMARA MUNICIPAL DE SETUBAL,PT,Public bodies,Autoridad local,media,organismo público + nombre
 895824489,MUNICIPIO DE VILA FRANCA DE XIRA,MUNICIPALITY OF VILA FRANCA DE XIRA,PT,Public bodies,Autoridad local,media,organismo público + nombre
@@ -718,24 +718,24 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 966466485,MUNICIPIUL CLUJ-NAPOCA,MUNICIPALITYOF CLUJ-NAPOCA UAT CLUJ-NAPOCA,RO,Public bodies,Autoridad local,media,organismo público + nombre
 957056418,Municipiul Suceava,,RO,Public bodies,Autoridad local,media,organismo público + nombre
 999978239,"NATIONAL CENTER FOR SCIENTIFIC RESEARCH ""DEMOKRITOS""","NCSR ""D""",EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
-919927825,NATUR IM GARTEN GMBH,,AT,Other,Otra,baja,"otros, nombre sin pista"
-881000464,NATURSCHUTZSTIFTUNG GRAFSCHAFT BENTHEIM,NATURSCHUTZSTIFTUNG GRAFSCHAFT BENTHEIM,DE,Other,Otra,baja,"otros, nombre sin pista"
-890772438,NATURSTYRELSEN,,DK,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+919927825,NATUR IM GARTEN GMBH,,AT,Other,Otro organismo público,revisada,revisión manual
+881000464,NATURSCHUTZSTIFTUNG GRAFSCHAFT BENTHEIM,NATURSCHUTZSTIFTUNG GRAFSCHAFT BENTHEIM,DE,Other,ONG / fundación / asociación,revisada,revisión manual
+890772438,NATURSTYRELSEN,,DK,Public bodies,Otro organismo público,revisada,revisión manual
 999988909,NEDERLANDSE ORGANISATIE VOOR TOEGEPAST NATUURWETENSCHAPPELIJK ONDERZOEK TNO,TNO,NL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 883089747,NELEN & SCHUURMANS A-HOLDING BV,,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
 890715111,NELEN & SCHUURMANS CONSULTANCY BV,,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
 887451740,NELEN & SCHUURMANS TECHNOLOGY BV,,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
 943385141,NEMO Nature and Environment Management Operators S.r.l,NEMO srl,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-887408478,NEMZETI INNOVACIOS UGYNOKSEG NONPROFIT ZRT,HUNGARIAN INNOVATION AGENCY NON-PROFIT PLC,HU,Other,ONG / fundación / asociación,media,otros + nombre
+887408478,NEMZETI INNOVACIOS UGYNOKSEG NONPROFIT ZRT,HUNGARIAN INNOVATION AGENCY NON-PROFIT PLC,HU,Other,Otro organismo público,revisada,revisión manual
 999702371,NETCOMPANY S.A.,,LU,Private for-profit entities,Empresa,alta,tipo CORDIS
 991108074,NEW ZEALAND INSTITUTE FOR BIOECONOMY SCIENCE LIMITED,BIOECONOMY SCIENCE INSTITUTE,NZ,Private for-profit entities,Empresa,alta,tipo CORDIS
 882083081,"NHOOD SERVICES PORTUGAL, S.A.",,PT,Private for-profit entities,Empresa,alta,tipo CORDIS
 884283914,NHOOD SERVICES ROMANIA SRL,,RO,Private for-profit entities,Empresa,alta,tipo CORDIS
 999480629,NIAB,NIAB,UK,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999754848,NIBIO - NORSK INSTITUTT FOR BIOOKONOMI,NIBIO,NO,Research Organisations,Centro de investigación,alta,tipo CORDIS
-885141976,NIEDEROSTERREICHISCHE AGRARBEZIRKSBEHORDE,LOWER AUSTRIA AGRICULTURAL DISTRICT AUTHORITY,AT,Public bodies,Otro organismo público,media,organismo público + nombre
-950583317,NIEDEROSTERREICHISCHE ENERGIE- UNDUMWELTAGENTUR GMBH,,AT,Other,Otra,baja,"otros, nombre sin pista"
-952503626,"NIEDERSACHSISCHER LANDESBETRIEB FUR WASSERWIRTSCHAFT, KUSTEN- UND NATURSCHUTZ",NLWKN,DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+885141976,NIEDEROSTERREICHISCHE AGRARBEZIRKSBEHORDE,LOWER AUSTRIA AGRICULTURAL DISTRICT AUTHORITY,AT,Public bodies,Autoridad regional,revisada,revisión manual
+950583317,NIEDEROSTERREICHISCHE ENERGIE- UNDUMWELTAGENTUR GMBH,,AT,Other,Otro organismo público,revisada,revisión manual
+952503626,"NIEDERSACHSISCHER LANDESBETRIEB FUR WASSERWIRTSCHAFT, KUSTEN- UND NATURSCHUTZ",NLWKN,DE,Public bodies,Otro organismo público,revisada,revisión manual
 998006229,NIRAS AS,NIRAS AS,DK,Private for-profit entities,Empresa,alta,tipo CORDIS
 898628856,NOORD-HOLLAND,PROVINCIE,NL,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
 999977851,NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET NTNU,NTNU,NO,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
@@ -743,231 +743,231 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 985390312,NOVA TELECOMMUNICATIONS & MEDIA SINGLE MEMBER SA,NOVA SMSA,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 893130314,NOVOVILLE LIMITED,Novoville,UK,Private for-profit entities,Empresa,alta,tipo CORDIS
 882157189,NYHAVNA EIENDOM AS,,NO,Private for-profit entities,Empresa,alta,tipo CORDIS
-943732110,OBCIANSKE ZDRUZENIE MVO L'UDIA A VODA KOSICE,PEOPLE AND WATER MVO LAV,SK,Other,Otra,baja,"otros, nombre sin pista"
-888300878,OBCINA SELNICA OB DRAVI,MUNICIPALITY OF SELNICA OB DRAVI,SI,Public bodies,Autoridad local,media,organismo público + nombre
-876914242,OBEC ABELOVA,OBEC ABELOVA,SK,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+943732110,OBCIANSKE ZDRUZENIE MVO L'UDIA A VODA KOSICE,PEOPLE AND WATER MVO LAV,SK,Other,ONG / fundación / asociación,revisada,revisión manual
+888300878,OBCINA SELNICA OB DRAVI,MUNICIPALITY OF SELNICA OB DRAVI,SI,Public bodies,Autoridad local,revisada,revisión manual
+876914242,OBEC ABELOVA,OBEC ABELOVA,SK,Public bodies,Autoridad local,revisada,revisión manual
 966998336,OBSHTINA BURGAS,BURGAS MUNICIPALITY,BG,Public bodies,Autoridad local,media,organismo público + nombre
-885086977,ODENSE FJORD SAMARBEJDET,,DK,Other,Otra,baja,"otros, nombre sin pista"
-969778453,ODENSE KOMMUNE,,DK,Public bodies,Autoridad local,media,organismo público + nombre
+885086977,ODENSE FJORD SAMARBEJDET,,DK,Other,Otra,revisada,revisión manual
+969778453,ODENSE KOMMUNE,,DK,Public bodies,Autoridad local,revisada,revisión manual
 998376284,ODESKIY NACIONALNIY UNIVERSITET IMENI I.I. MECHNIKOVA,ONU ODESSA I.I.MECHNKOV NATIONAL UNIVERSITY,UA,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 896926118,ODOS KENTRIKIS ELLADOS S.A,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-906704979,ODYSSEA AMKE,ODYSSEA,EL,Other,Otra,baja,"otros, nombre sin pista"
-894000307,OFFICE FRANCAIS DE LA BIODIVERSITE,,FR,Public bodies,Otro organismo público,media,organismo público + nombre
-997494069,OFFICE INTERNATIONAL DE L'EAU,OIEAU,FR,Other,Otra,baja,"otros, nombre sin pista"
+906704979,ODYSSEA AMKE,ODYSSEA,EL,Other,ONG / fundación / asociación,revisada,revisión manual
+894000307,OFFICE FRANCAIS DE LA BIODIVERSITE,,FR,Public bodies,Otro organismo público,revisada,revisión manual
+997494069,OFFICE INTERNATIONAL DE L'EAU,OIEAU,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 911734429,OFICINA DE PROYECTOS EUROPEOS DEL GOBIERNO DE CANTABRIA,OPE CANTABRIA,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 951719381,OHB DIGITAL SERVICES GMBH,OHB DS,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
-914842115,OPEN & AGILE SMART CITIES,OASC,BE,Other,Otra,baja,"otros, nombre sin pista"
-916321753,OPPLA EEIG,OPPLA,NL,Other,Otra,baja,"otros, nombre sin pista"
-881192427,ORGANISMOS ASFALISIS YGEIAS,HEALTH INSURANCE ORGANISATION,CY,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+914842115,OPEN & AGILE SMART CITIES,OASC,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+916321753,OPPLA EEIG,OPPLA,NL,Other,Otra,revisada,revisión manual
+881192427,ORGANISMOS ASFALISIS YGEIAS,HEALTH INSURANCE ORGANISATION,CY,Public bodies,Otro organismo público,revisada,revisión manual
 953476342,ORGANISMOS FYSIKOU PERIVALLONTOS KAI KLIMATIKIS ALLAGIS,NATURAL ENVIRONMENT AND CLIMATE CHANGE AGENCY,EL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 899127436,ORGANIZATION OF THE BLACK SEA ECONOMIC COOPERATION,BSEC,TR,Research Organisations,Centro de investigación,alta,tipo CORDIS
-911297735,ORTI GENERALI SRL - IMPRESA SOCIALE,ORTI GENERALI SRL,IT,Other,Otra,baja,"otros, nombre sin pista"
+911297735,ORTI GENERALI SRL - IMPRESA SOCIALE,ORTI GENERALI SRL,IT,Other,Empresa,revisada,revisión manual
 881998109,OSC AS,,NO,Private for-profit entities,Empresa,alta,tipo CORDIS
 882863737,OSJECKO BARANJSKA ZUPANIJA,OSIJEK BARANJA COUNTY,HR,Public bodies,Autoridad regional,media,organismo público + nombre
 994216051,OSLO KOMMUNE,OSLO KOMMUNE,NO,Public bodies,Autoridad local,media,organismo público + nombre
-879502008,OSTFOLD FYLKESKOMMUNE,,NO,Public bodies,Autoridad regional,media,organismo público + nombre
+879502008,OSTFOLD FYLKESKOMMUNE,,NO,Public bodies,Autoridad regional,revisada,revisión manual
 986125669,OVE ARUP & PARTNERS IRELAND LIMITED,,IE,Private for-profit entities,Empresa,alta,tipo CORDIS
-963542420,OXFORDSHIRE COUNTY COUNCIL,,UK,Public bodies,Autoridad regional,media,organismo público + nombre
-972382418,PAGKOSMIO TAMEIO GIA TIN FYSI (W.W.F.) -ELLAS,WWF GREECE,EL,Other,ONG / fundación / asociación,media,otros + nombre
-940255630,PANCYPRIAN FEDERATION OF LABOUR,PEO,CY,Other,ONG / fundación / asociación,media,otros + nombre
+963542420,OXFORDSHIRE COUNTY COUNCIL,,UK,Public bodies,Autoridad regional,revisada,revisión manual
+972382418,PAGKOSMIO TAMEIO GIA TIN FYSI (W.W.F.) -ELLAS,WWF GREECE,EL,Other,ONG / fundación / asociación,revisada,revisión manual
+940255630,PANCYPRIAN FEDERATION OF LABOUR,PEO,CY,Other,ONG / fundación / asociación,revisada,revisión manual
 999840693,PANEPISTIMIO AIGAIOU,UNIVERSITY OF THE AEGEAN,EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 986152150,PANEPISTIMIO THESSALIAS,UNIVERSITY OF THESSALY - UTH,EL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999876195,PANNON EGYETEM,UNIVERSITY OF PANNONIA,HU,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-919991845,PARIS EUROPLACE,POLE DE COMPETITIVITE FINANCE INNOVATION,FR,Other,Otra,baja,"otros, nombre sin pista"
-885641526,PARNU LINN/ CITY OF PARNU,,EE,Public bodies,Autoridad local,media,organismo público + nombre
+919991845,PARIS EUROPLACE,POLE DE COMPETITIVITE FINANCE INNOVATION,FR,Other,ONG / fundación / asociación,revisada,revisión manual
+885641526,PARNU LINN/ CITY OF PARNU,,EE,Public bodies,Autoridad local,revisada,revisión manual
 881414654,PASECO EREVNES KAI MELETES PROSTASIAS & DIACHEIRISIS PERIVALLONTOS & ENERGEIAS MONOPROSOPI ETAIREIA PERIORISMENIS EFTHYNIS,PASECO SP LTD,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 998403541,PAUL WATKISS ASSOCIATES LTD,PWA,UK,Private for-profit entities,Empresa,alta,tipo CORDIS
-884100196,PECS MEGYEI JOGU VAROS ONKORMANYZATA,,HU,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+884100196,PECS MEGYEI JOGU VAROS ONKORMANYZATA,,HU,Public bodies,Autoridad local,revisada,revisión manual
 950224126,PEDAL CONSULTING SRO,PEDAL,SK,Private for-profit entities,Empresa,alta,tipo CORDIS
 999823524,PELASTUSOPISTO,,FI,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 998303631,PENSOFT PUBLISHERS,PENSOFT,BG,Private for-profit entities,Empresa,alta,tipo CORDIS
 930725089,PERIFEREIA ANATOLIKIS MAKEDONIAS KAI THRAKIS,REGION OF EAST MACEDONIA AND THRACE,EL,Public bodies,Autoridad regional,media,organismo público + nombre
 950971414,PERIFEREIA DYTIKHS MAKEDONIAS,REGION OF WESTERN MACEDONIA,EL,Public bodies,Autoridad regional,media,organismo público + nombre
 992665991,PERIFEREIA DYTIKI ELLADA,REGION OF WESTERN GREECE,EL,Public bodies,Autoridad regional,media,organismo público + nombre
-885394564,PERIFEREIA NOTIOU AIGAIOU,SOUTH AEGEAN REGION,EL,Public bodies,Autoridad regional,media,organismo público + nombre
-929489794,PERIFEREIA STEREAS ELLADAS,PERIFEREIA,EL,Public bodies,Autoridad regional,media,organismo público + nombre
+885394564,PERIFEREIA NOTIOU AIGAIOU,SOUTH AEGEAN REGION,EL,Public bodies,Autoridad regional,revisada,revisión manual
+929489794,PERIFEREIA STEREAS ELLADAS,PERIFEREIA,EL,Public bodies,Autoridad regional,revisada,revisión manual
 952362006,PERIFEREIA THESSALIAS,REGION OF THESSALY,EL,Public bodies,Autoridad regional,media,organismo público + nombre
 887040848,PERIFEREIA VOREIOU AIGAIOU,REGION OF NORTH AEGEAN,EL,Public bodies,Autoridad regional,media,organismo público + nombre
-886871292,PERIFEREIAKO TAMEIO ANAPTYXIS ANATOLIKIS MAKEDONIAS THRAKIS,REGIONAL DEVELOPMENT FUND EAST MACEDONIA THRACE,EL,Other,Autoridad regional,baja,otros + nombre
+886871292,PERIFEREIAKO TAMEIO ANAPTYXIS ANATOLIKIS MAKEDONIAS THRAKIS,REGIONAL DEVELOPMENT FUND EAST MACEDONIA THRACE,EL,Other,Otro organismo público,revisada,revisión manual
 994857900,PIRAEUS PORT AUTHORITY  SA,PPA SA,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-876768645,PLACES IN COMMON LIMITED,,UK,Other,Otra,baja,"otros, nombre sin pista"
-907143613,PLAN ESTRATEGIC METROPOLITA DE BARCELONA,,ES,Other,Autoridad local,baja,otros + nombre
+876768645,PLACES IN COMMON LIMITED,,UK,Other,Empresa,revisada,revisión manual
+907143613,PLAN ESTRATEGIC METROPOLITA DE BARCELONA,,ES,Other,ONG / fundación / asociación,revisada,revisión manual
 949855138,PLEGMA LABS TECHNOLOGIKES LYSEIS ANONYMOS ETAIRIA,PLEGMA LABS,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 885070778,PLINIVS,,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 925581664,PLUSVALUE,,UK,Research Organisations,Centro de investigación,alta,tipo CORDIS
-882875280,PODKARPACKIE CENTRUM INNOWACJI SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA,PCI SPZOO,PL,Other,Otra,baja,"otros, nombre sin pista"
-885766462,PODKARPACKIE WOJEWODZTWO,,PL,Public bodies,Autoridad regional,media,organismo público + nombre
+882875280,PODKARPACKIE CENTRUM INNOWACJI SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA,PCI SPZOO,PL,Other,Otro organismo público,revisada,revisión manual
+885766462,PODKARPACKIE WOJEWODZTWO,,PL,Public bodies,Autoridad regional,revisada,revisión manual
 878780522,POHJOS SUOMEN BIOKAASU OY,,FI,Private for-profit entities,Empresa,alta,tipo CORDIS
 999588784,POLITECHNIKA GDANSKA,GDANSK UNIVERSITY OF TECHNOLOGY,PL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999879881,POLITECNICO DI MILANO,POLIMI,IT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999977754,POLITECNICO DI TORINO,POLITO,IT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-944982634,PORIN KAUPUNKI,BJORNEBORG STAD CITY OF PORI,FI,Public bodies,Autoridad local,media,organismo público + nombre
+944982634,PORIN KAUPUNKI,BJORNEBORG STAD CITY OF PORI,FI,Public bodies,Autoridad local,revisada,revisión manual
 999464042,POTSDAM-INSTITUT FUR KLIMAFOLGENFORSCHUNG EV,PIK,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
-876508491,POVOA EM TRANSICAO - ASSOCIACAO PELO CLIMA DA POVOA DE VARZIM,PTR,PT,Other,ONG / fundación / asociación,media,otros + nombre
-965891857,PRIMARIA SECTORULUI 2 BUCURESTI,,RO,Public bodies,Autoridad local,media,organismo público + nombre
+876508491,POVOA EM TRANSICAO - ASSOCIACAO PELO CLIMA DA POVOA DE VARZIM,PTR,PT,Other,ONG / fundación / asociación,revisada,revisión manual
+965891857,PRIMARIA SECTORULUI 2 BUCURESTI,,RO,Public bodies,Autoridad local,revisada,revisión manual
 934437667,"PRIVATE SCIENTIFIC INSTITUTION, INSTITUTE FOR RESEARCH IN ENVIRONMENT, CIVIL ENGINEERING AND ENERGY, SKOPJE",,MK,Research Organisations,Centro de investigación,alta,tipo CORDIS
-960848342,PRIZZTECH OY,PRIZZTECH LTD,FI,Other,Otra,baja,"otros, nombre sin pista"
-879610066,PROPARK-FUNDATIA PENTRU ARII PROTEJATE,,RO,Other,Otra,baja,"otros, nombre sin pista"
-936495134,PROSPEX INSTITUTE,PROSPEX INSTITUTE,BE,Other,Otra,baja,"otros, nombre sin pista"
+960848342,PRIZZTECH OY,PRIZZTECH LTD,FI,Other,Otro organismo público,revisada,revisión manual
+879610066,PROPARK-FUNDATIA PENTRU ARII PROTEJATE,,RO,Other,ONG / fundación / asociación,revisada,revisión manual
+936495134,PROSPEX INSTITUTE,PROSPEX INSTITUTE,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 966696472,PROTISVALOR MEDITERRANEE SAS,PVM,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 926252322,PROVINCIA DI POTENZA,,IT,Public bodies,Autoridad regional,media,organismo público + nombre
 948946636,PROVINCIE FRYSLAN,FRIESLAND,NL,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-934771541,PROVINCIEBESTUUR WEST-VLAANDEREN,PROVINCIEBESTUUR WEST-VLAANDEREN,BE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-867440155,"Parco Nazionale delle Foreste Casentinesi, Monte Falterona e Campigna",,IT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-885301056,Pilieciu mokslo asociacija,,LT,Other,Otra,baja,"otros, nombre sin pista"
-998130389,Priority Actions Programme Regional Activity Centre,PAP/RAC,HR,Public bodies,Autoridad regional,media,organismo público + nombre
-876153374,Pudasjärven Kehitys Oy,,FI,Other,Otra,baja,"otros, nombre sin pista"
+934771541,PROVINCIEBESTUUR WEST-VLAANDEREN,PROVINCIEBESTUUR WEST-VLAANDEREN,BE,Public bodies,Autoridad regional,revisada,revisión manual
+867440155,"Parco Nazionale delle Foreste Casentinesi, Monte Falterona e Campigna",,IT,Public bodies,Otro organismo público,revisada,revisión manual
+885301056,Pilieciu mokslo asociacija,,LT,Other,ONG / fundación / asociación,revisada,revisión manual
+998130389,Priority Actions Programme Regional Activity Centre,PAP/RAC,HR,Public bodies,Otro organismo público,revisada,revisión manual
+876153374,Pudasjärven Kehitys Oy,,FI,Other,Otro organismo público,revisada,revisión manual
 994416065,Quantis Sarl,,CH,Private for-profit entities,Empresa,alta,tipo CORDIS
 885093379,RAAHEN SATAMA OY,PORT OF RAAHE LTD,FI,Private for-profit entities,Empresa,alta,tipo CORDIS
 902859220,RAMBOLL FRANCE SAS,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 888556570,RAUMAN SATAMA OY,PORT OF RAUME LTD,FI,Private for-profit entities,Empresa,alta,tipo CORDIS
-950034976,RAZVOJNI CENTER MURSKA SOBOTA,,SI,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+950034976,RAZVOJNI CENTER MURSKA SOBOTA,,SI,Public bodies,Otro organismo público,revisada,revisión manual
 912907450,RED SPA,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-892252755,REFRAME FOOD ASTIKI MI KERDOSKOPIKI ETAIRIA,REFRAME.FOOD,EL,Other,Otra,baja,"otros, nombre sin pista"
-952793365,REGION BRETAGNE,,FR,Public bodies,Autoridad regional,media,organismo público + nombre
+892252755,REFRAME FOOD ASTIKI MI KERDOSKOPIKI ETAIRIA,REFRAME.FOOD,EL,Other,ONG / fundación / asociación,revisada,revisión manual
+952793365,REGION BRETAGNE,,FR,Public bodies,Autoridad regional,revisada,revisión manual
 948882228,REGION CENTRE-VAL DE LOIRE,REGION CENTRE-VAL DE LOIRE,FR,Public bodies,Autoridad regional,media,organismo público + nombre
-999654744,REGION HOVEDSTADEN,REGIONH,DK,Public bodies,Autoridad regional,media,organismo público + nombre
+999654744,REGION HOVEDSTADEN,REGIONH,DK,Public bodies,Autoridad regional,revisada,revisión manual
 997381452,REGION MIDTJYLLAND,,DK,Public bodies,Autoridad regional,media,organismo público + nombre
 891458131,REGION NORMANDIE,,FR,Public bodies,Autoridad regional,media,organismo público + nombre
 921821168,REGION NOUVELLE-AQUITAINE,,FR,Public bodies,Autoridad regional,media,organismo público + nombre
-998373665,REGION SJAELLAND,ZEALCO,DK,Public bodies,Autoridad regional,media,organismo público + nombre
+998373665,REGION SJAELLAND,ZEALCO,DK,Public bodies,Autoridad regional,revisada,revisión manual
 998165794,REGION SKANE,,SE,Public bodies,Autoridad regional,media,organismo público + nombre
 999522921,REGION STOCKHOLM,RS,SE,Public bodies,Autoridad regional,media,organismo público + nombre
 999602073,REGION SYDDANMARK,REGION OF SOUTHERN DENMARK,DK,Public bodies,Autoridad regional,media,organismo público + nombre
 996375659,REGION VASTERBOTTEN,Region Västerbotten,SE,Public bodies,Autoridad regional,media,organismo público + nombre
 915240688,REGIONAL COUNCIL OF LAPLAND,REGIONAL COUNCIL OF LAPLAND,FI,Public bodies,Autoridad regional,media,organismo público + nombre
-895718662,REGIONAL INNOVATION CENTER AMBITIOUS GABROVO,,BG,Other,Autoridad regional,baja,otros + nombre
+895718662,REGIONAL INNOVATION CENTER AMBITIOUS GABROVO,,BG,Other,ONG / fundación / asociación,revisada,revisión manual
 984364246,REGIONALNA ENERGETSKO-KLIMATSKA AGENCIJA SJEVEROZAPADNE HRVATSKE,REGEA NORTH-WEST CROATIA REGIONAL ENERGY AND CLIMATE AGENCY,HR,Research Organisations,Centro de investigación,alta,tipo CORDIS
-964126457,REGIONE AUTONOMA DELLA SARDEGNA*RAS,RAS,IT,Public bodies,Autoridad regional,media,organismo público + nombre
-983174347,REGIONE AUTONOMA FRIULI-VENEZIA GIULIA,REGIONE FVG,IT,Public bodies,Autoridad regional,media,organismo público + nombre
+964126457,REGIONE AUTONOMA DELLA SARDEGNA*RAS,RAS,IT,Public bodies,Autoridad regional,revisada,revisión manual
+983174347,REGIONE AUTONOMA FRIULI-VENEZIA GIULIA,REGIONE FVG,IT,Public bodies,Autoridad regional,revisada,revisión manual
 999482375,REGIONE EMILIA ROMAGNA,,IT,Public bodies,Autoridad regional,media,organismo público + nombre
 999476943,REGIONE PIEMONTE,,IT,Public bodies,Autoridad regional,media,organismo público + nombre
 999523503,REGIONE PUGLIA,,IT,Public bodies,Autoridad regional,media,organismo público + nombre
-998823842,REGIONE TOSCANA,RT,IT,Public bodies,Autoridad regional,media,organismo público + nombre
-889463132,REGIONS4 SUSTAINABLE DEVELOPMENT,,BE,Other,Otra,baja,"otros, nombre sin pista"
-923635068,RESEAU DES REGIONS EUROPEENNES UTILISATRICES DES TECHNOLOGIES SPATIALES - NEREUS,NETWORK OF EUROPEAN REGIONS USING SPACE TECHNOLOGIES,BE,Other,ONG / fundación / asociación,media,otros + nombre
-931790246,RESEAU INTERNATIONAL DES ORGANISMES DE BASSIN ASSOCIATION,RIOB,FR,Other,ONG / fundación / asociación,media,otros + nombre
+998823842,REGIONE TOSCANA,RT,IT,Public bodies,Autoridad regional,revisada,revisión manual
+889463132,REGIONS4 SUSTAINABLE DEVELOPMENT,,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+923635068,RESEAU DES REGIONS EUROPEENNES UTILISATRICES DES TECHNOLOGIES SPATIALES - NEREUS,NETWORK OF EUROPEAN REGIONS USING SPACE TECHNOLOGIES,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+931790246,RESEAU INTERNATIONAL DES ORGANISMES DE BASSIN ASSOCIATION,RIOB,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 949987737,RESILIENCE GUARD GMBH,RESILIENCE GUARD,CH,Private for-profit entities,Empresa,alta,tipo CORDIS
-915811533,REVOLVE PLANET,REVOLVE,BE,Other,Otra,baja,"otros, nombre sin pista"
+915811533,REVOLVE PLANET,REVOLVE,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 991435837,REYKJAVIKURBORG,CITY OF REYKJAVIK,IS,Public bodies,Autoridad local,media,organismo público + nombre
 999983962,RHEINISCH-WESTFAELISCHE TECHNISCHE HOCHSCHULE AACHEN,RWTH AACHEN,DE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-937861670,"RIGA MUNICIPAL AGENCY ""RIGA ENERGY AGENCY""",Riga Energy Agency (REA),LV,Public bodies,Autoridad local,media,organismo público + nombre
+937861670,"RIGA MUNICIPAL AGENCY ""RIGA ENERGY AGENCY""",Riga Energy Agency (REA),LV,Public bodies,Autoridad local,revisada,revisión manual
 932227425,RIGAS PILSETAS PASVALDIBA,RIGA CITY COUNCIL,LV,Public bodies,Autoridad local,media,organismo público + nombre
 999920718,RIGAS TEHNISKA UNIVERSITATE,RTU,LV,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-917535708,RIIGIMETSA MAJANDAMISE KESKUS,FOREST MANAGEMENT CENTRE,EE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+917535708,RIIGIMETSA MAJANDAMISE KESKUS,FOREST MANAGEMENT CENTRE,EE,Public bodies,Otro organismo público,revisada,revisión manual
 999989782,RIJKSUNIVERSITEIT GRONINGEN,,NL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999951467,RINA CONSULTING SPA,RINA-C,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 999512930,RISA SICHERHEITSANALYSEN GMBH,RISA,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
 999613422,RISE RESEARCH INSTITUTES OF SWEDEN AB,RISE,SE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 913789374,RISK - SPEYS - TRANSFER,RST-TTO,BG,Research Organisations,Centro de investigación,alta,tipo CORDIS
 884577630,ROBUST SYSTEMS ENGINEERING SCC LTD,RSE,CY,Private for-profit entities,Empresa,alta,tipo CORDIS
-916073433,ROHEALTH - CLUSTERUL PENTRU SANATATE SI BIOECONOMIE,ROHEALTH - HEALTH AND BIOECONOMY CLUSTER,RO,Other,Otra,baja,"otros, nombre sin pista"
-999512736,ROMA CAPITALE,ROMA CAPITALE,IT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+916073433,ROHEALTH - CLUSTERUL PENTRU SANATATE SI BIOECONOMIE,ROHEALTH - HEALTH AND BIOECONOMY CLUSTER,RO,Other,ONG / fundación / asociación,revisada,revisión manual
+999512736,ROMA CAPITALE,ROMA CAPITALE,IT,Public bodies,Autoridad local,revisada,revisión manual
 885104146,ROMAGNA ACQUE-SOCIETA DELLE FONTI SPA,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-916314381,ROSENDAL INTERNASJONALE TEATER,,NO,Other,Otra,baja,"otros, nombre sin pista"
+916314381,ROSENDAL INTERNASJONALE TEATER,,NO,Other,ONG / fundación / asociación,revisada,revisión manual
 999861451,ROYAL HOLLOWAY AND BEDFORD NEW COLLEGE,RHUL,UK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 949860570,ROYAL MELBOURNE INSTITUTE OF TECHNOLOGY SPAIN SL,RMIT EUROPE,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 955454463,ROYAL MELBOURNE INSTITUTE OF TECHNOLOGY*RMIT UNIVERSITY,RMIT-Uni,AU,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-946339373,Ranuan kunta,Ranuan kunta Municipality of Ranua,FI,Public bodies,Autoridad local,media,organismo público + nombre
+946339373,Ranuan kunta,Ranuan kunta Municipality of Ranua,FI,Public bodies,Autoridad local,revisada,revisión manual
 999891812,Regionalna razvojna agencija za Podravje - Maribor,RRA Podravje - Maribor,SI,Research Organisations,Centro de investigación,alta,tipo CORDIS
 998122338,Regione Sicilia,,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-877803635,Resilient Cities Catalyst Astiki Mi Kerdoskopiki Etairia,Resilient Cities Catalyst Europe,EL,Other,Otra,baja,"otros, nombre sin pista"
-879301994,SAKIU RAJONO SAVIVALDYBES ADMINISTRACIJA,SAKIU RAJONO SAVIVALDYBES ADMINISTRACIJA,LT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+877803635,Resilient Cities Catalyst Astiki Mi Kerdoskopiki Etairia,Resilient Cities Catalyst Europe,EL,Other,ONG / fundación / asociación,revisada,revisión manual
+879301994,SAKIU RAJONO SAVIVALDYBES ADMINISTRACIJA,SAKIU RAJONO SAVIVALDYBES ADMINISTRACIJA,LT,Public bodies,Autoridad local,revisada,revisión manual
 998518583,SCHWEIZERISCHES TROPEN UND PUBLIC HEALTH INSTITUT,SWISS TPH SWISS TROPICAL AND PUBLIC HEALTH INSTITUTE,CH,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999884731,SCUOLA SUPERIORE DI STUDI UNIVERSITARI E DI PERFEZIONAMENTO S ANNA,SSSA,IT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 903855313,SDSN ASSOCIATION PARIS,,FR,Research Organisations,Centro de investigación,alta,tipo CORDIS
-892369640,SECRETARIA REGIONAL DO MAR E DAS PESCAS,,PT,Public bodies,Autoridad regional,media,organismo público + nombre
-967250439,SECRETARIATUL NATIONAL ROMAN AL RETELEI UNIVERSITATILOR DE LA MAREA NEAGRA,BSUN,RO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-883394715,SECTORUL 4 AL MUNICIPIULUI BUCURESTI,,RO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+892369640,SECRETARIA REGIONAL DO MAR E DAS PESCAS,,PT,Public bodies,Autoridad regional,revisada,revisión manual
+967250439,SECRETARIATUL NATIONAL ROMAN AL RETELEI UNIVERSITATILOR DE LA MAREA NEAGRA,BSUN,RO,Public bodies,ONG / fundación / asociación,revisada,revisión manual
+883394715,SECTORUL 4 AL MUNICIPIULUI BUCURESTI,,RO,Public bodies,Autoridad local,revisada,revisión manual
 888220465,SEGES INNOVATION PS,SEGES Innovation P/S,DK,Research Organisations,Centro de investigación,alta,tipo CORDIS
-998830535,SEI OXFORD OFFICE LIMITED,,UK,Other,Otra,baja,"otros, nombre sin pista"
-905662714,"SENATSVERWALTUNG FUR MOBILITAT, VERKEHR, KLIMASCHUTZ UND UMWELT","Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt",DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+998830535,SEI OXFORD OFFICE LIMITED,,UK,Other,Centro de investigación,revisada,revisión manual
+905662714,"SENATSVERWALTUNG FUR MOBILITAT, VERKEHR, KLIMASCHUTZ UND UMWELT","Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt",DE,Public bodies,Autoridad regional,revisada,revisión manual
 925244783,SENSATIVE AB,,SE,Private for-profit entities,Empresa,alta,tipo CORDIS
 940211980,SENSEAIR AB,SENSEAIR,SE,Private for-profit entities,Empresa,alta,tipo CORDIS
-881160029,SERVEI ANDORRÀ D'ATENCIÓ SANITÀRIA,,AD,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-943930766,SIHTASUTUS EESTIMAA LOODUSE FOND,ESTONIAN FUND FOR NATURE,EE,Other,Otra,baja,"otros, nombre sin pista"
-896006752,SIHTASUTUS FAB CITY FOUNDATION,FAB CITY FOUNDATION,EE,Other,ONG / fundación / asociación,media,otros + nombre
-896576142,SIHTASUTUS PARNUMAA ARENDUSKESKUS,,EE,Other,Otra,baja,"otros, nombre sin pista"
+881160029,SERVEI ANDORRÀ D'ATENCIÓ SANITÀRIA,,AD,Public bodies,Otro organismo público,revisada,revisión manual
+943930766,SIHTASUTUS EESTIMAA LOODUSE FOND,ESTONIAN FUND FOR NATURE,EE,Other,ONG / fundación / asociación,revisada,revisión manual
+896006752,SIHTASUTUS FAB CITY FOUNDATION,FAB CITY FOUNDATION,EE,Other,ONG / fundación / asociación,revisada,revisión manual
+896576142,SIHTASUTUS PARNUMAA ARENDUSKESKUS,,EE,Other,Otro organismo público,revisada,revisión manual
 999448425,SIHTASUTUS STOCKHOLMI KESKKONNAINSTITUUDI TALLINNA KESKUS,STOCKHOLM ENVIRONMENT INSTITUTE TALLINN CENTRE,EE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 941584239,SIMBIOTICA SL,SIMBIOTICA,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 880735945,SINOPSIS SOCIALLY INTEGRATED INNOVATION S.R.L.,.,RO,Private for-profit entities,Empresa,alta,tipo CORDIS
 910945140,SINTEF AS,SINTEF,NO,Research Organisations,Centro de investigación,alta,tipo CORDIS
-998241357,SISAMINISTERIO (SM),MINISTRY OF THE INTERIOR,FI,Public bodies,Autoridad nacional,media,organismo público + nombre
-944781650,SKOGKURS,,NO,Other,Otra,baja,"otros, nombre sin pista"
+998241357,SISAMINISTERIO (SM),MINISTRY OF THE INTERIOR,FI,Public bodies,Autoridad nacional,revisada,revisión manual
+944781650,SKOGKURS,,NO,Other,ONG / fundación / asociación,revisada,revisión manual
 999873382,SLOVENSKA POLNOHOSPODARSKA UNIVERZITA V NITRE,SLOVAK UNIVERSITY OF AGRICULTURE IN NITRA,SK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 917800421,SMILTENES NOVADA PASVALDIBA,SMILTENE,LV,Public bodies,Autoridad local,media,organismo público + nombre
-885683915,SOCIAL FINANCE ASSOCIATION - ASOCIATIA PENTRU FINANTARE SOCIALA,,RO,Other,ONG / fundación / asociación,media,otros + nombre
+885683915,SOCIAL FINANCE ASSOCIATION - ASOCIATIA PENTRU FINANTARE SOCIALA,,RO,Other,ONG / fundación / asociación,revisada,revisión manual
 951411600,SOCIEDAD COOPERATIVA ANDALUZA GANADERA DEL VALLE DE LOS PEDROCHES,,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-938113482,SOCIEDAD ESPANOLA DE AGRICULTURA ECOLOGICA,SEAE,ES,Other,Otra,baja,"otros, nombre sin pista"
+938113482,SOCIEDAD ESPANOLA DE AGRICULTURA ECOLOGICA,SEAE,ES,Other,ONG / fundación / asociación,revisada,revisión manual
 943996241,SOCIEDAD ESPANOLA DE ORNITOLOGIA SEO,,ES,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999615944,SOCIEDAD GENERAL DE AGUAS DE BARCELONA SA,,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 990681953,SOCIEDAD PUBLICA DE GESTION AMBIENTAL IHOBE SA,,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 999479368,SOCIEDADE PORTUGUESA DE INOVACAO CONSULTADORIA EMPRESARIAL E FOMENTO DA INOVACAO SA,SPI,PT,Private for-profit entities,Empresa,alta,tipo CORDIS
-941263848,SOCIEDADE PORTUGUESA PARA O ESTUDO DAS AVES,SPEA,PT,Other,Otra,baja,"otros, nombre sin pista"
-998239805,SOLAGRO,,FR,Other,Otra,baja,"otros, nombre sin pista"
+941263848,SOCIEDADE PORTUGUESA PARA O ESTUDO DAS AVES,SPEA,PT,Other,ONG / fundación / asociación,revisada,revisión manual
+998239805,SOLAGRO,,FR,Other,ONG / fundación / asociación,revisada,revisión manual
 884672011,SOLARKAPITAL YPIRESIES DIACHEIRISIS PERIOUSIAS ETERORYTHMI ETAIRIA,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
 999871927,SOPRONI EGYETEM,UNIVERSITY OF SOPRON UNIVERSITAT SOPRON,HU,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 909875521,SORBONNE UNIVERSITE,,FR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 952094286,SOUTH NICOSIA-IDALION MUNICIPALITY,SNI,CY,Public bodies,Autoridad local,media,organismo público + nombre
 916261322,SOUTH POLE AG,SPG,CH,Private for-profit entities,Empresa,alta,tipo CORDIS
 895586451,SPITALUL CLINIC JUDETEAN DE URGENTA PIUS BRINZEU TIMISOARA,,RO,Research Organisations,Centro de investigación,alta,tipo CORDIS
-915589694,"SPRAVA INFORMACNICH TECHNOLOGII MESTA PLZNE, PRISPEVKOVA ORGANIZACE",SITMP,CZ,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-885041096,SPRAVA NARODNIHO PARKU CESKE SVYCARSKO,MANAGEMENT OF THE CZECH SWISS NATIONAL PARK,CZ,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-951807845,STAD GENK,CITY OF GENK,BE,Public bodies,Autoridad local,media,organismo público + nombre
-998945771,STAD GENT,GENT,BE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+915589694,"SPRAVA INFORMACNICH TECHNOLOGII MESTA PLZNE, PRISPEVKOVA ORGANIZACE",SITMP,CZ,Public bodies,Otro organismo público,revisada,revisión manual
+885041096,SPRAVA NARODNIHO PARKU CESKE SVYCARSKO,MANAGEMENT OF THE CZECH SWISS NATIONAL PARK,CZ,Public bodies,Otro organismo público,revisada,revisión manual
+951807845,STAD GENK,CITY OF GENK,BE,Public bodies,Autoridad local,revisada,revisión manual
+998945771,STAD GENT,GENT,BE,Public bodies,Autoridad local,revisada,revisión manual
 993960068,STAD LEUVEN,LEUVEN,BE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
 936955108,STAD OOSTENDE,CITY OF OSTEND,BE,Public bodies,Autoridad local,media,organismo público + nombre
 952525936,STADT MANNHEIM,,DE,Public bodies,Autoridad local,media,organismo público + nombre
-998208086,STANDORTAGENTUR TIROL GMBH,STANDORTAGENTUR TIROL GMBH,AT,Other,Otra,baja,"otros, nombre sin pista"
-913040049,STARTUP EUROPE REGIONS NETWORK,,BE,Other,ONG / fundación / asociación,media,otros + nombre
-937658649,STATUTARNI MESTO LIBEREC,,CZ,Public bodies,Autoridad local,media,organismo público + nombre
+998208086,STANDORTAGENTUR TIROL GMBH,STANDORTAGENTUR TIROL GMBH,AT,Other,Otro organismo público,revisada,revisión manual
+913040049,STARTUP EUROPE REGIONS NETWORK,,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+937658649,STATUTARNI MESTO LIBEREC,,CZ,Public bodies,Autoridad local,revisada,revisión manual
 999468310,STAZIONE ZOOLOGICA ANTON DOHRN,,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-929362239,STICHTING CLIMATE ADAPTATION SERVICES,,NL,Other,ONG / fundación / asociación,media,otros + nombre
-878875582,STICHTING CLIMATE-KIC INTERNATIONAL FOUNDATION,Climate KIC,NL,Other,ONG / fundación / asociación,media,otros + nombre
+929362239,STICHTING CLIMATE ADAPTATION SERVICES,,NL,Other,ONG / fundación / asociación,revisada,revisión manual
+878875582,STICHTING CLIMATE-KIC INTERNATIONAL FOUNDATION,Climate KIC,NL,Other,ONG / fundación / asociación,revisada,revisión manual
 999520302,STICHTING DELTARES,Deltares,NL,Research Organisations,Centro de investigación,alta,tipo CORDIS
-892204158,STICHTING GLOBAL RESILIENT CITIES NETWORK,RESILIENT CITIES NETWORK,NL,Other,ONG / fundación / asociación,media,otros + nombre
+892204158,STICHTING GLOBAL RESILIENT CITIES NETWORK,RESILIENT CITIES NETWORK,NL,Other,ONG / fundación / asociación,revisada,revisión manual
 888396811,STICHTING INTERNATIONAL INSTITUTE FOR ENVIRONMENT AND DEVELOPMENT EUROPE,IIED Europe,NL,Research Organisations,Centro de investigación,alta,tipo CORDIS
-972826484,"STICHTING INTERNATIONAL NETWORK ONCHILDREN'S HEALTH, ENVIRONMENT AND SAFETY",,NL,Other,ONG / fundación / asociación,media,otros + nombre
-974802471,STICHTING INTERNATIONAL RED CROSS RED CRESCENT CENTRE ON CLIMATE CHANGE AND DISASTER PREPAREDNESS,Climate Centre,NL,Other,ONG / fundación / asociación,media,otros + nombre
+972826484,"STICHTING INTERNATIONAL NETWORK ONCHILDREN'S HEALTH, ENVIRONMENT AND SAFETY",,NL,Other,ONG / fundación / asociación,revisada,revisión manual
+974802471,STICHTING INTERNATIONAL RED CROSS RED CRESCENT CENTRE ON CLIMATE CHANGE AND DISASTER PREPAREDNESS,Climate Centre,NL,Other,ONG / fundación / asociación,revisada,revisión manual
 999603043,STICHTING NATURALIS BIODIVERSITY CENTER,NATURALIS,NL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 898831295,STICHTING PLACEMAKING EUROPE,Placemaking Europe,NL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 954530344,STICHTING VU,,NL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999547365,STICHTING WAGENINGEN RESEARCH,WR,NL,Research Organisations,Centro de investigación,alta,tipo CORDIS
-936214707,STIFTELSEN MUSEUM NORD,FOUNDATION MUSEUM NORD,NO,Other,ONG / fundación / asociación,media,otros + nombre
+936214707,STIFTELSEN MUSEUM NORD,FOUNDATION MUSEUM NORD,NO,Other,ONG / fundación / asociación,revisada,revisión manual
 999654162,STIFTELSEN NILU,NILU,NO,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999450268,STIFTELSEN THE STOCKHOLM ENVIRONMENT INSTITUTE,SEI,SE,Research Organisations,Centro de investigación,alta,tipo CORDIS
-920286919,STIFTUNG GLOBAL INFRASTRUCTURE BASEL,GOBAL INFRASTRUCTURE BASEL FOUNDATION,CH,Other,ONG / fundación / asociación,media,otros + nombre
-880560084,STIPO GREECE  ASTIKI MI KERDOSKOPIKI ETAIREIA,,EL,Other,Otra,baja,"otros, nombre sin pista"
+920286919,STIFTUNG GLOBAL INFRASTRUCTURE BASEL,GOBAL INFRASTRUCTURE BASEL FOUNDATION,CH,Other,ONG / fundación / asociación,revisada,revisión manual
+880560084,STIPO GREECE  ASTIKI MI KERDOSKOPIKI ETAIREIA,,EL,Other,ONG / fundación / asociación,revisada,revisión manual
 998222539,STOWARZYSZENIE CENTRUM ROZWIAZAN SYSTEMOWYCH,Stowarzyszenie CRS,PL,Research Organisations,Centro de investigación,alta,tipo CORDIS
 902868726,STOWARZYSZENIE INICJATYWA MIASTO,,PL,Research Organisations,Centro de investigación,alta,tipo CORDIS
-950607664,STRANE INNOVATION,STRANE,FR,Other,Otra,baja,"otros, nombre sin pista"
+950607664,STRANE INNOVATION,STRANE,FR,Other,Empresa,revisada,revisión manual
 889371079,STROMING BV,,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
 999657557,SUEZ ARIA TECHNOLOGIES,AT,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 960438420,SUEZ EAU FRANCE,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
 951527224,SUSTAINABLE BUSINESS HUB SCANDINAVIA AB,SBHUB,SE,Private for-profit entities,Empresa,alta,tipo CORDIS
-941622457,SUSTAINABLE FINANCE OBSERVATORY,SUSTAINABLE FINANCE OBSERVATORY,FR,Other,Otra,baja,"otros, nombre sin pista"
+941622457,SUSTAINABLE FINANCE OBSERVATORY,SUSTAINABLE FINANCE OBSERVATORY,FR,Other,Centro de investigación,revisada,revisión manual
 885317352,SUSTAINADVISORY S.R.L.,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 999887350,SVERIGES LANTBRUKSUNIVERSITET,SWEDISH UNIVERSITY OF AGRICULTURAL SCIENCES,SE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-999507983,SVERIGES METEOROLOGISKA OCH HYDROLOGISKA INSTITUT,SMHI,SE,Public bodies,Otro organismo público,media,organismo público + nombre
+999507983,SVERIGES METEOROLOGISKA OCH HYDROLOGISKA INSTITUT,SMHI,SE,Public bodies,Otro organismo público,revisada,revisión manual
 999534561,SVEUCILISTE U ZAGREBU AGRONOMSKI FAKULTET,,HR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999876486,SVEUCILISTE U ZAGREBU FAKULTET ELEKTROTEHNIKE I RACUNARSTVA,UNIZG-FER,HR,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-953068069,SVI.MED. - CENTRO EUROMEDITERRANEO PER LO SVILUPPO SOSTENIBILE - ETS,SVI.MED.,IT,Other,ONG / fundación / asociación,media,otros + nombre
+953068069,SVI.MED. - CENTRO EUROMEDITERRANEO PER LO SVILUPPO SOSTENIBILE - ETS,SVI.MED.,IT,Other,ONG / fundación / asociación,revisada,revisión manual
 966010294,SVILUPPO TECNOLOGIE E RICERCA PER L'EDILIZIA SISMICAMENTE SICURA ED ECOSOSTENIBILE SCARL,STRESS,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999904616,SYDDANSK UNIVERSITET,SDU,DK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-885149445,SYNDICAT D AMENAGEMENT DU BASSIN DE LA VIENNE,,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-885143237,SYNDICAT MIXTE D'AMENAGEMENT ET DE GESTION DU PARC NATUREL REGIONAL DE MILLEVACHES EN LIMOUSIN,,FR,Public bodies,Autoridad regional,media,organismo público + nombre
-884984351,SYNDICAT MIXTE DU PARC NATUREL REGIONAL DU MARAIS POITEVIN,PNR MARAIS POITEVIN,FR,Public bodies,Autoridad regional,media,organismo público + nombre
-884955930,SYNDICAT MIXTE INTERDEPARTEMENTAL DE LA VALLEE DE LA LEZE (SMIVAL),,FR,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+885149445,SYNDICAT D AMENAGEMENT DU BASSIN DE LA VIENNE,,FR,Public bodies,Otro organismo público,revisada,revisión manual
+885143237,SYNDICAT MIXTE D'AMENAGEMENT ET DE GESTION DU PARC NATUREL REGIONAL DE MILLEVACHES EN LIMOUSIN,,FR,Public bodies,Otro organismo público,revisada,revisión manual
+884984351,SYNDICAT MIXTE DU PARC NATUREL REGIONAL DU MARAIS POITEVIN,PNR MARAIS POITEVIN,FR,Public bodies,Otro organismo público,revisada,revisión manual
+884955930,SYNDICAT MIXTE INTERDEPARTEMENTAL DE LA VALLEE DE LA LEZE (SMIVAL),,FR,Public bodies,Otro organismo público,revisada,revisión manual
 999865137,SZKOLA GLOWNA GOSPODARSTWA WIEJSKIEGO,SGGW WARSAW UNIVERSITY OF LIFE SCIENCES,PL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-996539201,Splitsko-dalmatinska županija,,HR,Public bodies,Autoridad regional,media,organismo público + nombre
+996539201,Splitsko-dalmatinska županija,,HR,Public bodies,Autoridad regional,revisada,revisión manual
 999588493,Ss. CYRIL AND METHODIUS UNIVERSITY IN SKOPJE,,MK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-885005206,Statsforvalteren i Trondelag,,NO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+885005206,Statsforvalteren i Trondelag,,NO,Public bodies,Autoridad nacional,revisada,revisión manual
 996747848,Stichting Hanzehogeschool Groningen,HUAS -  Hanze University of Applied Sciences,NL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-885307264,T.L. GARDENS OF THE FUTURE,,CY,Other,Otra,baja,"otros, nombre sin pista"
+885307264,T.L. GARDENS OF THE FUTURE,,CY,Other,Otra,revisada,revisión manual
 929371163,TAKT-IKI,,BG,Private for-profit entities,Empresa,alta,tipo CORDIS
 986128482,TALLINNA LINN,,EE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
 999842536,TALLINNA TEHNIKAÜLIKOOL,TALLINN UNIVERSITY OF TECHNOLOGY,EE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-998829080,TAMPEREEN KAUPUNKI,TAMMERFORS STADCITY OF TAMPERE,FI,Public bodies,Autoridad local,media,organismo público + nombre
+998829080,TAMPEREEN KAUPUNKI,TAMMERFORS STADCITY OF TAMPERE,FI,Public bodies,Autoridad local,revisada,revisión manual
 872452824,TAMPEREEN TILAPALVELUT OY,TAMPERE FACILITY SERVICES LTD,FI,Private for-profit entities,Empresa,alta,tipo CORDIS
 996380024,TARTU LINN,TARTU CITY,EE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
 999895013,TARTU ULIKOOL,UNIVERSITY OF TARTU,EE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
@@ -990,12 +990,12 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 996697893,TERVEYDEN JA HYVINVOINNIN LAITOS,FINNISH INSTITUTE FOR HEALTH AND WELFARE,FI,Research Organisations,Centro de investigación,alta,tipo CORDIS
 952129982,TH!NK E,TH!NK E,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
 886292978,TH!NK EUROPE,TH!NK EUROPE,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
-926523728,THAMES21 LIMITED,,UK,Other,Otra,baja,"otros, nombre sin pista"
+926523728,THAMES21 LIMITED,,UK,Other,ONG / fundación / asociación,revisada,revisión manual
 999984350,"THE CHANCELLOR, MASTERS AND SCHOLARS OF THE UNIVERSITY OF OXFORD",UOXF,UK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-937252025,THE COUNCIL OF THE BOROUGH OF TORBAY,TORBAY COUNCIL,UK,Public bodies,Autoridad local,media,organismo público + nombre
+937252025,THE COUNCIL OF THE BOROUGH OF TORBAY,TORBAY COUNCIL,UK,Public bodies,Autoridad local,revisada,revisión manual
 965934440,THE CYPRUS INSTITUTE,,CY,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-910571496,THE DEMOCRATIC SOCIETY AISBL,The Democratic Society,BE,Other,ONG / fundación / asociación,media,otros + nombre
-997420543,THE LISBON COUNCIL FOR ECONOMIC COMPETITIVENESS ASBL,THE LISBON COUNCIL,BE,Other,ONG / fundación / asociación,media,otros + nombre
+910571496,THE DEMOCRATIC SOCIETY AISBL,The Democratic Society,BE,Other,ONG / fundación / asociación,revisada,revisión manual
+997420543,THE LISBON COUNCIL FOR ECONOMIC COMPETITIVENESS ASBL,THE LISBON COUNCIL,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 999992013,THE QUEEN'S UNIVERSITY OF BELFAST,THE QUEEN'S UNIVERSITY OF BELFAST,UK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999467340,THE REGENTS OF THE UNIVERSITY OF CALIFORNIA,LOS ANGELES UCLA SANTA BARBARA UCSB DAVIS UCD RIVERSIDE UCR SAN DIEGO UCSD SANTA CRUZ UCSC IRVIN,US,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999738843,THE SCOTTISH ASSOCIATION FOR MARINE SCIENCE LBG,SAMS,UK,Research Organisations,Centro de investigación,alta,tipo CORDIS
@@ -1006,37 +1006,37 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 997579235,THETIS SPA,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 899880738,THINGS SRL,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 991656706,TIROL KLINIKEN GMBH,LANDESKRANKENHAUS UNIVERSITATSKLINIKEN INNSBRUCK,AT,Private for-profit entities,Empresa,alta,tipo CORDIS
-907072415,TOPIKOS ORGANISMOS EGGEION VELTIOSEON TAVROPOU KARDITSAS,LOCAL ORGANISATION FOR LAND IMPROVEMENT TAVROPOU KARDITSAS,EL,Other,Autoridad regional,baja,otros + nombre
+907072415,TOPIKOS ORGANISMOS EGGEION VELTIOSEON TAVROPOU KARDITSAS,LOCAL ORGANISATION FOR LAND IMPROVEMENT TAVROPOU KARDITSAS,EL,Other,Otro organismo público,revisada,revisión manual
 897329153,"TRAZA CONSULTORÍA, S.L.L.",Traza,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 890699882,TRISOLARIS ADVANCED TECHNOLOGIES LDA,,PT,Private for-profit entities,Empresa,alta,tipo CORDIS
-892096779,TROMS OG FINNMARK FYLKESKOMMUNE,,NO,Public bodies,Autoridad regional,media,organismo público + nombre
+892096779,TROMS OG FINNMARK FYLKESKOMMUNE,,NO,Public bodies,Autoridad regional,revisada,revisión manual
 998824327,TRONDHEIM KOMMUNE,TRONDHEIM,NO,Public bodies,Autoridad local,media,organismo público + nombre
 906664821,TRUST-IT SERVICES SRL,Trust-IT,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-987762059,TURKIYE KIZILAY DERNEGI,TRCS,TR,Other,Otra,baja,"otros, nombre sin pista"
+987762059,TURKIYE KIZILAY DERNEGI,TRCS,TR,Other,ONG / fundación / asociación,revisada,revisión manual
 948193431,TURUN AMMATTIKORKEAKOULU OY,Turku UAS,FI,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-993966082,TURUN KAUPUNKI,ABO STAD CITY OF TURKU,FI,Public bodies,Autoridad local,media,organismo público + nombre
+993966082,TURUN KAUPUNKI,ABO STAD CITY OF TURKU,FI,Public bodies,Autoridad local,revisada,revisión manual
 999903064,TURUN YLIOPISTO,UNIVERSITY OF TURKU,FI,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-900395420,TYOLLISYYS- KEHITTAMIS- JA HALLINTOKESKUS,KEHA-CENTRE,FI,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+900395420,TYOLLISYYS- KEHITTAMIS- JA HALLINTOKESKUS,KEHA-CENTRE,FI,Public bodies,Otro organismo público,revisada,revisión manual
 885319195,TYRSKY-KONSULTOINTI OY,TYRSKY-KONSULTOINTI,FI,Private for-profit entities,Empresa,alta,tipo CORDIS
-876906676,The Crown Estate Commissioners,The Crown Estate Commissioners,UK,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+876906676,The Crown Estate Commissioners,The Crown Estate Commissioners,UK,Public bodies,Otro organismo público,revisada,revisión manual
 885036634,Toretei Srl,Toretei Srl,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
 930042694,UAB BETA VIA,BETA VIA,LT,Private for-profit entities,Empresa,alta,tipo CORDIS
 968991589,UAB METIS BALTIC,METBALTIC,LT,Private for-profit entities,Empresa,alta,tipo CORDIS
 910939514,UAB TERAGLOBUS,,LT,Private for-profit entities,Empresa,alta,tipo CORDIS
 988522054,UBIMET GMBH,UBIMET GMBH,AT,Private for-profit entities,Empresa,alta,tipo CORDIS
 926362126,UBITECH LIMITED,,CY,Private for-profit entities,Empresa,alta,tipo CORDIS
-999810526,UDRUGA ZA PRIRODU OKOLIS I ODRZIVI RAZVOJ SUNCE,ASSOCIATION FOR NATURE ENVIRONMENT AND SUSTAINABLE DEVELOPMENT SUNCE,HR,Other,ONG / fundación / asociación,media,otros + nombre
-915444388,"UDRUZENJE CENTAR ZA ENERGIJU, OKOLINU I RESURSE - CENER 21","CENTER FOR ENERGY, ENVIRONMENT AND RESOURCES - CENER 21",BA,Other,Otra,baja,"otros, nombre sin pista"
-892657342,UDRUZENJE EKO-INOVACIJA NA BALKANU,ASSOCIATION OF BALKAN ECO-INNOVATION,RS,Other,ONG / fundación / asociación,media,otros + nombre
+999810526,UDRUGA ZA PRIRODU OKOLIS I ODRZIVI RAZVOJ SUNCE,ASSOCIATION FOR NATURE ENVIRONMENT AND SUSTAINABLE DEVELOPMENT SUNCE,HR,Other,ONG / fundación / asociación,revisada,revisión manual
+915444388,"UDRUZENJE CENTAR ZA ENERGIJU, OKOLINU I RESURSE - CENER 21","CENTER FOR ENERGY, ENVIRONMENT AND RESOURCES - CENER 21",BA,Other,ONG / fundación / asociación,revisada,revisión manual
+892657342,UDRUZENJE EKO-INOVACIJA NA BALKANU,ASSOCIATION OF BALKAN ECO-INNOVATION,RS,Other,ONG / fundación / asociación,revisada,revisión manual
 999740007,UGA FILIALE,FLORALIS,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
-995624006,"UICN, BUREAU DE REPRESENTATION AUPRES DE L'UNION EUROPEENNE AISBL",IUCNEUROPEAN UNION REPRESENTATIVE OFFICE,BE,Other,Otra,baja,"otros, nombre sin pista"
+995624006,"UICN, BUREAU DE REPRESENTATION AUPRES DE L'UNION EUROPEENNE AISBL",IUCNEUROPEAN UNION REPRESENTATIVE OFFICE,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 999918972,"UICN, UNION INTERNATIONALE POUR LA CONSERVATION DE LA NATURE ET DE SES RESSOURCES",INTERNATIONAL UNION FOR CONSERVATION OF NATURE AND NATURAL - IUCN - UICN,CH,Research Organisations,Centro de investigación,alta,tipo CORDIS
 897953251,UK CENTRE FOR ECOLOGY & HYDROLOGY,,UK,Research Organisations,Centro de investigación,alta,tipo CORDIS
 999898408,UMIT TIROL - PRIVATE UNIVERSITAT FUR GESUNDHEITSWISSENSCHAFTEN UND TECHNOLOGIE GMBH,UMIT TIROL,AT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-951102849,UNAC UNIAO DA FLORESTA MEDITERRANICA,,PT,Other,Otra,baja,"otros, nombre sin pista"
-878550050,UNIA regionalnych zdruzení vlastníkov nestatnych lesov Slovenska*Union of Regional Associations of Non-State Forest Owners of Slovakia,,SK,Other,Autoridad regional,baja,otros + nombre
+951102849,UNAC UNIAO DA FLORESTA MEDITERRANICA,,PT,Other,ONG / fundación / asociación,revisada,revisión manual
+878550050,UNIA regionalnych zdruzení vlastníkov nestatnych lesov Slovenska*Union of Regional Associations of Non-State Forest Owners of Slovakia,,SK,Other,ONG / fundación / asociación,revisada,revisión manual
 951660114,UNIONE NAZIONALE COMUNI COMUNITA ENTI MONTANI,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-955902409,UNITE TECHNIQUE DU SEMIDE GEIE,TECHNICAL UNIT OT THE EURO-MEDITERRANEAN INFORMATION SYSTEM ON THE KNOW HOW IN THE WATER SECTOR,FR,Other,Otra,baja,"otros, nombre sin pista"
+955902409,UNITE TECHNIQUE DU SEMIDE GEIE,TECHNICAL UNIT OT THE EURO-MEDITERRANEAN INFORMATION SYSTEM ON THE KNOW HOW IN THE WATER SECTOR,FR,Other,Otra,revisada,revisión manual
 999880075,UNIVERSIDAD DE CANTABRIA,,ES,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999872703,UNIVERSIDAD DE CORDOBA,UCO,ES,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999858832,UNIVERSIDAD DE EXTREMADURA,UEx,ES,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
@@ -1119,79 +1119,79 @@ id,name,short_name,country,cordis_type,nature,confidence,rule
 998521008,UNIWERSYTET EKONOMICZNY W KATOWICACH,,PL,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 953318426,UNPARALLEL INNOVATION LDA,UNPARALLEL,PT,Private for-profit entities,Empresa,alta,tipo CORDIS
 889096181,URBAN CLIMATE CHANGE RESEARCH NETWORK - EUROPEAN HUB ETS,,IT,Research Organisations,Centro de investigación,alta,tipo CORDIS
-895959319,URBANA ASTIKI MI KERDOSKOPIKI ETAIREIA,,EL,Other,Otra,baja,"otros, nombre sin pista"
+895959319,URBANA ASTIKI MI KERDOSKOPIKI ETAIREIA,,EL,Other,ONG / fundación / asociación,revisada,revisión manual
 896192119,URBANEX DOO ZA GRADEVINARSTVO,,HR,Private for-profit entities,Empresa,alta,tipo CORDIS
 957184458,URBASOFIA SRL,URBASOFIA,RO,Private for-profit entities,Empresa,alta,tipo CORDIS
-884967958,UTSJOEN KUNTA,MUNICIPALITY OF UTSJOKI,FI,Public bodies,Autoridad local,media,organismo público + nombre
+884967958,UTSJOEN KUNTA,MUNICIPALITY OF UTSJOKI,FI,Public bodies,Autoridad local,revisada,revisión manual
 900476900,UUDENMAAN LIITTO,HELSINKI-UUSIMAA REGIONAL COUNCIL,FI,Public bodies,Autoridad regional,media,organismo público + nombre
 916436601,UZDAROJI AKCINE BENDROVE ID VILNIUS,ID Vilnius,LT,Private for-profit entities,Empresa,alta,tipo CORDIS
 996740088,Universidade da Madeira,UMa,PT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-891563570,VALENCIANA D'ESTRATÈGIES I RECURSOS PER A LA SOSTENIBILITAT AMBIENTAL SA,VAERSA,ES,Other,Otra,baja,"otros, nombre sin pista"
+891563570,VALENCIANA D'ESTRATÈGIES I RECURSOS PER A LA SOSTENIBILITAT AMBIENTAL SA,VAERSA,ES,Other,Otro organismo público,revisada,revisión manual
 950764901,VALOREX SAS,,FR,Private for-profit entities,Empresa,alta,tipo CORDIS
-887275879,VANDCENTER SYD AS,,DK,Other,Otra,baja,"otros, nombre sin pista"
-950866460,VARSINAIS-SUOMEN LIITTO,VARSINAIS-SUOMI MAAKUNTA EGENTLIGA FINLANDS FORBUND REGIONAL COUNCIL OF SOUTHWESTFINLAND,FI,Public bodies,Autoridad regional,media,organismo público + nombre
+887275879,VANDCENTER SYD AS,,DK,Other,Otro organismo público,revisada,revisión manual
+950866460,VARSINAIS-SUOMEN LIITTO,VARSINAIS-SUOMI MAAKUNTA EGENTLIGA FINLANDS FORBUND REGIONAL COUNCIL OF SOUTHWESTFINLAND,FI,Public bodies,Autoridad regional,revisada,revisión manual
 999731568,VDI/VDE INNOVATION + TECHNIK GMBH,,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
-881055851,VECHTEVERBAND,,DE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+881055851,VECHTEVERBAND,,DE,Public bodies,Otro organismo público,revisada,revisión manual
 937383072,VEJLE KOMMUNE,VEJLE KOMMUNE,DK,Public bodies,Autoridad local,media,organismo público + nombre
-891632925,VERBAND KOMMUNALER UNTERNEHMEN EV,,DE,Other,ONG / fundación / asociación,media,otros + nombre
+891632925,VERBAND KOMMUNALER UNTERNEHMEN EV,,DE,Other,ONG / fundación / asociación,revisada,revisión manual
 917167593,VERBUND ENERGY4BUSINESS GMBH,VERBUND VEB,AT,Private for-profit entities,Empresa,alta,tipo CORDIS
 937663402,VEREIN DER EUROPAISCHEN BURGEWISSENSCHAFTEN - ECSA EV,EUROPEAN CITIZEN SCIENCE ASSOCIATION,DE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 890816670,VERHAERT KORTRIJK,,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
 992798008,VERHAERT NEW PRODUCTS & SERVICES NV,Verhaert,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
-879792038,VESTERALEN INTERKOMMUNALE POLITISKE RAD,VESTERALSRADET,NO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-885391557,VESTERALEN REGIONRAD,VESTERALEN REGIONRAD,NO,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+879792038,VESTERALEN INTERKOMMUNALE POLITISKE RAD,VESTERALSRADET,NO,Public bodies,Autoridad local,revisada,revisión manual
+885391557,VESTERALEN REGIONRAD,VESTERALEN REGIONRAD,NO,Public bodies,Autoridad local,revisada,revisión manual
 879356023,VFA SOLUTIONS BV,,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
 987834033,VIA UNIVERSITY COLLEGE,VIA UC,DK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 886984103,VIAJES Y PRACTICAS CIENTIFICAS GEOTENERIFE SL,VPCGT,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 998214876,VIAVERDA,,BE,Research Organisations,Centro de investigación,alta,tipo CORDIS
-986260596,VIDZEMES PLANOSANAS REGIONS,VIDZEMEPLANNING REGION,LV,Public bodies,Autoridad regional,media,organismo público + nombre
+986260596,VIDZEMES PLANOSANAS REGIONS,VIDZEMEPLANNING REGION,LV,Public bodies,Autoridad regional,revisada,revisión manual
 989552000,VIESOJI ISTAIGA VIESOSIOS POLITIKOSIR VADYBOS INSTITUTAS,PPMI,LT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 917703518,VILABS BG LTD,VILABS BG LTD,BG,Private for-profit entities,Empresa,alta,tipo CORDIS
 998498504,VILLE DE PARIS,VILLE DE PARIS,FR,Public bodies,Autoridad local,media,organismo público + nombre
 999647857,VILNIAUS GEDIMINO TECHNIKOS UNIVERSITETAS,VILNIUS TECH,LT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-938727492,VILNIAUS MIESTO SAVIVALDYBES ADMINISTRACIJA,VMSA,LT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
-879572430,VILNIAUS MIESTO SAVIVALDYBES VISUOMENES SVEIKATOS BIURAS,,LT,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+938727492,VILNIAUS MIESTO SAVIVALDYBES ADMINISTRACIJA,VMSA,LT,Public bodies,Autoridad local,revisada,revisión manual
+879572430,VILNIAUS MIESTO SAVIVALDYBES VISUOMENES SVEIKATOS BIURAS,,LT,Public bodies,Otro organismo público,revisada,revisión manual
 882206174,VIVEROS NAVALFRESA SL,VIVEROS NAVALFRESA SL,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-999575107,VLAAMSE GEWEST,VL O,BE,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+999575107,VLAAMSE GEWEST,VL O,BE,Public bodies,Autoridad regional,revisada,revisión manual
 999645238,VLAAMSE INSTELLING VOOR TECHNOLOGISCH ONDERZOEK N.V.,VITO,BE,Research Organisations,Centro de investigación,alta,tipo CORDIS
 954725702,VLAAMSE LANDMAATSCHAPPIJ,,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
 975471965,VLAAMSE MAATSCHAPPIJ VOOR WATERVOORZIENING,De Watergroep,BE,Private for-profit entities,Empresa,alta,tipo CORDIS
 906316494,VOJVODANSKI KLASTER ORGANSKE POLJOPRIVREDE NOVI SAD,,RS,Research Organisations,Centro de investigación,alta,tipo CORDIS
-898974952,VOST PORTUGAL - ASSOCIACAO DE VOLUNTARIOS DIGITAIS EM SITUACOES DE EMERGENCIA,,PT,Other,ONG / fundación / asociación,media,otros + nombre
+898974952,VOST PORTUGAL - ASSOCIACAO DE VOLUNTARIOS DIGITAIS EM SITUACOES DE EMERGENCIA,,PT,Other,ONG / fundación / asociación,revisada,revisión manual
 999902094,VRIJE UNIVERSITEIT BRUSSEL,VUB,BE,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999868144,VSB - TECHNICAL UNIVERSITY OF OSTRAVA,VSB - TU Ostrava,CZ,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
-910730091,VSI ZIEDINE EKONOMIKA,,LT,Other,Otra,baja,"otros, nombre sin pista"
-912219914,Verbraucherzentrale Sachsen e.V.,VZS,DE,Other,Otra,baja,"otros, nombre sin pista"
+910730091,VSI ZIEDINE EKONOMIKA,,LT,Other,ONG / fundación / asociación,revisada,revisión manual
+912219914,Verbraucherzentrale Sachsen e.V.,VZS,DE,Other,ONG / fundación / asociación,revisada,revisión manual
 937126604,VsI Laimikis.lt,Laimikis.LT,LT,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 904326927,WATER & ENERGY INTELLIGENCE BV,Water & Energy Intelligence B.V.,NL,Private for-profit entities,Empresa,alta,tipo CORDIS
-929744807,WATER ENVIRONMENT AND BEYOND (WE&B) SCCL,,ES,Other,Otra,baja,"otros, nombre sin pista"
-952516430,WATER EUROPE,,BE,Other,Otra,baja,"otros, nombre sin pista"
+929744807,WATER ENVIRONMENT AND BEYOND (WE&B) SCCL,,ES,Other,Empresa,revisada,revisión manual
+952516430,WATER EUROPE,,BE,Other,ONG / fundación / asociación,revisada,revisión manual
 919124762,WATERJADE SRL,,IT,Private for-profit entities,Empresa,alta,tipo CORDIS
-919993106,WATERSCHAP VECHTSTROMEN,DUTCH WATER AUTHORITY VECHTSTROMEN,NL,Public bodies,Otro organismo público,media,organismo público + nombre
+919993106,WATERSCHAP VECHTSTROMEN,DUTCH WATER AUTHORITY VECHTSTROMEN,NL,Public bodies,Otro organismo público,revisada,revisión manual
 884922465,WEB2CLIMATE IKE,,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-949351126,WESTCOUNTRY RIVERS TRUST LBG,,UK,Other,ONG / fundación / asociación,media,otros + nombre
-928620965,WETLANDS INTERNATIONAL - EUROPEAN ASSOCIATION,,NL,Other,ONG / fundación / asociación,media,otros + nombre
+949351126,WESTCOUNTRY RIVERS TRUST LBG,,UK,Other,ONG / fundación / asociación,revisada,revisión manual
+928620965,WETLANDS INTERNATIONAL - EUROPEAN ASSOCIATION,,NL,Other,ONG / fundación / asociación,revisada,revisión manual
 998852651,WIRTSCHAFT UND INFRASTRUKTUR GMBH & CO PLANUNGS KG,WIP,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
 884098935,WeGrant Platform,WeGrant Platform,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
 902128228,YDRASPIS EE,HYDRASPIS,EL,Private for-profit entities,Empresa,alta,tipo CORDIS
-916252204,YPOURGEIO ERGASIAS KAI KOINONIKON YPOTHESEON,MINISTRY OF LABOR AND SOCIAL SECURITY,EL,Public bodies,Autoridad nacional,media,organismo público + nombre
-920781328,YPOURGEIO NAFTILIAS KAI NISIOTIKIS POLITIKIS,MINISTRY OF SHIPPING AND ISULAR POLICY,EL,Public bodies,Autoridad nacional,media,organismo público + nombre
-968362350,YPOURGEIO PERIVALLONTOS KAI ENERGEIAS,MINISTRY OF ENVIRONMENT AND ENERGY,EL,Public bodies,Autoridad nacional,media,organismo público + nombre
+916252204,YPOURGEIO ERGASIAS KAI KOINONIKON YPOTHESEON,MINISTRY OF LABOR AND SOCIAL SECURITY,EL,Public bodies,Autoridad nacional,revisada,revisión manual
+920781328,YPOURGEIO NAFTILIAS KAI NISIOTIKIS POLITIKIS,MINISTRY OF SHIPPING AND ISULAR POLICY,EL,Public bodies,Autoridad nacional,revisada,revisión manual
+968362350,YPOURGEIO PERIVALLONTOS KAI ENERGEIAS,MINISTRY OF ENVIRONMENT AND ENERGY,EL,Public bodies,Autoridad nacional,revisada,revisión manual
 996410094,ZABALA INNOVATION CONSULTING SA,ZABALA,ES,Private for-profit entities,Empresa,alta,tipo CORDIS
-886318101,ZAGORSKA RAZVOJNA AGENCIJA,ZAGORJE DEVELOPMENT AGENCY,HR,Public bodies,Otro organismo público,media,organismo público + nombre
-994801543,ZALA BRIVIBA BIEDRIBA,GREEN LIBERTY,LV,Other,Otra,baja,"otros, nombre sin pista"
-887810834,ZAVOD ZA PROSTORNO UREDENJE PRIMORSKO-GORANSKE ZUPANIJE,Institute for Physical Planning of Primorje-Gorski Kotar County,HR,Public bodies,Autoridad regional,media,organismo público + nombre
+886318101,ZAGORSKA RAZVOJNA AGENCIJA,ZAGORJE DEVELOPMENT AGENCY,HR,Public bodies,Otro organismo público,revisada,revisión manual
+994801543,ZALA BRIVIBA BIEDRIBA,GREEN LIBERTY,LV,Other,ONG / fundación / asociación,revisada,revisión manual
+887810834,ZAVOD ZA PROSTORNO UREDENJE PRIMORSKO-GORANSKE ZUPANIJE,Institute for Physical Planning of Primorje-Gorski Kotar County,HR,Public bodies,Otro organismo público,revisada,revisión manual
 943681379,ZDRAVSTVENI DOM DR ADOLFA DROLCA MARIBOR,ZD MARIBOR,SI,Research Organisations,Centro de investigación,alta,tipo CORDIS
-950629877,ZEMGALES PLANOSANAS REGIONS,ZPR,LV,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+950629877,ZEMGALES PLANOSANAS REGIONS,ZPR,LV,Public bodies,Autoridad regional,revisada,revisión manual
 940719872,ZENTRUM FUR SOZIALE INNOVATION GMBH,Zentrum fuer Soziale Innovation GmbH,AT,Research Organisations,Centro de investigación,alta,tipo CORDIS
 944164051,ZHYTOMYR POLYTECHNIC STATE UNIVERSITY,ZPSU,UA,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 999969606,ZILINSKA UNIVERZITA V ZILINE,UNIZA,SK,Higher or Secondary Education Establishments,Universidad,alta,tipo CORDIS
 940021472,ZNANSTVENO-RAZISKOVALNO SREDISCE BISTRA PTUJ,SCIENTIFIC RESEARCH CENTRE BISTRA PTUJ,SI,Research Organisations,Centro de investigación,alta,tipo CORDIS
-969231858,ZUIDELIJKE LAND- EN TUINBOUWORGANISATIE VERENIGING,ZLTO,NL,Other,Autoridad regional,baja,otros + nombre
+969231858,ZUIDELIJKE LAND- EN TUINBOUWORGANISATIE VERENIGING,ZLTO,NL,Other,ONG / fundación / asociación,revisada,revisión manual
 952926061,Zadar County,,HR,Public bodies,Autoridad regional,media,organismo público + nombre
 885150803,Zalishchyky city council,,UA,Public bodies,Autoridad local,media,organismo público + nombre
 998767582,Zilina self-governing region,ZSK,SK,Public bodies,Autoridad regional,media,organismo público + nombre
 885145274,apptitude SA,apptitude SA,CH,Private for-profit entities,Empresa,alta,tipo CORDIS
-885015003,eingetragener Verein,Gesamtverband der Deutschen Versicherungswirtschaft e. V.,DE,Other,ONG / fundación / asociación,media,otros + nombre
+885015003,eingetragener Verein,Gesamtverband der Deutschen Versicherungswirtschaft e. V.,DE,Other,ONG / fundación / asociación,revisada,revisión manual
 951389969,virtualcitySYSTEMS GmbH,virtualcitySYSTEMS,DE,Private for-profit entities,Empresa,alta,tipo CORDIS
-907328786,ÅLANDS LANDSKAPSREGERING/ALLMANNA FÖRVALTNINGEN,AALAND GOV,FI,Public bodies,Otro organismo público,baja,"organismo público, nombre sin pista"
+907328786,ÅLANDS LANDSKAPSREGERING/ALLMANNA FÖRVALTNINGEN,AALAND GOV,FI,Public bodies,Autoridad regional,revisada,revisión manual

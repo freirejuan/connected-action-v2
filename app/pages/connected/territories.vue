@@ -25,9 +25,9 @@
 
         <p class="-mt-3 mb-6 max-w-[1100px] font-sans text-[12px] leading-snug text-neutral-dark">
           <strong class="font-semibold text-neutral-darkest">Data status.</strong>
-          Entities from the three sources are joined automatically where country, territory and name agree
-          ({{ actorsCount.toLocaleString("en-US") }} entities). Doubtful matches and the nature of some public bodies are under manual
-          review by Inviable; figures may change slightly when it is applied. Appendix 5 lists regions for 63 of the 65 Mission projects
+          Entities from the three sources are joined where country, territory and name agree
+          ({{ actorsCount.toLocaleString("en-US") }} entities). Doubtful matches and the type of public bodies and "other" CORDIS
+          partners were checked one by one (web-assisted review, validated by Inviable, October 2026). Appendix 5 lists regions for 63 of the 65 Mission projects
           (not for National Adaptation Hubs and REGILIENCE-plus, coordination actions at national or European scale).
         </p>
 

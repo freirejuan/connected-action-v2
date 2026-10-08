@@ -51,6 +51,17 @@ def score(a, b):
     if na == nb: return 100, 100
     return fuzz.token_sort_ratio(na, nb), fuzz.token_set_ratio(na, nb)
 
+# nivel que el nombre declara: si uno dice "ciudad/municipio" y el otro "región/condado", no pueden unirse solos
+KIND_LOCAL = re.compile(r'\b(municipality|municipal|city|town|borough|kommune|kommun|comune|citta|mesto|miasto|gmina|dimos|obcina|opcina|opstina|gemeente|stadt|ville|commune|ayuntamiento|concello|ajuntament|municipio|municipiul|kaupunki|savivaldybe|linn)\b')
+KIND_REGION = re.compile(r'\b(region|regional|regione|regiao|county|province|provincia|kraj|samospravny|self governing|perifereia|landkreis|diputacion|generalitat|fylkeskommune|landsting|voivodeship|wojewodztwo|zupanija|maakond)\b')
+def kind(name):
+    n = re.sub(r'[^a-z ]+', ' ', ascii_(name))
+    l, r = bool(KIND_LOCAL.search(n)), bool(KIND_REGION.search(n))
+    return 'local' if l and not r else 'region' if r and not l else None
+def kinds_clash(names_a, names_b):
+    ka = {kind(n) for n in names_a} - {None}; kb = {kind(n) for n in names_b} - {None}
+    return bool(ka and kb and not (ka & kb))
+
 def geo_ok(codes_a, codes_b):
     return any(x.startswith(y) or y.startswith(x) for x in codes_a for y in codes_b if x and y)
 
@@ -92,6 +103,7 @@ def pairs(left, right, lname, rname, lkey, rkey):
                     best = max(best, score(ln, rn))
             geo = geo_ok(l['codes'], r['codes'])
             conf = confidence(best[0], best[1], geo)
+            if conf in ('alta', 'media') and kinds_clash(lname(l), rname(r)): conf = 'baja'
             if conf: cands.append((best, geo, conf, r))
         cands.sort(key=lambda x: (-x[0][0], -x[0][1]))
         for rank, (best, geo, conf, r) in enumerate(cands[:3], 1):
