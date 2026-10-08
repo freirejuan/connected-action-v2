@@ -1,6 +1,18 @@
 <template>
   <div ref="el" class="relative h-full w-full bg-neutral-lightest">
     <svg :width="width" :height="height" class="block">
+      <defs>
+        <!-- rayado = sedes de socios (se superpone al relleno, que indica dónde actúan) -->
+        <pattern
+          id="ca-seat-hatch"
+          patternUnits="userSpaceOnUse"
+          width="5"
+          height="5"
+          :patternTransform="`rotate(45) scale(${1 / zoomK})`"
+        >
+          <line x1="0" y1="0" x2="0" y2="5" :stroke="HATCH" stroke-width="1.6" />
+        </pattern>
+      </defs>
       <g :transform="zoomTransform">
         <!-- base + fill -->
         <path
@@ -8,13 +20,21 @@
           :key="p.id"
           :d="p.d"
           :fill="fillFor(p.id)"
-          stroke="#fffbf8"
+          stroke="#d3ccc6"
           :stroke-width="0.4 / zoomK"
           class="cursor-pointer"
           @mouseenter="(e) => onEnter(e, p.id)"
           @mousemove="onMove"
           @mouseleave="onLeave"
           @click="emit('selectRegion', p.id)"
+        />
+        <!-- partner seats as stripes -->
+        <path
+          v-for="p in hatchedPaths"
+          :key="'h-' + p.id"
+          :d="p.d"
+          fill="url(#ca-seat-hatch)"
+          class="pointer-events-none"
         />
         <!-- Charter signatories (EEA) -->
         <path
@@ -23,8 +43,9 @@
           :d="p.d"
           fill="none"
           stroke="#403339"
-          stroke-opacity="0.55"
-          :stroke-width="0.8 / zoomK"
+          stroke-opacity="0.7"
+          :stroke-width="0.7 / zoomK"
+          :stroke-dasharray="`${2.2 / zoomK} ${1.6 / zoomK}`"
           class="pointer-events-none"
         />
         <!-- selected region -->
@@ -64,6 +85,8 @@ const props = defineProps<{
   fills: Map<string, string>;
   /** NUTS-3 a contornear como firmantes */
   signatories: Set<string>;
+  /** NUTS-3 rayadas (sedes de socios en los modos de contraste) */
+  hatched?: Set<string>;
   selectedRegion?: string | null;
   /** líneas del tooltip por región */
   describe: (nutsId: string) => string[];
@@ -77,7 +100,8 @@ const paths = ref<{ id: string; name: string; d: string }[]>([]);
 const zoomK = ref(1);
 const zoomTransform = ref("");
 
-const BASE = "#ece9e3";
+const BASE = "#f6f3ef";
+const HATCH = "#362a2f";
 const fillFor = (id: string) => props.fills.get(id) ?? BASE;
 
 function rebuild() {
@@ -97,6 +121,7 @@ function rebuild() {
 watch([width, height, () => props.features], rebuild, { immediate: true });
 
 const pathById = computed(() => new Map(paths.value.map((p) => [p.id, p])));
+const hatchedPaths = computed(() => (props.hatched?.size ? paths.value.filter((p) => props.hatched!.has(p.id)) : []));
 const signatoryPaths = computed(() => paths.value.filter((p) => props.signatories.has(p.id)));
 const selectedPath = computed(() => (props.selectedRegion ? pathById.value.get(props.selectedRegion) : null));
 

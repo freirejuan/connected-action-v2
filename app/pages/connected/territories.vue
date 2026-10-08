@@ -16,8 +16,10 @@
         <!-- stats -->
         <div class="mb-6 flex w-full flex-wrap border border-neutral-darkest bg-neutral-lightest">
           <div v-for="(s, i) in stats" :key="s.label" class="px-7 py-4" :class="i ? 'border-l border-neutral-darkest' : ''">
-            <span class="block font-display text-4xl font-bold" :style="{ color: s.color }">{{ s.value.toLocaleString("en-US") }}</span>
-            <span class="font-mono text-2xs font-semibold tracking-[0.16em] text-neutral-dark">{{ s.label }}</span>
+            <span class="block font-display text-4xl font-bold text-neutral-darkest">{{ s.value.toLocaleString("en-US") }}</span>
+            <span class="inline-flex items-center gap-2 font-mono text-2xs font-semibold tracking-[0.16em] text-neutral-dark">
+              <span v-if="s.swatch" class="h-3 w-4 shrink-0" :style="swatchStyle(s.swatch)" />{{ s.label }}
+            </span>
           </div>
         </div>
 
@@ -43,23 +45,27 @@
               :features="features"
               :fills="fills"
               :signatories="showSignatories ? eeaSignatoryNuts : emptySet"
+              :hatched="hatched"
               :selected-region="selectedRegion"
               :describe="describeRegion"
               @select-region="selectRegion"
             />
             <!-- legend -->
             <div class="absolute bottom-3 left-3 z-10 border border-neutral-darkest bg-neutral-lightest p-3">
-              <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">{{ legend.title }}</span>
+              <span class="mb-2 block max-w-[260px] font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">{{ legend.title }}</span>
               <div class="flex flex-col gap-1">
                 <span v-for="item in legend.items" :key="item.label" class="flex items-center gap-2">
-                  <span class="h-3 w-5 shrink-0" :style="{ background: item.color }" />
+                  <span class="h-3 w-5 shrink-0 border border-neutral-light" :style="swatchStyle(item.swatch)" />
                   <span class="font-mono text-[11px] text-neutral-darkest">{{ item.label }}</span>
                 </span>
                 <span v-if="showSignatories" class="mt-1 flex items-center gap-2">
-                  <span class="h-3 w-5 shrink-0 border-[1.5px] border-neutral-darkest" />
+                  <span class="h-3 w-5 shrink-0 border-[1.5px] border-dashed border-neutral-darker" />
                   <span class="font-mono text-[11px] text-neutral-darkest">Charter signatory (EEA)</span>
                 </span>
               </div>
+              <p class="mt-2 max-w-[260px] border-t border-neutral-lighter pt-1.5 font-sans text-[11px] leading-snug text-neutral-dark">
+                Map colours do not show project type. Type appears as a coloured square with its code in the filters and lists.
+              </p>
             </div>
             <span class="absolute bottom-3 right-3 z-10 font-mono text-2xs text-neutral-dark">Ctrl/⌘ + scroll to zoom · drag to pan</span>
           </div>
@@ -107,7 +113,7 @@
               </label>
               <label class="mt-1.5 flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
                 <input v-model="showSignatories" type="checkbox" class="accent-neutral-darkest" />
-                OUTLINE CHARTER SIGNATORIES (EEA)
+                OUTLINE CHARTER SIGNATORIES (EEA, DASHED)
               </label>
             </section>
 
@@ -127,6 +133,7 @@
                     <button type="button" class="flex w-full items-center gap-2 px-1 py-1 text-left hover:bg-warm-neutral-100" @click="selectProject(p.id)">
                       <span class="h-2 w-2 shrink-0" :style="{ background: missionTypeColor(p.type) }" />
                       <span class="font-mono text-[11px]">{{ p.name }}</span>
+                      <span class="font-mono text-[10px] text-neutral-dark">{{ p.type ?? "service" }}</span>
                       <span class="ml-auto font-mono text-[11px] text-neutral-dark">{{ p.n || "no regions" }}</span>
                     </button>
                   </li>
@@ -134,9 +141,9 @@
               </template>
 
               <div v-if="selectedProject && projectSummary" class="mt-3 grid grid-cols-3 border border-neutral-darkest text-center">
-                <div class="p-2"><span class="block font-display text-2xl font-bold text-[#0f4fc4]">{{ projectSummary.territory }}</span><span class="font-mono text-[10px] text-neutral-dark">ACTS IN (NUTS-3)</span></div>
-                <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold text-[#fc4b08]">{{ projectSummary.seats }}</span><span class="font-mono text-[10px] text-neutral-dark">PARTNER SEATS</span></div>
-                <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold text-[#249489]">{{ projectSummary.both }}</span><span class="font-mono text-[10px] text-neutral-dark">BOTH</span></div>
+                <div class="p-2"><span class="block font-display text-2xl font-bold">{{ projectSummary.territory }}</span><span class="inline-flex items-center gap-1 font-mono text-[10px] text-neutral-dark"><span class="h-2.5 w-3 border border-neutral-light" :style="swatchStyle('act')" />ACTS IN (NUTS-3)</span></div>
+                <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold">{{ projectSummary.seats }}</span><span class="inline-flex items-center gap-1 font-mono text-[10px] text-neutral-dark"><span class="h-2.5 w-3 border border-neutral-light" :style="swatchStyle('seat')" />PARTNER SEATS</span></div>
+                <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold">{{ projectSummary.both }}</span><span class="inline-flex items-center gap-1 font-mono text-[10px] text-neutral-dark"><span class="h-2.5 w-3 border border-neutral-light" :style="swatchStyle('both')" />BOTH</span></div>
               </div>
               <p v-if="selectedProjectNote" class="mt-3 border-l-2 border-neutral-darkest pl-2 font-sans text-[12px] leading-snug text-neutral-dark">{{ selectedProjectNote }}</p>
               <ul v-if="selectedProject" class="mt-3 max-h-56 overflow-y-auto">
@@ -177,7 +184,10 @@
                   <li v-for="(l, i) in regionLinks" :key="i" class="flex items-start gap-2 border-b border-neutral-lighter py-1.5">
                     <span class="mt-1 h-2 w-2 shrink-0" :style="{ background: missionTypeColor(l.mission?.project_type) }" />
                     <span class="min-w-0 flex-1">
-                      <button type="button" class="block text-left font-mono text-[11px] font-bold hover:underline" @click="selectProject(l.project_id)">{{ l.mission?.mission_name ?? l.project_id }}</button>
+                      <button type="button" class="block text-left font-mono text-[11px] font-bold hover:underline" @click="selectProject(l.project_id)">
+                        {{ l.mission?.mission_name ?? l.project_id }}
+                        <span class="font-normal text-neutral-dark">· {{ l.mission?.project_type ?? "service" }}</span>
+                      </button>
                       <span class="block text-[12px] text-neutral-darkest">{{ l.territory?.name }}</span>
                       <span v-if="l.territory?.catalogue_name" class="block text-[11px] italic text-neutral-dark">Catalogue: {{ l.territory.catalogue_name }}</span>
                       <span class="font-mono text-[10px] text-neutral-dark">{{ l.code }}{{ l.role ? " · " + l.role : "" }}</span>
@@ -281,7 +291,7 @@ const modeHelp = computed(() =>
     ? "Number of Mission projects whose regions or local authorities (Barometer, Appendix 5) cover each NUTS-3 area."
     : mode.value === "seats"
       ? "Number of Mission projects with at least one partner organisation based in each NUTS-3 area (CORDIS). This is what the other views of the Connected Action show."
-      : "Where projects act, where their partners sit, and where both coincide."
+      : "Violet fill: a project acts there. Stripes: a partner of a project is based there. Both together: the two coincide."
 );
 
 const toggleType = (code: string) => {
@@ -297,12 +307,21 @@ function projectAllowed(id: string) {
 
 const projectName = (id: string) => (id === MIP4ADAPT ? "MIP4Adapt" : missionById.value.get(id)?.mission_name ?? id);
 
-const BLUES = ["#d4e0f6", "#93b2ea", "#4f7fd6", "#0f4fc4"];
-const ORANGES = ["#fde3d6", "#fbb08e", "#f97c45", "#fc4b08"];
+// Los colores del mapa no comparten tono con los de los tipos de proyecto (RIA, IA, Cascade, CSA):
+// violeta = dónde actúan; gris tinta = sedes de socios; en contraste, rayado = sede y relleno violeta = actúa.
+const ACT_RAMP = ["#e6dcf5", "#cab1e8", "#a67ad6", "#7945ab"];
+const SEAT_RAMP = ["#d9cece", "#aca2a1", "#7e7574", "#534b4a"];
 const bucket = (n: number) => (n >= 5 ? 3 : n >= 3 ? 2 : n === 2 ? 1 : 0);
-const C_TERR = "#0f4fc4";
-const C_SEAT = "#fc4b08";
-const C_BOTH = "#249489";
+const C_TERR = ACT_RAMP[2]!;
+const HATCH = "#362a2f";
+const HATCH_CSS = `repeating-linear-gradient(45deg, ${HATCH} 0 1.5px, transparent 1.5px 4px)`;
+type Swatch = "act" | "seat" | "both" | { fill: string };
+function swatchStyle(s: Swatch) {
+  if (s === "act") return { background: C_TERR };
+  if (s === "seat") return { background: `${HATCH_CSS}, #f6f3ef` };
+  if (s === "both") return { background: `${HATCH_CSS}, ${C_TERR}` };
+  return { background: s.fill };
+}
 
 const counts = computed(() => {
   const acting = new Map<string, number>();
@@ -324,42 +343,44 @@ const projectSets = computed(() => {
   return { terr, seats };
 });
 
+// Relleno violeta = el proyecto o los proyectos actúan aquí; rayado = algún socio tiene aquí su sede.
 const fills = computed(() => {
   const out = new Map<string, string>();
   const ps = projectSets.value;
   if (ps) {
     if (mode.value !== "seats") for (const id of ps.terr) out.set(id, C_TERR);
-    if (mode.value !== "acting") {
-      for (const id of ps.seats) out.set(id, mode.value === "contrast" && ps.terr.has(id) ? C_BOTH : C_SEAT);
-    }
     return out;
   }
   const { acting, seats } = counts.value;
-  if (mode.value === "acting") for (const [id, n] of acting) out.set(id, BLUES[bucket(n)]!);
-  else if (mode.value === "seats") for (const [id, n] of seats) out.set(id, ORANGES[bucket(n)]!);
-  else {
-    for (const id of acting.keys()) out.set(id, C_TERR);
-    for (const id of seats.keys()) out.set(id, acting.has(id) ? C_BOTH : C_SEAT);
-  }
+  if (mode.value === "acting") for (const [id, n] of acting) out.set(id, ACT_RAMP[bucket(n)]!);
+  else if (mode.value === "seats") for (const [id, n] of seats) out.set(id, SEAT_RAMP[bucket(n)]!);
+  else for (const id of acting.keys()) out.set(id, C_TERR);
   return out;
 });
+const hatched = computed(() => {
+  const ps = projectSets.value;
+  if (ps) return mode.value === "acting" ? emptySet : ps.seats;
+  return mode.value === "contrast" ? new Set(counts.value.seats.keys()) : emptySet;
+});
 
+const typeScope = computed(() => (selectedTypes.value.length ? selectedTypes.value.join(" + ") + " " : ""));
 const legend = computed(() => {
   if (mode.value === "contrast" || projectSets.value) {
-    const items = [];
-    if (mode.value !== "seats") items.push({ label: "Project acts here", color: C_TERR });
-    if (mode.value !== "acting") items.push({ label: "Partner based here", color: C_SEAT });
-    if (mode.value === "contrast") items.push({ label: "Both", color: C_BOTH });
-    return { title: projectSets.value ? projectName(selectedProject.value!).toUpperCase() : "PROJECTS", items };
+    const items: { label: string; swatch: Swatch }[] = [];
+    const one = !!projectSets.value;
+    if (mode.value !== "seats") items.push({ label: one ? "Project acts here" : "A project acts here", swatch: "act" });
+    if (mode.value !== "acting") items.push({ label: one ? "A partner is based here" : "A partner of a project is based here", swatch: "seat" });
+    if (mode.value === "contrast") items.push({ label: "Both", swatch: "both" });
+    return { title: projectSets.value ? projectName(selectedProject.value!).toUpperCase() : (typeScope.value ? typeScope.value + "PROJECTS" : "ALL PROJECTS"), items };
   }
-  const colors = mode.value === "acting" ? BLUES : ORANGES;
+  const ramp = mode.value === "acting" ? ACT_RAMP : SEAT_RAMP;
   return {
-    title: mode.value === "acting" ? "PROJECTS ACTING HERE" : "PROJECTS WITH PARTNERS HERE",
+    title: `NUMBER OF ${typeScope.value}PROJECTS ${mode.value === "acting" ? "ACTING HERE" : "WITH PARTNERS HERE"}`,
     items: [
-      { label: "1", color: colors[0]! },
-      { label: "2", color: colors[1]! },
-      { label: "3–4", color: colors[2]! },
-      { label: "5 or more", color: colors[3]! },
+      { label: "1", swatch: { fill: ramp[0]! } },
+      { label: "2", swatch: { fill: ramp[1]! } },
+      { label: "3–4", swatch: { fill: ramp[2]! } },
+      { label: "5 or more", swatch: { fill: ramp[3]! } },
     ],
   };
 });
@@ -442,11 +463,11 @@ const stats = computed(() => {
   const { acting, seats } = counts.value;
   const both = [...acting.keys()].filter((id) => seats.has(id)).length;
   return [
-    { label: "AUTHORITIES (APPENDIX 5)", value: terr.length, color: "#100007" },
-    { label: "NUTS-3 WHERE PROJECTS ACT", value: acting.size, color: C_TERR },
-    { label: "NUTS-3 WITH PARTNER SEATS", value: seats.size, color: C_SEAT },
-    { label: "BOTH", value: both, color: C_BOTH },
-    { label: "SIGNATORIES WITHOUT A PROJECT", value: gaps.value.length, color: "#86592b" },
+    { label: "AUTHORITIES (APPENDIX 5)", value: terr.length, swatch: null },
+    { label: "NUTS-3 WHERE PROJECTS ACT", value: acting.size, swatch: "act" as Swatch },
+    { label: "NUTS-3 WITH PARTNER SEATS", value: seats.size, swatch: "seat" as Swatch },
+    { label: "BOTH", value: both, swatch: "both" as Swatch },
+    { label: "SIGNATORIES WITHOUT A PROJECT", value: gaps.value.length, swatch: null },
   ];
 });
 </script>
