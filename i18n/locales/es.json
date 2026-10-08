@@ -159,6 +159,16 @@
             "Sedes de socios frente a territorios",
             "Firmantes de la Charter sin proyecto"
           ]
+        },
+        "links": {
+          "title": "Investigación ↔ demostración",
+          "lede": "Dónde se encuentran los proyectos de investigación y los de demostración.",
+          "body": "Organizaciones que participan a la vez en proyectos de investigación (RIA) y de demostración (IA) de la Misión, y regiones donde trabajan ambos. Busca en los datos los vínculos que pide la evaluación de las Misiones de 2026.",
+          "shows": [
+            "Matriz RIA × IA de socios y regiones compartidos",
+            "Organizaciones puente",
+            "Proyectos de investigación sin vínculo"
+          ]
         }
       }
     }
@@ -1057,6 +1067,7 @@
     "stableVersion": "Versión estable",
     "sources": "Fuentes de datos",
     "cutoff": "corte",
-    "generated": "datos generados el"
+    "generated": "datos generados el",
+    "refresh": "actualización prevista"
   }
 }

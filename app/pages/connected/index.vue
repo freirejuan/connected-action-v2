@@ -127,8 +127,16 @@ const cardDefs = [
     key: "territories",
     n: "05",
     glyph: "⬢",
-    accent: "#0f4fc4",
+    accent: "#7945ab",
     to: "/connected/territories",
+  },
+  {
+    id: "links",
+    key: "links",
+    n: "06",
+    glyph: "⇄",
+    accent: "#534b4a",
+    to: "/connected/links",
   },
 ] as const;
 

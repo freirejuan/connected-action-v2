@@ -18,6 +18,8 @@ export type RegionStats = {
   actingProjects: Set<string>;
   /** idem, pero solo a través de autoridades nacionales o macrorregionales (NUTS 0-1) */
   actingProjectsCoarse: Set<string>;
+  /** cada relación proyecto–territorio que cubre esta NUTS-3, con su papel (demostrador / replicador) */
+  acting: { project: string; role: string | null; coarse: boolean }[];
   /** autoridades del anexo 5 cuyo código cubre esta NUTS-3 */
   territories: Set<string>;
   /** proyectos con al menos un socio con sede en esta NUTS-3 */
@@ -77,6 +79,7 @@ export function useMissionTerritories() {
         name: f.properties.NUTS_NAME,
         actingProjects: new Set(),
         actingProjectsCoarse: new Set(),
+        acting: [],
         territories: new Set(),
         seatProjects: new Set(),
         annexSignatory: false,
@@ -86,8 +89,10 @@ export function useMissionTerritories() {
     for (const link of payload.value.links) {
       for (const id of nuts3Covered(link.code)) {
         const r = map.get(id)!;
-        if ((link.level ?? 3) <= 1) r.actingProjectsCoarse.add(link.project_id);
+        const coarse = (link.level ?? 3) <= 1;
+        if (coarse) r.actingProjectsCoarse.add(link.project_id);
         else r.actingProjects.add(link.project_id);
+        r.acting.push({ project: link.project_id, role: link.role ?? null, coarse });
         r.territories.add(link.territory_id);
         if (link.is_signatory) r.annexSignatory = true;
       }
@@ -107,11 +112,12 @@ export function useMissionTerritories() {
   });
 
   /** NUTS-3 cubiertas por los territorios de un proyecto */
-  function projectTerritoryNuts(projectId: string, includeCoarse = false): Set<string> {
+  function projectTerritoryNuts(projectId: string, includeCoarse = false, role: string | null = null): Set<string> {
     const out = new Set<string>();
     for (const link of payload.value?.links ?? []) {
       if (link.project_id !== projectId) continue;
       if (!includeCoarse && (link.level ?? 3) <= 1) continue;
+      if (role && link.role !== role) continue;
       for (const id of nuts3Covered(link.code)) out.add(id);
     }
     return out;

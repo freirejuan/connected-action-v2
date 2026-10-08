@@ -56,4 +56,12 @@ export const connectedNav: ConnectedNavItem[] = [
     n: '05',
     description: 'Where Mission projects act, compared with where their partners are based',
   },
+  {
+    label: 'Research ↔ Demonstration',
+    to: '/connected/links',
+    icon: 'i-lucide-git-compare-arrows',
+    glyph: '⇄',
+    n: '06',
+    description: 'Organisations and territories shared by research (RIA) and demonstration (IA) projects',
+  },
 ]

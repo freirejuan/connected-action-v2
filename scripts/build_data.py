@@ -168,11 +168,11 @@ counts['eea_signatories'] = dump('eea_signatories', eea_out)
 meta = {
     'generated': datetime.date.today().isoformat(),
     'sources': [
-        {'key': 'cordis', 'label': 'CORDIS (project and participant records)', 'date': '2026-10-07', 'url': 'https://cordis.europa.eu'},
-        {'key': 'catalogue', 'label': 'EU Mission Projects Catalogue (climate risks and themes)', 'date': '2026-05'},
-        {'key': 'types', 'label': 'Mission Barometer, 6th update, Appendix 4 (project types)', 'date': '2025-09-30'},
-        {'key': 'annex5', 'label': 'Mission Barometer, 6th update, Appendix 5 (regions, cleaned by Inviable)', 'date': '2026-03-31'},
-        {'key': 'eea', 'label': 'EEA Adaptation Dashboard (Charter signatories)', 'date': '2026-10-07'},
+        {'key': 'cordis', 'label': 'CORDIS (project and participant records)', 'date': '2026-10-07', 'url': 'https://cordis.europa.eu', 'refresh': 'monthly'},
+        {'key': 'catalogue', 'label': 'EU Mission Projects Catalogue (climate risks and themes)', 'date': '2026-05', 'refresh': 'with each new Catalogue (yearly)'},
+        {'key': 'types', 'label': 'Mission Barometer, 6th update, Appendix 4 (project types)', 'date': '2025-09-30', 'refresh': 'with each Barometer update (every six months)'},
+        {'key': 'annex5', 'label': 'Mission Barometer, 6th update, Appendix 5 (regions, cleaned by Inviable)', 'date': '2026-03-31', 'refresh': 'every six months; next data at 30 Sep 2026'},
+        {'key': 'eea', 'label': 'EEA Adaptation Dashboard (Charter signatories)', 'date': '2026-10-07', 'refresh': 'when the EEA updates its dashboard'},
     ],
     'counts': counts,
 }

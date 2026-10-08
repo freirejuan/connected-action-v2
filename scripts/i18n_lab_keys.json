@@ -6,7 +6,8 @@
    "stableVersion": "Stable version",
    "sources": "Data sources",
    "cutoff": "cut-off",
-   "generated": "data built"
+   "generated": "data built",
+   "refresh": "planned refresh"
   },
   "es": {
    "subtitle": "Lab · capa de la Misión UE",
@@ -14,7 +15,8 @@
    "stableVersion": "Versión estable",
    "sources": "Fuentes de datos",
    "cutoff": "corte",
-   "generated": "datos generados el"
+   "generated": "datos generados el",
+   "refresh": "actualización prevista"
   },
   "it": {
    "subtitle": "Lab · livello della Missione UE",
@@ -22,7 +24,8 @@
    "stableVersion": "Versione stabile",
    "sources": "Fonti dei dati",
    "cutoff": "aggiornato al",
-   "generated": "dati generati il"
+   "generated": "dati generati il",
+   "refresh": "aggiornamento previsto"
   }
  },
  "_cards": {
@@ -55,6 +58,38 @@
      "Mappa progetto–territorio (NUTS-3)",
      "Sedi dei partner rispetto ai territori",
      "Firmatari della Carta senza progetto"
+    ]
+   }
+  },
+  "links": {
+   "en": {
+    "title": "Research ↔ demonstration",
+    "lede": "Where research and demonstration projects meet.",
+    "body": "Organisations that take part in both research (RIA) and demonstration (IA) Mission projects, and regions where both work. It looks in the data for the links the 2026 assessment of the Missions asks for.",
+    "shows": [
+     "RIA × IA matrix of shared partners and regions",
+     "Bridge organisations",
+     "Research projects without a link"
+    ]
+   },
+   "es": {
+    "title": "Investigación ↔ demostración",
+    "lede": "Dónde se encuentran los proyectos de investigación y los de demostración.",
+    "body": "Organizaciones que participan a la vez en proyectos de investigación (RIA) y de demostración (IA) de la Misión, y regiones donde trabajan ambos. Busca en los datos los vínculos que pide la evaluación de las Misiones de 2026.",
+    "shows": [
+     "Matriz RIA × IA de socios y regiones compartidos",
+     "Organizaciones puente",
+     "Proyectos de investigación sin vínculo"
+    ]
+   },
+   "it": {
+    "title": "Ricerca ↔ dimostrazione",
+    "lede": "Dove si incontrano i progetti di ricerca e quelli di dimostrazione.",
+    "body": "Organizzazioni che partecipano sia a progetti di ricerca (RIA) sia di dimostrazione (IA) della Missione, e regioni in cui lavorano entrambi. Cerca nei dati i collegamenti richiesti dalla valutazione delle Missioni del 2026.",
+    "shows": [
+     "Matrice RIA × IA di partner e regioni condivisi",
+     "Organizzazioni ponte",
+     "Progetti di ricerca senza collegamento"
     ]
    }
   }

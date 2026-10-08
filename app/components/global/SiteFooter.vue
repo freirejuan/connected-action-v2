@@ -4,7 +4,7 @@
       <div class="shrink-0 font-bold uppercase tracking-[0.14em] text-neutral-darkest">{{ $t('lab.sources') }}</div>
       <ul v-if="meta" class="flex-1 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-1">
         <li v-for="s in meta.sources" :key="s.key">
-          <span class="text-neutral-darkest">{{ s.label }}</span> · {{ $t('lab.cutoff') }} {{ s.date }}
+          <span class="text-neutral-darkest">{{ s.label }}</span> · {{ $t('lab.cutoff') }} {{ s.date }}<span v-if="s.refresh"> · {{ $t('lab.refresh') }}: {{ s.refresh }}</span>
         </li>
       </ul>
       <div class="shrink-0">FARCLIMATE · Inviable · {{ $t('lab.generated') }} {{ meta?.generated }}</div>

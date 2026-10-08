@@ -103,6 +103,23 @@
                   <span class="h-2 w-2" :style="{ background: t.color }" />{{ t.code }}
                 </button>
               </div>
+              <span class="mb-1.5 mt-3 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">ROLE OF THE TERRITORY</span>
+              <div class="flex border border-neutral-darkest">
+                <button
+                  v-for="(r, i) in roleOptions"
+                  :key="r.id"
+                  type="button"
+                  class="flex-1 px-2 py-1.5 font-mono text-[10px] font-bold tracking-[0.08em] transition-colors"
+                  :class="[i ? 'border-l border-neutral-darkest' : '', role === r.id ? 'bg-neutral-darkest text-neutral-lightest' : 'text-neutral-dark hover:bg-neutral-lighter']"
+                  @click="role = r.id"
+                >
+                  {{ r.label }}
+                </button>
+              </div>
+              <p v-if="role !== 'all'" class="mt-1 font-sans text-[11px] leading-snug text-neutral-dark">
+                Only territories listed as {{ role === "Demonstrator" ? "demonstrators" : "replicators" }} in Appendix 5. Most roles are
+                given by Innovation Actions.
+              </p>
               <label class="mt-3 flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
                 <input v-model="includeMip" type="checkbox" class="accent-neutral-darkest" />
                 INCLUDE MIP4ADAPT TECHNICAL ASSISTANCE (SERVICE CONTRACT)
@@ -233,6 +250,71 @@
             </ul>
           </CaCard>
         </div>
+
+        <!-- indicators in the style of the Barometer -->
+        <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <CaCard title="Indicators from Appendix 5">
+            <template #help>
+              <CaHelp title="Barometer-style indicators">
+                Computed from the cleaned Appendix 5 for all Mission projects (MIP4Adapt excluded), in the way the Mission
+                Barometer reports them. They do not follow the map filters.
+              </CaHelp>
+            </template>
+            <div class="grid grid-cols-3 border border-neutral-darkest text-center">
+              <div class="p-2"><span class="block font-display text-2xl font-bold">{{ indicators.median }}</span><span class="font-mono text-[10px] text-neutral-dark">MEDIAN AUTHORITIES PER PROJECT</span></div>
+              <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold">{{ indicators.multi }}</span><span class="font-mono text-[10px] text-neutral-dark">AUTHORITIES IN 2+ PROJECTS</span></div>
+              <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold">{{ indicators.signatoryShare }}%</span><span class="font-mono text-[10px] text-neutral-dark">AUTHORITIES THAT ARE SIGNATORIES</span></div>
+            </div>
+            <h4 class="mb-1 mt-4 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">BY PROJECT TYPE</h4>
+            <table class="w-full text-left text-[12px]">
+              <thead class="font-mono text-[10px] text-neutral-dark">
+                <tr><th class="py-1 font-normal">TYPE</th><th class="font-normal">PROJECTS</th><th class="font-normal">AUTHORITIES</th><th class="font-normal">SIGNATORIES</th><th class="font-normal">PER PROJECT</th></tr>
+              </thead>
+              <tbody>
+                <tr v-for="t in indicators.byType" :key="t.code" class="border-t border-neutral-lighter">
+                  <td class="py-1"><span class="inline-flex items-center gap-1.5 font-mono text-[11px]"><span class="h-2 w-2" :style="{ background: missionTypeColor(t.code) }" />{{ t.code }}</span></td>
+                  <td>{{ t.projects }}</td><td>{{ t.authorities }}</td><td>{{ t.signatories }}</td><td>{{ t.perProject }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 class="mb-1 mt-4 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">BY ROLE OF THE TERRITORY</h4>
+            <table class="w-full text-left text-[12px]">
+              <thead class="font-mono text-[10px] text-neutral-dark">
+                <tr><th class="py-1 font-normal">ROLE</th><th class="font-normal">PROJECT–AUTHORITY LINKS</th><th class="font-normal">OF WHICH SIGNATORIES</th></tr>
+              </thead>
+              <tbody>
+                <tr v-for="r in indicators.byRole" :key="r.role" class="border-t border-neutral-lighter">
+                  <td class="py-1 font-mono text-[11px]">{{ r.role }}</td><td>{{ r.links }}</td><td>{{ r.signatories }} ({{ r.share }}%)</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 class="mb-1 mt-4 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">AUTHORITIES IN MOST PROJECTS</h4>
+            <ul>
+              <li v-for="a in indicators.topAuthorities" :key="a.id" class="flex gap-2 border-t border-neutral-lighter py-1 text-[12px]">
+                <span class="w-8 shrink-0 font-mono text-[10px] text-neutral-dark">{{ a.country }}</span>
+                <span class="flex-1">{{ a.name }}<span v-if="a.signatory" class="ml-1.5 border border-neutral-darkest px-1 font-mono text-[9px] font-bold">SIGNATORY</span></span>
+                <span class="font-mono text-[11px]">{{ a.n }} projects</span>
+              </li>
+            </ul>
+          </CaCard>
+          <CaCard title="Territories with a Mission project that are not Charter signatories">
+            <template #help>
+              <CaHelp title="The other gap">
+                Authorities that work with at least one Mission project (Appendix 5) but are not listed as Charter
+                signatories. The reverse of the list of signatories without a project: candidates to join the Mission.
+              </CaHelp>
+            </template>
+            <p class="mb-2 font-mono text-[11px] text-neutral-dark">
+              {{ nonSignatories.total }} of {{ nonSignatories.of }} authorities · {{ nonSignatories.countries.length }} countries
+            </p>
+            <ul class="max-h-[420px] overflow-y-auto">
+              <li v-for="c in nonSignatories.countries" :key="c.country" class="border-t border-neutral-lighter py-1.5">
+                <span class="font-mono text-[11px] font-bold">{{ c.country }} · {{ c.items.length }}</span>
+                <span class="block text-[12px] leading-snug text-neutral-darkest">{{ c.items.map((t) => t.name).join(" · ") }}</span>
+              </li>
+            </ul>
+          </CaCard>
+        </div>
       </template>
 
       <CaProjectDetailModal v-model:open="isOpen" :project-id="projectId" @select-entity="onSelectEntityFromProject" />
@@ -294,6 +376,24 @@ const modeHelp = computed(() =>
       : "Violet fill: a project acts there. Stripes: a partner of a project is based there. Both together: the two coincide."
 );
 
+type Role = "all" | "Demonstrator" | "Replicator";
+const role = ref<Role>("all");
+const roleOptions: { id: Role; label: string }[] = [
+  { id: "all", label: "ALL" },
+  { id: "Demonstrator", label: "DEMONSTRATOR" },
+  { id: "Replicator", label: "REPLICATOR" },
+];
+/** proyectos que actúan en una NUTS-3 según los filtros de tipo, papel y escala */
+function actingIn(r: { acting: { project: string; role: string | null; coarse: boolean }[] }) {
+  const out = new Set<string>();
+  for (const a of r.acting) {
+    if (a.coarse && !includeCoarse.value) continue;
+    if (role.value !== "all" && a.role !== role.value) continue;
+    if (projectAllowed(a.project)) out.add(a.project);
+  }
+  return [...out];
+}
+
 const toggleType = (code: string) => {
   selectedTypes.value = selectedTypes.value.includes(code) ? selectedTypes.value.filter((c) => c !== code) : [...selectedTypes.value, code];
 };
@@ -327,8 +427,7 @@ const counts = computed(() => {
   const acting = new Map<string, number>();
   const seats = new Map<string, number>();
   for (const [id, r] of regions.value) {
-    const actingHere = includeCoarse.value ? new Set([...r.actingProjects, ...r.actingProjectsCoarse]) : r.actingProjects;
-    const a = [...actingHere].filter(projectAllowed).length;
+    const a = actingIn(r).length;
     const s = [...r.seatProjects].filter(projectAllowed).length;
     if (a) acting.set(id, a);
     if (s) seats.set(id, s);
@@ -338,7 +437,7 @@ const counts = computed(() => {
 
 const projectSets = computed(() => {
   if (!selectedProject.value) return null;
-  const terr = projectTerritoryNuts(selectedProject.value, includeCoarse.value);
+  const terr = projectTerritoryNuts(selectedProject.value, includeCoarse.value, role.value === "all" ? null : role.value);
   const seats = selectedProject.value === MIP4ADAPT ? new Set<string>() : projectSeatNuts(selectedProject.value);
   return { terr, seats };
 });
@@ -394,7 +493,7 @@ const eeaSignatoryNuts = computed(() => {
 function describeRegion(id: string) {
   const r = regions.value.get(id);
   if (!r) return [];
-  const acting = [...(includeCoarse.value ? new Set([...r.actingProjects, ...r.actingProjectsCoarse]) : r.actingProjects)].filter(projectAllowed);
+  const acting = actingIn(r);
   const lines = [
     `${acting.length} project${acting.length === 1 ? "" : "s"} act here${acting.length ? ": " + acting.slice(0, 6).map(projectName).join(", ") + (acting.length > 6 ? "…" : "") : ""}`,
     `${[...r.seatProjects].filter(projectAllowed).length} projects with partners based here`,
@@ -447,9 +546,70 @@ const projectSummary = computed(() => {
 
 const regionLinks = computed(() =>
   selectedRegion.value
-    ? linksForRegion(selectedRegion.value).filter((l) => projectAllowed(l.project_id) && (includeCoarse.value || (l.level ?? 3) >= 2))
+    ? linksForRegion(selectedRegion.value).filter(
+        (l) => projectAllowed(l.project_id) && (includeCoarse.value || (l.level ?? 3) >= 2) && (role.value === "all" || l.role === role.value)
+      )
     : []
 );
+
+const indicators = computed(() => {
+  const links = (payload.value?.links ?? []).filter((l) => l.project_id !== MIP4ADAPT);
+  const terrById = new Map((payload.value?.territories ?? []).map((t) => [t.id, t]));
+  const byProject = new Map<string, Set<string>>();
+  const projectsByTerr = new Map<string, Set<string>>();
+  for (const l of links) {
+    if (!byProject.has(l.project_id)) byProject.set(l.project_id, new Set());
+    byProject.get(l.project_id)!.add(l.territory_id);
+    if (!projectsByTerr.has(l.territory_id)) projectsByTerr.set(l.territory_id, new Set());
+    projectsByTerr.get(l.territory_id)!.add(l.project_id);
+  }
+  const sizes = [...byProject.values()].map((s) => s.size).sort((a, b) => a - b);
+  const median = sizes.length ? (sizes.length % 2 ? sizes[(sizes.length - 1) / 2]! : (sizes[sizes.length / 2 - 1]! + sizes[sizes.length / 2]!) / 2) : 0;
+  const terrIds = [...projectsByTerr.keys()];
+  const sig = terrIds.filter((id) => terrById.get(id)?.is_signatory).length;
+  const byType = MISSION_TYPES.map((t) => {
+    const ps = [...byProject.keys()].filter((id) => missionById.value.get(id)?.project_type === t.code);
+    const auth = new Set(ps.flatMap((id) => [...byProject.get(id)!]));
+    const sigs = [...auth].filter((id) => terrById.get(id)?.is_signatory).length;
+    return { code: t.code, projects: ps.length, authorities: auth.size, signatories: sigs, perProject: ps.length ? Math.round(ps.reduce((n, id) => n + byProject.get(id)!.size, 0) / ps.length) : 0 };
+  });
+  const roleKey = (r: string | null) => r ?? "No role given";
+  const pairs = new Map<string, { role: string; sig: boolean }>();
+  for (const l of links) pairs.set(`${l.project_id}|${l.territory_id}`, { role: roleKey(l.role), sig: !!terrById.get(l.territory_id)?.is_signatory });
+  const byRole = ["Demonstrator", "Replicator", "No role given"].map((role) => {
+    const xs = [...pairs.values()].filter((x) => x.role === role);
+    const s = xs.filter((x) => x.sig).length;
+    return { role, links: xs.length, signatories: s, share: xs.length ? Math.round((100 * s) / xs.length) : 0 };
+  });
+  const topAuthorities = terrIds
+    .map((id) => ({ id, n: projectsByTerr.get(id)!.size, name: terrById.get(id)?.name ?? id, country: terrById.get(id)?.country ?? "", signatory: !!terrById.get(id)?.is_signatory }))
+    .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name))
+    .slice(0, 8);
+  return {
+    median,
+    multi: terrIds.filter((id) => projectsByTerr.get(id)!.size >= 2).length,
+    signatoryShare: terrIds.length ? Math.round((100 * sig) / terrIds.length) : 0,
+    byType,
+    byRole,
+    topAuthorities,
+  };
+});
+
+const nonSignatories = computed(() => {
+  const terr = payload.value?.territories ?? [];
+  const withProject = new Set((payload.value?.links ?? []).filter((l) => l.project_id !== MIP4ADAPT).map((l) => l.territory_id));
+  const items = terr.filter((t) => withProject.has(t.id) && !t.is_signatory);
+  const byCountry = new Map<string, typeof items>();
+  for (const t of items) {
+    const c = t.country ?? "—";
+    if (!byCountry.has(c)) byCountry.set(c, []);
+    byCountry.get(c)!.push(t);
+  }
+  const countries = [...byCountry.entries()]
+    .map(([country, xs]) => ({ country, items: xs.sort((a, b) => a.name.localeCompare(b.name)) }))
+    .sort((a, b) => b.items.length - a.items.length || a.country.localeCompare(b.country));
+  return { total: items.length, of: withProject.size, countries };
+});
 
 const gaps = computed(() =>
   (payload.value?.eea ?? []).filter((s) => {
@@ -467,7 +627,7 @@ const stats = computed(() => {
     { label: "NUTS-3 WHERE PROJECTS ACT", value: acting.size, swatch: "act" as Swatch },
     { label: "NUTS-3 WITH PARTNER SEATS", value: seats.size, swatch: "seat" as Swatch },
     { label: "BOTH", value: both, swatch: "both" as Swatch },
-    { label: "SIGNATORIES WITHOUT A PROJECT", value: gaps.value.length, swatch: null },
+    { label: role.value === "all" ? "SIGNATORIES WITHOUT A PROJECT" : `SIGNATORIES WITHOUT A ${role.value.toUpperCase()}`, value: gaps.value.length, swatch: null },
   ];
 });
 </script>

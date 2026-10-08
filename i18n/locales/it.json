@@ -159,6 +159,16 @@
             "Sedi dei partner rispetto ai territori",
             "Firmatari della Carta senza progetto"
           ]
+        },
+        "links": {
+          "title": "Ricerca ↔ dimostrazione",
+          "lede": "Dove si incontrano i progetti di ricerca e quelli di dimostrazione.",
+          "body": "Organizzazioni che partecipano sia a progetti di ricerca (RIA) sia di dimostrazione (IA) della Missione, e regioni in cui lavorano entrambi. Cerca nei dati i collegamenti richiesti dalla valutazione delle Missioni del 2026.",
+          "shows": [
+            "Matrice RIA × IA di partner e regioni condivisi",
+            "Organizzazioni ponte",
+            "Progetti di ricerca senza collegamento"
+          ]
         }
       }
     }
@@ -1057,6 +1067,7 @@
     "stableVersion": "Versione stabile",
     "sources": "Fonti dei dati",
     "cutoff": "aggiornato al",
-    "generated": "dati generati il"
+    "generated": "dati generati il",
+    "refresh": "aggiornamento previsto"
   }
 }

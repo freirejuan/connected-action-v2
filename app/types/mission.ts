@@ -60,6 +60,6 @@ export interface EeaSignatory {
 
 export interface DataMeta {
   generated: string;
-  sources: { key: string; label: string; date: string; url?: string }[];
+  sources: { key: string; label: string; date: string; url?: string; refresh?: string }[];
   counts: Record<string, number>;
 }

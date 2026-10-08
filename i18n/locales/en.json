@@ -159,6 +159,16 @@
             "Partner seats vs territories",
             "Charter signatories without a project"
           ]
+        },
+        "links": {
+          "title": "Research ↔ demonstration",
+          "lede": "Where research and demonstration projects meet.",
+          "body": "Organisations that take part in both research (RIA) and demonstration (IA) Mission projects, and regions where both work. It looks in the data for the links the 2026 assessment of the Missions asks for.",
+          "shows": [
+            "RIA × IA matrix of shared partners and regions",
+            "Bridge organisations",
+            "Research projects without a link"
+          ]
         }
       }
     }
@@ -1746,6 +1756,7 @@
     "stableVersion": "Stable version",
     "sources": "Data sources",
     "cutoff": "cut-off",
-    "generated": "data built"
+    "generated": "data built",
+    "refresh": "planned refresh"
   }
 }

@@ -40,3 +40,12 @@ Registro para la integración posterior. Cada cambio indica si debe volver al Hu
 | MIP4Adapt identificado como contrato de servicio, no proyecto Horizon | `app/pages/connected/territories.vue` | Sí |
 | Nombre del Catálogo de proyectos 2026 junto al del anexo 5 cuando la revisión manual lo confirma (`catalogue_name`, opcional; se lee de `data-src/mission/catalogue_names_reviewed.csv`, vacío hasta que se haga la revisión) | `scripts/build_data.py`, `app/types/mission.ts`, `app/pages/connected/territories.vue` | Sí, tras la revisión |
 | Territories: colores del mapa separados de los del tipo de proyecto. Antes el mapa reutilizaba los cuatro colores de tipo (azul IA para «dónde actúan», naranja Cascade para «sedes», verde azulado RIA para «ambos», marrón CSA para «firmantes sin proyecto»). Ahora: violeta (escala) para dónde actúan, gris tinta (escala) para sedes de socios, y en contraste y ficha de proyecto relleno violeta = actúa, rayado = sede, ambos = violeta rayado. Firmantes con contorno discontinuo. Cifras en tinta con muestra al lado; el tipo se muestra siempre con su código en listas y filtros; la leyenda nombra el filtro de tipo activo y avisa de que el color del mapa no es el tipo | `app/pages/connected/territories.vue`, `app/components/mission/MissionTerritoryMap.vue` | Sí |
+
+## Prioridades del 8-oct (doc Recursos, §5)
+
+| Cambio | Archivos | ¿Vuelve al Hub? |
+| --- | --- | --- |
+| Vista nueva «Research ↔ Demonstration» (06): matriz RIA × IA de organizaciones compartidas (CORDIS) y de NUTS-3 compartidas (anexo 5, solo autoridades regionales y locales); organizaciones puente; proyectos de investigación sin vínculo | `app/pages/connected/links.vue`, `connectedNav.ts`, `pages/connected/index.vue`, `i18n` | Sí |
+| Territories: filtro por papel del territorio (demostrador / replicador) en mapa, fichas y listas | `app/pages/connected/territories.vue`, `app/composables/useMissionTerritories.ts` | Sí |
+| Territories: indicadores al estilo del Barómetro (autoridades por proyecto, autoridades en varios proyectos, firmantes por tipo y por papel) y lista de autoridades con proyecto que no son firmantes | `app/pages/connected/territories.vue` | Sí |
+| Cadencia de actualización prevista por fuente en el pie | `scripts/build_data.py`, `SiteFooter.vue`, `app/types/mission.ts` | Sí |
