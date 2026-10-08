@@ -24,13 +24,17 @@ pin = json.load(open(os.path.join(D, 'pairs.json'), encoding='utf-8'))
 nin = json.load(open(os.path.join(D, 'nature.json'), encoding='utf-8'))
 P, N = outs('*pairs*_out.json'), outs('*nature*_out.json')
 assert len(P) == len(pin) and len(N) == len(nin), (len(P), len(pin), len(N), len(nin))
+# criterios acordados después de la pasada de los agentes (criteria_overrides.json): se aplican sobre su propuesta
+OV = {'decided': {}, 'pending': {}}
+if os.path.exists(os.path.join(D, 'criteria_overrides.json')):
+    OV = json.load(open(os.path.join(D, 'criteria_overrides.json'), encoding='utf-8'))
+for k, v in OV['decided'].items():
+    if N[k]['nature'] != v['nature']:
+        N[k] = dict(N[k], nature=v['nature'], reason=f"[criterio aplicado] {N[k]['reason']}")
 
 NATURES = ['Autoridad local', 'Autoridad regional', 'Autoridad nacional', 'Otro organismo público', 'Universidad',
            'Centro de investigación', 'Empresa', 'ONG / fundación / asociación', 'Otra']
 PAIR_DEC = ['Misma entidad', 'Distinta', 'Dudoso']
-# criterio pendiente: asociaciones empresariales o sectoriales clasificadas como ONG (un agente las pasó a "Otra")
-SECTOR = re.compile(r'empresari|sectorial|industri|asegurador|patronal|cl[uú]ster|c[aá]mara de comercio|de empresas|utilities|servicios p[uú]blicos municipales', re.I)
-
 wb = Workbook()
 lists = wb.active; lists.title = 'Listas'
 for i, v in enumerate(PAIR_DEC, 1): lists.cell(i, 1, v)
@@ -65,7 +69,8 @@ txt = [
     ['Qué ha cambiado', 'Cada pareja dudosa y cada tipo de entidad lo ha revisado un agente con el nombre, el país, los códigos NUTS y, cuando hacía falta, búsqueda web. Su propuesta ya está en la columna de decisión final: solo hay que cambiarla si no estás de acuerdo.'],
     ['Por dónde empezar', 'Hojas 1 y 3 (dudas): decidir cada fila. Después, hojas 2 y 4 (resueltas): repaso rápido, empezando por las filas con confianza media (en amarillo). La hoja 5 son los cruces automáticos ya aplicados: marcar "Distinta" solo si alguno está mal.'],
     ['Desplegables', 'Las columnas de decisión tienen una lista desplegable en Excel y Google Sheets. Numbers (Mac) no muestra estas listas: en ese caso, escribir el valor exacto (aparece en la columna de la propuesta).'],
-    ['Criterio pendiente', 'Asociaciones empresariales o sectoriales (aseguradoras, empresas de servicios públicos, clústeres): un agente las clasificó como "Otra" y los demás como "ONG / fundación / asociación". Están en las dudas de la hoja 3 con la nota "criterio": decidir una vez y aplicar igual a todas.'],
+    ['Criterio acordado', 'Asociaciones empresariales y sectoriales, plataformas, hubs, clústeres y fundaciones (no de investigación) van en "ONG / fundación / asociación". Ya está aplicado: esas filas llevan la nota "[criterio aplicado]".'],
+    ['Criterio pendiente', 'Cámaras (de comercio, de agricultura) y cooperativas: filas con la nota "[pendiente]" en la hoja 3. Propuesta: cámaras → "Otro organismo público" (corporaciones de derecho público); cooperativas → "Empresa".'],
     ['Cómo se aplica', 'Al devolver el libro: python3 scripts/apply_entity_review.py <libro> && pnpm run data. Las decisiones se guardan en data-src/mission/entity_review.csv y entity_nature_review.csv.'],
 ]
 for r in txt: ws.append(r)
@@ -106,13 +111,12 @@ NCOLS = ['País', 'Nombre (CORDIS)', 'Nombre corto', 'Ciudad', 'Tipo CORDIS', 'P
 NW = {'Nombre (CORDIS)': 48, 'Nombre corto': 14, 'Propuesta automática': 22, 'Propuesta del agente': 26, 'Motivo': 46,
       'Fuente consultada': 26, 'Tipo final': 26, 'Comentario': 24}
 def is_criterion(n):
-    o = N[n['k']]
-    return o['nature'] in ('ONG / fundación / asociación', 'Otra') and bool(SECTOR.search(o['reason'] + ' ' + (n['name'] or '')))
+    return n['k'] in OV['pending']
 def nature_sheet(name, items):
     w = wb.create_sheet(name); header(w, NCOLS, NW)
     for n in items:
         o = N[n['k']]
-        reason = ('[criterio] ' if is_criterion(n) else '') + o['reason']
+        reason = (f"[pendiente: {OV['pending'][n['k']]}] " if is_criterion(n) else '') + o['reason']
         w.append([n['country'], n['name'], n['short'], n['city'], n['cordis_type'], n['proposal'], o['nature'], o['confidence'],
                   reason, o.get('evidence_url') or None, o['nature'], None, n['id']])
         style_row(w, 8, o['confidence'])
@@ -153,7 +157,7 @@ rows = [['Qué', 'Número', 'Nota'],
         ['  · dudas (hoja 1)', len(p_doubt), 'dudosas o con confianza media o baja'],
         ['  · resueltas (hoja 2)', len(p_ok), 'confianza alta'],
         ['Tipos revisados por agente', len(nin), f"{sum(1 for n in nin if N[n['k']]['nature'] != n['proposal'])} cambian respecto a la propuesta automática"],
-        ['  · dudas (hoja 3)', len(n_doubt), f"{sum(1 for n in n_doubt if is_criterion(n))} por el criterio de asociaciones sectoriales, el resto con confianza baja"],
+        ['  · dudas (hoja 3)', len(n_doubt), f"{sum(1 for n in n_doubt if is_criterion(n))} cámaras y cooperativas pendientes de criterio, el resto con confianza baja"],
         ['  · resueltos (hoja 4)', len(n_ok), f"{sum(1 for n in n_ok if N[n['k']]['confidence'] == 'media')} con confianza media (amarillo)"],
         ['Cruces automáticos (hoja 5)', w.max_row - 1, 'ya aplicados en el Lab'],
         [], ['Tipo propuesto por el agente', 'Entidades', '']] + [[k, v, ''] for k, v in Counter(N[n['k']]['nature'] for n in nin).most_common()]
