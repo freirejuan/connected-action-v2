@@ -4,6 +4,7 @@
 // generados por scripts/build_data.py a partir del pipeline CORDIS y de la capa de la Misión.
 import type { CordisEntityDetail, CordisProjectDetail } from "~/types/cordis";
 import type {
+  Actor,
   DataMeta,
   EeaSignatory,
   MissionProject,
@@ -246,6 +247,10 @@ export async function fetchProjectTerritories() {
 
 export async function fetchEeaSignatories() {
   return load<EeaSignatory[]>("eea_signatories");
+}
+
+export async function fetchActors() {
+  return load<Actor[]>("actors");
 }
 
 export async function fetchDataMeta() {

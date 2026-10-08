@@ -32,32 +32,32 @@
   "territories": {
    "en": {
     "title": "Territories",
-    "lede": "Where Mission projects act on the ground.",
-    "body": "The regions and local authorities each project works with, according to the Mission Barometer, compared with where its partners are based. Charter signatories without any Mission project are listed.",
+    "lede": "Start from a territory.",
+    "body": "For each NUTS-3 area or NUTS-2 region: the Mission projects acting there, its Charter signatories, and its entities that take part in projects there or elsewhere, by type of entity and role (partner, demonstrator, replicator).",
     "shows": [
-     "Project–territory map (NUTS-3)",
-     "Partner seats vs territories",
-     "Charter signatories without a project"
+     "Map of territory profiles (NUTS-3 / NUTS-2)",
+     "Territory profile: projects, signatories, participants",
+     "Entities that sign, take part, or both"
     ]
    },
    "es": {
     "title": "Territorios",
-    "lede": "Dónde actúan sobre el terreno los proyectos de la Misión.",
-    "body": "Las regiones y autoridades locales con las que trabaja cada proyecto, según el Barómetro de la Misión, frente a dónde tienen la sede sus socios. Incluye los firmantes de la Charter sin ningún proyecto de la Misión.",
+    "lede": "Partir del territorio.",
+    "body": "Para cada NUTS-3 o región NUTS-2: los proyectos de la Misión que actúan allí, sus firmantes de la Charter y sus entidades que participan en proyectos allí o en otros territorios, por tipo de entidad y papel (socio, demostrador, replicador).",
     "shows": [
-     "Mapa proyecto–territorio (NUTS-3)",
-     "Sedes de socios frente a territorios",
-     "Firmantes de la Charter sin proyecto"
+     "Mapa de perfiles de territorio (NUTS-3 / NUTS-2)",
+     "Ficha del territorio: proyectos, firmantes, participantes",
+     "Entidades que firman, participan o ambas cosas"
     ]
    },
    "it": {
     "title": "Territori",
-    "lede": "Dove agiscono sul territorio i progetti della Missione.",
-    "body": "Le regioni e le autorità locali con cui lavora ogni progetto, secondo il Barometro della Missione, rispetto a dove hanno sede i partner. Elenca i firmatari della Carta senza alcun progetto della Missione.",
+    "lede": "Partire dal territorio.",
+    "body": "Per ogni area NUTS-3 o regione NUTS-2: i progetti della Missione che vi operano, i firmatari della Carta e i soggetti che partecipano ai progetti lì o altrove, per tipo di soggetto e ruolo (partner, dimostratore, replicatore).",
     "shows": [
-     "Mappa progetto–territorio (NUTS-3)",
-     "Sedi dei partner rispetto ai territori",
-     "Firmatari della Carta senza progetto"
+     "Mappa dei profili territoriali (NUTS-3 / NUTS-2)",
+     "Scheda del territorio: progetti, firmatari, partecipanti",
+     "Soggetti che firmano, partecipano o entrambi"
     ]
    }
   },

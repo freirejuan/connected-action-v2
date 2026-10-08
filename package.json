@@ -6,7 +6,7 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "data": "python3 scripts/build_data.py",
+    "data": "python3 scripts/build_data.py && python3 scripts/entity_catalogue.py",
     "dev": "nuxt dev",
     "build": "nuxt generate && node -e \"require('fs').rmSync('.output/public/404.html',{force:true})\"",
     "preview": "npx serve -s .output/public",

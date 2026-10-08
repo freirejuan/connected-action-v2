@@ -152,12 +152,12 @@
         },
         "territories": {
           "title": "Territorios",
-          "lede": "Dónde actúan sobre el terreno los proyectos de la Misión.",
-          "body": "Las regiones y autoridades locales con las que trabaja cada proyecto, según el Barómetro de la Misión, frente a dónde tienen la sede sus socios. Incluye los firmantes de la Charter sin ningún proyecto de la Misión.",
+          "lede": "Partir del territorio.",
+          "body": "Para cada NUTS-3 o región NUTS-2: los proyectos de la Misión que actúan allí, sus firmantes de la Charter y sus entidades que participan en proyectos allí o en otros territorios, por tipo de entidad y papel (socio, demostrador, replicador).",
           "shows": [
-            "Mapa proyecto–territorio (NUTS-3)",
-            "Sedes de socios frente a territorios",
-            "Firmantes de la Charter sin proyecto"
+            "Mapa de perfiles de territorio (NUTS-3 / NUTS-2)",
+            "Ficha del territorio: proyectos, firmantes, participantes",
+            "Entidades que firman, participan o ambas cosas"
           ]
         },
         "links": {

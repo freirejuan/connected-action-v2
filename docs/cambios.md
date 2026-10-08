@@ -51,3 +51,13 @@ Registro para la integración posterior. Cada cambio indica si debe volver al Hu
 | Territories: filtro por papel del territorio (demostrador / replicador) en mapa, fichas y listas | `app/pages/connected/territories.vue`, `app/composables/useMissionTerritories.ts` | Sí |
 | Territories: indicadores al estilo del Barómetro (autoridades por proyecto, autoridades en varios proyectos, firmantes por tipo y por papel) y lista de autoridades con proyecto que no son firmantes | `app/pages/connected/territories.vue` | Sí |
 | Cadencia de actualización prevista por fuente en el pie | `scripts/build_data.py`, `SiteFooter.vue`, `app/types/mission.ts` | Sí |
+
+## Territories v2 (8-oct-2026, doc "Territories (Lab v2): diagnóstico y alternativas")
+
+| Cambio | Archivos | ¿Vuelve al Hub? |
+| --- | --- | --- |
+| Catálogo único de entidades: une autoridades del anexo 5, firmantes EEA y socios CORDIS (cruce por país, territorio y nombre normalizado) y clasifica su naturaleza (autoridad local/regional/nacional, otro organismo público, universidad, centro de investigación, empresa, ONG, otra). Cruces de confianza alta aplicados; el resto, en revisión manual | `scripts/entity_catalogue.py`, `public/data/actors.json`, `data-src/mission/entity_candidates.csv`, `entity_nature_auto.csv` | Sí, como tabla nueva en Supabase |
+| Libro de revisión del catálogo y lectura de las decisiones | `scripts/entity_review_workbook.py`, `scripts/apply_entity_review.py` (→ `entity_review.csv`, `entity_nature_review.csv`) | Pipeline |
+| Vista Territories reescrita desde el territorio: mapa por perfil (proyectos actúan directamente / socios locales / firmantes, contorno discontinuo), selector NUTS-3 / NUTS-2, buscador de territorios y entidades, ficha con proyectos aquí y "desde arriba", firmantes con su rol y entidades que participan aquí o en otros territorios, tabla de entidades con filtros de rol y naturaleza. Se retiran los modos "dónde actúan / sedes / contraste", la selección de proyecto y las listas de huecos de firmantes y de no firmantes (ahora son filtros de la tabla) | `app/pages/connected/territories.vue`, `app/composables/useTerritoryProfiles.ts`, `app/components/mission/MissionAnnexCards.vue` | Sí, tras validar |
+| Contornos NUTS-2 por disolución de las NUTS-3 del Lab | `scripts/build_nuts2.py`, `app/assets/geo/NUTS2_from_NUTS3.json` | Sí |
+| `pnpm run data` ejecuta también `entity_catalogue.py` | `package.json` | Sí |

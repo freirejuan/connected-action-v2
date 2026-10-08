@@ -152,12 +152,12 @@
         },
         "territories": {
           "title": "Territories",
-          "lede": "Where Mission projects act on the ground.",
-          "body": "The regions and local authorities each project works with, according to the Mission Barometer, compared with where its partners are based. Charter signatories without any Mission project are listed.",
+          "lede": "Start from a territory.",
+          "body": "For each NUTS-3 area or NUTS-2 region: the Mission projects acting there, its Charter signatories, and its entities that take part in projects there or elsewhere, by type of entity and role (partner, demonstrator, replicator).",
           "shows": [
-            "Project–territory map (NUTS-3)",
-            "Partner seats vs territories",
-            "Charter signatories without a project"
+            "Map of territory profiles (NUTS-3 / NUTS-2)",
+            "Territory profile: projects, signatories, participants",
+            "Entities that sign, take part, or both"
           ]
         },
         "links": {

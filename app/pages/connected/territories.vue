@@ -2,11 +2,11 @@
   <div class="bg-neutral-lightest">
     <CaPageHeader
       n="05"
-      kicker="WHERE PROJECTS ACT"
+      kicker="TERRITORIES"
       title="Territories"
-      intro="Where Mission projects work on the ground, not only where their partners are based. Regions and local authorities come from the Mission Barometer (Appendix 5); partner seats from CORDIS; Charter signatories from the EEA Adaptation Dashboard."
+      intro="Start from a territory. For each NUTS-3 area (or NUTS-2 region): which Mission projects act there, which of its entities sign the Charter, and which of its entities take part in projects — there or elsewhere."
       help-title="Reading this page"
-      help="Every authority listed by the Mission is mapped to its NUTS region (NUTS 2024; UK in NUTS 2021; Western Balkans and Türkiye in Eurostat Statistical Regions). A regional authority colours all its NUTS-3 areas. Codes were cleaned by Inviable: see the corrections log."
+      help="Projects act where Appendix 5 of the Mission Barometer places their regions and local authorities (as demonstrator, replicator or with no role given). Entities are the authorities of Appendix 5, the Charter signatories of the EEA Adaptation Dashboard and the CORDIS partners of the 65 Mission projects, joined into one list. An authority coded at a higher level (a region, a country) is shown as 'from above', not as local."
     />
 
     <div class="mx-auto w-full max-w-[1920px] px-7 py-7 pb-24">
@@ -14,307 +14,325 @@
 
       <template v-else>
         <!-- stats -->
-        <div class="mb-6 flex w-full flex-wrap border border-neutral-darkest bg-neutral-lightest">
-          <div v-for="(s, i) in stats" :key="s.label" class="px-7 py-4" :class="i ? 'border-l border-neutral-darkest' : ''">
+        <div class="stats mb-6 grid w-full grid-cols-2 border-l border-t border-neutral-darkest bg-neutral-lightest md:grid-cols-3 2xl:grid-cols-6">
+          <div v-for="s in statCells" :key="s.label" class="border-b border-r border-neutral-darkest px-5 py-4">
             <span class="block font-display text-4xl font-bold text-neutral-darkest">{{ s.value.toLocaleString("en-US") }}</span>
             <span class="inline-flex items-center gap-2 font-mono text-2xs font-semibold tracking-[0.16em] text-neutral-dark">
-              <span v-if="s.swatch" class="h-3 w-4 shrink-0" :style="swatchStyle(s.swatch)" />{{ s.label }}
+              <span v-if="s.swatch" class="h-3 w-4 shrink-0" :style="s.swatch" />{{ s.label }}
             </span>
           </div>
         </div>
 
-        <!-- coverage -->
         <p class="-mt-3 mb-6 max-w-[1100px] font-sans text-[12px] leading-snug text-neutral-dark">
-          <strong class="font-semibold text-neutral-darkest">Coverage.</strong>
-          Appendix 5 lists regions for {{ coverage.withRegions }} of the {{ coverage.total }} Mission projects.
-          <template v-if="coverage.without.length">
-            Without regions:
-            <template v-for="(m, i) in coverage.without" :key="m.cordis_id">
-              {{ i ? (i === coverage.without.length - 1 ? " and " : ", ") : "" }}<button type="button" class="font-semibold underline decoration-dotted" @click="openProject(m.cordis_id)">{{ m.mission_name }}</button>
-            </template>
-            (coordination and support actions working at national or European scale; open them for details).
-          </template>
-          MIP4Adapt, the Mission Implementation Platform, is a service contract rather than a Horizon project; the regions
-          it supports with technical assistance are also in Appendix 5 and can be switched off below.
+          <strong class="font-semibold text-neutral-darkest">Data status.</strong>
+          Entities from the three sources are joined automatically where country, territory and name agree
+          ({{ actorsCount.toLocaleString("en-US") }} entities). Doubtful matches and the nature of some public bodies are under manual
+          review by Inviable; figures may change slightly when it is applied. Appendix 5 lists regions for 63 of the 65 Mission projects
+          (not for National Adaptation Hubs and REGILIENCE-plus, coordination actions at national or European scale).
         </p>
 
-        <div class="grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1fr)_380px]">
+        <!-- controls -->
+        <div class="mb-4 flex flex-wrap items-end gap-x-6 gap-y-3 border border-neutral-darkest bg-neutral-lightest p-4">
+          <div>
+            <span class="mb-1.5 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">LEVEL</span>
+            <div class="flex border border-neutral-darkest">
+              <button
+                v-for="(l, i) in levels"
+                :key="l.id"
+                type="button"
+                class="px-3 py-1.5 font-mono text-[11px] font-bold tracking-[0.08em] transition-colors"
+                :class="[i ? 'border-l border-neutral-darkest' : '', level === l.id ? 'bg-neutral-darkest text-neutral-lightest' : 'text-neutral-dark hover:bg-neutral-lighter']"
+                @click="setLevel(l.id)"
+              >
+                {{ l.label }}
+              </button>
+            </div>
+          </div>
+          <div class="relative w-[280px]">
+            <span class="mb-1.5 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">FIND A TERRITORY OR ENTITY</span>
+            <UInput v-model="query" variant="editorial" placeholder="e.g. Galicia, Aarhus, Deltares…" class="w-full" />
+            <ul v-if="searchResults.length" class="absolute left-0 right-0 top-full z-30 max-h-72 overflow-y-auto border border-neutral-darkest bg-neutral-lightest shadow-lg">
+              <li v-for="r in searchResults" :key="r.kind + r.id">
+                <button type="button" class="flex w-full items-baseline gap-2 px-2 py-1.5 text-left hover:bg-warm-neutral-100" @click="pickResult(r)">
+                  <span class="text-[12px] text-neutral-darkest">{{ r.label }}</span>
+                  <span class="ml-auto shrink-0 font-mono text-[10px] text-neutral-dark">{{ r.sub }}</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <span class="mb-1.5 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">PROJECT TYPE</span>
+            <div class="flex flex-wrap gap-1.5">
+              <button
+                v-for="t in MISSION_TYPES"
+                :key="t.code"
+                type="button"
+                class="inline-flex items-center gap-1.5 border px-2 py-1 font-mono text-[11px] transition-colors"
+                :class="types.includes(t.code) ? 'border-neutral-darkest bg-neutral-darkest text-neutral-lightest' : 'border-neutral-light text-neutral-darkest hover:border-neutral-darkest'"
+                @click="toggleType(t.code)"
+              >
+                <span class="h-2 w-2" :style="{ background: t.color }" />{{ t.code }}
+              </button>
+            </div>
+          </div>
+          <div>
+            <span class="mb-1.5 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">ROLE OF THE TERRITORY</span>
+            <div class="flex border border-neutral-darkest">
+              <button
+                v-for="(r, i) in roleOptions"
+                :key="r.id"
+                type="button"
+                class="px-2.5 py-1.5 font-mono text-[10px] font-bold tracking-[0.08em] transition-colors"
+                :class="[i ? 'border-l border-neutral-darkest' : '', role === r.id ? 'bg-neutral-darkest text-neutral-lightest' : 'text-neutral-dark hover:bg-neutral-lighter']"
+                @click="role = r.id"
+              >
+                {{ r.label }}
+              </button>
+            </div>
+          </div>
+          <div>
+            <span class="mb-1.5 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">ENTITIES</span>
+            <div class="flex flex-wrap gap-1.5">
+              <button
+                v-for="g in NATURE_GROUPS"
+                :key="g.id"
+                type="button"
+                class="border px-2 py-1 font-mono text-[11px] transition-colors"
+                :class="natures.includes(g.id) ? 'border-neutral-darkest bg-neutral-darkest text-neutral-lightest' : 'border-neutral-light text-neutral-darkest hover:border-neutral-darkest'"
+                @click="toggleNature(g.id)"
+              >
+                {{ g.label }}
+              </button>
+            </div>
+          </div>
+          <label class="flex cursor-pointer items-center gap-2 pb-1.5 font-mono text-2xs text-neutral-dark">
+            <input v-model="includeMip" type="checkbox" class="accent-neutral-darkest" />
+            INCLUDE MIP4ADAPT ASSISTANCE
+          </label>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1fr)_440px]">
           <!-- map -->
           <div class="relative h-[78vh] min-h-[640px] overflow-hidden border border-neutral-darkest">
             <MissionTerritoryMap
               :features="features"
               :fills="fills"
-              :signatories="showSignatories ? eeaSignatoryNuts : emptySet"
-              :hatched="hatched"
-              :selected-region="selectedRegion"
+              :signatories="signatoryRegions"
+              :selected-region="selected"
               :describe="describeRegion"
               @select-region="selectRegion"
             />
-            <!-- legend -->
-            <div class="absolute bottom-3 left-3 z-10 border border-neutral-darkest bg-neutral-lightest p-3">
-              <span class="mb-2 block max-w-[260px] font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">{{ legend.title }}</span>
+            <div class="absolute bottom-3 left-3 z-10 max-w-[330px] border border-neutral-darkest bg-neutral-lightest p-3">
+              <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">{{ level === 3 ? "NUTS-3 AREAS" : "NUTS-2 REGIONS" }} BY PROFILE</span>
               <div class="flex flex-col gap-1">
-                <span v-for="item in legend.items" :key="item.label" class="flex items-center gap-2">
-                  <span class="h-3 w-5 shrink-0 border border-neutral-light" :style="swatchStyle(item.swatch)" />
-                  <span class="font-mono text-[11px] text-neutral-darkest">{{ item.label }}</span>
-                </span>
-                <span v-if="showSignatories" class="mt-1 flex items-center gap-2">
-                  <span class="h-3 w-5 shrink-0 border-[1.5px] border-dashed border-neutral-darker" />
-                  <span class="font-mono text-[11px] text-neutral-darkest">Charter signatory (EEA)</span>
+                <span v-for="c in legendItems" :key="c.id" class="flex items-start gap-2">
+                  <span class="mt-0.5 h-3 w-5 shrink-0 border border-neutral-light" :style="c.style" />
+                  <span class="font-mono text-[11px] leading-snug text-neutral-darkest">{{ c.label }}</span>
+                  <span class="ml-auto pl-2 font-mono text-[11px] text-neutral-dark">{{ c.n }}</span>
                 </span>
               </div>
-              <p class="mt-2 max-w-[260px] border-t border-neutral-lighter pt-1.5 font-sans text-[11px] leading-snug text-neutral-dark">
-                Map colours do not show project type. Type appears as a coloured square with its code in the filters and lists.
+              <p class="mt-2 border-t border-neutral-lighter pt-1.5 font-sans text-[11px] leading-snug text-neutral-dark">
+                "Partners" are entities based here that are partners (CORDIS) of a Mission project. Map colours do not show project type.
               </p>
             </div>
             <span class="absolute bottom-3 right-3 z-10 font-mono text-2xs text-neutral-dark">Ctrl/⌘ + scroll to zoom · drag to pan</span>
           </div>
 
-          <!-- panel -->
-          <aside class="flex flex-col border border-neutral-darkest bg-neutral-lightest">
-            <section class="border-b border-neutral-darkest p-4">
-              <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">VIEW</span>
-              <div class="flex border border-neutral-darkest">
-                <button
-                  v-for="(m, i) in modes"
-                  :key="m.id"
-                  type="button"
-                  class="flex-1 px-2 py-2 font-mono text-2xs font-bold tracking-[0.08em] transition-colors"
-                  :class="[i ? 'border-l border-neutral-darkest' : '', mode === m.id ? 'bg-neutral-darkest text-neutral-lightest' : 'text-neutral-dark hover:bg-neutral-lighter']"
-                  @click="mode = m.id"
-                >
-                  {{ m.label }}
-                </button>
-              </div>
-              <p class="mt-2 font-sans text-[12px] leading-snug text-neutral-dark">{{ modeHelp }}</p>
-            </section>
-
-            <section class="border-b border-neutral-darkest p-4">
-              <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">MISSION PROJECT TYPE</span>
-              <div class="flex flex-wrap gap-1.5">
-                <button
-                  v-for="t in MISSION_TYPES"
-                  :key="t.code"
-                  type="button"
-                  class="inline-flex items-center gap-1.5 border px-2 py-1 font-mono text-[11px] transition-colors"
-                  :class="selectedTypes.includes(t.code) ? 'border-neutral-darkest bg-neutral-darkest text-neutral-lightest' : 'border-neutral-light text-neutral-darkest hover:border-neutral-darkest'"
-                  @click="toggleType(t.code)"
-                >
-                  <span class="h-2 w-2" :style="{ background: t.color }" />{{ t.code }}
-                </button>
-              </div>
-              <span class="mb-1.5 mt-3 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">ROLE OF THE TERRITORY</span>
-              <div class="flex border border-neutral-darkest">
-                <button
-                  v-for="(r, i) in roleOptions"
-                  :key="r.id"
-                  type="button"
-                  class="flex-1 px-2 py-1.5 font-mono text-[10px] font-bold tracking-[0.08em] transition-colors"
-                  :class="[i ? 'border-l border-neutral-darkest' : '', role === r.id ? 'bg-neutral-darkest text-neutral-lightest' : 'text-neutral-dark hover:bg-neutral-lighter']"
-                  @click="role = r.id"
-                >
-                  {{ r.label }}
-                </button>
-              </div>
-              <p v-if="role !== 'all'" class="mt-1 font-sans text-[11px] leading-snug text-neutral-dark">
-                Only territories listed as {{ role === "Demonstrator" ? "demonstrators" : "replicators" }} in Appendix 5. Most roles are
-                given by Innovation Actions.
+          <!-- territory profile -->
+          <aside class="flex max-h-[78vh] min-h-[640px] flex-col overflow-y-auto border border-neutral-darkest bg-neutral-lightest">
+            <div v-if="!profile" class="p-5">
+              <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">TERRITORY PROFILE</span>
+              <p class="font-sans text-[13px] leading-snug text-neutral-dark">
+                Click an area on the map, or search above, to see which projects act there, which of its entities sign the Charter and
+                which take part in projects there or elsewhere.
               </p>
-              <label class="mt-3 flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
-                <input v-model="includeMip" type="checkbox" class="accent-neutral-darkest" />
-                INCLUDE MIP4ADAPT TECHNICAL ASSISTANCE (SERVICE CONTRACT)
-              </label>
-              <label class="mt-1.5 flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
-                <input v-model="includeCoarse" type="checkbox" class="accent-neutral-darkest" />
-                INCLUDE NATIONAL AND MACRO-REGIONAL AUTHORITIES
-              </label>
-              <label class="mt-1.5 flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
-                <input v-model="showSignatories" type="checkbox" class="accent-neutral-darkest" />
-                OUTLINE CHARTER SIGNATORIES (EEA, DASHED)
-              </label>
-            </section>
-
-            <section class="border-b border-neutral-darkest p-4">
-              <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">PROJECT</span>
-              <div v-if="selectedProject" class="flex items-start gap-2">
+            </div>
+            <template v-else>
+              <header class="sticky top-0 z-10 flex items-start gap-2 border-b border-neutral-darkest bg-neutral-lightest p-4">
                 <div class="min-w-0 flex-1">
-                  <div class="font-mono text-sm font-bold">{{ selectedProjectInfo?.name }}</div>
-                  <div class="font-mono text-2xs text-neutral-dark">{{ selectedProjectInfo?.sub }}</div>
-                </div>
-                <button type="button" class="font-mono text-2xs font-bold tracking-[0.1em] text-community-pink-dark" @click="selectedProject = null">CLEAR</button>
-              </div>
-              <template v-else>
-                <UInput v-model="query" variant="editorial" placeholder="Search a project…" class="w-full" />
-                <ul class="mt-2 max-h-48 overflow-y-auto">
-                  <li v-for="p in projectOptions" :key="p.id">
-                    <button type="button" class="flex w-full items-center gap-2 px-1 py-1 text-left hover:bg-warm-neutral-100" @click="selectProject(p.id)">
-                      <span class="h-2 w-2 shrink-0" :style="{ background: missionTypeColor(p.type) }" />
-                      <span class="font-mono text-[11px]">{{ p.name }}</span>
-                      <span class="font-mono text-[10px] text-neutral-dark">{{ p.type ?? "service" }}</span>
-                      <span class="ml-auto font-mono text-[11px] text-neutral-dark">{{ p.n || "no regions" }}</span>
-                    </button>
-                  </li>
-                </ul>
-              </template>
-
-              <div v-if="selectedProject && projectSummary" class="mt-3 grid grid-cols-3 border border-neutral-darkest text-center">
-                <div class="p-2"><span class="block font-display text-2xl font-bold">{{ projectSummary.territory }}</span><span class="inline-flex items-center gap-1 font-mono text-[10px] text-neutral-dark"><span class="h-2.5 w-3 border border-neutral-light" :style="swatchStyle('act')" />ACTS IN (NUTS-3)</span></div>
-                <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold">{{ projectSummary.seats }}</span><span class="inline-flex items-center gap-1 font-mono text-[10px] text-neutral-dark"><span class="h-2.5 w-3 border border-neutral-light" :style="swatchStyle('seat')" />PARTNER SEATS</span></div>
-                <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold">{{ projectSummary.both }}</span><span class="inline-flex items-center gap-1 font-mono text-[10px] text-neutral-dark"><span class="h-2.5 w-3 border border-neutral-light" :style="swatchStyle('both')" />BOTH</span></div>
-              </div>
-              <p v-if="selectedProjectNote" class="mt-3 border-l-2 border-neutral-darkest pl-2 font-sans text-[12px] leading-snug text-neutral-dark">{{ selectedProjectNote }}</p>
-              <ul v-if="selectedProject" class="mt-3 max-h-56 overflow-y-auto">
-                <li v-for="l in selectedProjectLinks" :key="l.territory_id" class="flex items-start gap-2 border-b border-neutral-lighter py-1.5">
-                  <span class="min-w-0 flex-1">
-                    <span class="block text-[12px] text-neutral-darkest">{{ l.territory?.name }}</span>
-                    <span v-if="l.territory?.catalogue_name" class="block text-[11px] italic text-neutral-dark">Catalogue: {{ l.territory.catalogue_name }}</span>
-                    <span class="font-mono text-[10px] text-neutral-dark">{{ l.code || l.territory?.country || "no code" }}{{ l.role ? " · " + l.role : "" }}</span>
-                  </span>
-                  <span v-if="l.is_signatory" class="shrink-0 border border-neutral-darkest px-1 font-mono text-[9px] font-bold">SIGNATORY</span>
-                </li>
-              </ul>
-              <button
-                v-if="selectedProject && selectedProject !== MIP4ADAPT"
-                type="button"
-                class="mt-2 font-mono text-2xs font-bold tracking-[0.1em] text-trust-blue-darkest"
-                @click="openProject(selectedProject)"
-              >
-                PROJECT PROFILE →
-              </button>
-            </section>
-
-            <section class="flex-1 p-4">
-              <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">REGION</span>
-              <p v-if="!selectedRegion" class="font-sans text-[12px] text-neutral-dark">Click a region on the map to list the Mission projects and authorities that act there.</p>
-              <template v-else>
-                <div class="flex items-start gap-2">
-                  <div class="min-w-0 flex-1">
-                    <div class="font-mono text-sm font-bold">{{ regions.get(selectedRegion)?.name }}</div>
-                    <div class="font-mono text-2xs text-neutral-dark">{{ selectedRegion }}<span v-if="regions.get(selectedRegion)?.eeaSignatory"> · Charter signatory area</span></div>
+                  <div class="font-mono text-sm font-bold">{{ profile.name }}</div>
+                  <div class="mt-0.5 flex items-center gap-2 font-mono text-2xs text-neutral-dark">
+                    {{ profile.id }} · {{ level === 3 ? "NUTS-3" : "NUTS-2" }}
+                    <span v-if="profile.profile" class="inline-flex items-center gap-1"><span class="h-2.5 w-3.5 border border-neutral-light" :style="CLS[profile.profile.cls].style" />{{ CLS[profile.profile.cls].short }}</span>
                   </div>
-                  <button type="button" class="font-mono text-2xs font-bold tracking-[0.1em] text-community-pink-dark" @click="selectedRegion = null">CLEAR</button>
                 </div>
-                <p class="mt-2 font-mono text-[11px] text-neutral-dark">
-                  {{ regionLinks.length }} authority–project links · partners from {{ regions.get(selectedRegion)?.seatProjects.size ?? 0 }} projects based here
-                </p>
-                <ul class="mt-2 max-h-72 overflow-y-auto">
-                  <li v-for="(l, i) in regionLinks" :key="i" class="flex items-start gap-2 border-b border-neutral-lighter py-1.5">
-                    <span class="mt-1 h-2 w-2 shrink-0" :style="{ background: missionTypeColor(l.mission?.project_type) }" />
-                    <span class="min-w-0 flex-1">
-                      <button type="button" class="block text-left font-mono text-[11px] font-bold hover:underline" @click="selectProject(l.project_id)">
-                        {{ l.mission?.mission_name ?? l.project_id }}
-                        <span class="font-normal text-neutral-dark">· {{ l.mission?.project_type ?? "service" }}</span>
-                      </button>
-                      <span class="block text-[12px] text-neutral-darkest">{{ l.territory?.name }}</span>
-                      <span v-if="l.territory?.catalogue_name" class="block text-[11px] italic text-neutral-dark">Catalogue: {{ l.territory.catalogue_name }}</span>
-                      <span class="font-mono text-[10px] text-neutral-dark">{{ l.code }}{{ l.role ? " · " + l.role : "" }}</span>
+                <button type="button" class="font-mono text-2xs font-bold tracking-[0.1em] text-community-pink-dark" @click="selected = null">CLEAR</button>
+              </header>
+
+              <!-- 1 projects -->
+              <section class="border-b border-neutral-darkest p-4">
+                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">1 · PROJECTS ACTING HERE · {{ profile.projectsHere.length }}</h3>
+                <p v-if="!profile.projectsHere.length" class="text-[12px] text-neutral-dark">No Mission project lists a local authority of this area in Appendix 5.</p>
+                <ul>
+                  <li v-for="p in profile.projectsHere" :key="p.project" class="border-b border-neutral-lighter py-1.5">
+                    <button type="button" class="inline-flex items-center gap-1.5 font-mono text-[11px] font-bold hover:underline" @click="openMission(p.project)">
+                      <span class="h-2 w-2 shrink-0" :style="{ background: missionTypeColor(missionById.get(p.project)?.project_type) }" />
+                      {{ projectName(p.project) }}
+                      <span class="font-normal text-neutral-dark">{{ missionById.get(p.project)?.project_type ?? "service" }}</span>
+                    </button>
+                    <span v-for="l in p.links" :key="l.territory_id" class="block pl-3.5 text-[12px] leading-snug text-neutral-darkest">
+                      {{ territoryById.get(l.territory_id)?.name }}
+                      <span class="font-mono text-[10px] text-neutral-dark">· {{ roleLabel(l.role) }}</span>
                     </span>
-                    <span v-if="l.is_signatory" class="shrink-0 border border-neutral-darkest px-1 font-mono text-[9px] font-bold">SIGNATORY</span>
                   </li>
                 </ul>
-              </template>
-            </section>
+                <template v-if="profile.projectsAbove.length">
+                  <h4 class="mb-1 mt-3 font-mono text-[10px] font-bold tracking-[0.14em] text-neutral-dark">FROM ABOVE · {{ profile.projectsAbove.length }}</h4>
+                  <p class="mb-1 text-[11px] leading-snug text-neutral-dark">Projects that work with a regional or national authority covering this area.</p>
+                  <ul>
+                    <li v-for="p in profile.projectsAbove" :key="p.project" class="py-0.5 text-[12px] leading-snug">
+                      <button type="button" class="font-mono text-[11px] font-bold hover:underline" @click="openMission(p.project)">{{ projectName(p.project) }}</button>
+                      <span class="text-neutral-dark"> · {{ p.links.map((l) => `${territoryById.get(l.territory_id)?.name} (${roleLabel(l.role)})`).join("; ") }}</span>
+                    </li>
+                  </ul>
+                </template>
+              </section>
+
+              <!-- 2 signatories -->
+              <section class="border-b border-neutral-darkest p-4">
+                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">2 · CHARTER SIGNATORIES FROM HERE · {{ profile.signatoriesHere.length }}</h3>
+                <p v-if="!profile.signatoriesHere.length" class="text-[12px] text-neutral-dark">No entity of this area signs the Charter (EEA list and Appendix 5).</p>
+                <ul>
+                  <li v-for="a in profile.signatoriesHere" :key="a.id" class="flex items-start gap-2 border-b border-neutral-lighter py-1.5">
+                    <span class="min-w-0 flex-1">
+                      <button type="button" class="text-left text-[12px] text-neutral-darkest" :class="a.cordis_ids.length ? 'hover:underline' : 'cursor-default'" @click="openActor(a)">{{ a.name }}</button>
+                      <span class="block font-mono text-[10px] text-neutral-dark">{{ NATURE_EN[a.nature] }}</span>
+                    </span>
+                    <span class="shrink-0 border px-1 font-mono text-[9px] font-bold" :class="takesPart(a) ? 'border-neutral-darkest' : 'border-neutral-light text-neutral-dark'">{{ signRole(a) }}</span>
+                  </li>
+                </ul>
+                <template v-if="profile.signatoriesAbove.length">
+                  <h4 class="mb-1 mt-3 font-mono text-[10px] font-bold tracking-[0.14em] text-neutral-dark">FROM ABOVE · {{ profile.signatoriesAbove.length }}</h4>
+                  <ul>
+                    <li v-for="a in profile.signatoriesAbove" :key="a.id" class="flex gap-2 py-0.5 text-[12px]">
+                      <span class="flex-1">{{ a.name }} <span class="font-mono text-[10px] text-neutral-dark">· {{ NATURE_EN[a.nature] }}</span></span>
+                      <span class="shrink-0 font-mono text-[9px] font-bold text-neutral-dark">{{ signRole(a) }}</span>
+                    </li>
+                  </ul>
+                </template>
+              </section>
+
+              <!-- 3 entities taking part -->
+              <section class="p-4">
+                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">3 · ENTITIES FROM HERE TAKING PART</h3>
+                <div class="mb-2 flex border border-neutral-darkest">
+                  <button
+                    v-for="(t, i) in partTabs"
+                    :key="t.id"
+                    type="button"
+                    class="flex-1 px-2 py-1.5 font-mono text-[10px] font-bold tracking-[0.08em] transition-colors"
+                    :class="[i ? 'border-l border-neutral-darkest' : '', partTab === t.id ? 'bg-neutral-darkest text-neutral-lightest' : 'text-neutral-dark hover:bg-neutral-lighter']"
+                    @click="partTab = t.id"
+                  >
+                    {{ t.label }} · {{ t.id === "here" ? profile.partHere.length : profile.partElsewhere.length }}
+                  </button>
+                </div>
+                <p class="mb-1 text-[11px] leading-snug text-neutral-dark">
+                  {{ partTab === "here" ? "In projects that act in this area (directly or through its regional authority): as partner (CORDIS) or as demonstration / replication territory (Appendix 5)." : "As partners (CORDIS) in projects that act in other territories; country codes show where." }}
+                </p>
+                <ul v-if="partTab === 'here'">
+                  <li v-for="x in profile.partHere" :key="x.actor.id" class="border-b border-neutral-lighter py-1.5">
+                    <button type="button" class="text-left text-[12px] text-neutral-darkest" :class="x.actor.cordis_ids.length ? 'hover:underline' : 'cursor-default'" @click="openActor(x.actor)">{{ x.actor.name }}</button>
+                    <span class="block font-mono text-[10px] text-neutral-dark">
+                      {{ NATURE_EN[x.actor.nature] }}<template v-if="x.actor.signatory"> · signatory</template>
+                    </span>
+                    <span v-if="x.partner.length" class="block text-[11px] leading-snug"><span class="font-mono text-[10px] font-bold">PARTNER</span> {{ x.partner.map(projectName).join(", ") }}</span>
+                    <span v-if="x.territory.length" class="block text-[11px] leading-snug"><span class="font-mono text-[10px] font-bold">TERRITORY</span> {{ territoryList(x.territory) }}</span>
+                  </li>
+                  <li v-if="!profile.partHere.length" class="text-[12px] text-neutral-dark">None.</li>
+                </ul>
+                <ul v-else>
+                  <li v-for="x in profile.partElsewhere" :key="x.actor.id" class="border-b border-neutral-lighter py-1.5">
+                    <button type="button" class="text-left text-[12px] text-neutral-darkest" :class="x.actor.cordis_ids.length ? 'hover:underline' : 'cursor-default'" @click="openActor(x.actor)">{{ x.actor.name }}</button>
+                    <span class="block font-mono text-[10px] text-neutral-dark">{{ NATURE_EN[x.actor.nature] }}<template v-if="x.actor.signatory"> · signatory</template></span>
+                    <span class="block text-[11px] leading-snug">
+                      <template v-for="(p, i) in x.projects" :key="p.project">{{ i ? "; " : "" }}{{ projectName(p.project) }} <span class="font-mono text-[10px] text-neutral-dark">{{ p.countries.join(" ") || "no regions" }}</span></template>
+                    </span>
+                  </li>
+                  <li v-if="!profile.partElsewhere.length" class="text-[12px] text-neutral-dark">None.</li>
+                </ul>
+              </section>
+            </template>
           </aside>
         </div>
 
-        <!-- below the map -->
-        <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <CaCard title="Charter signatories with no Mission project in their area">
-            <template #help>
-              <CaHelp title="Signatory gaps">
-                Signatories with a geometry in the EEA Adaptation Dashboard (309) whose NUTS area has no territory of any
-                Mission project{{ includeMip ? " or MIP4Adapt assistance" : "" }} in Appendix 5. A first list of where the Mission's
-                research and demonstration results have not landed yet.
-              </CaHelp>
-            </template>
-            <p class="mb-2 font-mono text-[11px] text-neutral-dark">{{ gaps.length }} of {{ payload?.eea.length }} signatories</p>
-            <ul class="max-h-72 columns-1 overflow-y-auto sm:columns-2">
-              <li v-for="g in gaps" :key="g.nuts + g.name" class="break-inside-avoid py-0.5 text-[12px]">
-                <span class="font-mono text-[10px] text-neutral-dark">{{ g.country }} · {{ g.nuts }}</span> {{ g.name }}
-              </li>
-            </ul>
-          </CaCard>
-          <CaCard title="Territories outside the map">
-            <template #help>
-              <CaHelp title="Not mapped">
-                Authorities outside the NUTS system and without a Eurostat Statistical Region geometry (Ukraine, Georgia,
-                Armenia, Moldova, Bosnia and Herzegovina, overseas and non-European sites).
-              </CaHelp>
-            </template>
-            <ul class="max-h-72 overflow-y-auto">
-              <li v-for="u in unmappedTerritories" :key="u.territory.id" class="flex gap-2 py-0.5 text-[12px]">
-                <span class="w-10 shrink-0 font-mono text-[10px] text-neutral-dark">{{ u.territory.country }}</span>
-                <span class="flex-1">{{ u.territory.name }}</span>
-                <span class="font-mono text-[10px] text-neutral-dark">{{ [...u.projects].map(projectName).join(", ") }}</span>
-              </li>
-            </ul>
-          </CaCard>
-        </div>
-
-        <!-- indicators in the style of the Barometer -->
-        <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <CaCard title="Indicators from Appendix 5">
-            <template #help>
-              <CaHelp title="Barometer-style indicators">
-                Computed from the cleaned Appendix 5 for all Mission projects (MIP4Adapt excluded), in the way the Mission
-                Barometer reports them. They do not follow the map filters.
-              </CaHelp>
-            </template>
-            <div class="grid grid-cols-3 border border-neutral-darkest text-center">
-              <div class="p-2"><span class="block font-display text-2xl font-bold">{{ indicators.median }}</span><span class="font-mono text-[10px] text-neutral-dark">MEDIAN AUTHORITIES PER PROJECT</span></div>
-              <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold">{{ indicators.multi }}</span><span class="font-mono text-[10px] text-neutral-dark">AUTHORITIES IN 2+ PROJECTS</span></div>
-              <div class="border-l border-neutral-darkest p-2"><span class="block font-display text-2xl font-bold">{{ indicators.signatoryShare }}%</span><span class="font-mono text-[10px] text-neutral-dark">AUTHORITIES THAT ARE SIGNATORIES</span></div>
+        <!-- entities table -->
+        <CaCard class="mt-6" :title="profile ? `Entities of ${profile.name}` : 'All entities'" body-class="p-0">
+          <template #help>
+            <CaHelp title="Entities and their roles" :w="320">
+              One row per entity, after joining Appendix 5 authorities, EEA Charter signatories and CORDIS partners. "Signs" =
+              Charter signatory. "Partner" = Mission projects where it is a CORDIS partner, split by whether the project acts in the
+              entity's own area, directly or through its regional authority (here), or elsewhere. "Demonstrator" / "Replicator" = projects where it is a territory in Appendix 5.
+            </CaHelp>
+          </template>
+          <template #right>
+            <label v-if="profile" class="flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
+              <input v-model="tableAbove" type="checkbox" class="accent-neutral-darkest" />
+              INCLUDE AUTHORITIES FROM ABOVE
+            </label>
+          </template>
+          <div class="flex flex-wrap items-center gap-3 border-b border-neutral-darkest px-5 py-3">
+            <div class="flex border border-neutral-darkest">
+              <button
+                v-for="(r, i) in roleFilters"
+                :key="r.id"
+                type="button"
+                class="px-2.5 py-1.5 font-mono text-[10px] font-bold tracking-[0.08em] transition-colors"
+                :class="[i ? 'border-l border-neutral-darkest' : '', roleFilter === r.id ? 'bg-neutral-darkest text-neutral-lightest' : 'text-neutral-dark hover:bg-neutral-lighter']"
+                @click="roleFilter = r.id"
+              >
+                {{ r.label }} · {{ roleCounts[r.id] }}
+              </button>
             </div>
-            <h4 class="mb-1 mt-4 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">BY PROJECT TYPE</h4>
+            <select v-if="!profile" v-model="country" class="border border-neutral-darkest bg-neutral-lightest px-2 py-1.5 font-mono text-[11px]">
+              <option value="">ALL COUNTRIES</option>
+              <option v-for="c in countries" :key="c" :value="c">{{ c }}</option>
+            </select>
+            <UInput v-model="tableQuery" variant="editorial" placeholder="Filter by name…" class="w-[220px]" />
+            <span class="ml-auto font-mono text-[11px] text-neutral-dark">{{ tableRows.length.toLocaleString("en-US") }} entities</span>
+          </div>
+          <div class="overflow-x-auto">
             <table class="w-full text-left text-[12px]">
               <thead class="font-mono text-[10px] text-neutral-dark">
-                <tr><th class="py-1 font-normal">TYPE</th><th class="font-normal">PROJECTS</th><th class="font-normal">AUTHORITIES</th><th class="font-normal">SIGNATORIES</th><th class="font-normal">PER PROJECT</th></tr>
+                <tr class="border-b border-neutral-darkest">
+                  <th class="px-5 py-2 font-normal tracking-[0.12em]">ENTITY</th>
+                  <th class="px-3 py-2 font-normal tracking-[0.12em]">NATURE</th>
+                  <th class="px-3 py-2 font-normal tracking-[0.12em]">BASED IN</th>
+                  <th class="px-3 py-2 text-center font-normal tracking-[0.12em]">SIGNS</th>
+                  <th class="px-3 py-2 text-right font-normal tracking-[0.12em]" title="Partner in projects acting in its own area">PARTNER · HERE</th>
+                  <th class="px-3 py-2 text-right font-normal tracking-[0.12em]" title="Partner in projects acting elsewhere">PARTNER · ELSEWHERE</th>
+                  <th class="px-3 py-2 text-right font-normal tracking-[0.12em]">DEMONSTRATOR</th>
+                  <th class="px-3 py-2 text-right font-normal tracking-[0.12em]">REPLICATOR</th>
+                  <th class="px-5 py-2 text-right font-normal tracking-[0.12em]" title="Territory in Appendix 5 with no role given">TERRITORY, NO ROLE</th>
+                </tr>
               </thead>
               <tbody>
-                <tr v-for="t in indicators.byType" :key="t.code" class="border-t border-neutral-lighter">
-                  <td class="py-1"><span class="inline-flex items-center gap-1.5 font-mono text-[11px]"><span class="h-2 w-2" :style="{ background: missionTypeColor(t.code) }" />{{ t.code }}</span></td>
-                  <td>{{ t.projects }}</td><td>{{ t.authorities }}</td><td>{{ t.signatories }}</td><td>{{ t.perProject }}</td>
+                <tr v-for="r in tableRows.slice(0, tableLimit)" :key="r.actor.id" class="border-b border-neutral-lighter align-top">
+                  <td class="px-5 py-1.5">
+                    <button type="button" class="text-left" :class="r.actor.cordis_ids.length ? 'hover:underline' : 'cursor-default'" @click="openActor(r.actor)">{{ r.actor.name }}</button>
+                    <span v-if="r.above" class="ml-1 font-mono text-[9px] text-neutral-dark">FROM ABOVE</span>
+                  </td>
+                  <td class="px-3 py-1.5 font-mono text-[11px]">{{ NATURE_EN[r.actor.nature] }}</td>
+                  <td class="px-3 py-1.5 font-mono text-[11px]">
+                    <button v-for="h in r.home" :key="h.code" type="button" class="mr-1 hover:underline" :title="h.name ?? ''" @click="selectCode(h.code)">{{ h.code }}</button>
+                    <span v-if="!r.home.length" class="text-neutral-dark">{{ r.actor.country ?? "—" }}</span>
+                  </td>
+                  <td class="px-3 py-1.5 text-center font-mono text-[11px]">{{ r.actor.signatory ? "✓" : "" }}</td>
+                  <td class="px-3 py-1.5 text-right font-mono text-[12px] tabular-nums">{{ r.partnerHere || "" }}</td>
+                  <td class="px-3 py-1.5 text-right font-mono text-[12px] tabular-nums">{{ r.partnerElsewhere || "" }}</td>
+                  <td class="px-3 py-1.5 text-right font-mono text-[12px] tabular-nums">{{ r.demonstrator || "" }}</td>
+                  <td class="px-3 py-1.5 text-right font-mono text-[12px] tabular-nums">{{ r.replicator || "" }}</td>
+                  <td class="px-5 py-1.5 text-right font-mono text-[12px] tabular-nums">{{ r.territoryOther || "" }}</td>
                 </tr>
               </tbody>
             </table>
-            <h4 class="mb-1 mt-4 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">BY ROLE OF THE TERRITORY</h4>
-            <table class="w-full text-left text-[12px]">
-              <thead class="font-mono text-[10px] text-neutral-dark">
-                <tr><th class="py-1 font-normal">ROLE</th><th class="font-normal">PROJECT–AUTHORITY LINKS</th><th class="font-normal">OF WHICH SIGNATORIES</th></tr>
-              </thead>
-              <tbody>
-                <tr v-for="r in indicators.byRole" :key="r.role" class="border-t border-neutral-lighter">
-                  <td class="py-1 font-mono text-[11px]">{{ r.role }}</td><td>{{ r.links }}</td><td>{{ r.signatories }} ({{ r.share }}%)</td>
-                </tr>
-              </tbody>
-            </table>
-            <h4 class="mb-1 mt-4 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">AUTHORITIES IN MOST PROJECTS</h4>
-            <ul>
-              <li v-for="a in indicators.topAuthorities" :key="a.id" class="flex gap-2 border-t border-neutral-lighter py-1 text-[12px]">
-                <span class="w-8 shrink-0 font-mono text-[10px] text-neutral-dark">{{ a.country }}</span>
-                <span class="flex-1">{{ a.name }}<span v-if="a.signatory" class="ml-1.5 border border-neutral-darkest px-1 font-mono text-[9px] font-bold">SIGNATORY</span></span>
-                <span class="font-mono text-[11px]">{{ a.n }} projects</span>
-              </li>
-            </ul>
-          </CaCard>
-          <CaCard title="Territories with a Mission project that are not Charter signatories">
-            <template #help>
-              <CaHelp title="The other gap">
-                Authorities that work with at least one Mission project (Appendix 5) but are not listed as Charter
-                signatories. The reverse of the list of signatories without a project: candidates to join the Mission.
-              </CaHelp>
-            </template>
-            <p class="mb-2 font-mono text-[11px] text-neutral-dark">
-              {{ nonSignatories.total }} of {{ nonSignatories.of }} authorities · {{ nonSignatories.countries.length }} countries
-            </p>
-            <ul class="max-h-[420px] overflow-y-auto">
-              <li v-for="c in nonSignatories.countries" :key="c.country" class="border-t border-neutral-lighter py-1.5">
-                <span class="font-mono text-[11px] font-bold">{{ c.country }} · {{ c.items.length }}</span>
-                <span class="block text-[12px] leading-snug text-neutral-darkest">{{ c.items.map((t) => t.name).join(" · ") }}</span>
-              </li>
-            </ul>
-          </CaCard>
-        </div>
+          </div>
+          <div v-if="tableRows.length > tableLimit" class="border-t border-neutral-darkest px-5 py-3">
+            <button type="button" class="font-mono text-2xs font-bold tracking-[0.1em] text-trust-blue-darkest" @click="tableLimit += 100">SHOW 100 MORE</button>
+          </div>
+        </CaCard>
+
+        <MissionAnnexCards class="mt-6" />
       </template>
 
       <CaProjectDetailModal v-model:open="isOpen" :project-id="projectId" @select-entity="onSelectEntityFromProject" />
@@ -324,25 +342,21 @@
 </template>
 
 <script setup lang="ts">
-import { MISSION_TYPES, missionTypeColor, missionTypeLabel } from "~/utils/missionTypes";
+import type { Actor, ProjectTerritory } from "~/types/mission";
+import { MISSION_TYPES, missionTypeColor } from "~/utils/missionTypes";
+import {
+  MIP4ADAPT,
+  NATURE_EN,
+  NATURE_GROUPS,
+  type NatureGroup,
+  type ProfileClass,
+  type Role,
+  type RoleFilter,
+  type TerritoryLevel,
+} from "~/composables/useTerritoryProfiles";
 
 definePageMeta({ layout: "connected" });
 useHead({ title: "Territories · Connected Action Lab" });
-
-const {
-  ready,
-  payload,
-  features,
-  regions,
-  missionById,
-  projectTerritoryNuts,
-  projectSeatNuts,
-  linksForProject,
-  linksForRegion,
-  unmappedTerritories,
-  nuts3Covered,
-  MIP4ADAPT,
-} = useMissionTerritories();
 
 const { isOpen, projectId, openProject, closeProject } = useProjectDetailModal();
 const { isOpen: isEntityOpen, entityId, openEntity } = useEntityDetailModal();
@@ -351,283 +365,190 @@ function onSelectEntityFromProject(id: string) {
   openEntity(id);
 }
 
-type Mode = "acting" | "seats" | "contrast";
-const modes: { id: Mode; label: string }[] = [
-  { id: "acting", label: "WHERE THEY ACT" },
-  { id: "seats", label: "PARTNER SEATS" },
-  { id: "contrast", label: "CONTRAST" },
-];
-const mode = ref<Mode>("acting");
-const selectedTypes = ref<string[]>([]);
-const includeMip = ref(true);
-/** Autoridades con código de país o NUTS-1 (p. ej. "Ireland", "Central and north Germany") pintan regiones enteras: fuera por defecto */
-const includeCoarse = ref(false);
-const showSignatories = ref(true);
-const selectedProject = ref<string | null>(null);
-const selectedRegion = ref<string | null>(null);
-const query = ref("");
-const emptySet = new Set<string>();
-
-const modeHelp = computed(() =>
-  mode.value === "acting"
-    ? "Number of Mission projects whose regions or local authorities (Barometer, Appendix 5) cover each NUTS-3 area."
-    : mode.value === "seats"
-      ? "Number of Mission projects with at least one partner organisation based in each NUTS-3 area (CORDIS). This is what the other views of the Connected Action show."
-      : "Violet fill: a project acts there. Stripes: a partner of a project is based there. Both together: the two coincide."
-);
-
-type Role = "all" | "Demonstrator" | "Replicator";
+// --- filtros ---
+const level = ref<TerritoryLevel>(3);
+const types = ref<string[]>([]);
 const role = ref<Role>("all");
+const includeMip = ref(true);
+const natures = ref<NatureGroup[]>([]);
+const levels: { id: TerritoryLevel; label: string }[] = [
+  { id: 3, label: "NUTS-3" },
+  { id: 2, label: "NUTS-2" },
+];
 const roleOptions: { id: Role; label: string }[] = [
   { id: "all", label: "ALL" },
   { id: "Demonstrator", label: "DEMONSTRATOR" },
   { id: "Replicator", label: "REPLICATOR" },
 ];
-/** proyectos que actúan en una NUTS-3 según los filtros de tipo, papel y escala */
-function actingIn(r: { acting: { project: string; role: string | null; coarse: boolean }[] }) {
-  const out = new Set<string>();
-  for (const a of r.acting) {
-    if (a.coarse && !includeCoarse.value) continue;
-    if (role.value !== "all" && a.role !== role.value) continue;
-    if (projectAllowed(a.project)) out.add(a.project);
-  }
-  return [...out];
-}
+const toggleType = (c: string) => (types.value = types.value.includes(c) ? types.value.filter((x) => x !== c) : [...types.value, c]);
+const toggleNature = (g: NatureGroup) => (natures.value = natures.value.includes(g) ? natures.value.filter((x) => x !== g) : [...natures.value, g]);
 
-const toggleType = (code: string) => {
-  selectedTypes.value = selectedTypes.value.includes(code) ? selectedTypes.value.filter((c) => c !== code) : [...selectedTypes.value, code];
+const T = useTerritoryProfiles({ level, types, role, includeMip, natures });
+const ready = T.ready;
+const features = T.features;
+const missionById = T.missionById;
+const territoryById = T.territoryById;
+const { projectName, takesPart, regionProfile, actorRow } = T;
+
+// --- mapa ---
+const CLS: Record<ProfileClass, { color: string; short: string; label: string; style: Record<string, string> }> = {
+  both: { color: "#7945ab", short: "projects + local partners", label: "Projects act directly here and local entities are partners", style: { background: "#7945ab" } },
+  projects: { color: "#cab1e8", short: "projects, no local partner", label: "Projects act directly here, no local partner", style: { background: "#cab1e8" } },
+  partners: { color: "#9a908e", short: "local partners, no project here", label: "Local partners, but no project acts directly here", style: { background: "#9a908e" } },
+  none: { color: "#f6f3ef", short: "no project or partner", label: "No project or partner", style: { background: "#f6f3ef" } },
 };
-
-function projectAllowed(id: string) {
-  if (id === MIP4ADAPT) return includeMip.value && selectedTypes.value.length === 0;
-  if (!selectedTypes.value.length) return true;
-  const t = missionById.value.get(id)?.project_type;
-  return !!t && selectedTypes.value.includes(t);
-}
-
-const projectName = (id: string) => (id === MIP4ADAPT ? "MIP4Adapt" : missionById.value.get(id)?.mission_name ?? id);
-
-// Los colores del mapa no comparten tono con los de los tipos de proyecto (RIA, IA, Cascade, CSA):
-// violeta = dónde actúan; gris tinta = sedes de socios; en contraste, rayado = sede y relleno violeta = actúa.
-const ACT_RAMP = ["#e6dcf5", "#cab1e8", "#a67ad6", "#7945ab"];
-const SEAT_RAMP = ["#d9cece", "#aca2a1", "#7e7574", "#534b4a"];
-const bucket = (n: number) => (n >= 5 ? 3 : n >= 3 ? 2 : n === 2 ? 1 : 0);
-const C_TERR = ACT_RAMP[2]!;
-const HATCH = "#362a2f";
-const HATCH_CSS = `repeating-linear-gradient(45deg, ${HATCH} 0 1.5px, transparent 1.5px 4px)`;
-type Swatch = "act" | "seat" | "both" | { fill: string };
-function swatchStyle(s: Swatch) {
-  if (s === "act") return { background: C_TERR };
-  if (s === "seat") return { background: `${HATCH_CSS}, #f6f3ef` };
-  if (s === "both") return { background: `${HATCH_CSS}, ${C_TERR}` };
-  return { background: s.fill };
-}
-
-const counts = computed(() => {
-  const acting = new Map<string, number>();
-  const seats = new Map<string, number>();
-  for (const [id, r] of regions.value) {
-    const a = actingIn(r).length;
-    const s = [...r.seatProjects].filter(projectAllowed).length;
-    if (a) acting.set(id, a);
-    if (s) seats.set(id, s);
-  }
-  return { acting, seats };
-});
-
-const projectSets = computed(() => {
-  if (!selectedProject.value) return null;
-  const terr = projectTerritoryNuts(selectedProject.value, includeCoarse.value, role.value === "all" ? null : role.value);
-  const seats = selectedProject.value === MIP4ADAPT ? new Set<string>() : projectSeatNuts(selectedProject.value);
-  return { terr, seats };
-});
-
-// Relleno violeta = el proyecto o los proyectos actúan aquí; rayado = algún socio tiene aquí su sede.
 const fills = computed(() => {
-  const out = new Map<string, string>();
-  const ps = projectSets.value;
-  if (ps) {
-    if (mode.value !== "seats") for (const id of ps.terr) out.set(id, C_TERR);
-    return out;
-  }
-  const { acting, seats } = counts.value;
-  if (mode.value === "acting") for (const [id, n] of acting) out.set(id, ACT_RAMP[bucket(n)]!);
-  else if (mode.value === "seats") for (const [id, n] of seats) out.set(id, SEAT_RAMP[bucket(n)]!);
-  else for (const id of acting.keys()) out.set(id, C_TERR);
-  return out;
+  const m = new Map<string, string>();
+  for (const [id, p] of T.profiles.value) if (p.cls !== "none") m.set(id, CLS[p.cls].color);
+  return m;
 });
-const hatched = computed(() => {
-  const ps = projectSets.value;
-  if (ps) return mode.value === "acting" ? emptySet : ps.seats;
-  return mode.value === "contrast" ? new Set(counts.value.seats.keys()) : emptySet;
-});
-
-const typeScope = computed(() => (selectedTypes.value.length ? selectedTypes.value.join(" + ") + " " : ""));
-const legend = computed(() => {
-  if (mode.value === "contrast" || projectSets.value) {
-    const items: { label: string; swatch: Swatch }[] = [];
-    const one = !!projectSets.value;
-    if (mode.value !== "seats") items.push({ label: one ? "Project acts here" : "A project acts here", swatch: "act" });
-    if (mode.value !== "acting") items.push({ label: one ? "A partner is based here" : "A partner of a project is based here", swatch: "seat" });
-    if (mode.value === "contrast") items.push({ label: "Both", swatch: "both" });
-    return { title: projectSets.value ? projectName(selectedProject.value!).toUpperCase() : (typeScope.value ? typeScope.value + "PROJECTS" : "ALL PROJECTS"), items };
-  }
-  const ramp = mode.value === "acting" ? ACT_RAMP : SEAT_RAMP;
-  return {
-    title: `NUMBER OF ${typeScope.value}PROJECTS ${mode.value === "acting" ? "ACTING HERE" : "WITH PARTNERS HERE"}`,
-    items: [
-      { label: "1", swatch: { fill: ramp[0]! } },
-      { label: "2", swatch: { fill: ramp[1]! } },
-      { label: "3–4", swatch: { fill: ramp[2]! } },
-      { label: "5 or more", swatch: { fill: ramp[3]! } },
-    ],
-  };
-});
-
-const eeaSignatoryNuts = computed(() => {
-  const out = new Set<string>();
-  for (const [id, r] of regions.value) if (r.eeaSignatory) out.add(id);
-  return out;
-});
-
-function describeRegion(id: string) {
-  const r = regions.value.get(id);
-  if (!r) return [];
-  const acting = actingIn(r);
-  const lines = [
-    `${acting.length} project${acting.length === 1 ? "" : "s"} act here${acting.length ? ": " + acting.slice(0, 6).map(projectName).join(", ") + (acting.length > 6 ? "…" : "") : ""}`,
-    `${[...r.seatProjects].filter(projectAllowed).length} projects with partners based here`,
-  ];
-  if (r.eeaSignatory) lines.push("Charter signatory area (EEA)");
-  return lines;
-}
-
-const projectOptions = computed(() => {
-  const q = query.value.trim().toLowerCase();
-  const nByProject = new Map<string, number>();
-  for (const l of payload.value?.links ?? []) nByProject.set(l.project_id, (nByProject.get(l.project_id) ?? 0) + 1);
-  const list = [...(payload.value?.mission ?? []).map((m) => ({ id: m.cordis_id, name: m.mission_name, type: m.project_type as string | null, n: nByProject.get(m.cordis_id) ?? 0 })),
-    { id: MIP4ADAPT, name: "MIP4Adapt (technical assistance, service contract)", type: null, n: nByProject.get(MIP4ADAPT) ?? 0 }];
-  return list
-    .filter((p) => projectAllowed(p.id) || p.id === MIP4ADAPT)
-    .filter((p) => !q || p.name.toLowerCase().includes(q))
-    .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
-});
-
-function selectProject(id: string) {
-  selectedProject.value = id;
-  if (mode.value === "seats") mode.value = "contrast";
-}
-function selectRegion(id: string) {
-  selectedRegion.value = selectedRegion.value === id ? null : id;
-}
-
-const selectedProjectInfo = computed(() => {
-  const id = selectedProject.value;
-  if (!id) return null;
-  if (id === MIP4ADAPT) return { name: "MIP4Adapt", sub: "Mission Implementation Platform · service contract, not a Horizon project · technical assistance to regions" };
-  const m = missionById.value.get(id);
-  return { name: m?.mission_name ?? id, sub: [missionTypeLabel(m?.project_type), m?.topic_code].filter(Boolean).join(" · ") };
-});
-const selectedProjectNote = computed(() =>
-  selectedProject.value && selectedProject.value !== MIP4ADAPT ? missionById.value.get(selectedProject.value)?.territory_note ?? null : null
-);
-const coverage = computed(() => {
-  const mission = payload.value?.mission ?? [];
-  const without = mission.filter((m) => !m.in_annex5).sort((a, b) => a.mission_name.localeCompare(b.mission_name));
-  return { total: mission.length, withRegions: mission.length - without.length, without };
-});
-const selectedProjectLinks = computed(() => (selectedProject.value ? linksForProject(selectedProject.value) : []));
-const projectSummary = computed(() => {
-  const ps = projectSets.value;
-  if (!ps) return null;
-  return { territory: ps.terr.size, seats: ps.seats.size, both: [...ps.terr].filter((id) => ps.seats.has(id)).length };
-});
-
-const regionLinks = computed(() =>
-  selectedRegion.value
-    ? linksForRegion(selectedRegion.value).filter(
-        (l) => projectAllowed(l.project_id) && (includeCoarse.value || (l.level ?? 3) >= 2) && (role.value === "all" || l.role === role.value)
-      )
-    : []
-);
-
-const indicators = computed(() => {
-  const links = (payload.value?.links ?? []).filter((l) => l.project_id !== MIP4ADAPT);
-  const terrById = new Map((payload.value?.territories ?? []).map((t) => [t.id, t]));
-  const byProject = new Map<string, Set<string>>();
-  const projectsByTerr = new Map<string, Set<string>>();
-  for (const l of links) {
-    if (!byProject.has(l.project_id)) byProject.set(l.project_id, new Set());
-    byProject.get(l.project_id)!.add(l.territory_id);
-    if (!projectsByTerr.has(l.territory_id)) projectsByTerr.set(l.territory_id, new Set());
-    projectsByTerr.get(l.territory_id)!.add(l.project_id);
-  }
-  const sizes = [...byProject.values()].map((s) => s.size).sort((a, b) => a - b);
-  const median = sizes.length ? (sizes.length % 2 ? sizes[(sizes.length - 1) / 2]! : (sizes[sizes.length / 2 - 1]! + sizes[sizes.length / 2]!) / 2) : 0;
-  const terrIds = [...projectsByTerr.keys()];
-  const sig = terrIds.filter((id) => terrById.get(id)?.is_signatory).length;
-  const byType = MISSION_TYPES.map((t) => {
-    const ps = [...byProject.keys()].filter((id) => missionById.value.get(id)?.project_type === t.code);
-    const auth = new Set(ps.flatMap((id) => [...byProject.get(id)!]));
-    const sigs = [...auth].filter((id) => terrById.get(id)?.is_signatory).length;
-    return { code: t.code, projects: ps.length, authorities: auth.size, signatories: sigs, perProject: ps.length ? Math.round(ps.reduce((n, id) => n + byProject.get(id)!.size, 0) / ps.length) : 0 };
-  });
-  const roleKey = (r: string | null) => r ?? "No role given";
-  const pairs = new Map<string, { role: string; sig: boolean }>();
-  for (const l of links) pairs.set(`${l.project_id}|${l.territory_id}`, { role: roleKey(l.role), sig: !!terrById.get(l.territory_id)?.is_signatory });
-  const byRole = ["Demonstrator", "Replicator", "No role given"].map((role) => {
-    const xs = [...pairs.values()].filter((x) => x.role === role);
-    const s = xs.filter((x) => x.sig).length;
-    return { role, links: xs.length, signatories: s, share: xs.length ? Math.round((100 * s) / xs.length) : 0 };
-  });
-  const topAuthorities = terrIds
-    .map((id) => ({ id, n: projectsByTerr.get(id)!.size, name: terrById.get(id)?.name ?? id, country: terrById.get(id)?.country ?? "", signatory: !!terrById.get(id)?.is_signatory }))
-    .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name))
-    .slice(0, 8);
-  return {
-    median,
-    multi: terrIds.filter((id) => projectsByTerr.get(id)!.size >= 2).length,
-    signatoryShare: terrIds.length ? Math.round((100 * sig) / terrIds.length) : 0,
-    byType,
-    byRole,
-    topAuthorities,
-  };
-});
-
-const nonSignatories = computed(() => {
-  const terr = payload.value?.territories ?? [];
-  const withProject = new Set((payload.value?.links ?? []).filter((l) => l.project_id !== MIP4ADAPT).map((l) => l.territory_id));
-  const items = terr.filter((t) => withProject.has(t.id) && !t.is_signatory);
-  const byCountry = new Map<string, typeof items>();
-  for (const t of items) {
-    const c = t.country ?? "—";
-    if (!byCountry.has(c)) byCountry.set(c, []);
-    byCountry.get(c)!.push(t);
-  }
-  const countries = [...byCountry.entries()]
-    .map(([country, xs]) => ({ country, items: xs.sort((a, b) => a.name.localeCompare(b.name)) }))
-    .sort((a, b) => b.items.length - a.items.length || a.country.localeCompare(b.country));
-  return { total: items.length, of: withProject.size, countries };
-});
-
-const gaps = computed(() =>
-  (payload.value?.eea ?? []).filter((s) => {
-    const covered = s.codes.flatMap((c) => nuts3Covered(c));
-    return covered.length > 0 && covered.every((id) => (counts.value.acting.get(id) ?? 0) === 0);
-  })
-);
-
-const stats = computed(() => {
-  const terr = payload.value?.territories ?? [];
-  const { acting, seats } = counts.value;
-  const both = [...acting.keys()].filter((id) => seats.has(id)).length;
+const signatoryRegions = computed(() => new Set([...T.profiles.value].filter(([, p]) => p.signatories.size).map(([id]) => id)));
+const legendItems = computed(() => {
+  const s = T.stats.value;
   return [
-    { label: "AUTHORITIES (APPENDIX 5)", value: terr.length, swatch: null },
-    { label: "NUTS-3 WHERE PROJECTS ACT", value: acting.size, swatch: "act" as Swatch },
-    { label: "NUTS-3 WITH PARTNER SEATS", value: seats.size, swatch: "seat" as Swatch },
-    { label: "BOTH", value: both, swatch: "both" as Swatch },
-    { label: role.value === "all" ? "SIGNATORIES WITHOUT A PROJECT" : `SIGNATORIES WITHOUT A ${role.value.toUpperCase()}`, value: gaps.value.length, swatch: null },
+    { id: "both", label: CLS.both.label, style: CLS.both.style, n: s.both },
+    { id: "projects", label: CLS.projects.label, style: CLS.projects.style, n: s.projects },
+    { id: "partners", label: CLS.partners.label, style: CLS.partners.style, n: s.partners },
+    { id: "sig", label: "Dashed outline: an entity from here signs the Charter", style: { border: "1.5px dashed #403339", background: "#f6f3ef" }, n: s.withSignatories },
+  ];
+});
+const selected = ref<string | null>(null);
+function selectRegion(id: string) {
+  selected.value = selected.value === id ? null : id;
+}
+function setLevel(l: TerritoryLevel) {
+  if (l === level.value) return;
+  const s = selected.value;
+  level.value = l;
+  selected.value = s ? (l === 2 ? s.slice(0, 4) : null) : null;
+}
+function selectCode(code: string) {
+  if (code.length < 4) return;
+  if (code.length === 4 && level.value === 3) level.value = 2;
+  selected.value = code.slice(0, level.value === 3 ? 5 : 4);
+}
+function describeRegion(id: string) {
+  const p = T.profiles.value.get(id);
+  if (!p) return ["No project, partner or signatory"];
+  return [
+    `${p.projects.size} project${p.projects.size === 1 ? "" : "s"} act here`,
+    `${p.partners.size} local partner organisation${p.partners.size === 1 ? "" : "s"}`,
+    `${p.signatories.size} Charter signator${p.signatories.size === 1 ? "y" : "ies"}`,
+  ];
+}
+
+// --- ficha ---
+const profile = computed(() => (selected.value ? regionProfile(selected.value) : null));
+const partTabs = [
+  { id: "here" as const, label: "HERE" },
+  { id: "elsewhere" as const, label: "ELSEWHERE" },
+];
+const partTab = ref<"here" | "elsewhere">("here");
+const roleLabel = (r: string | null) => (r === "Demonstrator" ? "demonstrator" : r === "Replicator" ? "replicator" : "role not given");
+function territoryList(ls: ProjectTerritory[]) {
+  const seen = new Map<string, Set<string>>();
+  for (const l of ls) {
+    const k = projectName(l.project_id);
+    if (!seen.has(k)) seen.set(k, new Set());
+    seen.get(k)!.add(roleLabel(l.role));
+  }
+  return [...seen.entries()].map(([p, rs]) => `${p} (${[...rs].join(", ")})`).join(", ");
+}
+function signRole(a: Actor) {
+  const p = T.participation.value.get(a.id);
+  const parts: string[] = [];
+  if (p?.partner.length) parts.push("PARTNER");
+  if (p?.territory.length) parts.push("TERRITORY");
+  return parts.length ? `SIGNS + ${parts.join(" + ")}` : "SIGNS ONLY";
+}
+function openMission(id: string) {
+  if (id !== MIP4ADAPT) openProject(id);
+}
+function openActor(a: Actor) {
+  if (a.cordis_ids.length) openEntity(a.cordis_ids[0]!);
+}
+
+// --- búsqueda ---
+const query = ref("");
+const norm = (s: string) => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const searchResults = computed(() => {
+  const q = norm(query.value.trim());
+  if (q.length < 2) return [];
+  const out: { kind: "region" | "actor"; id: string; label: string; sub: string; code: string | null }[] = [];
+  for (const [id, name] of T.regionName.value) {
+    if (id.length !== (level.value === 3 ? 5 : 4)) continue;
+    if (norm(name).includes(q) || id.toLowerCase() === q) out.push({ kind: "region", id, label: name, sub: id, code: id });
+    if (out.length >= 6) break;
+  }
+  for (const a of T.payload.value?.actors ?? []) {
+    if (!norm(a.name).includes(q)) continue;
+    const code = T.areaOf(a)[0] ?? null;
+    out.push({ kind: "actor", id: a.id, label: a.name, sub: `${NATURE_EN[a.nature]} · ${code ?? a.country ?? ""}`, code });
+    if (out.length >= 14) break;
+  }
+  return out;
+});
+function pickResult(r: { code: string | null }) {
+  if (r.code) selectCode(r.code);
+  query.value = "";
+}
+
+// --- tabla ---
+const roleFilters: { id: RoleFilter; label: string }[] = [
+  { id: "all", label: "ALL" },
+  { id: "both", label: "SIGN AND TAKE PART" },
+  { id: "signs", label: "SIGN ONLY" },
+  { id: "takes", label: "TAKE PART ONLY" },
+];
+const roleFilter = ref<RoleFilter>("all");
+const country = ref("");
+const tableQuery = ref("");
+const tableAbove = ref(true);
+const tableLimit = ref(100);
+watch([selected, roleFilter, country, tableQuery, natures, types, role], () => (tableLimit.value = 100));
+
+const actorsCount = computed(() => T.payload.value?.actors.length ?? 0);
+const countries = computed(() => [...new Set((T.payload.value?.actors ?? []).map((a) => a.country).filter(Boolean) as string[])].sort());
+const scopeActors = computed(() => {
+  const p = profile.value;
+  if (p) return [...p.actorsHere.map((a) => ({ a, above: false })), ...(tableAbove.value ? p.actorsAbove.map((a) => ({ a, above: true })) : [])];
+  return (T.payload.value?.actors ?? []).filter((a) => T.actorAllowed(a) && (!country.value || a.country === country.value)).map((a) => ({ a, above: false }));
+});
+const scopeRows = computed(() =>
+  scopeActors.value
+    .map(({ a, above }) => ({ ...actorRow(a), above }))
+    .filter((r) => r.role !== "all")
+);
+const roleCounts = computed(() => {
+  const c: Record<RoleFilter, number> = { all: scopeRows.value.length, both: 0, signs: 0, takes: 0 };
+  for (const r of scopeRows.value) c[r.role]++;
+  return c;
+});
+const tableRows = computed(() => {
+  const q = norm(tableQuery.value.trim());
+  return scopeRows.value
+    .filter((r) => roleFilter.value === "all" || r.role === roleFilter.value)
+    .filter((r) => !q || norm(r.actor.name).includes(q))
+    .sort(
+      (a, b) =>
+        Number(a.above) - Number(b.above) ||
+        b.partnerHere + b.partnerElsewhere + b.demonstrator + b.replicator + b.territoryOther - (a.partnerHere + a.partnerElsewhere + a.demonstrator + a.replicator + a.territoryOther) ||
+        a.actor.name.localeCompare(b.actor.name)
+    );
+});
+
+// --- cifras ---
+const statCells = computed(() => {
+  const s = T.stats.value;
+  const unit = level.value === 3 ? "NUTS-3" : "NUTS-2";
+  const all = (T.payload.value?.actors ?? []).filter(T.actorAllowed).map((a) => T.roleOf(a));
+  return [
+    { label: `${unit} WHERE PROJECTS ACT`, value: s.both + s.projects, swatch: null },
+    { label: "…WITH LOCAL PARTNERS TOO", value: s.both, swatch: CLS.both.style },
+    { label: `${unit} WITH PARTNERS, NO PROJECT`, value: s.partners, swatch: CLS.partners.style },
+    { label: "ENTITIES THAT SIGN AND TAKE PART", value: all.filter((r) => r === "both").length, swatch: null },
+    { label: "SIGN ONLY", value: all.filter((r) => r === "signs").length, swatch: null },
+    { label: "TAKE PART ONLY", value: all.filter((r) => r === "takes").length, swatch: null },
   ];
 });
 </script>

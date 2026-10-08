@@ -63,3 +63,33 @@ export interface DataMeta {
   sources: { key: string; label: string; date: string; url?: string; refresh?: string }[];
   counts: Record<string, number>;
 }
+
+/** Entidad unificada (scripts/entity_catalogue.py): autoridad del anexo 5, firmante EEA y/o socio CORDIS */
+export type ActorNature =
+  | "Autoridad local"
+  | "Autoridad regional"
+  | "Autoridad nacional"
+  | "Otro organismo público"
+  | "Universidad"
+  | "Centro de investigación"
+  | "Empresa"
+  | "ONG / fundación / asociación"
+  | "Otra";
+
+export interface Actor {
+  id: string;
+  name: string;
+  nature: ActorNature;
+  country: string | null;
+  home_nuts3: string | null;
+  /** códigos territoriales de la autoridad (anexo 5 y EEA) */
+  codes: string[];
+  /** NUTS-3 de la sede en CORDIS */
+  seats: string[];
+  level: number | null;
+  signatory: boolean;
+  signatory_source: "EEA" | "anexo 5" | null;
+  annex_ids: string[];
+  eea_ids: string[];
+  cordis_ids: string[];
+}
