@@ -95,16 +95,9 @@ def type_note_en(r):
                 'technical and financial support to regions through cascade funding.')
     return None
 
-# Por qué un proyecto no tiene regiones en el anexo 5 (Catálogo de proyectos de la Misión 2026, pp. 22 y 26)
-TERRITORY_NOTE = {
-    '101212639': ('No regions in Appendix 5: AdaptationHubs works at national scale. It is setting up 27 National Adaptation Hubs, '
-                  'one per Member State, with 54 twinning activities between regions (CSA, started 1 November 2025).'),
-    '101213634': ('No regions in Appendix 5: REGILIENCE+ collects proven adaptation solutions and turns them into training materials '
-                  'for regional and national actors, shared through the Mission Portal and Climate-ADAPT (CSA, started 1 October 2025).'),
-}
 def territory_note_en(r):
-    if B(r['in_annex5']): return None
-    return TERRITORY_NOTE.get(r['cordis_id'], 'No regions listed for this project in the Mission Barometer (Appendix 5).')
+    # nota en inglés de por qué no tiene regiones en el anexo 5 (columna generada en enrich_projects.py)
+    return None if B(r['in_annex5']) else (txt(r.get('territory_note')) or 'No regions listed for this project in the Mission Barometer (Appendix 5).')
 mission = {}
 for r in rows('mission', 'projects_65_enrichment.csv'):
     mission[r['cordis_id']] = {
