@@ -1,6 +1,6 @@
 // Capa de la Misión (Barómetro de MIP4Adapt + EEA), generada por scripts/build_data.py
 
-export type MissionProjectType = "RIA" | "IA" | "CSA" | "Cascade";
+export type MissionProjectType = "RIA" | "IA" | "CSA" | "Cascade" | "MIP";
 
 export interface MissionProject {
   cordis_id: string;

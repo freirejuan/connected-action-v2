@@ -65,6 +65,9 @@
               <input v-model="colorByType" type="checkbox" class="accent-neutral-darkest" />
               COLOUR BY TYPE
             </label>
+            <p class="mt-1 font-sans text-[11px] leading-snug text-neutral-dark">
+              The fifth type, MIP · Mission support (MIP4Adapt), is a service contract with no CORDIS record, so it has no risks or themes to place here. It appears in Territories.
+            </p>
           </div>
           <!-- bubble-size legend (inside the panel so it never covers bubbles) -->
           <div class="border-b border-neutral-darkest px-4 py-3">
@@ -127,7 +130,7 @@
 definePageMeta({ layout: "connected" });
 import * as d3 from "d3";
 import { fetchMissionProjects } from "~/utils/cordisRepository";
-import { MISSION_TYPES } from "~/utils/missionTypes";
+import { CORDIS_TYPES } from "~/utils/missionTypes";
 
 type CategoryMode = "risks" | "themes";
 
@@ -149,7 +152,7 @@ const toggleType = (code: string) => {
     : [...selectedTypes.value, code];
 };
 const typeItems = computed(() =>
-  MISSION_TYPES.map((t) => ({
+  CORDIS_TYPES.map((t) => ({
     ...t,
     count: (missionProjects.value ?? []).filter((m) => m.project_type === t.code).length,
   }))

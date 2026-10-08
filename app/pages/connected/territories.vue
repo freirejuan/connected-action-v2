@@ -27,8 +27,9 @@
           <strong class="font-semibold text-neutral-darkest">Data status.</strong>
           Entities from the three sources are joined where country, territory and name agree
           ({{ actorsCount.toLocaleString("en-US") }} entities). Doubtful matches and the type of public bodies and "other" CORDIS
-          partners were checked one by one (web-assisted review, validated by Inviable, October 2026). Appendix 5 lists regions for 63 of the 65 Mission projects
-          (not for National Adaptation Hubs and REGILIENCE-plus, coordination actions at national or European scale).
+          partners were checked one by one (web-assisted review, validated by Inviable, October 2026). Appendix 5 lists regions for 63 of the 65 Horizon Mission projects
+          (not for National Adaptation Hubs and REGILIENCE-plus, coordination actions at national or European scale) and for MIP4Adapt, the
+          Mission's official support mechanism, shown as its own type (MIP).
         </p>
 
         <!-- controls -->
@@ -105,10 +106,6 @@
               </button>
             </div>
           </div>
-          <label class="flex cursor-pointer items-center gap-2 pb-1.5 font-mono text-2xs text-neutral-dark">
-            <input v-model="includeMip" type="checkbox" class="accent-neutral-darkest" />
-            INCLUDE MIP4ADAPT ASSISTANCE
-          </label>
         </div>
 
         <div class="grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1fr)_440px]">
@@ -195,9 +192,9 @@
                 <ul>
                   <li v-for="p in profile.projectsHere" :key="p.project" class="border-b border-neutral-lighter py-1.5">
                     <button type="button" class="inline-flex items-center gap-1.5 font-mono text-[11px] font-bold hover:underline" @click="openMission(p.project)">
-                      <span class="h-2 w-2 shrink-0" :style="{ background: missionTypeColor(missionById.get(p.project)?.project_type) }" />
+                      <span class="h-2 w-2 shrink-0" :style="{ background: missionTypeColor(T.projectType(p.project)) }" />
                       {{ projectName(p.project) }}
-                      <span class="font-normal text-neutral-dark">{{ missionById.get(p.project)?.project_type ?? "service" }}</span>
+                      <span class="font-normal text-neutral-dark">{{ T.projectType(p.project) }}</span>
                     </button>
                     <span v-for="l in p.links" :key="l.territory_id" class="block pl-3.5 text-[12px] leading-snug text-neutral-darkest">
                       {{ territoryLabel(l.territory_id) }}
@@ -416,7 +413,6 @@ function onSelectEntityFromProject(id: string) {
 const level = ref<TerritoryLevel>(3);
 const types = ref<string[]>([]);
 const role = ref<Role>("all");
-const includeMip = ref(true);
 const natures = ref<NatureGroup[]>([]);
 const levels: { id: TerritoryLevel; label: string }[] = [
   { id: 3, label: "NUTS-3" },
@@ -430,7 +426,7 @@ const roleOptions: { id: Role; label: string }[] = [
 const toggleType = (c: string) => (types.value = types.value.includes(c) ? types.value.filter((x) => x !== c) : [...types.value, c]);
 const toggleNature = (g: NatureGroup) => (natures.value = natures.value.includes(g) ? natures.value.filter((x) => x !== g) : [...natures.value, g]);
 
-const T = useTerritoryProfiles({ level, types, role, includeMip, natures });
+const T = useTerritoryProfiles({ level, types, role, natures });
 const ready = T.ready;
 const features = T.features;
 const missionById = T.missionById;

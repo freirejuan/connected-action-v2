@@ -3,7 +3,7 @@
           <CaCard title="Indicators from Appendix 5">
             <template #help>
               <CaHelp title="Barometer-style indicators">
-                Computed from the cleaned Appendix 5 for all Mission projects (MIP4Adapt excluded), in the way the Mission
+                Computed from the cleaned Appendix 5 for all Mission projects, with MIP4Adapt as its own type (MIP), in the way the Mission
                 Barometer reports them. They do not follow the map filters.
               </CaHelp>
             </template>
@@ -70,7 +70,8 @@ const { payload, missionById, unmappedTerritories, MIP4ADAPT } = useMissionTerri
 const projectName = (id: string) => (id === MIP4ADAPT ? "MIP4Adapt" : missionById.value.get(id)?.mission_name ?? id);
 
 const indicators = computed(() => {
-  const links = (payload.value?.links ?? []).filter((l) => l.project_id !== MIP4ADAPT);
+  const links = payload.value?.links ?? [];
+  const typeOf = (id: string) => (id === MIP4ADAPT ? "MIP" : missionById.value.get(id)?.project_type);
   const terrById = new Map((payload.value?.territories ?? []).map((t) => [t.id, t]));
   const byProject = new Map<string, Set<string>>();
   const projectsByTerr = new Map<string, Set<string>>();
@@ -85,7 +86,7 @@ const indicators = computed(() => {
   const terrIds = [...projectsByTerr.keys()];
   const sig = terrIds.filter((id) => terrById.get(id)?.is_signatory).length;
   const byType = MISSION_TYPES.map((t) => {
-    const ps = [...byProject.keys()].filter((id) => missionById.value.get(id)?.project_type === t.code);
+    const ps = [...byProject.keys()].filter((id) => typeOf(id) === t.code);
     const auth = new Set(ps.flatMap((id) => [...byProject.get(id)!]));
     const sigs = [...auth].filter((id) => terrById.get(id)?.is_signatory).length;
     return { code: t.code, projects: ps.length, authorities: auth.size, signatories: sigs, perProject: ps.length ? Math.round(ps.reduce((n, id) => n + byProject.get(id)!.size, 0) / ps.length) : 0 };

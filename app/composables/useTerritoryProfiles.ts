@@ -55,14 +55,13 @@ export interface Filters {
   level: Ref<TerritoryLevel>;
   types: Ref<string[]>;
   role: Ref<Role>;
-  includeMip: Ref<boolean>;
   natures: Ref<NatureGroup[]>;
 }
 
 export interface ActorParticipation {
   /** proyectos en los que es socio (CORDIS), tras los filtros de tipo */
   partner: string[];
-  /** vínculos del anexo 5 en los que es territorio, tras los filtros de tipo, papel y MIP4Adapt */
+  /** vínculos del anexo 5 en los que es territorio, tras los filtros de tipo (incluido MIP) y papel */
   territory: ProjectTerritory[];
 }
 
@@ -146,10 +145,11 @@ export function useTerritoryProfiles(f: Filters) {
   const areaOf = (a: Actor) => (a.codes.length ? a.codes : a.seats);
 
   // --- filtros ---
+  /** tipo de proyecto de la Misión; MIP4Adapt es su propia categoría (MIP) */
+  const projectType = (id: string) => (id === MIP4ADAPT ? "MIP" : missionById.value.get(id)?.project_type ?? null);
   function projectAllowed(id: string) {
-    if (id === MIP4ADAPT) return f.includeMip.value && f.types.value.length === 0;
     if (!f.types.value.length) return true;
-    const t = missionById.value.get(id)?.project_type;
+    const t = projectType(id);
     return !!t && f.types.value.includes(t);
   }
   const linkAllowed = (l: ProjectTerritory) => projectAllowed(l.project_id) && (f.role.value === "all" || l.role === f.role.value);
@@ -389,6 +389,7 @@ export function useTerritoryProfiles(f: Filters) {
     takesPart,
     actorAllowed,
     projectAllowed,
+    projectType,
     projectName,
     areaOf,
   };

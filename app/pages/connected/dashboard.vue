@@ -14,7 +14,7 @@ import {
   fetchDataMeta,
   fetchMissionProjects,
 } from "~/utils/cordisRepository";
-import { MISSION_TYPES, missionTypeLabel } from "~/utils/missionTypes";
+import { CORDIS_TYPES as MISSION_TYPES, missionTypeLabel } from "~/utils/missionTypes";
 
 // Filter types
 const FILTER_TYPES = {
@@ -537,7 +537,7 @@ const dataForProjectsByType = computed(() => {
 });
 
 const typeChartScopeHint = computed(() => {
-  if (!hasFilteredData.value) return "Mission classification (Barometer, Appendix 4). Click a type to filter.";
+  if (!hasFilteredData.value) return "Mission classification (Barometer, Appendix 4). Click a type to filter. MIP · Mission support (MIP4Adapt) is not in CORDIS: see Territories.";
   const { filterType, label } = activeFilter.value;
   if (filterType === FILTER_TYPES.type) return `Dark bar: ${label} · Gray: all projects`;
   return `Dark bar: projects matching “${label}” · Gray: all projects`;
