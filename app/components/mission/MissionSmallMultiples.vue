@@ -30,7 +30,7 @@
     <p class="font-sans text-[12px] leading-snug text-neutral-dark lg:col-span-3">
       <template v-if="hovered && hoverInfo">
         <strong class="font-semibold text-neutral-darkest">{{ hoverInfo.name }}</strong> ({{ hovered }}):
-        {{ hoverInfo.projects }} project{{ hoverInfo.projects === 1 ? "" : "s" }} acting directly ·
+        {{ hoverInfo.projects }} project{{ hoverInfo.projects === 1 ? "" : "s" }} with a local authority ·
         {{ hoverInfo.partners }} local partner{{ hoverInfo.partners === 1 ? "" : "s" }} ·
         {{ hoverInfo.signatories }} signator{{ hoverInfo.signatories === 1 ? "y" : "ies" }}.
       </template>
@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-// Vista D: tres capas lado a lado (proyectos que actúan / socios locales / firmantes), sincronizadas.
+// Vista D: tres capas lado a lado (proyectos con autoridad local / socios locales / firmantes), sincronizadas.
 type NutsFeature = GeoJSON.Feature<GeoJSON.Geometry, { NUTS_ID: string; NUTS_NAME: string }>;
 type Profile = { projects: Set<string>; partners: Set<string>; signatories: Set<string> };
 
@@ -81,7 +81,7 @@ const maps = computed(() => {
     return { id, title, measure, fills, count, ramp: RAMPS[id], buckets };
   };
   return [
-    layer("projects", "PROJECTS ACTING DIRECTLY", "projects", b1, ["1", "2", "3–4", "5+"]),
+    layer("projects", "PROJECTS WITH A LOCAL AUTHORITY", "projects", b1, ["1", "2", "3–4", "5+"]),
     layer("partners", "LOCAL PARTNERS (CORDIS)", "partner entities", b2, ["1", "2–3", "4–9", "10+"]),
     layer("signatories", "CHARTER SIGNATORIES", "signatory entities", b1, ["1", "2", "3–4", "5+"]),
   ];

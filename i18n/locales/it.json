@@ -153,7 +153,7 @@
         "territories": {
           "title": "Territori",
           "lede": "Partire dal territorio.",
-          "body": "Per ogni area NUTS-3 o regione NUTS-2: i progetti della Missione che vi operano, i firmatari della Carta e i soggetti che partecipano ai progetti lì o altrove, per tipo di soggetto e ruolo (partner, dimostratore, replicatore).",
+          "body": "Per ogni area NUTS-3 o regione NUTS-2: i progetti della Missione con un'autorità locale nell'area, i firmatari della Carta e i soggetti che partecipano ai progetti lì o altrove, per tipo di soggetto e ruolo (partner, dimostratore, replicatore).",
           "shows": [
             "Mappa dei profili territoriali (NUTS-3 / NUTS-2)",
             "Scheda del territorio: progetti, firmatari, partecipanti",

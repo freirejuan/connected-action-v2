@@ -33,7 +33,7 @@
    "en": {
     "title": "Territories",
     "lede": "Start from a territory.",
-    "body": "For each NUTS-3 area or NUTS-2 region: the Mission projects acting there, its Charter signatories, and its entities that take part in projects there or elsewhere, by type of entity and role (partner, demonstrator, replicator).",
+    "body": "For each NUTS-3 area or NUTS-2 region: the Mission projects with a local authority there, its Charter signatories, and its entities that take part in projects there or elsewhere, by type of entity and role (partner, demonstrator, replicator).",
     "shows": [
      "Map of territory profiles (NUTS-3 / NUTS-2)",
      "Territory profile: projects, signatories, participants",
@@ -43,7 +43,7 @@
    "es": {
     "title": "Territorios",
     "lede": "Partir del territorio.",
-    "body": "Para cada NUTS-3 o región NUTS-2: los proyectos de la Misión que actúan allí, sus firmantes de la Charter y sus entidades que participan en proyectos allí o en otros territorios, por tipo de entidad y papel (socio, demostrador, replicador).",
+    "body": "Para cada NUTS-3 o región NUTS-2: los proyectos de la Misión con una autoridad de esa zona, sus firmantes de la Charter y sus entidades que participan en proyectos allí o en otros territorios, por tipo de entidad y papel (socio, demostrador, replicador).",
     "shows": [
      "Mapa de perfiles de territorio (NUTS-3 / NUTS-2)",
      "Ficha del territorio: proyectos, firmantes, participantes",
@@ -53,7 +53,7 @@
    "it": {
     "title": "Territori",
     "lede": "Partire dal territorio.",
-    "body": "Per ogni area NUTS-3 o regione NUTS-2: i progetti della Missione che vi operano, i firmatari della Carta e i soggetti che partecipano ai progetti lì o altrove, per tipo di soggetto e ruolo (partner, dimostratore, replicatore).",
+    "body": "Per ogni area NUTS-3 o regione NUTS-2: i progetti della Missione con un'autorità locale nell'area, i firmatari della Carta e i soggetti che partecipano ai progetti lì o altrove, per tipo di soggetto e ruolo (partner, dimostratore, replicatore).",
     "shows": [
      "Mappa dei profili territoriali (NUTS-3 / NUTS-2)",
      "Scheda del territorio: progetti, firmatari, partecipanti",

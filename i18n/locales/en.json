@@ -153,7 +153,7 @@
         "territories": {
           "title": "Territories",
           "lede": "Start from a territory.",
-          "body": "For each NUTS-3 area or NUTS-2 region: the Mission projects acting there, its Charter signatories, and its entities that take part in projects there or elsewhere, by type of entity and role (partner, demonstrator, replicator).",
+          "body": "For each NUTS-3 area or NUTS-2 region: the Mission projects with a local authority there, its Charter signatories, and its entities that take part in projects there or elsewhere, by type of entity and role (partner, demonstrator, replicator).",
           "shows": [
             "Map of territory profiles (NUTS-3 / NUTS-2)",
             "Territory profile: projects, signatories, participants",

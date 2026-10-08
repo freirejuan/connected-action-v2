@@ -4,9 +4,9 @@
       n="05"
       kicker="TERRITORIES"
       title="Territories"
-      intro="Start from a territory. For each NUTS-3 area (or NUTS-2 region): which Mission projects act there, which of its entities sign the Charter, and which of its entities take part in projects — there or elsewhere."
+      intro="Start from a territory. For each NUTS-3 area (or NUTS-2 region): which Mission projects have a local authority there, which of its entities sign the Charter, and which of its entities take part in projects — there or elsewhere."
       help-title="Reading this page"
-      help="Projects act where Appendix 5 of the Mission Barometer places their regions and local authorities (as demonstrator, replicator or with no role given). Entities are the authorities of Appendix 5, the Charter signatories of the EEA Adaptation Dashboard and the CORDIS partners of the 65 Mission projects, joined into one list. An authority coded at a higher level (a region, a country) is shown as 'from above', not as local."
+      help="A project has a local authority in an area when Appendix 5 of the Mission Barometer lists, for that project, an authority whose territorial code is that area or a smaller unit inside it (as demonstrator, replicator or with no role given). When the authority is coded at a higher level (a NUTS-2 region, a NUTS-1 area or a country), the project appears as working through a regional or national authority: it does not colour the map, because Appendix 5 does not say in which of the areas it works. Example, Østjylland (DK042): BLOSSOM and URBREATH list Aarhus City (DK042), so they have a local authority there; NBRACER, Precilience, RESIST and TRANSFORM list Central Denmark Region (DK04), which covers five NUTS-3 areas, so they work there through a regional authority. In the NUTS-2 view the rule moves up one level. This shows where the authority a project declares as territory is, not where the work is done. Entities are the authorities of Appendix 5, the Charter signatories of the EEA Adaptation Dashboard and the CORDIS partners of the 65 Mission projects, joined into one list."
     />
 
     <div class="mx-auto w-full max-w-[1920px] px-7 py-7 pb-24">
@@ -143,13 +143,13 @@
               </div>
               <p v-if="flowMode !== 'none'" class="flex items-start gap-2 text-[11px] leading-snug text-neutral-darkest" :class="flowMode === 'in' ? 'opacity-40' : ''">
                 <span class="mt-1 h-0.5 w-5 shrink-0" :style="{ background: FLOW_OUT }" />
-                <span><strong>Out.</strong> Partners from here take part in {{ flowData.summary.outProjects }} project{{ flowData.summary.outProjects === 1 ? "" : "s" }} acting in {{ flowData.summary.outAreas }} other area{{ flowData.summary.outAreas === 1 ? "" : "s" }} ({{ flowData.summary.outCountries }} countr{{ flowData.summary.outCountries === 1 ? "y" : "ies" }}).</span>
+                <span><strong>Out.</strong> Partners from here take part in {{ flowData.summary.outProjects }} project{{ flowData.summary.outProjects === 1 ? "" : "s" }} with a local authority in {{ flowData.summary.outAreas }} other area{{ flowData.summary.outAreas === 1 ? "" : "s" }} ({{ flowData.summary.outCountries }} countr{{ flowData.summary.outCountries === 1 ? "y" : "ies" }}).</span>
               </p>
               <p v-if="flowMode !== 'none'" class="mt-1 flex items-start gap-2 text-[11px] leading-snug text-neutral-darkest" :class="flowMode === 'out' ? 'opacity-40' : ''">
                 <span class="mt-1 h-0.5 w-5 shrink-0" :style="{ background: FLOW_IN }" />
-                <span><strong>In.</strong> The {{ flowData.summary.inProjects }} project{{ flowData.summary.inProjects === 1 ? "" : "s" }} acting here have partners based in {{ flowData.summary.inAreas }} other area{{ flowData.summary.inAreas === 1 ? "" : "s" }} ({{ flowData.summary.inCountries }} countr{{ flowData.summary.inCountries === 1 ? "y" : "ies" }}).</span>
+                <span><strong>In.</strong> The {{ flowData.summary.inProjects }} project{{ flowData.summary.inProjects === 1 ? "" : "s" }} with a local authority here have partners based in {{ flowData.summary.inAreas }} other area{{ flowData.summary.inAreas === 1 ? "" : "s" }} ({{ flowData.summary.inCountries }} countr{{ flowData.summary.inCountries === 1 ? "y" : "ies" }}).</span>
               </p>
-              <p v-if="flowMode !== 'none'" class="mt-1.5 border-t border-neutral-lighter pt-1 text-[10px] leading-snug text-neutral-dark">Line width: number of entity–project links. Only areas where projects act directly.</p>
+              <p v-if="flowMode !== 'none'" class="mt-1.5 border-t border-neutral-lighter pt-1 text-[10px] leading-snug text-neutral-dark">Line width: number of entity–project links. Only areas where projects have a local authority.</p>
             </div>
             <div class="absolute bottom-3 left-3 z-10 max-w-[330px] border border-neutral-darkest bg-neutral-lightest p-3">
               <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">{{ level === 3 ? "NUTS-3 AREAS" : "NUTS-2 REGIONS" }} BY PROFILE</span>
@@ -190,7 +190,7 @@
 
               <!-- 1 projects -->
               <section class="border-b border-neutral-darkest p-4">
-                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">1 · PROJECTS ACTING HERE · {{ profile.projectsHere.length }}</h3>
+                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">1 · PROJECTS WITH A LOCAL AUTHORITY HERE · {{ profile.projectsHere.length }}</h3>
                 <p v-if="!profile.projectsHere.length" class="text-[12px] text-neutral-dark">No Mission project lists a local authority of this area in Appendix 5.</p>
                 <ul>
                   <li v-for="p in profile.projectsHere" :key="p.project" class="border-b border-neutral-lighter py-1.5">
@@ -206,8 +206,8 @@
                   </li>
                 </ul>
                 <template v-if="profile.projectsAbove.length">
-                  <h4 class="mb-1 mt-3 font-mono text-[10px] font-bold tracking-[0.14em] text-neutral-dark">FROM ABOVE · {{ profile.projectsAbove.length }}</h4>
-                  <p class="mb-1 text-[11px] leading-snug text-neutral-dark">Projects that work with a regional or national authority covering this area.</p>
+                  <h4 class="mb-1 mt-3 font-mono text-[10px] font-bold tracking-[0.14em] text-neutral-dark">THROUGH A REGIONAL OR NATIONAL AUTHORITY · {{ profile.projectsAbove.length }}</h4>
+                  <p class="mb-1 text-[11px] leading-snug text-neutral-dark">Projects that list a regional or national authority covering this area; Appendix 5 does not say in which of its areas they work.</p>
                   <ul>
                     <li v-for="p in profile.projectsAbove" :key="p.project" class="py-0.5 text-[12px] leading-snug">
                       <button type="button" class="font-mono text-[11px] font-bold hover:underline" @click="openMission(p.project)">{{ projectName(p.project) }}</button>
@@ -231,7 +231,7 @@
                   </li>
                 </ul>
                 <template v-if="profile.signatoriesAbove.length">
-                  <h4 class="mb-1 mt-3 font-mono text-[10px] font-bold tracking-[0.14em] text-neutral-dark">FROM ABOVE · {{ profile.signatoriesAbove.length }}</h4>
+                  <h4 class="mb-1 mt-3 font-mono text-[10px] font-bold tracking-[0.14em] text-neutral-dark">REGIONAL OR NATIONAL SIGNATORIES COVERING THIS AREA · {{ profile.signatoriesAbove.length }}</h4>
                   <ul>
                     <li v-for="a in profile.signatoriesAbove" :key="a.id" class="flex gap-2 py-0.5 text-[12px]">
                       <span class="flex-1">{{ a.name }} <span class="font-mono text-[10px] text-neutral-dark">· {{ NATURE_EN[a.nature] }}</span></span>
@@ -257,7 +257,7 @@
                   </button>
                 </div>
                 <p class="mb-1 text-[11px] leading-snug text-neutral-dark">
-                  {{ partTab === "here" ? "In projects that act in this area (directly or through its regional authority): as partner (CORDIS) or as demonstration / replication territory (Appendix 5)." : "As partners (CORDIS) in projects that act in other territories; country codes show where." }}
+                  {{ partTab === "here" ? "In projects with a local authority in this area or working here through its regional authority: as partner (CORDIS) or as demonstration / replication territory (Appendix 5)." : "As partners (CORDIS) in projects that act in other territories; country codes show where." }}
                 </p>
                 <ul v-if="partTab === 'here'">
                   <li v-for="x in profile.partHere" :key="x.actor.id" class="border-b border-neutral-lighter py-1.5">
@@ -289,8 +289,8 @@
         <CaCard class="mt-6" title="The three layers side by side" body-class="p-4">
           <template #help>
             <CaHelp title="Small multiples" :w="320">
-              The same {{ level === 3 ? "NUTS-3 areas" : "NUTS-2 regions" }} and filters as the map above, one layer per map: where Mission projects act
-              directly, where their CORDIS partners are based, and where Charter signatories are. Zoom, pan and hover are shared.
+              The same {{ level === 3 ? "NUTS-3 areas" : "NUTS-2 regions" }} and filters as the map above, one layer per map: where Mission projects have
+              a local authority, where their CORDIS partners are based, and where Charter signatories are. Zoom, pan and hover are shared.
             </CaHelp>
           </template>
           <MissionSmallMultiples
@@ -309,13 +309,13 @@
             <CaHelp title="Entities and their roles" :w="320">
               One row per entity, after joining Appendix 5 authorities, EEA Charter signatories and CORDIS partners. "Signs" =
               Charter signatory. "Partner" = Mission projects where it is a CORDIS partner, split by whether the project acts in the
-              entity's own area, directly or through its regional authority (here), or elsewhere. "Demonstrator" / "Replicator" = projects where it is a territory in Appendix 5.
+              entity's own area, through a local or regional authority (here), or elsewhere. "Demonstrator" / "Replicator" = projects where it is a territory in Appendix 5.
             </CaHelp>
           </template>
           <template #right>
             <label v-if="profile" class="flex cursor-pointer items-center gap-2 font-mono text-2xs text-neutral-dark">
               <input v-model="tableAbove" type="checkbox" class="accent-neutral-darkest" />
-              INCLUDE AUTHORITIES FROM ABOVE
+              INCLUDE REGIONAL AND NATIONAL AUTHORITIES COVERING THIS AREA
             </label>
           </template>
           <div class="flex flex-wrap items-center gap-3 border-b border-neutral-darkest px-5 py-3">
@@ -357,7 +357,7 @@
                 <tr v-for="r in tableRows.slice(0, tableLimit)" :key="r.actor.id" class="border-b border-neutral-lighter align-top">
                   <td class="px-5 py-1.5">
                     <button type="button" class="text-left" :class="r.actor.cordis_ids.length ? 'hover:underline' : 'cursor-default'" @click="openActor(r.actor)">{{ r.actor.name }}</button>
-                    <span v-if="r.above" class="ml-1 font-mono text-[9px] text-neutral-dark">FROM ABOVE</span>
+                    <span v-if="r.above" class="ml-1 font-mono text-[9px] text-neutral-dark">REGIONAL / NATIONAL</span>
                   </td>
                   <td class="px-3 py-1.5 font-mono text-[11px]">{{ NATURE_EN[r.actor.nature] }}</td>
                   <td class="px-3 py-1.5 font-mono text-[11px]">
@@ -439,9 +439,9 @@ const { projectName, takesPart, regionProfile, actorRow, territoryLabel } = T;
 
 // --- mapa ---
 const CLS: Record<ProfileClass, { color: string; short: string; label: string; style: Record<string, string> }> = {
-  both: { color: "#7945ab", short: "projects + local partners", label: "Projects act directly here and local entities are partners", style: { background: "#7945ab" } },
-  projects: { color: "#cab1e8", short: "projects, no local partner", label: "Projects act directly here, no local partner", style: { background: "#cab1e8" } },
-  partners: { color: "#9a908e", short: "local partners, no project here", label: "Local partners, but no project acts directly here", style: { background: "#9a908e" } },
+  both: { color: "#7945ab", short: "local authority + local partners", label: "Projects with a local authority here, and local partners", style: { background: "#7945ab" } },
+  projects: { color: "#cab1e8", short: "local authority, no local partner", label: "Projects with a local authority here, no local partner", style: { background: "#cab1e8" } },
+  partners: { color: "#9a908e", short: "local partners only", label: "Local partners, but no project with a local authority here", style: { background: "#9a908e" } },
   none: { color: "#f6f3ef", short: "no project or partner", label: "No project or partner", style: { background: "#f6f3ef" } },
 };
 const fills = computed(() => {
@@ -478,7 +478,7 @@ function describeRegion(id: string) {
   const p = T.profiles.value.get(id);
   if (!p) return ["No project, partner or signatory"];
   return [
-    `${p.projects.size} project${p.projects.size === 1 ? "" : "s"} act here`,
+    `${p.projects.size} project${p.projects.size === 1 ? "" : "s"} with a local authority here`,
     `${p.partners.size} local partner organisation${p.partners.size === 1 ? "" : "s"}`,
     `${p.signatories.size} Charter signator${p.signatories.size === 1 ? "y" : "ies"}`,
   ];
@@ -610,9 +610,9 @@ const statCells = computed(() => {
   const unit = level.value === 3 ? "NUTS-3" : "NUTS-2";
   const all = (T.payload.value?.actors ?? []).filter(T.actorAllowed).map((a) => T.roleOf(a));
   return [
-    { label: `${unit} WHERE PROJECTS ACT`, value: s.both + s.projects, swatch: null },
-    { label: "…WITH LOCAL PARTNERS TOO", value: s.both, swatch: CLS.both.style },
-    { label: `${unit} WITH PARTNERS, NO PROJECT`, value: s.partners, swatch: CLS.partners.style },
+    { label: `${unit} WITH A LOCAL AUTHORITY IN A PROJECT`, value: s.both + s.projects, swatch: null },
+    { label: "…AND LOCAL PARTNERS", value: s.both, swatch: CLS.both.style },
+    { label: `${unit} WITH LOCAL PARTNERS ONLY`, value: s.partners, swatch: CLS.partners.style },
     { label: "ENTITIES THAT SIGN AND TAKE PART", value: all.filter((r) => r === "both").length, swatch: null },
     { label: "SIGN ONLY", value: all.filter((r) => r === "signs").length, swatch: null },
     { label: "TAKE PART ONLY", value: all.filter((r) => r === "takes").length, swatch: null },
