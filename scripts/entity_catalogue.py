@@ -161,6 +161,9 @@ for c in cand:
     if accepted(c):
         l, r = c['pair'].split('-')
         union(key[l] + c['left_id'], key[r] + c['right_id'])
+# la misma autoridad con nombres distintos en el anexo 5 (revisión A-A; no hay cruce automático)
+for (pr, l, r), d in review.items():
+    if pr == 'A-A' and d == 'confirmar': union('A:' + l, 'A:' + r)
 
 # ---------- 2. naturaleza ----------
 P = lambda *w: re.compile(r'\b(' + '|'.join(w) + r')\b')
