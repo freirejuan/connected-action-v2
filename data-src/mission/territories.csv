@@ -33,11 +33,11 @@ T0031,Arezzo City,IT,ITI18,True,1,MIP4Adapt,,43.4753948,11.8410135
 T0032,Arlesheim,CH,CH032,False,1,healthRiskADAPT,Replicator,47.4931125,7.6202048
 T0033,Arnhem-Nijmegen,NL,NL226,True,1,Pathways2Resilience,,51.902966750000004,5.926843680478266
 T0034,Athens,EL,EL303,False,5,GreenInCities|ISMED-CLIM|JustREACH|URBREATH|healthRiskADAPT,Demonstrator|Replicator,,
-T0035,Athens Metropolitan Area,EL,EL304,False,1,ARSINOE,Demonstrator,,
+T0035,Athens Metropolitan Area,EL,EL30,False,1,ARSINOE,Demonstrator,,
 T0036,Athienou Municipality,CY,CY000,True,2,MIP4Adapt|NURISH,Demonstrator,35.032550799999996,33.552085279275296
-T0037,Attiki,EL,DE300,False,1,IMPETUS,Demonstrator,,
+T0037,Attiki,EL,EL30,False,1,IMPETUS,Demonstrator,,
 T0038,Autonomous Province of Trento,IT,ITH20,True,1,MIP4Adapt,,45.89400315,11.045022599662428
-T0039,Autonomous Province of Vojvodina,RS,RS127,True,1,ClimaPannonia,Demonstrator,45.25341125,19.848462918178765
+T0039,Autonomous Province of Vojvodina,RS,RS12,True,1,ClimaPannonia,Demonstrator,45.25341125,19.848462918178765
 T0040,Autonomous region of Madeira,PT,PT30,False,1,REGILIENCE,,,
 T0041,Aveiro,PT,PT191,False,1,FARCLIMATE,,40.640496,-8.6537841
 T0042,Aveiro lagoon,PT,PT191,False,1,COAST-SCAPES,Replicator,40.7702322,-8.6433869
@@ -124,7 +124,7 @@ T0122,Comunitat Valenciana,ES,ES52|ES523,True,3,MIP4Adapt|REGILIENCE|SOTERIA,,39
 T0123,Constanta,RO,RO223,False,1,JUSTSAFE,Replicator,44.1767161,28.6507598
 T0124,Cork City,IE,IE053,True,2,GreenInCities|MIP4Adapt,Replicator,51.89948,-8.498993474119112
 T0125,Cornia River watershed,IT,ITI1,False,1,SpongeWorks,Replicator,,
-T0126,Crete Region,EL,EL43|EL432,True,5,CLIMAAX|MIP4Adapt|Med-IREN|OCEANIDS|Regions4Climate,Demonstrator|Replicator,,
+T0126,Crete Region,EL,EL43,True,5,CLIMAAX|MIP4Adapt|Med-IREN|OCEANIDS|Regions4Climate,Demonstrator|Replicator,,
 T0127,Cukurova Region,TR,TR62,False,1,Pathways2Resilience,,37.0500064,35.3594026014036
 T0128,Cyprus,CY,CY000,False,1,DesirMED,Replicator,34.9823018,33.1451285
 T0129,Cáceres,ES,ES432,False,1,FARCLIMATE,,39.4745175,-6.3716761
@@ -188,7 +188,7 @@ T0186,Germany,DE,DE,False,1,PIISA,,51.1638175,10.4478313
 T0187,Gernika,ES,ES213,False,1,ClimaGen,Replicator,43.3143976,-2.6778593
 T0188,Gers,FR,FRJ24,False,1,TRANSFORM,Replicator,43.695527600000005,0.4101019175237992
 T0189,Ghent,BE,BE234,False,2,RISE-IN|ReGreeneration,Replicator,51.0538286,3.7250121
-T0190,Globocica,MK,MK007,False,1,NATURE-DEMO,Demonstrator,41.3164283,20.642842
+T0190,Globocica,MK,MK003,False,1,NATURE-DEMO,Demonstrator,41.3164283,20.642842
 T0191,Gmina Żmigród,PL,PL518,True,1,MIP4Adapt,,51.49154285,16.938313643313172
 T0192,Gorenjska Region,SI,SI042,True,3,FARCLIMATE|MIP4Adapt|Pathways2Resilience,,46.2636081,14.158939180045914
 T0193,Goriška Region,SI,SI043,True,2,MIP4Adapt|Pathways2Resilience,,46.10411015,13.812337532144351
@@ -203,8 +203,8 @@ T0201,Greece,EL,EL,False,1,MIRACA,,39.69847225,21.57708970085524
 T0202,Greek Islands,EL,EL4,False,1,OCEANIDS,,,
 T0203,Grenoble,FR,FRK24,False,2,MOUNTADAPT|healthRiskADAPT,Demonstrator|Replicator,45.1875602,5.7357819
 T0204,Guadeloupe,FR,FRY10,False,2,GENESIS|SystR,Demonstrator|Replicator,16.2528827,-61.5686855
-T0205,Guadeloupe Archipelago,FR,FI1C5,False,1,TransformAr,Demonstrator,,
-T0206,Guimarães Municipality,PT,PT11C,True,1,MIP4Adapt,,,
+T0205,Guadeloupe Archipelago,FR,FRY1,False,1,TransformAr,Demonstrator,,
+T0206,Guimarães Municipality,PT,PT119,True,1,MIP4Adapt,,,
 T0207,Hamburg City,DE,DE600,True,1,MOUNTADAPT,Replicator,53.5502503,9.992872
 T0208,Hamburg city,DE,DE600,True,2,FairFuture|JUSTSAFE,Demonstrator,53.5502503,9.992872
 T0209,Hatay Province,TR,TR631,False,1,JUSTSAFE,Demonstrator,36.3451332,36.0748022
@@ -227,7 +227,7 @@ T0225,Istrian County,HR,HR03,False,1,REGILIENCE,,45.1854803,13.9090255
 T0226,Italy,IT,IT,False,1,PIISA,,42.6384261,12.674297
 T0227,Ithaki,EL,EL623,False,1,Pathways2Resilience,,,
 T0228,Izmir City,TR,TR31|TR310,True,2,CLIMAAX|MIP4Adapt,,37.8513204,27.519655153828452
-T0229,Izmit Municipality,TR,TR310,True,1,CARDIMED,Demonstrator,40.7604008,29.933138172296175
+T0229,Izmit Municipality,TR,TR421,True,1,CARDIMED,Demonstrator,40.7604008,29.933138172296175
 T0230,Joniskis,LT,LT026,False,1,AURORA,Replicator,56.2412052,23.6151344
 T0231,Júcar River Basin,ES,ES52,False,1,SpongeWorks,Replicator,39.068793,-0.5620285
 T0232,Jūrmala,LV,LV00A,False,1,AURORA,Replicator,56.9727164,23.7886979
@@ -242,7 +242,7 @@ T0240,Kielce city,PL,PL721,False,1,BLOSSOM,Demonstrator,50.86575755,20.641118429
 T0241,Klaipeda City,LT,LT023,True,3,AURORA|MIP4Adapt|Pathways2Resilience,Replicator,55.7127529,21.1350469
 T0242,Konin City,PL,PL414,True,1,MIP4Adapt,,,
 T0243,Koprivnica Križevci County,HR,HR063,True,1,ClimaPannonia,Replicator,46.1254508,16.8221278
-T0244,Korydallos,EL,EL301,False,1,ISMED-CLIM,Replicator,,
+T0244,Korydallos,EL,EL307,False,1,ISMED-CLIM,Replicator,,
 T0245,Kosice region,SK,SK042,True,1,Pathways2Resilience,,48.676291,21.289816758617043
 T0246,Kotayk region,AM,,False,1,Pathways2Resilience,,,
 T0247,Kozani,EL,EL531,False,1,FARCLIMATE,,,
@@ -272,7 +272,7 @@ T0270,Lattenbach,AT,AT33,False,1,NATURE-DEMO,Demonstrator,,
 T0271,Lelantine Plain,EL,EL642,False,1,NATALIE,Demonstrator,,
 T0272,Lesser Poland Voivodeship,PL,PL21,True,1,MIP4Adapt,,49.790952,20.3793521
 T0273,Leuven city,BE,BE242,True,2,MIP4Adapt|URBREATH,Demonstrator,50.8785236,4.7089734
-T0274,Leze catchment,FR,FRH,False,1,SpongeScapes,,,
+T0274,Leze catchment,FR,FRJ21|FRJ23,False,1,SpongeScapes,,,
 T0275,León,ES,ES413,False,1,ISMED-CLIM,Demonstrator,42.63414505,-5.971415104539984
 T0276,Liguria Region,IT,ITC3,True,1,MIP4Adapt,,44.4066248,8.9445005
 T0277,Likovrisi Pefki Municipality,EL,EL301,True,1,MIP4Adapt,,,
@@ -286,7 +286,7 @@ T0284,Lombardia Region,IT,ITC4,False,1,CLIMATEFIT,,45.4906014,9.1965611
 T0285,London Borough of Newham,UK,UKI4,False,1,BLOSSOM,Replicator,,
 T0286,Louth,IE,IE062,True,2,CLIMAAX|MIP4Adapt,,53.9508294,-6.5403319
 T0287,Lower Austria,AT,AT12,True,1,ARCADIA,Demonstrator,48.2817813,15.7632457
-T0288,Lower Timiş River Catchment,RO,RO421,False,1,LAND4CLIMATE,Replicator,,
+T0288,Lower Timiş River Catchment,RO,RO424,False,1,LAND4CLIMATE,Replicator,,
 T0289,Lower Tisza,HU,HU33,False,1,SpongeWorks,Replicator,,
 T0290,Lublin City,PL,PL814,True,1,MIP4Adapt,,51.20183754999999,22.5520305050077
 T0291,Lubusz Voivodeship,PL,PL43,True,1,MIP4Adapt,,52.1001754,15.3605075
@@ -314,7 +314,7 @@ T0312,Matosinhos,PT,PT11A,True,2,GreenInCities|MIP4Adapt,Replicator,41.1806814,-
 T0313,Mayo,IE,IE042,True,1,MIP4Adapt,,,
 T0314,Mayo / Atlantic Seaboard North,IE,IE042,False,1,GRACE,Replicator,,
 T0315,Mazovian Voivodeship,PL,PL92,True,1,MIP4Adapt,,52.865354800000006,19.636217970185577
-T0316,Mediterranean Ports Piraeus,EL,EL302,False,1,ARSINOE,Demonstrator,,
+T0316,Mediterranean Ports Piraeus,EL,EL307,False,1,ARSINOE,Demonstrator,,
 T0317,Mersin Metropolitan Municipality,TR,TR622,False,1,CLIMAAX,,36.79133065,34.62392583451408
 T0318,Meteorological Department Curaçao,NL,,False,1,CLIMAAX,,,
 T0319,Međimurje County,HR,HR061,False,1,REHUBS,Replicator,46.4061943,16.5472278
@@ -332,8 +332,8 @@ T0330,Municipality of Mantoudi - Limni - Agia Anna,EL,EL64,False,1,CLIMAAX,,,
 T0331,Municipality of Pescara,IT,ITF13,False,1,Pathways2Resilience,,,
 T0332,Municipality of Podujeva,XK,XK001,False,1,Pathways2Resilience,,,
 T0333,Municipality of Quart de Poblet,ES,ES523,False,1,CLIMAAX,,39.48018715,-0.4331848934641751
-T0334,Municipality of Rafina-Pikermi,EL,EL306,False,1,CLIMAAX,,,
-T0335,Municipality of Santorso,IT,ITH35,False,1,SpongeScapes,,,
+T0334,Municipality of Rafina-Pikermi,EL,EL305,False,1,CLIMAAX,,,
+T0335,Municipality of Santorso,IT,ITH32,False,1,SpongeScapes,,,
 T0336,Municipality of Sveti Nikole,MK,MK001,False,1,Pathways2Resilience,,41.8763834,21.968930124637048
 T0337,Municipality of Valencia,ES,ES523,True,3,ARSINOE|DesirMED|MIP4Adapt,Demonstrator,,
 T0338,Municipality of Xanthi,EL,EL512,False,1,CLIMAAX,,,
@@ -363,7 +363,7 @@ T0361,North Middle Sweden,SE,SE31,False,1,Precilience,Replicator,60.537079950000
 T0362,North Savo,FI,FI1DB,False,1,FARCLIMATE,,63.01593535,27.626789561547632
 T0363,North-East Attica,EL,EL30,False,1,TerraTwin,,,
 T0364,North-West Region,RO,RO11,False,1,Pathways2Resilience,,,
-T0365,Northeastern Statistical Region,MK,MK004,False,1,Pathways2Resilience,,,
+T0365,Northeastern Statistical Region,MK,MK007,False,1,Pathways2Resilience,,,
 T0366,Northern Evia,EL,EL642,False,1,TerraTwin,,,
 T0367,Northern Region of Malta,MT,MT001,False,1,NURISH,Replicator,35.921642000000006,14.472789466474921
 T0368,Nouvelle-Aquitaine Region,FR,FRI,True,5,JustREACH|MIP4Adapt|NATALIE|NBRACER|Pathways2Resilience,Demonstrator,45.679752750000006,2.082630852964626
@@ -371,7 +371,7 @@ T0369,Nova Gorica,SI,SI043,False,1,GreenInCities,Demonstrator,45.9580549,13.6474
 T0370,Occitanie Region,FR,FRJ,True,2,MIP4Adapt|VALORADA,,43.03523355,2.272592846560686
 T0371,Odesa,UA,,False,1,Pathways2Resilience,,46.4843023,30.7322878
 T0372,Offaly,IE,IE063,True,1,MIP4Adapt,,53.13617215,-7.810340751784169
-T0373,Ohrid/Prespa Lakes,MK,MK002,False,1,ARSINOE,Demonstrator,,
+T0373,Ohrid/Prespa Lakes,MK,MK003|MK005,False,1,ARSINOE,Demonstrator,,
 T0374,Oristano Gulf,IT,ITG2G,False,1,TransformAr,Demonstrator,,
 T0375,Osijek-Baranja County,HR,HR025,False,1,ClimEmpower,,45.541111,18.4384615
 T0376,Oslo,NO,NO081,False,1,healthRiskADAPT,Demonstrator,59.9133301,10.7389701
@@ -388,7 +388,7 @@ T0386,Paris City,FR,FR101,True,1,MIP4Adapt,,48.85659475,2.351437689955218
 T0387,Parma,IT,ITH52,False,2,BLOSSOM|URBREATH,Replicator,44.8013678,10.3280833
 T0388,Pays des Cévennes,FR,FRJ12,False,1,DRYAD,Replicator,44.4378021,4.093021944105448
 T0389,Pecs,HU,HU231,False,1,GreenInCities,Replicator,46.0765092,18.2280317
-T0390,Penteli Municipality,EL,EL303,True,1,MIP4Adapt,,,
+T0390,Penteli Municipality,EL,EL301,True,1,MIP4Adapt,,,
 T0391,Perifereia Attikis,EL,EL30,False,1,CLIMAAX,,,
 T0392,Pernik Muncipality,BG,BG414,True,1,CLIMAAX,,42.6092185,23.0309457
 T0393,Piemonte Region,IT,ITC1,False,1,MountResilience,Demonstrator,45.0641298,7.6776775
@@ -470,7 +470,7 @@ T0468,Silistra,BG,BG325,False,1,Pathways2Resilience,,44.118308,27.2600031
 T0469,Silistra Municipality,BG,BG325,False,1,CLIMAAX,,44.02194765,27.222721525764186
 T0470,Sintra Municipality,PT,PT1A0,True,1,MIP4Adapt,,41.1436223,-8.590209936208929
 T0471,Sjælland,DK,DK02,False,1,Precilience,Replicator,55.545597900000004,11.697374095992934
-T0472,Skiathos Municipality,EL,EL511,True,1,NURISH,Demonstrator,,
+T0472,Skiathos Municipality,EL,EL613,True,1,NURISH,Demonstrator,,
 T0473,Skåne,SE,SE22|SE224,False,3,CLIMAAX|Pathways2Resilience|Precilience,Demonstrator,55.8479416,13.633711699754647
 T0474,Skåne Region,SE,SE224,False,1,ARCADIA,Demonstrator,56.0319247,14.1562326
 T0475,Sligo,IE,IE041,True,1,MIP4Adapt,,54.2720696,-8.4751357
@@ -513,7 +513,7 @@ T0511,Tartu City,EE,EE008,True,2,ClimaGen|MIP4Adapt,Demonstrator,58.3819747,26.7
 T0512,Taurage District Municipality,LT,LT027,True,1,MIP4Adapt,,55.3434661,21.9483474
 T0513,"Tavropos, Thessaly",EL,EL61,False,1,CLIMINVEST,Demonstrator,,
 T0514,Teleorman County,RO,RO317,False,1,Pathways2Resilience,,43.9716029,25.3269655
-T0515,Temerin,RS,RS127,False,1,ClimaPannonia,Demonstrator,45.4073868,19.8876546
+T0515,Temerin,RS,RS123,False,1,ClimaPannonia,Demonstrator,45.4073868,19.8876546
 T0516,Terras de Trás-os-Montes,PT,PT11E,False,1,Pathways2Resilience,,41.59298595,-6.7288269232895885
 T0517,Thames River Basin District,UK,UKH|UKI|UKJ,False,1,TRANSFORM,Demonstrator,,
 T0518,The Arilje Municipality,RS,RS211,False,1,Pathways2Resilience,,43.7273448,20.1151133
@@ -525,7 +525,7 @@ T0523,Thessaly,EL,EL61,True,2,GRACE|MIP4Adapt,Replicator,,
 T0524,Timiș County,RO,RO424,False,1,MOUNTADAPT,Replicator,45.7549918,21.2521389
 T0525,Timonchio,IT,ITH35,False,1,SpongeScapes,,45.7338905,11.374676
 T0526,Tipperary County,IE,IE051,True,2,CLIMAAX|Pathways2Resilience,,52.68482145,-7.898147186112796
-T0527,Tirana Region,AL,AL011,False,1,Pathways2Resilience,,41.34453095,19.77718252153513
+T0527,Tirana Region,AL,AL022,False,1,Pathways2Resilience,,41.34453095,19.77718252153513
 T0528,Tirol,AT,AT33,False,2,MOUNTADAPT|MountResilience,Demonstrator,47.223193,11.5261028
 T0529,Torbay and Devon County,UK,UKK42|UKK43,False,1,ARSINOE,Demonstrator,,
 T0530,Torino,IT,ITC11,False,2,ClimaGen|FARCLIMATE,Demonstrator,45.0677551,7.6824892
@@ -549,7 +549,7 @@ T0547,Unione dei Comuni della Valcerrina,IT,ITC18,False,1,CLIMAAX,,42.8131688,13
 T0548,Upper Biebrza,PL,PL84,False,1,SpongeScapes,,,
 T0549,Upper Svaneti,GE,,False,1,Pathways2Resilience,,42.63545205,42.24871384619953
 T0550,Upper Thames,UK,UKK1,False,1,SpongeScapes,,,
-T0551,Upper Timiş River,RO,RO421,False,1,LAND4CLIMATE,Demonstrator,,
+T0551,Upper Timiş River,RO,RO422,False,1,LAND4CLIMATE,Demonstrator,,
 T0552,Utena District Municipality,LT,LT029,True,1,MIP4Adapt,,54.6715549,25.1985761
 T0553,Vaasa City,FI,FI19A,True,1,MIP4Adapt,,63.0969778,21.6196205
 T0554,Vacaresti Natural Park,RO,RO321,False,1,NATALIE,Demonstrator,44.3994706,26.1337469628221
@@ -589,7 +589,7 @@ T0587,West Estonian Archipelago,EE,EE004,False,1,Pathways2Resilience,,58.2948782
 T0588,West Finland,FI,FI19,True,1,Precilience,Demonstrator,62.1286921,23.774117730171536
 T0589,West Flanders,BE,BE25,False,1,NBRACER,Demonstrator,51.04047465,2.9994213387887116
 T0590,West Lesvos,EL,EL411,False,1,NURISH,Replicator,,
-T0591,West Marmara Region,TR,TRB2,False,1,Pathways2Resilience,,,
+T0591,West Marmara Region,TR,TR2,False,1,Pathways2Resilience,,,
 T0592,West Region Romania,RO,RO42,False,1,Pathways2Resilience,,,
 T0593,Westcountry Region,UK,UKK43,False,1,TransformAr,Demonstrator,,
 T0594,Western Costa del Sol,ES,ES61,False,1,ClimEmpower,,,
@@ -613,6 +613,6 @@ T0611,Île-de-France Region,FR,FR10,True,1,Pathways2Resilience,,,
 T0612,Østfold County,NO,NO083,True,1,Precilience,Demonstrator,,
 T0613,Üsküdar,TR,TR100,False,1,Pathways2Resilience,,41.0265498,29.0151321
 T0614,İstanbul Metropolitan Municipality,TR,TR100,True,1,MIP4Adapt,,41.0134862,28.9553178
-T0615,Şanlıurfa Metropolitan Municipality,TR,TRC2|TRC22,True,2,CLIMAAX|Pathways2Resilience,,40.9917696,39.75149196503165
+T0615,Şanlıurfa Metropolitan Municipality,TR,TRC2|TRC21,True,2,CLIMAAX|Pathways2Resilience,,40.9917696,39.75149196503165
 T0616,Šavnik,ME,ME000,False,1,SpongeWorks,Replicator,42.957197,19.0946043
 T0617,Žilina Region,SK,SK031,True,5,CLIMAAX|GRACE|JUSTSAFE|MIP4Adapt|Pathways2Resilience,Demonstrator|Replicator,49.1775455,19.205817977591973
