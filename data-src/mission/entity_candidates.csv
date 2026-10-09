@@ -353,8 +353,8 @@ E-A,E156,T0135,1,70.96774193548387,100.0,True,media,True
 E-A,E158,T0506,1,100,100,True,alta,True
 E-A,E159,T0124,1,100,100,True,alta,True
 E-A,E160,T0143,1,100,100,True,alta,True
-E-A,E161,T0180,1,100,100,True,alta,True
-E-A,E161,T0181,2,100,100,True,alta,False
+E-A,E161,T0180,1,100,100,True,alta,False
+E-A,E161,T0181,2,100,100,True,alta,True
 E-A,E162,T0286,1,100,100,True,alta,True
 E-A,E163,T0313,1,100,100,True,alta,True
 E-A,E163,T0314,2,25.0,100.0,True,baja,False
