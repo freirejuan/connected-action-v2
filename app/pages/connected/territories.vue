@@ -4,32 +4,37 @@
       n="05"
       kicker="TERRITORIES"
       title="Territories"
-      intro="Start from a territory. For each NUTS-3 area (or NUTS-2 region): which Mission projects have a local authority there, which of its entities sign the Charter, and which of its entities take part in projects — there or elsewhere."
+      intro="Pick a place and see what the Mission is doing there: which regions and local authorities have signed the Charter, which work with Mission projects as demonstrators, replicators or research partners, which receive technical assistance, and which local organisations are partners in Mission projects."
       help-title="Reading this page"
-      help="A project has a local authority in an area when Appendix 5 of the Mission Barometer lists, for that project, an authority whose territorial code is that area or a smaller unit inside it (as demonstrator, replicator or with no role given). When the authority is coded at a higher level (a NUTS-2 region, a NUTS-1 area or a country), the project appears as working through a regional or national authority: it does not colour the map, because Appendix 5 does not say in which of the areas it works. Example, Østjylland (DK042): BLOSSOM and URBREATH list Aarhus City (DK042), so they have a local authority there; NBRACER, Precilience, RESIST and TRANSFORM list Central Denmark Region (DK04), which covers five NUTS-3 areas, so they work there through a regional authority. In the NUTS-2 view the rule moves up one level. This shows where the authority a project declares as territory is, not where the work is done. Entities are the authorities of Appendix 5, the Charter signatories of the EEA Adaptation Dashboard and the CORDIS partners of the 65 Mission projects, joined into one list."
+      help="Places are mapped on NUTS 3 areas (NUTS 2 for regional authorities). An engaged RLA is a region or local authority working with a Mission project or MIP4Adapt: listed in the Mission Barometer (Appendix 5) or a partner in a Mission project (CORDIS). The map places each authority on its own area; a project that works with a regional or national authority appears in the profile of every area it covers as working there through that authority, and does not colour the map, because Appendix 5 does not say in which areas the work is done. Example, Østjylland (DK042): Aarhus City works with BLOSSOM and URBREATH; NBRACER, Precilience, RESIST and TRANSFORM work with Central Denmark Region (DK04), which covers five NUTS 3 areas."
     />
 
     <div class="mx-auto w-full max-w-[1920px] px-7 py-7 pb-24">
       <div v-if="!ready" class="h-[70vh]"><USkeleton class="h-full w-full" /></div>
 
       <template v-else>
-        <!-- stats -->
+        <!-- headline figures (Mission vocabulary); follow the project-type filter and the selected area -->
+        <div v-if="profile" class="mb-2 flex items-center gap-3 font-mono text-[11px] text-neutral-dark">
+          <span>INDICATORS FOR <strong class="text-neutral-darkest">{{ profile.name.toUpperCase() }}</strong> ({{ profile.id }}) — a different set from the whole map</span>
+          <button type="button" class="font-bold tracking-[0.1em] text-community-pink-dark" @click="selected = null">SHOW ALL</button>
+        </div>
         <div class="stats mb-6 grid w-full grid-cols-2 border-l border-t border-neutral-darkest bg-neutral-lightest md:grid-cols-3 2xl:grid-cols-6">
           <div v-for="s in statCells" :key="s.label" class="border-b border-r border-neutral-darkest px-5 py-4">
             <span class="block font-display text-4xl font-bold text-neutral-darkest">{{ s.value.toLocaleString("en-US") }}</span>
-            <span class="inline-flex items-center gap-2 font-mono text-2xs font-semibold tracking-[0.16em] text-neutral-dark">
-              <span v-if="s.swatch" class="h-3 w-4 shrink-0" :style="s.swatch" />{{ s.label }}
-            </span>
+            <span class="block font-mono text-2xs font-semibold tracking-[0.16em] text-neutral-darkest">{{ s.label }}</span>
+            <span class="mt-0.5 block font-sans text-[11px] leading-snug text-neutral-dark">{{ s.sub }}</span>
           </div>
         </div>
 
         <p class="-mt-3 mb-6 max-w-[1100px] font-sans text-[12px] leading-snug text-neutral-dark">
-          <strong class="font-semibold text-neutral-darkest">Data status.</strong>
-          Entities from the three sources are joined where country, territory and name agree
-          ({{ actorsCount.toLocaleString("en-US") }} entities). Doubtful matches and the type of public bodies and "other" CORDIS
-          partners were checked one by one (web-assisted review, validated by Inviable, October 2026). Appendix 5 lists regions for 63 of the 65 Horizon Mission projects
-          (not for National Adaptation Hubs and REGILIENCE-plus, coordination actions at national or European scale) and for MIP4Adapt, the
-          Mission's official support mechanism, shown as its own type (MIP).
+          <strong class="font-semibold text-neutral-darkest">About the data.</strong>
+          This prototype has been developed by inViable using three public sources: the list of Charter signatories, the Mission
+          Barometer's database of regions and local authorities supported by Mission projects and MIP4Adapt (Appendix 5, data as of
+          March 2026), and project partners from CORDIS. Organisations are matched by country, place and name; doubtful matches were
+          reviewed one by one. The Barometer database covers 63 of the 65 Mission projects, since National Adaptation Hubs and
+          REGILIENCE-plus work at national or European scale. MIP4Adapt appears as its own type (MIP). While cross-checking the sources
+          we found some inconsistencies, mainly in territorial codes, so a few figures may shift slightly once these are corrected.
+          The figures above follow the project-type filter and do not add up. With an area selected they switch to a set of indicators for that area.
         </p>
 
         <!-- controls -->
@@ -119,6 +124,7 @@
               :describe="describeRegion"
               :flows="mapFlows"
               :dim="mapFlows.length > 0"
+              :inset-right="legendOpen ? 240 : 0"
               @select-region="selectRegion"
             />
             <!-- C · flows from the selected territory -->
@@ -148,8 +154,11 @@
               </p>
               <p v-if="flowMode !== 'none'" class="mt-1.5 border-t border-neutral-lighter pt-1 text-[10px] leading-snug text-neutral-dark">Line width: number of entity–project links. Only areas where projects have a local authority.</p>
             </div>
-            <div class="absolute bottom-3 left-3 z-10 max-w-[330px] border border-neutral-darkest bg-neutral-lightest p-3">
-              <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">{{ level === 3 ? "NUTS-3 AREAS" : "NUTS-2 REGIONS" }} BY PROFILE</span>
+            <div v-if="legendOpen" class="absolute right-3 top-3 z-10 w-[270px] border border-neutral-darkest bg-neutral-lightest/95 p-3">
+              <div class="mb-2 flex items-start gap-2">
+                <span class="font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">WHERE THE MISSION IS ACTIVE</span>
+                <button type="button" class="ml-auto font-mono text-[10px] font-bold tracking-[0.08em] text-neutral-dark hover:text-neutral-darkest" aria-label="Hide legend" @click="legendOpen = false">HIDE</button>
+              </div>
               <div class="flex flex-col gap-1">
                 <span v-for="c in legendItems" :key="c.id" class="flex items-start gap-2">
                   <span class="mt-0.5 h-3 w-5 shrink-0 border border-neutral-light" :style="c.style" />
@@ -158,9 +167,24 @@
                 </span>
               </div>
               <p class="mt-2 border-t border-neutral-lighter pt-1.5 font-sans text-[11px] leading-snug text-neutral-dark">
-                "Partners" are entities based here that are partners (CORDIS) of a Mission project. Map colours do not show project type.
+                <em>Engaged RLA</em>: a region or local authority working with a Mission project or MIP4Adapt. <em>Project partners</em>:
+                organisations based in the area that take part in Mission projects (CORDIS). Areas are {{ level === 3 ? "NUTS 3" : "NUTS 2" }}
+                regions. Colours do not show project type.
               </p>
             </div>
+            <button
+              v-else
+              type="button"
+              class="absolute right-3 top-3 z-10 border border-neutral-darkest bg-neutral-lightest px-2.5 py-1.5 font-mono text-[10px] font-bold tracking-[0.12em] text-neutral-darkest hover:bg-neutral-lighter"
+              @click="legendOpen = true"
+            >
+              SHOW LEGEND
+            </button>
+            <span class="absolute bottom-3 left-3 z-10 max-w-[60%] bg-neutral-lightest/90 px-1.5 py-0.5 font-sans text-[12px] text-neutral-darkest">
+              Mission activity in {{ (T.stats.value.both + T.stats.value.projects + T.stats.value.partners).toLocaleString("en-US") }} areas:
+              {{ (T.stats.value.both + T.stats.value.projects).toLocaleString("en-US") }} with an engaged RLA,
+              {{ T.stats.value.partners.toLocaleString("en-US") }} with project partners only.
+            </span>
             <span class="absolute bottom-3 right-3 z-10 font-mono text-2xs text-neutral-dark">Ctrl/⌘ + scroll to zoom · drag to pan</span>
           </div>
 
@@ -169,8 +193,9 @@
             <div v-if="!profile" class="p-5">
               <span class="mb-2 block font-mono text-2xs font-bold tracking-[0.16em] text-neutral-dark">TERRITORY PROFILE</span>
               <p class="font-sans text-[13px] leading-snug text-neutral-dark">
-                Click an area on the map, or search above, to see which projects act there, which of its entities sign the Charter and
-                which take part in projects there or elsewhere.
+                Click an area on the map, or search for a place, to see what the Mission is doing there: which Mission projects work
+                with its regions and local authorities, which of them are Charter Signatories, and which local organisations take part
+                in Mission projects, here or elsewhere.
               </p>
             </div>
             <template v-else>
@@ -187,7 +212,7 @@
 
               <!-- 1 projects -->
               <section class="border-b border-neutral-darkest p-4">
-                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">1 · PROJECTS WITH A LOCAL AUTHORITY HERE · {{ profile.projectsHere.length }}</h3>
+                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">1 · MISSION PROJECTS WORKING WITH RLAs HERE · {{ profile.projectsHere.length }}</h3>
                 <p v-if="!profile.projectsHere.length" class="text-[12px] text-neutral-dark">No Mission project lists a local authority of this area in Appendix 5.</p>
                 <ul>
                   <li v-for="p in profile.projectsHere" :key="p.project" class="border-b border-neutral-lighter py-1.5">
@@ -216,7 +241,7 @@
 
               <!-- 2 signatories -->
               <section class="border-b border-neutral-darkest p-4">
-                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">2 · CHARTER SIGNATORIES FROM HERE · {{ profile.signatoriesHere.length }}</h3>
+                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">2 · CHARTER SIGNATORIES BASED HERE · {{ profile.signatoriesHere.length }}</h3>
                 <p v-if="!profile.signatoriesHere.length" class="text-[12px] text-neutral-dark">No entity of this area signs the Charter (EEA list and Appendix 5).</p>
                 <ul>
                   <li v-for="a in profile.signatoriesHere" :key="a.id" class="flex items-start gap-2 border-b border-neutral-lighter py-1.5">
@@ -240,7 +265,7 @@
 
               <!-- 3 entities taking part -->
               <section class="p-4">
-                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">3 · ENTITIES FROM HERE TAKING PART</h3>
+                <h3 class="mb-2 font-mono text-2xs font-bold tracking-[0.16em] text-neutral-darkest">3 · LOCAL ORGANISATIONS IN MISSION PROJECTS</h3>
                 <div class="mb-2 flex border border-neutral-darkest">
                   <button
                     v-for="(t, i) in partTabs"
@@ -286,8 +311,8 @@
         <CaCard class="mt-6" title="The three layers side by side" body-class="p-4">
           <template #help>
             <CaHelp title="Small multiples" :w="320">
-              The same {{ level === 3 ? "NUTS-3 areas" : "NUTS-2 regions" }} and filters as the map above, one layer per map: where Mission projects have
-              a local authority, where their CORDIS partners are based, and where Charter signatories are. Zoom, pan and hover are shared.
+              The same {{ level === 3 ? "NUTS-3 areas" : "NUTS-2 regions" }} and filters as the map above, one layer per map: engaged RLAs (regions and local
+              authorities working with Mission projects or MIP4Adapt), project partners (CORDIS) and Charter Signatories. Zoom, pan and hover are shared.
             </CaHelp>
           </template>
           <MissionSmallMultiples
@@ -392,6 +417,7 @@ import {
   MIP4ADAPT,
   NATURE_EN,
   NATURE_GROUPS,
+  natureGroupOf,
   type NatureGroup,
   type ProfileClass,
   type Role,
@@ -435,9 +461,9 @@ const { projectName, takesPart, regionProfile, actorRow, territoryLabel } = T;
 
 // --- mapa ---
 const CLS: Record<ProfileClass, { color: string; short: string; label: string; style: Record<string, string> }> = {
-  both: { color: "#7945ab", short: "local authority + local partners", label: "Projects with a local authority here, and local partners", style: { background: "#7945ab" } },
-  projects: { color: "#cab1e8", short: "local authority, no local partner", label: "Projects with a local authority here, no local partner", style: { background: "#cab1e8" } },
-  partners: { color: "#9a908e", short: "local partners only", label: "Local partners, but no project with a local authority here", style: { background: "#9a908e" } },
+  both: { color: "#7945ab", short: "engaged RLA + project partners", label: "Engaged RLA + project partners", style: { background: "#7945ab" } },
+  projects: { color: "#cab1e8", short: "engaged RLA only", label: "Engaged RLA only", style: { background: "#cab1e8" } },
+  partners: { color: "#9a908e", short: "project partners only", label: "Project partners only", style: { background: "#9a908e" } },
   none: { color: "#f6f3ef", short: "no project or partner", label: "No project or partner", style: { background: "#f6f3ef" } },
 };
 const fills = computed(() => {
@@ -452,10 +478,11 @@ const legendItems = computed(() => {
     { id: "both", label: CLS.both.label, style: CLS.both.style, n: s.both },
     { id: "projects", label: CLS.projects.label, style: CLS.projects.style, n: s.projects },
     { id: "partners", label: CLS.partners.label, style: CLS.partners.style, n: s.partners },
-    { id: "sig", label: "Dashed outline: an entity from here signs the Charter", style: { border: "1.5px dashed #403339", background: "#f6f3ef" }, n: s.withSignatories },
+    { id: "sig", label: "Charter Signatory based here", style: { border: "1.5px dashed #403339", background: "#f6f3ef" }, n: s.withSignatories },
   ];
 });
 const selected = ref<string | null>(null);
+const legendOpen = ref(true);
 function selectRegion(id: string) {
   selected.value = selected.value === id ? null : id;
 }
@@ -474,9 +501,9 @@ function describeRegion(id: string) {
   const p = T.profiles.value.get(id);
   if (!p) return ["No project, partner or signatory"];
   return [
-    `${p.projects.size} project${p.projects.size === 1 ? "" : "s"} with a local authority here`,
-    `${p.partners.size} local partner organisation${p.partners.size === 1 ? "" : "s"}`,
-    `${p.signatories.size} Charter signator${p.signatories.size === 1 ? "y" : "ies"}`,
+    `${p.rlas.size} engaged RLA${p.rlas.size === 1 ? "" : "s"} · ${p.projects.size} Mission project${p.projects.size === 1 ? "" : "s"}`,
+    `${p.partners.size} project partner${p.partners.size === 1 ? "" : "s"} based here`,
+    `${p.signatories.size} Charter Signator${p.signatories.size === 1 ? "y" : "ies"}`,
   ];
 }
 
@@ -601,17 +628,42 @@ const tableRows = computed(() => {
 });
 
 // --- cifras ---
+// Dos juegos de indicadores: el de todo el mapa (vocabulario de la Misión) y el de un territorio elegido
+// (qué pasa aquí, quién es de aquí y con quién conecta).
+const NATURE_SHORT: Record<string, [string, string]> = {
+  authority: ["authority", "authorities"], academia: ["university or research centre", "universities & research"], company: ["company", "companies"],
+  ngo: ["NGO", "NGOs"], public: ["other public body", "other public bodies"], other: ["other", "other"],
+};
 const statCells = computed(() => {
-  const s = T.stats.value;
-  const unit = level.value === 3 ? "NUTS-3" : "NUTS-2";
-  const all = (T.payload.value?.actors ?? []).filter(T.actorAllowed).map((a) => T.roleOf(a));
+  const p = profile.value;
+  if (!p) {
+    const h = T.headline(null);
+    return [
+      { label: "ENGAGED RLAs", value: h.engaged, sub: `Regions and local authorities in Mission projects or MIP4Adapt · ${h.engagedResearch.toLocaleString("en-US")} with research projects` },
+      { label: "CHARTER SIGNATORIES", value: h.signatories, sub: `${h.signatoriesEngaged.toLocaleString("en-US")} engaged, ${(h.signatories - h.signatoriesEngaged).toLocaleString("en-US")} not yet engaged` },
+      { label: "RLAs RECEIVING TECHNICAL ASSISTANCE", value: h.technicalAssistance, sub: "MIP4Adapt, Pathways2Resilience, CLIMAAX" },
+      { label: "DEMONSTRATOR RLAs", value: h.demonstrators, sub: "In Innovation Actions" },
+      { label: "REPLICATOR RLAs", value: h.replicators, sub: "In Innovation Actions" },
+      { label: "PROJECT PARTNERS", value: h.partners, sub: "All organisations in Mission projects (CORDIS), including RLAs" },
+    ];
+  }
+  const h = T.headline(p.id);
+  const rlas = p.profile?.rlas.size ?? 0;
+  const byNature = new Map<string, number>();
+  for (const a of p.actorsHere) {
+    if (!T.participation.value.get(a.id)?.partner.length) continue;
+    const g = natureGroupOf(a.nature);
+    byNature.set(g, (byNature.get(g) ?? 0) + 1);
+  }
+  const natureLine = [...byNature.entries()].sort((a, b) => b[1] - a[1]).map(([g, n]) => `${n} ${NATURE_SHORT[g]![n === 1 ? 0 : 1]}`).join(" · ");
+  const f = flowData.value;
   return [
-    { label: `${unit} WITH A LOCAL AUTHORITY IN A PROJECT`, value: s.both + s.projects, swatch: null },
-    { label: "…AND LOCAL PARTNERS", value: s.both, swatch: CLS.both.style },
-    { label: `${unit} WITH LOCAL PARTNERS ONLY`, value: s.partners, swatch: CLS.partners.style },
-    { label: "ENTITIES THAT SIGN AND TAKE PART", value: all.filter((r) => r === "both").length, swatch: null },
-    { label: "SIGN ONLY", value: all.filter((r) => r === "signs").length, swatch: null },
-    { label: "TAKE PART ONLY", value: all.filter((r) => r === "takes").length, swatch: null },
+    { label: "MISSION PROJECTS HERE", value: p.projectsHere.length, sub: `Working with RLAs of this area · ${p.projectsAbove.length} more through a regional or national authority` },
+    { label: "ENGAGED RLAs", value: rlas, sub: `${h.demonstrators} demonstrator${h.demonstrators === 1 ? "" : "s"} · ${h.replicators} replicator${h.replicators === 1 ? "" : "s"} · ${h.technicalAssistance} with technical assistance` },
+    { label: "CHARTER SIGNATORIES", value: h.signatories, sub: `Based here: ${h.signatoriesEngaged} engaged, ${h.signatories - h.signatoriesEngaged} not yet · ${p.signatoriesAbove.length} regional or national covering it` },
+    { label: "PROJECT PARTNERS BASED HERE", value: h.partners, sub: natureLine || "None" },
+    { label: "LOCAL ORGANISATIONS WORKING ELSEWHERE", value: p.partElsewhere.length, sub: `${p.partHere.length} take part in projects working here` },
+    { label: "AREAS LINKED THROUGH PROJECTS", value: f?.summary.outAreas ?? 0, sub: f ? `Where projects of local partners work (${f.summary.outCountries} countries) · projects here have partners in ${f.summary.inAreas} areas` : "" },
   ];
 });
 </script>

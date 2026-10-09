@@ -139,10 +139,16 @@ if os.path.exists(nat_path):
     for r in csv.DictReader(open(nat_path, encoding='utf-8')):
         if r.get('nature'): nature_review[r['id']] = (r['nature'], r.get('level') or None)
 
+# el primer candidato de confianza alta de cada entidad se acepta solo, aunque no sea el de mayor puntuación
+# (p. ej. "Murcia Region" puntúa igual con "Murcia City", que queda en baja por el choque ciudad/región)
+first_alta = {}
+for c in sorted(cand, key=lambda c: (c['pair'], c['left_id'], c['rank'])):
+    if c['confidence'] == 'alta': first_alta.setdefault((c['pair'], c['left_id']), c['right_id'])
+
 def accepted(c):
     d = review.get((c['pair'], c['left_id'], c['right_id']))
     if d: return d == 'confirmar'
-    return c['rank'] == 1 and c['confidence'] == 'alta'
+    return c['confidence'] == 'alta' and first_alta.get((c['pair'], c['left_id'])) == c['right_id']
 
 # ---------- unión ----------
 parent = {}
@@ -256,11 +262,14 @@ for i, (root, members) in enumerate(sorted(groups.items(), key=lambda kv: sorted
     # naturaleza: las autoridades del anexo 5 y de la EEA mandan sobre el tipo CORDIS
     # varias entradas del anexo 5 unidas: ante la duda, la entidad superior (nacional > regional > local)
     LEVEL_UP = {'Autoridad nacional': 0, 'Autoridad regional': 1, 'Autoridad local': 2}
-    if a_ids: nature = min((a_level(A_by[x]) for x in a_ids), key=lambda n: LEVEL_UP[n])
-    elif e_ids: nature = e_level(E_by[e_ids[0]])
-    else: nature = c_nat[c_ids[0]]
-    for x in c_ids:
-        if x in nature_review: nature = nature_review[x][0]
+    if a_ids: nature, nature_source = min((a_level(A_by[x]) for x in a_ids), key=lambda n: LEVEL_UP[n]), 'anexo 5'
+    elif e_ids: nature, nature_source = e_level(E_by[e_ids[0]]), 'EEA'
+    else:
+        nature, nature_source = c_nat[c_ids[0]], 'reglas'
+        for x in c_ids:
+            if x in nature_review: nature, nature_source = nature_review[x][0], 'revisión'
+        if nature_source == 'reglas' and C_by[c_ids[0]]['type'] in ('Higher or Secondary Education Establishments', 'Research Organisations', 'Private for-profit entities'):
+            nature_source = 'CORDIS'
     country = (A_by[a_ids[0]]['country'] if a_ids else E_by[e_ids[0]]['country'] if e_ids else C_by[c_ids[0]]['country'])
     codes = sorted({cd for x in a_ids for cd in A_by[x]['codes']} | {cd for x in e_ids for cd in E_by[x]['codes']})
     seats = sorted({C_by[x]['codes'][0] for x in c_ids if C_by[x]['codes']})
@@ -272,6 +281,8 @@ for i, (root, members) in enumerate(sorted(groups.items(), key=lambda kv: sorted
         'signatory': bool(e_ids) or any(A_by[x]['is_signatory'] for x in a_ids),
         'signatory_source': 'EEA' if e_ids else ('anexo 5' if any(A_by[x]['is_signatory'] for x in a_ids) else None),
         'annex_ids': a_ids, 'eea_ids': e_ids, 'cordis_ids': c_ids,
+        # el tipo original de CORDIS se conserva junto al nuestro, para poder rastrearlo
+        'cordis_types': sorted({C_by[x]['type'] for x in c_ids}), 'nature_source': nature_source,
     })
 
 json.dump(actors, open(os.path.join(PUB, 'actors.json'), 'w'), ensure_ascii=False, separators=(',', ':'))

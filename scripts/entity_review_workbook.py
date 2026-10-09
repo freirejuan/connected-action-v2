@@ -43,7 +43,7 @@ wb = Workbook()
 ws = wb.active; ws.title = 'Cómo revisar'
 txt = [
     ['Revisión del catálogo de entidades (Connected Action v2 · Territories)'],
-    ['Inviable · 8-oct-2026 · propuestas automáticas de scripts/entity_catalogue.py'],
+    ['inViable · 8-oct-2026 · propuestas automáticas de scripts/entity_catalogue.py'],
     [],
     ['Para qué', 'El Lab une en una sola entidad las autoridades del anexo 5, los firmantes de la EEA y los socios de CORDIS, y clasifica cada entidad por su naturaleza. Sin esta unión no se puede saber quién firma y además participa, ni distinguir autoridades, universidades, empresas y ONG.'],
     ['Qué está hecho', 'Los cruces de confianza alta (mismo país, mismo territorio y mismo nombre tras normalizar, p. ej. "Prato" = "COMUNE DI PRATO") ya se aplican en el Lab. La naturaleza de universidades, centros de investigación y empresas sale del tipo de CORDIS y no se revisa.'],
@@ -75,7 +75,12 @@ W = {'Entidad 1': 36, 'Entidad 2': 46, 'Fuente 1': 22, 'Fuente 2': 30, 'Qué mir
 
 # 1. a revisar
 w = wb.create_sheet('1 Cruces a revisar'); header(w, COLS, W)
-todo = [r for r in cand if r['accepted'] != 'True' and r['confidence'] in ('media', 'baja')
+# en una actualización solo entra lo nuevo: lo ya revisado (entity_review.csv, entity_nature_review.csv) no se repite
+import csv as _csv
+_rev = os.path.join(SRC, 'entity_review.csv'); _nrev = os.path.join(SRC, 'entity_nature_review.csv')
+reviewed = {(r['pair'], r['left_id'], r['right_id']) for r in _csv.DictReader(open(_rev, encoding='utf-8'))} if os.path.exists(_rev) else set()
+reviewed_nat = {r['id'] for r in _csv.DictReader(open(_nrev, encoding='utf-8'))} if os.path.exists(_nrev) else set()
+todo = [r for r in cand if (r['pair'], r['left_id'], r['right_id']) not in reviewed and r['accepted'] != 'True' and r['confidence'] in ('media', 'baja')
         and (r['pair'], r['left_id']) not in accepted_left and (r['pair'], r['right_id']) not in accepted_right]
 order = {'media': 0, 'baja': 1}
 todo.sort(key=lambda r: (r['pair'], order[r['confidence']], A.get(r['left_id'], E.get(r['left_id'], {})).get('country', ''), r['left_id'], int(r['rank'])))
@@ -112,7 +117,7 @@ in_authority = {cid for a in actors if a['annex_ids'] or a['eea_ids'] for cid in
 w = wb.create_sheet('3 Naturaleza')
 cols = ['Confianza', 'País', 'Nombre (CORDIS)', 'Nombre corto', 'Tipo CORDIS', 'Propuesta', 'Por qué', 'Naturaleza corregida', 'Comentario', 'Revisado por', 'id']
 header(w, cols, {'Nombre (CORDIS)': 60, 'Nombre corto': 18, 'Tipo CORDIS': 16, 'Propuesta': 26, 'Por qué': 28, 'Naturaleza corregida': 28, 'Comentario': 30})
-rows = [n for n in nat if n['cordis_type'] in ('Public bodies', 'Other') and n['id'] not in in_authority]
+rows = [n for n in nat if n['cordis_type'] in ('Public bodies', 'Other') and n['id'] not in in_authority and n['id'] not in reviewed_nat]
 rows.sort(key=lambda n: ({'baja': 0, 'media': 1}.get(n['confidence'], 2), n['country'], n['name']))
 TYPES_ES = {'Public bodies': 'Organismo público', 'Other': 'Otros'}
 for n in rows:

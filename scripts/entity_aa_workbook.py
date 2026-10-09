@@ -21,7 +21,7 @@ wb = Workbook()
 ws = wb.active; ws.title = 'Cómo revisar'
 for r in [
     ['Revisión: la misma autoridad con nombres distintos en el anexo 5'],
-    ['Inviable · 9-oct-2026 · Connected Action v2 · Territories'],
+    ['inViable · 9-oct-2026 · Connected Action v2 · Territories'],
     [],
     ['Qué es', 'Cada proyecto escribe a su manera las autoridades del anexo 5 (Midtjylland, Central Denmark Region, Central-Jutland). Se han comparado las entradas del mismo país con el mismo código NUTS o con nombres casi iguales, y un agente ha propuesto si son la misma autoridad.'],
     ['Qué hacer', 'Hoja 1: decidir las dudas (la propuesta, si la hay, ya está puesta en "Decisión final"). Hoja 2: repaso rápido; cambiar solo lo que no compartas.'],

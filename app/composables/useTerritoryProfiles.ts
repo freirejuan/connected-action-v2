@@ -184,27 +184,43 @@ export function useTerritoryProfiles(f: Filters) {
   });
 
   // --- perfil de cada región al nivel elegido ---
+  /**
+   * RLA (regional or local authority) comprometida con la Misión: autoridad del anexo 5 con un proyecto o MIP4Adapt
+   * (tras los filtros de tipo y papel), o autoridad local o regional que es socia CORDIS de un proyecto de la Misión.
+   */
+  const isEngagedRla = (a: Actor) => {
+    const p = participation.value.get(a.id);
+    if (!p) return false;
+    if (a.annex_ids.length && p.territory.length) return true;
+    return (a.nature === "Autoridad local" || a.nature === "Autoridad regional") && p.partner.length > 0;
+  };
+  const isRla = (a: Actor) => a.annex_ids.length > 0 || a.nature === "Autoridad local" || a.nature === "Autoridad regional";
+
+  // --- perfil de cada región al nivel elegido ---
   const profiles = computed(() => {
     const n = idLen.value;
-    const out = new Map<string, { projects: Set<string>; partners: Set<string>; signatories: Set<string>; cls: ProfileClass }>();
+    const out = new Map<string, { projects: Set<string>; rlas: Set<string>; partners: Set<string>; signatories: Set<string>; cls: ProfileClass }>();
     const get = (id: string) => {
       if (!regionIds.value.has(id)) return null;
-      if (!out.has(id)) out.set(id, { projects: new Set(), partners: new Set(), signatories: new Set(), cls: "none" });
+      if (!out.has(id)) out.set(id, { projects: new Set(), rlas: new Set(), partners: new Set(), signatories: new Set(), cls: "none" });
       return out.get(id)!;
     };
     for (const [p, regs] of projectRegions.value) for (const r of regs) get(r)?.projects.add(p);
     for (const a of payload.value?.actors ?? []) {
       if (!actorAllowed(a)) continue;
       const part = participation.value.get(a.id)!;
+      const engaged = isEngagedRla(a);
       for (const code of areaOf(a)) {
         if (code.length < n) continue;
         const r = get(code.slice(0, n));
         if (!r) continue;
+        if (engaged) r.rlas.add(a.id);
         if (part.partner.length) r.partners.add(a.id);
         if (a.signatory) r.signatories.add(a.id);
       }
     }
-    for (const r of out.values()) r.cls = r.projects.size && r.partners.size ? "both" : r.projects.size ? "projects" : r.partners.size ? "partners" : "none";
+    // clases del mapa: RLA comprometida y socios de proyectos / solo RLA / solo socios
+    for (const r of out.values()) r.cls = r.rlas.size && r.partners.size ? "both" : r.rlas.size ? "projects" : r.partners.size ? "partners" : "none";
     return out;
   });
 
@@ -218,6 +234,34 @@ export function useTerritoryProfiles(f: Filters) {
     }
     return c;
   });
+
+  /**
+   * Cifras de cabecera (vocabulario de la Misión). Siguen el filtro de tipo de proyecto y, si hay un territorio elegido,
+   * cuentan solo las entidades con sede o territorio en él. No siguen el filtro de tipo de entidad.
+   */
+  function headline(region: string | null) {
+    const inScope = (a: Actor) => !region || areaOf(a).some((c) => within(c, region));
+    const actors = (payload.value?.actors ?? []).filter(inScope);
+    const types = (a: Actor) => {
+      const p = participation.value.get(a.id)!;
+      return new Set([...p.partner.map(projectType), ...p.territory.map((l) => projectType(l.project_id))]);
+    };
+    const roles = (a: Actor, role: string) => participation.value.get(a.id)!.territory.some((l) => l.role === role);
+    const engaged = actors.filter(isEngagedRla);
+    const signatories = actors.filter((a) => a.signatory);
+    const partnerIds = new Set<string>();
+    for (const a of actors) if (participation.value.get(a.id)!.partner.length) for (const c of a.cordis_ids) partnerIds.add(c);
+    return {
+      engaged: engaged.length,
+      engagedResearch: engaged.filter((a) => types(a).has("RIA")).length,
+      signatories: signatories.length,
+      signatoriesEngaged: signatories.filter((a) => takesPart(a)).length,
+      technicalAssistance: actors.filter((a) => isRla(a) && participation.value.get(a.id)!.territory.some((l) => ["MIP", "Cascade"].includes(projectType(l.project_id) ?? ""))).length,
+      demonstrators: actors.filter((a) => isRla(a) && roles(a, "Demonstrator")).length,
+      replicators: actors.filter((a) => isRla(a) && roles(a, "Replicator")).length,
+      partners: partnerIds.size,
+    };
+  }
 
   // --- flujos desde y hacia una región (vista C) ---
   const partnersByProject = computed(() => {
@@ -384,6 +428,8 @@ export function useTerritoryProfiles(f: Filters) {
     participation,
     regionProfile,
     flowsFor,
+    headline,
+    isEngagedRla,
     roleOf,
     actorRow,
     takesPart,

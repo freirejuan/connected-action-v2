@@ -303,7 +303,7 @@ E-A,E104,T0337,1,100,100,True,alta,True
 E-A,E105,T0339,1,100,100,True,alta,True
 E-A,E105,T0340,2,100,100,True,baja,False
 E-A,E106,T0339,1,100,100,True,baja,False
-E-A,E106,T0340,2,100,100,True,alta,False
+E-A,E106,T0340,2,100,100,True,alta,True
 E-A,E107,T0347,1,100,100,True,alta,True
 E-A,E108,T0409,1,100,100,True,alta,True
 E-A,E109,T0412,1,100,100,True,alta,True

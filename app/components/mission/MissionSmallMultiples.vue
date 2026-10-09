@@ -30,9 +30,9 @@
     <p class="font-sans text-[12px] leading-snug text-neutral-dark lg:col-span-3">
       <template v-if="hovered && hoverInfo">
         <strong class="font-semibold text-neutral-darkest">{{ hoverInfo.name }}</strong> ({{ hovered }}):
-        {{ hoverInfo.projects }} project{{ hoverInfo.projects === 1 ? "" : "s" }} with a local authority ·
-        {{ hoverInfo.partners }} local partner{{ hoverInfo.partners === 1 ? "" : "s" }} ·
-        {{ hoverInfo.signatories }} signator{{ hoverInfo.signatories === 1 ? "y" : "ies" }}.
+        {{ hoverInfo.rlas }} engaged RLA{{ hoverInfo.rlas === 1 ? "" : "s" }} ·
+        {{ hoverInfo.partners }} project partner{{ hoverInfo.partners === 1 ? "" : "s" }} ·
+        {{ hoverInfo.signatories }} Charter Signator{{ hoverInfo.signatories === 1 ? "y" : "ies" }}.
       </template>
       <template v-else>
         The three maps share zoom, pan and hover: move over one to see the same area in the others; click to open its profile above.
@@ -44,7 +44,7 @@
 <script setup lang="ts">
 // Vista D: tres capas lado a lado (proyectos con autoridad local / socios locales / firmantes), sincronizadas.
 type NutsFeature = GeoJSON.Feature<GeoJSON.Geometry, { NUTS_ID: string; NUTS_NAME: string }>;
-type Profile = { projects: Set<string>; partners: Set<string>; signatories: Set<string> };
+type Profile = { projects: Set<string>; rlas: Set<string>; partners: Set<string>; signatories: Set<string> };
 
 const props = defineProps<{
   features: NutsFeature[];
@@ -61,7 +61,7 @@ const hovered = ref<string | null>(null);
 
 // rampas: violeta = dónde actúan los proyectos; tinta = socios (como en el resto del Lab); rosa = firmantes
 const RAMPS = {
-  projects: ["#e6dcf5", "#cab1e8", "#a67ad6", "#7945ab"],
+  rlas: ["#e6dcf5", "#cab1e8", "#a67ad6", "#7945ab"],
   partners: ["#d9cece", "#aca2a1", "#7e7574", "#534b4a"],
   signatories: ["#f3dbe2", "#e2aabb", "#c97790", "#a34a68"],
 };
@@ -69,7 +69,7 @@ const b1 = (n: number) => (n >= 5 ? 3 : n >= 3 ? 2 : n === 2 ? 1 : 0);
 const b2 = (n: number) => (n >= 10 ? 3 : n >= 4 ? 2 : n >= 2 ? 1 : 0);
 
 const maps = computed(() => {
-  const layer = (id: "projects" | "partners" | "signatories", title: string, measure: string, bucket: (n: number) => number, buckets: string[]) => {
+  const layer = (id: "rlas" | "partners" | "signatories", title: string, measure: string, bucket: (n: number) => number, buckets: string[]) => {
     const fills = new Map<string, string>();
     let count = 0;
     for (const [rid, p] of props.profiles) {
@@ -81,9 +81,9 @@ const maps = computed(() => {
     return { id, title, measure, fills, count, ramp: RAMPS[id], buckets };
   };
   return [
-    layer("projects", "PROJECTS WITH A LOCAL AUTHORITY", "projects", b1, ["1", "2", "3–4", "5+"]),
-    layer("partners", "LOCAL PARTNERS (CORDIS)", "partner entities", b2, ["1", "2–3", "4–9", "10+"]),
-    layer("signatories", "CHARTER SIGNATORIES", "signatory entities", b1, ["1", "2", "3–4", "5+"]),
+    layer("rlas", "ENGAGED RLAs", "regions and local authorities", b1, ["1", "2", "3–4", "5+"]),
+    layer("partners", "PROJECT PARTNERS (CORDIS)", "organisations", b2, ["1", "2–3", "4–9", "10+"]),
+    layer("signatories", "CHARTER SIGNATORIES", "signatories", b1, ["1", "2", "3–4", "5+"]),
   ];
 });
 
@@ -92,7 +92,7 @@ const hoverInfo = computed(() => {
   const p = props.profiles.get(hovered.value);
   return {
     name: props.names.get(hovered.value) ?? hovered.value,
-    projects: p?.projects.size ?? 0,
+    rlas: p?.rlas.size ?? 0,
     partners: p?.partners.size ?? 0,
     signatories: p?.signatories.size ?? 0,
   };

@@ -7,7 +7,7 @@
           <span class="text-neutral-darkest">{{ s.label }}</span> · {{ $t('lab.cutoff') }} {{ s.date }}<span v-if="s.refresh"> · {{ $t('lab.refresh') }}: {{ s.refresh }}</span>
         </li>
       </ul>
-      <div class="shrink-0">FARCLIMATE · Inviable · {{ $t('lab.generated') }} {{ meta?.generated }}</div>
+      <div class="shrink-0">FARCLIMATE · inViable · {{ $t('lab.generated') }} {{ meta?.generated }}</div>
     </div>
   </footer>
 </template>

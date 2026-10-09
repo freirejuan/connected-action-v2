@@ -128,6 +128,8 @@ const props = defineProps<{
   noTip?: boolean;
   /** atenuar los rellenos (cuando se dibujan flujos encima) */
   dim?: boolean;
+  /** px reservados a la derecha (leyenda): el mapa se encaja en el resto si el ancho es lo que lo limita */
+  insetRight?: number;
 }>();
 
 const emit = defineEmits<{
@@ -152,7 +154,7 @@ function rebuild() {
   const projection = d3.geoConicEquidistant().fitExtent(
     [
       [pad, pad],
-      [width.value - pad, height.value - pad],
+      [Math.max(width.value - pad - (props.insetRight ?? 0), width.value * 0.5), height.value - pad],
     ],
     europeMap as GeoJSON.GeoJsonObject
   );
@@ -160,7 +162,7 @@ function rebuild() {
   paths.value = props.features.map((f) => ({ id: f.properties.NUTS_ID, name: f.properties.NUTS_NAME, d: path(f) ?? "", c: path.centroid(f) }));
 }
 
-watch([width, height, () => props.features], rebuild, { immediate: true });
+watch([width, height, () => props.features, () => props.insetRight], rebuild, { immediate: true });
 
 const pathById = computed(() => new Map(paths.value.map((p) => [p.id, p])));
 const hatchedPaths = computed(() => (props.hatched?.size ? paths.value.filter((p) => props.hatched!.has(p.id)) : []));

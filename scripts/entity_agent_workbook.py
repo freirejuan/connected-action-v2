@@ -64,7 +64,7 @@ def style_row(ws, conf_col, conf):
 ws = wb.create_sheet('Cómo revisar', 0)
 txt = [
     ['Revisión del catálogo de entidades · v2 (con propuestas de agentes)'],
-    ['Inviable · 8-oct-2026 · Connected Action v2 · Territories'],
+    ['inViable · 8-oct-2026 · Connected Action v2 · Territories'],
     [],
     ['Qué ha cambiado', 'Cada pareja dudosa y cada tipo de entidad lo ha revisado un agente con el nombre, el país, los códigos NUTS y, cuando hacía falta, búsqueda web. Su propuesta ya está en la columna de decisión final: solo hay que cambiarla si no estás de acuerdo.'],
     ['Por dónde empezar', 'Hojas 1 y 3 (dudas): decidir cada fila. Después, hojas 2 y 4 (resueltas): repaso rápido, empezando por las filas con confianza media (en amarillo). La hoja 5 son los cruces automáticos ya aplicados: marcar "Distinta" solo si alguno está mal.'],

@@ -152,12 +152,12 @@
         },
         "territories": {
           "title": "Territories",
-          "lede": "Start from a territory.",
-          "body": "For each NUTS-3 area or NUTS-2 region: the Mission projects with a local authority there, its Charter signatories, and its entities that take part in projects there or elsewhere, by type of entity and role (partner, demonstrator, replicator).",
+          "lede": "What the Mission is doing in each place.",
+          "body": "Pick a place: which regions and local authorities have signed the Charter, which work with Mission projects as demonstrators, replicators or research partners, which receive technical assistance, and which local organisations are partners in Mission projects.",
           "shows": [
-            "Map of territory profiles (NUTS-3 / NUTS-2)",
-            "Territory profile: projects, signatories, participants",
-            "Entities that sign, take part, or both"
+            "Where the Mission is active (map)",
+            "Place profile: projects, Charter Signatories, local organisations",
+            "Flows and three layers side by side"
           ]
         },
         "links": {

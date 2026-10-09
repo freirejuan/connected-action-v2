@@ -152,12 +152,12 @@
         },
         "territories": {
           "title": "Territorios",
-          "lede": "Partir del territorio.",
-          "body": "Para cada NUTS-3 o región NUTS-2: los proyectos de la Misión con una autoridad de esa zona, sus firmantes de la Charter y sus entidades que participan en proyectos allí o en otros territorios, por tipo de entidad y papel (socio, demostrador, replicador).",
+          "lede": "Qué hace la Misión en cada lugar.",
+          "body": "Elige un lugar: qué regiones y autoridades locales han firmado la Charter, cuáles trabajan con proyectos de la Misión como demostradoras, replicadoras o socias de investigación, cuáles reciben asistencia técnica y qué organizaciones locales son socias de proyectos de la Misión.",
           "shows": [
-            "Mapa de perfiles de territorio (NUTS-3 / NUTS-2)",
-            "Ficha del territorio: proyectos, firmantes, participantes",
-            "Entidades que firman, participan o ambas cosas"
+            "Dónde está activa la Misión (mapa)",
+            "Ficha del lugar: proyectos, firmantes de la Charter, organizaciones locales",
+            "Flujos y tres capas lado a lado"
           ]
         },
         "links": {
