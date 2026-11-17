@@ -74,3 +74,36 @@ Registro para la integración posterior. Cada cambio indica si debe volver al Hu
 | Dos juegos de indicadores: todo el mapa (vocabulario de la Misión) y territorio elegido (proyectos aquí y a través de una autoridad superior, RLA comprometidas con sus papeles, firmantes, socios con sede aquí por tipo, organizaciones que trabajan fuera y zonas conectadas); "inViable" en todos los textos | `app/pages/connected/territories.vue`, `SiteFooter.vue`, scripts | Sí |
 | Cruce EEA–anexo 5 (9-oct): el firmante EEA «Galway City» se une a la fila Galway City (MIP4Adapt) y no a «Galway» (TerraTwin), que la revisión A-A separó. Los firmantes siguen siendo 333 | `data-src/mission/entity_review.csv`, `public/data/actors.json` | Sí, con la carga de datos |
 | Anexo 5, segunda revisión (9-oct, dudas de Beatriz y repaso de las filas sin geocodificar): 21 filas más con código de otro territorio (p. ej. Attiki DE300 = Berlín, Guadeloupe FI1C5, Thessaloniki EL131 = Grevena, Lèze FR5, Piraeus, Skiathos, Tirana, West Marmara), 4 de nivel (Creta EL432, Vojvodina RS127, Athens Metropolitan Area) y 2 por confirmar (Blue Horizon Limburg, Coastal Finland). Filas con cambio: 165 → 189 (versión 68, otro territorio 57, fuera de NUTS 34, nivel 15, formato 9, por confirmar 5, duplicada 1). Firmantes y autoridades sin cambios (582 / 333) | `30_trabajo/Connected_Action_v2/scripts/clean_annex5.py`, `reasons_en.py`, `data-src/mission/*.csv`, `public/data/*.json` | Sí, con la carga de datos |
+
+## Diseño Adaptarium en la envoltura y la portada (17-nov-2026, H144)
+
+Referencia: rama `feat/diseniosindicato` de `isInviable/farclimate_hub`, commit `6604597`. El Lab usa los mismos nombres de archivo, componentes, clases y tokens `adapt-*`, con los mismos valores, para que la integración sea directa. Las vistas interiores y sus componentes `Ca*` no cambian.
+
+### Lo que viene del Hub (no hay nada que devolver)
+
+| Cambio | Archivos |
+| --- | --- |
+| Fuentes Julius Sans One, Archivo Black, Bebas Neue y Actor | `nuxt.config.ts` |
+| Las cuatro `--font-adapt-*` y la paleta `--color-adapt-*` completa, con sus comentarios | `app/assets/css/main.css` |
+| Selector de idioma y logotipo compuesto, idénticos byte a byte | `app/components/site/SiteLocaleSwitcher.vue`, `SiteWordmark.vue` |
+| Plantillas `site` (portada) y `connected` (barra, pestañas, contenido y pie), sin `SiteNavOverlay` | `app/layouts/site.vue`, `connected.vue`, `default.vue` |
+| Plantilla de la portada con las tres bandas (idéntica a la del Hub) y los textos `kicker`, `title` y `ways` | `app/pages/connected/index.vue`, `i18n/locales/*.json` |
+| Foto de vidrios y los dos vidrios de la banda menta, idénticos | `public/img/adaptarium/connected-action.jpg`, `gemas-connected.png` |
+
+### Lo que es propio del Lab
+
+| Cambio | Archivos | ¿Vuelve al Hub? |
+| --- | --- | --- |
+| Portada con seis tarjetas (05 Territories y 06 Research ↔ Demonstration); el número grande sale de `cards.length`; `heroIntro` y `metaDescription` hablan de seis vistas | `app/pages/connected/index.vue`, `i18n/locales/*.json` | Sí, con las dos vistas nuevas |
+| Franja de fuentes de datos y fechas de corte, primera banda del pie | `app/components/global/SiteFooter.vue` | Sí |
+| Banda institucional del pie con los dos financiadores: emblema de la UE con «Funded by the European Union», logotipo «Project funded by» de la SERI suiza (oficial, sin modificar, horizontal y positivo, 64 px de alto como mínimo; el archivo `…_pos_quer.ai.svg` del paquete *positive* de sbfi.admin.ch/logos_en, con el nombre sin `.ai`) y declaración de financiación en Arial (`font-eu`), en inglés, español e italiano | `SiteFooter.vue`, `public/img/eu-emblem.svg`, `public/img/WBF_SBFI_EU_Frameworkprogramme_E_RGB_pos_quer.svg`, `main.css` (`--font-eu`), `i18n/locales/*.json` (`lab.fundedBy`, `lab.funding`) | Sí: el logotipo suizo y la declaración en italiano. El emblema de la UE ya lo está incluyendo el Hub |
+| Barra superior sin botón de sesión ni menú; en su lugar, distintivo «Experimental», enlace a la versión estable y selector de idioma. Por debajo de 640 px se oculta el enlace (está en el pie) y por debajo de 375 px, también el distintivo | `app/components/site/SiteTopBar.vue` | No (es del Lab) |
+| Banda oscura del pie con textos en los ficheros de idioma (el Lab no tiene gestor de contenidos), una línea de aviso y dos enlaces, en vez del menú y las redes | `SiteFooter.vue`, `i18n/locales/*.json` (`lab.footerNotice`) | No |
+| Cifras de la portada desde el repositorio estático, no desde Supabase | `app/pages/connected/index.vue` | No |
+| Iconos empaquetados en la compilación (`icon.clientBundle.scan`): al cargar las siete rutas no hay peticiones a `api.iconify.design` ni a ningún otro servidor | `nuxt.config.ts` | Opcional: conviene comprobar si el Hub los pide en tiempo de ejecución |
+| Favicon de Adaptarium (el mismo de la web de Skills) en lugar del icono de FARCLIMATE | `public/favicon.ico`, `favicon-32.png`, `favicon-180.png`, `app/app.vue` | No: el Hub tiene el suyo |
+| Se retiran `SiteHeader.vue` y las claves `connected.index.eyebrow`, `heroTitle`, `cardsHeading`, `helpTitle`, `helpBody` y `lab.subtitle` | varios | No |
+
+### Igual que la referencia a propósito
+
+Para corregirlo en el Hub y en el Lab a la vez: el título y los rótulos en blanco sobre la banda menta (1,9:1); el hueco de color papel bajo la tarjeta más corta de una fila; la barra superior, que lleva `sticky` pero no se fija; el `aria-label` del enlace del logotipo del pie, que no coincide con el texto visible; la barra superior fuera de un `header`; y el texto alternativo de `gemas-connected.png`, fijo en inglés.
