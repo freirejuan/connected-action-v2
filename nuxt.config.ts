@@ -12,7 +12,8 @@ export default defineNuxtConfig({
   components: [
     { path: '~/components/connected', pathPrefix: false },
     { path: '~/components/global', pathPrefix: false },
-    { path: '~/components/mission', pathPrefix: false }
+    { path: '~/components/mission', pathPrefix: false },
+    { path: '~/components/site', pathPrefix: false }
   ],
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
@@ -20,6 +21,8 @@ export default defineNuxtConfig({
   sourcemap: { server: false, client: false },
   nitro: { preset: 'static' },
   ui: { colorMode: false },
+  // Icons are bundled at build time, so the site makes no request to api.iconify.design.
+  icon: { clientBundle: { scan: true } },
   i18n: {
     defaultLocale: 'en',
     locales: [
@@ -34,6 +37,14 @@ export default defineNuxtConfig({
   googleFonts: {
     display: 'swap',
     subsets: ['latin', 'latin-ext'],
-    families: { Inter: [400, 500, 600, 700], 'Martian Mono': [300, 400, 500, 600, 700], Outfit: [400, 500, 600, 700, 800, 900] }
+    families: {
+      Inter: [400, 500, 600, 700],
+      'Martian Mono': [300, 400, 500, 600, 700],
+      Outfit: [400, 500, 600, 700, 800, 900],
+      'Julius Sans One': [400],
+      'Archivo Black': [400],
+      'Bebas Neue': [400],
+      Actor: [400]
+    }
   }
 })

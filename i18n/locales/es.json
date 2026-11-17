@@ -97,8 +97,14 @@
     "index": {
       "metaTitle": "Acción Conectada",
       "metaDescription": "Explora la red de proyectos y organizaciones de la Misión de Adaptación Climática de la UE en cinco vistas interactivas.",
-      "eyebrow": "Acción Conectada",
-      "heroTitle": "Explora el ecosistema de la Misión de Adaptación Climática de la UE",
+      "kicker": [
+        "Explora",
+        "el ecosistema de la"
+      ],
+      "title": [
+        "Misión de Adaptación Climática",
+        "de la UE"
+      ],
       "heroIntro": "Navega por la red de proyectos y organizaciones que impulsan la adaptación climática en Europa. Seis perspectivas muestran cómo se conectan las iniciativas financiadas por la Misión en temas, lugares y alianzas.",
       "stats": {
         "projects": "proyectos",
@@ -106,9 +112,10 @@
         "countries": "países",
         "themes": "temas"
       },
-      "cardsHeading": "Seis formas de explorar",
-      "helpTitle": "Cómo usar esta sección",
-      "helpBody": "Cada tarjeta abre una visualización en vivo. Usa la barra de pestañas superior para cambiar entre ellas en cualquier momento; cada vista incluye una breve explicación y consejos de ayuda.",
+      "ways": [
+        "formas",
+        "a explorar"
+      ],
       "cards": {
         "dashboard": {
           "title": "Panel",
@@ -1062,12 +1069,14 @@
     }
   },
   "lab": {
-    "subtitle": "Lab · capa de la Misión UE",
     "badge": "Experimental",
     "stableVersion": "Versión estable",
     "sources": "Fuentes de datos",
     "cutoff": "corte",
     "generated": "datos generados el",
-    "refresh": "actualización prevista"
+    "refresh": "actualización prevista",
+    "footerNotice": "Versión experimental de la Connected Action de Adaptarium · Transformation Hub.",
+    "fundedBy": "Financiado por la Unión Europea",
+    "funding": "Financiado por la Unión Europea en el marco de Horizonte Europa (FARCLIMATE, acuerdo de subvención n.º 101112860) y cofinanciado por la Secretaría de Estado de Formación, Investigación e Innovación de Suiza (SERI). Las opiniones expresadas son exclusivamente de sus autores y no reflejan necesariamente las de la Unión Europea ni las de la autoridad que concede la subvención. Ni la Unión Europea ni la autoridad que concede la subvención pueden ser consideradas responsables de ellas."
   }
 }

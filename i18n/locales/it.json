@@ -97,8 +97,14 @@
     "index": {
       "metaTitle": "Azione Connessa",
       "metaDescription": "Esplora la rete di progetti e organizzazioni della Missione UE per l’adattamento climatico in cinque viste interattive.",
-      "eyebrow": "Azione Connessa",
-      "heroTitle": "Esplora l’ecosistema della Missione UE per l’adattamento climatico",
+      "kicker": [
+        "Esplora",
+        "l’ecosistema della"
+      ],
+      "title": [
+        "Missione UE per",
+        "l’adattamento climatico"
+      ],
       "heroIntro": "Naviga nella rete di progetti e organizzazioni che guidano l’adattamento climatico in Europa. Sei prospettive mostrano come le iniziative finanziate dalla Missione si collegano tra temi, luoghi e partnership.",
       "stats": {
         "projects": "progetti",
@@ -106,9 +112,10 @@
         "countries": "paesi",
         "themes": "temi"
       },
-      "cardsHeading": "Sei modi per esplorare",
-      "helpTitle": "Come usare questa sezione",
-      "helpBody": "Ogni scheda apre una visualizzazione live. Usa la barra delle schede in alto per passare da una all’altra in qualsiasi momento; ogni vista ha una breve spiegazione e suggerimenti di aiuto.",
+      "ways": [
+        "modi",
+        "per esplorare"
+      ],
       "cards": {
         "dashboard": {
           "title": "Dashboard",
@@ -1062,12 +1069,14 @@
     }
   },
   "lab": {
-    "subtitle": "Lab · livello della Missione UE",
     "badge": "Sperimentale",
     "stableVersion": "Versione stabile",
     "sources": "Fonti dei dati",
     "cutoff": "aggiornato al",
     "generated": "dati generati il",
-    "refresh": "aggiornamento previsto"
+    "refresh": "aggiornamento previsto",
+    "footerNotice": "Versione sperimentale della Connected Action di Adaptarium · Transformation Hub.",
+    "fundedBy": "Finanziato dall'Unione europea",
+    "funding": "Finanziato dall'Unione europea nell'ambito di Orizzonte Europa (FARCLIMATE, convenzione di sovvenzione n. 101112860) e cofinanziato dalla Segreteria di Stato per la formazione, la ricerca e l'innovazione della Svizzera (SEFRI). Le opinioni espresse appartengono tuttavia al solo o ai soli autori e non riflettono necessariamente le opinioni dell'Unione europea o dell'amministrazione erogatrice. Né l'Unione europea né l'amministrazione erogatrice possono esserne ritenute responsabili."
   }
 }

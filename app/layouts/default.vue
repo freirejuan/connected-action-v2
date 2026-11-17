@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-neutral-lightest">
-    <SiteHeader />
+  <div class="flex min-h-screen flex-col bg-white">
+    <SiteTopBar mode="bar" />
     <main class="flex-1"><slot /></main>
     <SiteFooter />
   </div>

@@ -97,8 +97,14 @@
     "index": {
       "metaTitle": "Connected Action",
       "metaDescription": "Browse the EU Climate Adaptation Mission network of projects and organisations across five interactive views.",
-      "eyebrow": "Connected Action",
-      "heroTitle": "Explore the EU Climate Adaptation Mission ecosystem",
+      "kicker": [
+        "Explore",
+        "the ecosystem of the"
+      ],
+      "title": [
+        "EU Climate Adaptation",
+        "Mission"
+      ],
       "heroIntro": "Browse the network of projects and organisations shaping climate adaptation across Europe. Six lenses reveal how Mission-funded initiatives connect across topics, places and partnerships.",
       "stats": {
         "projects": "projects",
@@ -106,9 +112,10 @@
         "countries": "countries",
         "themes": "themes"
       },
-      "cardsHeading": "Six ways to explore",
-      "helpTitle": "How to use this",
-      "helpBody": "Each card opens a live visualization. Use the tab bar at the top to switch between them at any time; every view has its own short explainer and help tips.",
+      "ways": [
+        "ways",
+        "to explore"
+      ],
       "cards": {
         "dashboard": {
           "title": "Dashboard",
@@ -1751,12 +1758,14 @@
     }
   },
   "lab": {
-    "subtitle": "Lab · EU Mission layer",
     "badge": "Experimental",
     "stableVersion": "Stable version",
     "sources": "Data sources",
     "cutoff": "cut-off",
     "generated": "data built",
-    "refresh": "planned refresh"
+    "refresh": "planned refresh",
+    "footerNotice": "Experimental version of the Connected Action of Adaptarium · Transformation Hub.",
+    "fundedBy": "Funded by the European Union",
+    "funding": "Funded by the European Union under Horizon Europe (FARCLIMATE, grant agreement No 101112860) and co-funded by the Swiss State Secretariat for Education, Research and Innovation (SERI). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the granting authority. Neither the European Union nor the granting authority can be held responsible for them."
   }
 }
